@@ -1,0 +1,25 @@
+{
+  "name": "DYPERE – Kapittel I: Den første utforskningen",
+  "short_name": "DYPERE",
+  "description": "Privat spørreundersøkelse for Mester og Baby",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#17131A",
+  "theme_color": "#17131A",
+  "lang": "no",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
