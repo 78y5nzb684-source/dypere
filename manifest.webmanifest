@@ -1,7 +1,7 @@
 {
-  "name": "DYPERE – Kapittel I: Den første utforskningen",
+  "name": "DYPERE – Vår reise",
   "short_name": "DYPERE",
-  "description": "Privat spørreundersøkelse for Mester og Baby",
+  "description": "En privat reise gjennom spørsmål, ønsker og opplevelser",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
