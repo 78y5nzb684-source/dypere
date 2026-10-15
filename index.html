@@ -5,10 +5,85 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="DYPERE">
 <link rel="apple-touch-icon" href="./icons/icon-180.png">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DYPERE · Kapittel I – Den første utforskningen</title><style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>DYPERE · Kapittel I – Den første utforskningen</title><style>
 :root{--bg:#17131A;--card:#211B24;--ink:#F8E6D4;--muted:#B3A0A4;--gold:#CBA77E;--rose:#D29A84;--line:#53404A}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#332431 0%,var(--bg) 57%);color:var(--ink);font:15px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.wrap{max-width:830px;margin:auto;padding:26px 20px 75px}.brand{text-align:center;padding:15px 0 15px}.eyebrow{letter-spacing:3px;font-size:11px;text-transform:uppercase;color:var(--gold)}.brand h1{font:normal clamp(54px,10vw,88px)/1 Georgia,serif;letter-spacing:3px;margin:6px 0;color:var(--gold)}.sub{color:var(--muted);font-size:13px}.rule{border:0;border-top:1px solid var(--line);margin:20px 0}.panel{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:clamp(22px,5vw,43px);box-shadow:0 18px 60px #0d071044}.page{display:none}.page.active{display:block}.headline{font:normal clamp(29px,5vw,42px)/1.18 Georgia,serif;margin:8px 0 15px}.intro{color:var(--muted);max-width:55ch}.progress{height:3px;background:#342934;margin:22px 0 27px;border-radius:4px;overflow:hidden}.bar{height:100%;background:var(--gold);width:0%;transition:width .2s}.question{font:normal clamp(26px,4.8vw,39px)/1.3 Georgia,serif;margin:20px 0 35px}.choicegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.choice{border:1px solid var(--line);background:#2b232c;border-radius:9px;color:var(--ink);padding:16px;text-align:left;min-height:54px;display:flex;align-items:center;gap:12px}.choice:before{content:'';display:block;width:17px;height:17px;min-width:17px;border:1.5px solid #9c8087;border-radius:50%}.choice.chosen{border-color:var(--gold);background:#443037}.choice.chosen:before{background:var(--gold);box-shadow:inset 0 0 0 4px #443037;border-color:var(--gold)}label.small{display:block;color:var(--muted);font-size:12px;letter-spacing:.8px;text-transform:uppercase;margin-bottom:8px}.entry{background:#1b161d;border:1px solid var(--line);border-radius:9px;padding:12px 14px;color:var(--ink);width:100%;min-height:46px}.entry::placeholder{color:#92808b}textarea.entry{min-height:106px;resize:vertical}.field{margin:23px 0}.controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}.btn{padding:13px 18px;border-radius:9px;background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.gold{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:700}.btn:hover,.choice:hover{border-color:var(--gold)}.counter{margin-left:auto;color:var(--muted);font-size:12px}.menu{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:4px 0 18px}.menu .btn{font-size:12px;padding:9px 12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.chapter{color:var(--rose);text-transform:uppercase;letter-spacing:1.7px;font-size:12px}.preamble{font:italic 20px/1.4 Georgia,serif;color:var(--muted)}.check{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:8px;padding:12px 15px;margin:9px 0;background:#2a2129}.check input{accent-color:#CBA77E;width:18px;height:18px}.aside{background:#2a2028;border-left:2px solid var(--gold);padding:14px;color:var(--muted);font-size:13px}.status{color:var(--gold);font-size:12px;min-height:21px}.footer{text-align:center;font-size:12px;color:var(--muted);padding:32px 0}.report{display:none}.report table{width:100%;border-collapse:collapse}.report td,.report th{border-bottom:1px solid #ddd;padding:9px;vertical-align:top;text-align:left;font-size:11px}.report h1,.report h2{font-family:Georgia,serif}.report .rhead{margin-bottom:20px}.report .section{break-before:page;margin-top:22px}.report .qcell{width:55%}.report .meta{font-size:12px;color:#555}.fine{font-size:12px;color:var(--muted)}.hide{display:none!important}@media(max-width:600px){.wrap{padding:12px 14px 54px}.brand{padding:8px 0}.brand h1{font-size:52px}.choicegrid,.two{grid-template-columns:1fr}.panel{padding:23px 18px}.choice{min-height:51px}.controls{gap:8px}.btn{padding:12px}.counter{margin-left:0;width:100%;text-align:center}}@media print{@page{size:A4;margin:16mm}body{background:white;color:#111}.wrap{display:none!important}.report{display:block!important;color:#111;font-family:Arial,sans-serif}.report h1{font-size:32px}.report .section{break-before:page}.report tr{break-inside:avoid}.report .qcell{width:55%}.report th{background:#eee!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* DYPERE mobile-first compact layout v1.2.1 – does not modify questions or saved answer format */
+@media (max-width: 650px) {
+ html { -webkit-text-size-adjust: 100%; }
+ body { background: #17131A; }
+ .wrap { min-height: 100dvh; width: 100%; max-width: none; padding: max(8px, env(safe-area-inset-top)) 12px max(8px,env(safe-area-inset-bottom)); display: flex; flex-direction: column; }
+ .brand { padding: 2px 0 4px; flex-shrink:0; }
+ .eyebrow { font-size:9px; letter-spacing:2px; line-height:1.2; }
+ .brand h1 { font-size:clamp(33px, 9vw, 43px); line-height:1; margin:2px 0; letter-spacing:1px; }
+ .sub { font-size:9px; letter-spacing:.2px; }
+ .menu { display:flex; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; justify-content:flex-start; margin:4px 0 9px; gap:5px; flex-shrink:0; }
+ .menu::-webkit-scrollbar { display:none; }
+ .menu .btn { flex:0 0 auto; font-size:11px; padding:7px 10px; min-height:33px; border-radius:8px; }
+ .page.active { flex:1; min-height:0; }
+ .panel { padding:14px 14px 12px; border-radius:13px; box-shadow:none; }
+ .headline { font-size:clamp(24px,6.4vw,29px); line-height:1.1; margin:5px 0 5px; }
+ .preamble { font-size:15px; line-height:1.25; margin:4px 0 7px; }
+ .intro { font-size:12px; line-height:1.35; margin:5px 0 9px; }
+ .chapter { font-size:10px; letter-spacing:1px; }
+ .two { grid-template-columns: 1fr 1fr; gap:8px; }
+ .field { margin:9px 0; }
+ label.small { font-size:10px; margin-bottom:4px; letter-spacing:.3px; }
+ .entry { min-height:41px; padding:8px 10px; font-size:16px; }
+ .aside { padding:8px 10px; font-size:11px; line-height:1.3; }
+ details.privacy { background:#2a2028; border-left:2px solid var(--gold); padding:7px 10px; font-size:11px; }
+ details.privacy summary { cursor:pointer; color:var(--gold); }
+ details.privacy p { margin:7px 0 0; color:var(--muted); }
+ .controls { margin-top:10px; gap:7px; }
+ .btn { padding:9px 10px; font-size:12px; min-height:39px; }
+ .footer { font-size:10px; padding:8px 0 3px; flex-shrink:0; }
+ .progress { margin:1px 0 8px; }
+ #survey.page.active { display:flex; flex-direction:column; }
+ #survey>.panel { display:flex; flex-direction:column; flex:1; min-height:0; }
+ .question { font-size:clamp(20px,5.7vw,26px); line-height:1.18; margin:9px 0 11px; }
+ .question.long {font-size:clamp(18px,5vw,22px)}
+ .question.verylong {font-size:clamp(16px,4.6vw,20px)}
+ .choicegrid { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:auto; }
+ .choice { padding:7px 10px; min-height:41px; font-size:12px; border-radius:8px; gap:7px; }
+ .choice:before { width:14px; height:14px; min-width:14px; }
+ .choice.chosen:before {box-shadow:inset 0 0 0 3px #443037;}
+ #survey .field { margin:8px 0 0; }
+ #survey textarea.entry {min-height:49px; height:49px; resize:vertical; font-size:14px;}
+ #survey .controls {margin-top:9px}
+ #survey .counter { width:auto; margin-left:auto; font-size:11px; }
+ #survey>.controls {margin-top:6px; gap:7px}
+ #survey #jump { max-width:none!important; flex:1; min-width:0; font-size:12px; height:37px; min-height:37px; }
+ #survey #saveQuick { font-size:11px; min-height:37px; }
+ #survey .status {min-height:0; font-size:10px}
+ #welcome .panel {padding-top:13px;}
+ #welcome .controls { display:grid;grid-template-columns:1fr 1fr; }
+ #welcome .controls .btn {padding:10px 5px; font-size:12px;}
+ #welcome .two .field {min-width:0;}
+ #welcome .intro {max-width:none;}
+ #extra.page.active, #archive.page.active, #comparison.page.active { overflow-y:auto; }
+ #extra .check {padding:10px 11px; margin:6px 0;}
+}
+@media (max-width:650px) and (max-height:770px) {
+ .wrap {padding:4px 10px 5px;}
+ .brand h1 {font-size:33px}
+ .sub{font-size:8px}
+ .menu {margin:2px 0 5px}
+ .menu .btn {min-height:30px; padding:5px 8px}
+ .panel {padding:10px}
+ .headline {font-size:23px}
+ .preamble {font-size:13px}
+ .intro {font-size:11px}
+ .question {font-size:20px; margin:5px 0 8px}
+ .question.long {font-size:18px}
+ .question.verylong {font-size:16px}
+ .choice {min-height:36px;padding:5px 9px}
+ #survey textarea.entry {min-height:39px;height:39px}
+ .footer {padding:4px 0 0;font-size:9px}
+ .field {margin:7px 0}
+}
+@media print { .wrap {display:none!important} }
 </style></head><body><div class="wrap"><header class="brand"><div class="eyebrow">MESTER ✦ BABY</div><h1>DYPERE</h1><div class="sub">KAPITTEL I · DEN FØRSTE UTFORSKNINGEN</div></header><nav class="menu"><button class="btn" data-page="welcome">Start</button><button class="btn" data-page="survey">Spørsmål</button><button class="btn" data-page="archive">Arkiv & eksport</button><button class="btn" data-page="comparison">Sammenlign</button></nav>
-<section id="welcome" class="page active"><div class="panel"><div class="chapter">01 / 2026 · 155 spørsmål</div><h2 class="headline">Den første utforskningen</h2><p class="preamble">To perspektiver. Ingen fasit. Kanskje noen overraskelser.</p><p class="intro">Velg hvem som svarer. Besvarelsene er separate. Spørsmålene er de samme for begge, og hvert spørsmål har plass til egne tanker. «Jente» betyr her alltid en voksen kvinne.</p><div class="two"><div class="field"><label class="small" for="role">Jeg svarer som</label><select id="role" class="entry"><option value="">Velg rolle …</option><option>Mester</option><option>Baby</option></select></div><div class="field"><label class="small" for="participant">Navn eller kallenavn</label><input class="entry" id="participant" placeholder="Ditt navn"></div></div><div class="field"><label class="small" for="surveyDate">Utfyllingsdato</label><input type="date" id="surveyDate" class="entry"></div><div class="aside">Besvarelsen lagres i nettleseren der dette er mulig, men kan forsvinne hvis nettleserdata slettes. Bruk «Last ned svarfil» jevnlig for en varig kopi. Svarfilene inneholder private opplysninger og er ikke kryptert.</div><div class="controls"><button id="begin" class="btn gold">Begynn reisen →</button><button class="btn" data-page="archive">Åpne lagret besvarelse</button></div></div></section>
+<section id="welcome" class="page active"><div class="panel"><div class="chapter">01 / 2026 · 155 spørsmål</div><h2 class="headline">Den første utforskningen</h2><p class="preamble">To perspektiver. Ingen fasit. Kanskje noen overraskelser.</p><p class="intro">Velg hvem som svarer. Besvarelsene er separate. Spørsmålene er de samme for begge, og hvert spørsmål har plass til egne tanker. «Jente» betyr her alltid en voksen kvinne.</p><div class="two"><div class="field"><label class="small" for="role">Jeg svarer som</label><select id="role" class="entry"><option value="">Velg rolle …</option><option>Mester</option><option>Baby</option></select></div><div class="field"><label class="small" for="participant">Navn eller kallenavn</label><input class="entry" id="participant" placeholder="Ditt navn"></div></div><div class="field"><label class="small" for="surveyDate">Utfyllingsdato</label><input type="date" id="surveyDate" class="entry"></div><details class="privacy"><summary>Personvern og sikkerhetskopi</summary><p>Besvarelsen lagres i nettleseren der dette er mulig, men kan forsvinne hvis nettleserdata slettes. Bruk «Last ned svarfil» jevnlig for en varig kopi. Svarfilene inneholder private opplysninger og er ikke kryptert.</p></details><div class="controls"><button id="begin" class="btn gold">Begynn reisen →</button><button class="btn" data-page="archive">Åpne lagret besvarelse</button></div></div></section>
 <section id="survey" class="page"><div class="progress"><div class="bar" id="progress"></div></div><div class="panel"><div class="chapter" id="chaplabel"></div><p class="fine" id="chapterNote"></p><div class="fine" id="qnum"></div><h2 class="question" id="question"></h2><div class="choicegrid" id="choices"></div><p class="fine" id="choiceHelp"></p><div class="field"><label class="small" for="comment">Noe du vil legge til?</label><textarea class="entry" id="comment" placeholder="En tanke, en preferanse eller en liten hemmelighet …"></textarea></div><div class="controls"><button class="btn" id="prev">← Tilbake</button><button class="btn gold" id="next">Neste →</button><span class="counter" id="counter"></span></div></div><div class="controls"><select id="jump" class="entry" style="max-width:350px" aria-label="Hopp til kapittel"></select><button class="btn" id="saveQuick">Last ned svarfil</button></div><div class="status" id="status"></div></section>
 
 <section id="archive" class="page"><div class="panel"><div class="chapter">Bevar øyeblikket</div><h2 class="headline">Lagre & åpne</h2><p class="intro">Last ned en svarfil for å kunne fortsette senere eller sammenligne Mester og Baby. Filen kan åpnes igjen på samme eller en annen enhet.</p><p class="fine" id="summary"></p><div class="controls"><button class="btn gold" id="exportJson">↓ Last ned svarfil (JSON)</button><button class="btn" id="exportPdf">↓ Lag PDF-rapport</button></div><div class="field"><label class="small" for="importFile">Åpne tidligere svarfil (JSON)</label><input id="importFile" type="file" accept=".json,application/json" class="entry"></div><div class="aside">PDF: velg «Lagre som PDF» i utskriftsdialogen. På iPhone kan du bruke Del/Utskrift og lagre PDF-en i Filer. JSON er best for å fortsette og sammenligne besvarelser.</div><div class="controls"><button class="btn" id="clear">Slett denne enhetens lokale besvarelse</button></div><div class="status" id="archStatus"></div></div></section>
@@ -25,7 +100,7 @@ const pick=(d,q)=>d.answers?.[q.id]||{};
 function show(page){document.querySelectorAll('.page').forEach(e=>e.classList.toggle('active',e.id===page));if(page==='survey')render();if(page==='archive')summary();window.scrollTo(0,0)}
 function persist(){try{localStorage.setItem('DYPERE_2026_01_v12_'+(data.role||'unknown'),JSON.stringify(data))}catch(e){$('status').textContent='Mellomlagring utilgjengelig – eksporter JSON jevnlig.'}}
 function collect(){data.role=$('role').value;data.name=$('participant').value.trim();data.date=$('surveyDate').value;persist()}
-function render(){let q=QUESTIONS[current],c=CHAPTERS[q.chapter], a=pick(data,q);$('chaplabel').textContent=`KAPITTEL ${String(q.chapter+1).padStart(2,'0')} · ${c.title}`;$('chapterNote').textContent=c.subtitle;$('qnum').textContent=`SPØRSMÅL ${String(q.number).padStart(3,'0')}`;$('question').textContent=q.text;$('progress').style.width=(q.number/QUESTIONS.length*100)+'%';$('counter').textContent=`${q.number} / ${QUESTIONS.length}`;$('choices').replaceChildren();let multi=q.type==='multi';$('choiceHelp').textContent=multi?'Velg gjerne flere. Det er også helt greit å ikke velge noe.':'';
+function render(){let q=QUESTIONS[current],c=CHAPTERS[q.chapter], a=pick(data,q);$('chaplabel').textContent=`KAPITTEL ${String(q.chapter+1).padStart(2,'0')} · ${c.title}`;$('chapterNote').textContent=c.subtitle;$('qnum').textContent=`SPØRSMÅL ${String(q.number).padStart(3,'0')}`;$('question').textContent=q.text;$('question').className='question'+(q.text.length>185?' verylong':q.text.length>120?' long':'');$('progress').style.width=(q.number/QUESTIONS.length*100)+'%';$('counter').textContent=`${q.number} / ${QUESTIONS.length}`;$('choices').replaceChildren();let multi=q.type==='multi';$('choiceHelp').textContent=multi?'Velg gjerne flere. Det er også helt greit å ikke velge noe.':'';
 if(multi){$('choices').style.gridTemplateColumns='1fr';q.options.forEach(label=>{let b=document.createElement('button');b.type='button';let selected=(a.selections||[]).includes(label);b.className='choice'+(selected?' chosen':'');b.textContent=(selected?'☑  ':'☐  ')+label;b.setAttribute('aria-pressed',String(selected));b.onclick=()=>{let old=pick(data,q),arr=old.selections||[];data.answers[q.id]={...old,selections:arr.includes(label)?arr.filter(x=>x!==label):[...arr,label]};persist();render()};$('choices').appendChild(b)})}else{$('choices').style.gridTemplateColumns='';OPTIONS.forEach(([val,label])=>{let b=document.createElement('button');b.type='button';b.className='choice'+(a.choice===val?' chosen':'');b.textContent=label;b.setAttribute('aria-pressed',String(a.choice===val));b.onclick=()=>{data.answers[q.id]={...pick(data,q),choice:val};persist();render()};$('choices').appendChild(b)})}
 $('comment').value=a.comment||'';$('prev').disabled=current===0;$('next').textContent=current===QUESTIONS.length-1?'Til arkiv →':'Neste →';$('jump').value=String(q.chapter)}
 $('comment').addEventListener('input',e=>{let id=QUESTIONS[current].id;data.answers[id]={...pick(data,QUESTIONS[current]),comment:e.target.value};persist()});
