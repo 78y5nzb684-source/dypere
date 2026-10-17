@@ -1,0 +1,5 @@
+DYPERE v2.5 – Midnight Rococo
+
+Pakk ut ZIP og last opp alle filene og mappen ornaments/ til roten av GitHub-repositoriet. Behold filstrukturen. Quizenes lagringsnøkler og spørsmålssett er uendret. Eksporter alltid JSON som sikkerhetskopi før oppdatering.
+
+Nye kortbakgrunner bruker de seks SVG-ene og ornamentlinjene fra referansebildet. Korttekst rendres som HTML.
