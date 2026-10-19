@@ -1,7 +1,2 @@
-DYPERE v2.8 – estetisk finpuss og gjennomgang
-
-Last opp alle filene fra ZIP til roten av GitHub Pages. Eksporter private svar før oppdatering.
-
-Oppdatert: mer konsekvente overflater, typografi, mellomrom, klikktilstander, kontrast og kontrollstørrelser. Ingen spørsmål, svarformater eller lagringsnøkler er bevisst endret.
-
-Kontroll: statisk gjennomgang av alle HTML-sider, lokal CSS/JS, henvisninger og cache. Full nettlesertest blokkert av nettlesermiljøets administratorpolicy; test på ekte enhet før publisering.
+DYPERE v3.0 – alle ni nye tekstkilder integrert i spill, bildeutfordring, quiz, FFM, terninger og punishment. Kapittel I–V er beholdt fordi det ikke ble levert nye kapitteltekster. Last opp alle filer til samme mappe. Eksporter tidligere svar før oppdatering.\n
+DYPERE v3.0: 25 stillinger med bilder, offline randomizer i Lek sammen, overordnede tekster forkortet i sidene.

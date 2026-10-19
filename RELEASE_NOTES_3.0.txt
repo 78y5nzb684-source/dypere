@@ -1,0 +1,4 @@
+DYPERE 3.0 – første offisielle utgave
+Basert på intern KS-utgave 3.9; rebasert til 3.0 på alle synlige versjonssteder og i offline-cache.
+Inkluderer versjonskonsistens, tilbake-navigasjon, egen småspill-side, ekstern CSS i bildeutfordringen og stillingskort uten repetisjon per runde.
+Skjermtilpasning for Bilde forbedret. Faktisk test på fysisk iPhone og iPad anbefales før publisering.

@@ -1,0 +1,48 @@
+/* DYPERE 2.9 | harmonised optical spacing and page rhythm */
+:root{--d-space-1:8px;--d-space-2:12px;--d-space-3:16px;--d-space-4:24px;--d-space-5:32px;--d-page-gutter:clamp(16px,4vw,26px)}
+*,*::before,*::after{box-sizing:border-box}
+.d-home .d-shell{padding-left:var(--d-page-gutter);padding-right:var(--d-page-gutter)}
+.d-home .d-home-nav{gap:12px}
+.d-home .d-home-nav a{gap:8px;padding-inline:12px;line-height:1.3}
+.d-home .d-home-nav span{display:inline-block;min-width:20px;margin:0;text-align:center}
+.d-home .d-section-intro{display:flex;flex-direction:column;align-items:center;gap:0}
+.d-home .d-section-icon{margin:0 auto 16px;flex:none}
+.d-home .d-section h2{margin:10px 0 12px}
+.d-home .d-section-intro p{text-align:center;margin-inline:auto}
+.d-home .d-section-content,.d-home .d-duo{padding:20px;gap:14px}
+.d-home .d-feature{padding:24px;gap:12px}
+.d-home .d-chapter-grid{gap:14px;margin-top:14px}
+.d-home .d-chapter-grid a{padding:20px 18px 28px;gap:8px;min-height:150px}
+.d-home .d-chapter-grid a b{right:18px;bottom:12px}
+.d-home .d-tile{padding:22px;gap:11px;min-height:220px}
+.d-home .d-tile-art{height:38px;display:flex;align-items:center;line-height:1}
+.d-home .d-game-feature{margin:20px 20px 0;padding:24px;gap:24px}
+.d-home .d-game-feature>span:last-child{min-width:0;flex:1;gap:10px}
+.d-home .d-game-duo{padding-top:14px}
+.d-home .d-link-label,.d-home .d-tile-go{margin-top:auto}
+.d-home .d-footer{padding-top:16px;padding-bottom:24px}
+body[data-d-section] .d-section-nav{width:min(100%,830px);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:12px;padding-inline:var(--d-page-gutter)}
+body[data-d-section] .d-section-nav .d-back{justify-self:start}
+body[data-d-section] .d-section-nav strong{justify-self:center;text-align:center;line-height:1.35}
+body[data-d-section] .d-section-nav .d-other{justify-self:end;text-align:center}
+body[data-d-section] main,body[data-d-section] .wrap{max-width:100%;min-width:0}
+body[data-d-section] :is(button,.btn,.d-action-link){display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;vertical-align:middle;min-height:46px;line-height:1.35}
+body[data-d-section] :is(.row,.choice,.levels){column-gap:10px;row-gap:10px}
+body[data-d-section] :is(.row,.choice,.levels)>:is(button,.btn,.d-action-link){min-width:0;flex:1}
+body[data-d-section] :is(.box,.panel){max-width:100%}
+body[data-d-section] :is(input,textarea,select){max-width:100%}
+body[data-d-section] :is(.rococo-card){margin-inline:auto}
+@media(max-width:550px){
+ .d-home .d-section-content,.d-home .d-duo{padding:14px;gap:10px}
+ .d-home .d-chapter-grid{gap:10px;margin-top:10px}
+ .d-home .d-chapter-grid a{padding:16px 14px 27px;min-height:142px}
+ .d-home .d-tile{padding:16px;min-height:210px}
+ .d-home .d-game-feature{margin:14px 14px 0;padding:18px;gap:14px}
+ .d-home .d-game-duo{padding-top:10px}
+ .d-home .d-home-nav{gap:7px}
+ .d-home .d-home-nav a{gap:4px;padding:10px 5px}
+ body[data-d-section] .d-section-nav{grid-template-columns:auto 1fr auto;column-gap:8px}
+ body[data-d-section] .d-section-nav strong{font-size:10px;letter-spacing:.065em}
+}
+@media(max-width:430px){body[data-d-section] .d-section-nav{grid-template-columns:auto minmax(0,1fr)}body[data-d-section] .d-section-nav strong{justify-self:end}body[data-d-section] .d-section-nav .d-other{display:none}}
+@media(max-width:350px){.d-home .d-chapter-grid,.d-home .d-duo{grid-template-columns:1fr}.d-home .d-tile{min-height:155px}.d-home .d-chapter-grid a{min-height:110px}.d-home .d-home-nav span{display:none}}

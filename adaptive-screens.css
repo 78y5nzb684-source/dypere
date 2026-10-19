@@ -1,0 +1,23 @@
+/* DYPERE v3.0 — responsive single-viewport canvas for phone and tablet */
+:root{--app-viewport:100dvh}html{width:100%;height:100%;overflow:hidden!important;overscroll-behavior:none}body{width:100%;height:100dvh;max-height:100dvh;min-height:0!important;margin:0!important;overflow:hidden!important;overscroll-behavior:none;-webkit-overflow-scrolling:auto}*{box-sizing:border-box}button,a,select,input,textarea{touch-action:manipulation}button:focus-visible,a:focus-visible{outline:2px solid #f2d7ae;outline-offset:3px}
+/* Screen areas obey dynamic safe areas and are centered on tablets */
+body.v3-home .d-shell,body.v3-survey .d-shell,body.v3-explore .d-shell,body.v3-play .d-shell{width:min(100%,760px)!important;min-height:0!important;height:100dvh!important;max-height:100dvh!important;margin:0 auto!important;padding:calc(env(safe-area-inset-top) + clamp(8px,1.5dvh,22px)) clamp(16px,3vw,30px) calc(env(safe-area-inset-bottom) + clamp(7px,1.5dvh,22px))!important}
+body.v3-home .v3-module-list,body.v3-survey .v3-activities,body.v3-explore .v3-activities,body.v3-play .v3-activities{width:100%;max-width:660px;margin-left:auto;margin-right:auto}
+body.v3-home .v3-module,body.v3-survey .v3-activity,body.v3-explore .v3-activity,body.v3-play .v3-activity{width:100%;box-sizing:border-box;align-items:center}
+body.v3-home .v3-module-icon,body.v3-survey .v3-activity-icon,body.v3-explore .v3-activity-icon,body.v3-play .v3-activity-icon{display:grid;place-items:center;flex-shrink:0}
+body.v3-home .panic-zone{flex:none;align-items:center;justify-content:center}
+body.v3-home .panic-button{width:clamp(96px,13.5dvh,145px);height:clamp(96px,13.5dvh,145px);aspect-ratio:1;flex-shrink:0}
+.play-root{width:min(100%,760px)!important;max-width:760px!important;height:100dvh!important;max-height:100dvh!important;margin-inline:auto!important;padding-inline:clamp(16px,3vw,30px)!important}
+.play-screen.active{min-height:0;max-height:100%;overflow:hidden}.play-screen .rococo-card{min-height:0;max-height:min(49dvh,470px)}
+/* Legacy question pages: one visible stage, rather than page scrolling */
+body[data-d-section]>.d-section-nav{position:absolute;top:calc(env(safe-area-inset-top) + 5px);left:50%;transform:translateX(-50%);z-index:10;width:min(calc(100% - 24px),760px);margin:0!important}
+body[data-d-section] > main,body[data-d-section] > .wrap{width:min(calc(100% - 24px),760px)!important;max-width:760px!important;margin:0 auto!important;position:relative;top:0;padding-top:calc(env(safe-area-inset-top) + 54px)!important;padding-bottom:calc(env(safe-area-inset-bottom) + 8px)!important;height:100dvh;min-height:0;max-height:100dvh;overflow:hidden!important;display:flex;flex-direction:column;justify-content:center}
+body[data-d-section] > main > .v3-activity-breadcrumb,body[data-d-section] > .wrap > .v3-activity-breadcrumb{display:none!important}
+body[data-d-section] section:not(.hide):not(.page):not([hidden]){min-height:0}
+body[data-d-section] .page{overflow:hidden!important;min-height:0}
+body[data-d-section] textarea{max-height:min(13dvh,100px)!important;resize:none}
+/* Fit dynamically scaled legacy active content within remaining height */
+.d-fit-target{transform-origin:top center;flex:none!important;position:relative}
+@media(min-width:700px){body.v3-home .v3-module{padding:clamp(13px,2vh,21px) 21px!important}body.v3-home .v3-module-icon{width:54px!important;height:54px!important;flex-basis:54px!important}body.v3-home .v3-module strong{font-size:24px!important}body.v3-home .v3-module small{font-size:13px!important}body.v3-home .panic-button{width:clamp(118px,14dvh,158px);height:clamp(118px,14dvh,158px)}body.v3-home .v3-module-list{gap:clamp(10px,1.5dvh,18px)!important}.play-root{gap:clamp(12px,2dvh,22px)}}
+@media(max-height:700px){body.v3-home .d-hero p,body.v3-home .d-hero-ornament,body.v3-home .d-footer{display:none!important}body.v3-home .v3-module{padding:7px 11px!important}body.v3-home .panic-label,body.v3-home .panic-hint{display:none}body.v3-home .panic-button{width:clamp(78px,13dvh,108px);height:clamp(78px,13dvh,108px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
