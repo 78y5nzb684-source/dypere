@@ -1,0 +1,6 @@
+DYPERE 3.0.1 - foreløpig integrasjon før visuell QA med iPhone 17 skjermbilder.
+BDSM 20 bilder i to egne stillingskategorier.
+50 brukerleverte prompttekster, nivå Drøye (Baby).
+Truth / Dare rollevalget tilgjengelig før hvert trekk.
+Ved pass kan man åpne Punishment. Punishment er frivillig og kan hoppes over.
+Mester-punishment er filtrert til kroppsnøytrale kort fra den eksisterende notatfilen; ingen nye seksuelt eksplisitte kort er laget.

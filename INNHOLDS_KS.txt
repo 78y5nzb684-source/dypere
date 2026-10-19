@@ -1,0 +1,2 @@
+DYPERE 3.0 – INNHOLDS-KS
+Alle ni notatfiler kontrollert mot innholdet i appen. Truth/Dare rolleoppslag justert til case-insensitive Mester/Baby. Kort Punishment-liste på forsiden begrenset til kildeordlyder på maks 55 tegn, mens alle 55 beholdes i spillbanken. Den tiende tekstlisten med overordnede tekster er kontrollert; ikke alle historiske sidetitler er entydige siden de brukes som aktivitetstitler.

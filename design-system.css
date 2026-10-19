@@ -1,0 +1,15 @@
+/* DYPERE 3.0.1 unified interface rules — final cascade */
+:root{--dy-bg:#17131A;--dy-panel:#261D2A;--dy-gold:#D8B889;--dy-text:#F9EADB;--dy-muted:#C2ADB4;--dy-space:12px;--dy-radius:16px}
+html,body{background-color:var(--dy-bg)!important}body{color:var(--dy-text)}
+button,a{touch-action:manipulation}button{min-height:48px;border-radius:var(--dy-radius);font-size:clamp(13px,3.7vw,16px)}button:focus-visible,a:focus-visible{outline:2px solid var(--dy-gold);outline-offset:3px}
+.choice,.levels,.play-row,.row{gap:12px}.selected,[aria-pressed=true]{border-color:var(--dy-gold)}
+.play-heading,.v3-header{min-height:46px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.play-brand{font:600 12px/1.3 Georgia,serif;letter-spacing:.11em;color:var(--dy-gold);text-align:center}
+.play-step{font-size:11px;color:var(--dy-muted)}
+.play-intro h1,.d-hero h1{color:var(--dy-gold)}
+.rococo-card,.card,.box{border-color:#66505C}
+.rococo-copy{line-height:1.35}
+.v3-module,.v3-activity{border-radius:18px}
+.panic-core [hidden]{display:none!important}
+@media(max-height:680px){.play-intro p{display:none}.play-root{gap:5px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}

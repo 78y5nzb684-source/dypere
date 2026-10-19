@@ -6,7 +6,7 @@ const PUNISHMENT_BANK=[{"clothes": "MED KLÆR PÅ", "category": "Punishment (ekt
 const DICE_ACTIONS=["Kyss", "Stryk", "Hold", "Klem", "Slå", "Spank", "Spre", "Stikk inn", "Fingre", "Sug", "Slikk", "Spytt på", "Klyp", "Bit", "Gni", "Press", "Nekt", "Edge", "Kom på", "Hold fast"];
 const DICE_PLACES={"Baby": ["Munnen", "Halsen", "Titsene", "Nipplene", "Fitta", "Klitoris", "Rompa", "Rompehullet", "Mellom rompeballene", "Innsiden av lårene"], "Mester": ["Munnen", "Halsen", "Brystet", "Pikken", "Pikkhode", "Ballene", "Låret", "Rompa"]};
 const DYPERE_SPILL={
- trekk(type,level,role,seen=[]){const pool=SPILLKORT.filter(c=>c.type===type && (type==='punishment'||(c.level===level&&c.role===role)));const available=pool.filter(c=>!seen.includes(c.id));const list=available.length?available:pool;return list[Math.floor(Math.random()*list.length)]||null;},
+ trekk(type,level,role,seen=[]){const pool=SPILLKORT.filter(c=>c.type===type && (type==='punishment'||(c.level===level&&c.role.toLowerCase()===role.toLowerCase())));const available=pool.filter(c=>!seen.includes(c.id));const list=available.length?available:pool;return list[Math.floor(Math.random()*list.length)]||null;},
  foto(level,role='Baby'){const pool=(role==='Mester'?photoMaster:photo).filter(p=>level==='Alle'||p[0]===level);return pool[Math.floor(Math.random()*pool.length)]||null;},
  terning(role,level){const a=DICE_ACTIONS[Math.floor(Math.random()*DICE_ACTIONS.length)];const p=DICE_PLACES[role][Math.floor(Math.random()*DICE_PLACES[role].length)];return [a,p];}
 };
