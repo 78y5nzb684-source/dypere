@@ -1,0 +1,33 @@
+
+/* DYPERE 2.7 | shared interaction language */
+:root{--d-control-radius:11px;--d-focus:#f5d7a3}
+body[data-d-section]{--d-action:var(--d-sector,#d9c392);--d-button-surface:#302630;--d-button-border:#765967}
+body[data-d-section] main{scroll-margin-top:1rem}
+body[data-d-section] :is(button,.btn,.d-action-link,select,input,textarea){font-family:inherit}
+body[data-d-section] :is(button,.btn,.d-action-link){min-height:44px;border-radius:var(--d-control-radius);transition:background-color .15s ease,border-color .15s ease,box-shadow .15s ease,transform .15s ease}
+body[data-d-section] :is(button,.btn,.d-action-link):not(:disabled){cursor:pointer}
+body[data-d-section] :is(button,.btn,.d-action-link):not(:disabled):hover{border-color:var(--d-action);filter:brightness(1.08)}
+body[data-d-section] :is(button,.btn,.d-action-link):not(:disabled):active{transform:translateY(1px)}
+body[data-d-section] :is(button,.btn,.d-action-link,select,input,textarea,a,[tabindex]):focus-visible{outline:3px solid var(--d-focus)!important;outline-offset:3px}
+body[data-d-section] button:disabled{opacity:.45;cursor:not-allowed}
+body[data-d-section] :is(button.selected,button.chosen,button[aria-pressed="true"]):not(.gold):not(.primary){border-color:var(--d-action);background:color-mix(in srgb,var(--d-sector-bg) 76%,#735447);box-shadow:inset 0 0 0 1px var(--d-action);color:#fff3e2}
+body[data-d-section] :is(button.gold,button.primary,.btn.gold){background:#d7b785;color:#17131a;border-color:#d7b785;font-weight:700}
+body[data-d-section] :is(.box,.panel){box-shadow:0 8px 28px #05030622}
+body[data-d-section] :is(input,textarea,select){min-height:44px;max-width:100%}
+body[data-d-section] .d-action-link{display:flex;align-items:center;justify-content:center;flex:1;border:1px solid var(--d-button-border);background:var(--d-button-surface);color:#f8e6d4;padding:12px 10px;text-align:center;text-decoration:none}
+body[data-d-section] .d-section-nav{margin-bottom:4px}
+body[data-d-section] .d-section-nav a:hover{border-color:var(--d-sector);background:color-mix(in srgb,var(--d-sector-bg) 82%,white)}
+body[data-d-section] .d-section-nav a:active{transform:translateY(1px)}
+body.d-home .d-home-nav a:hover{background:#332735;border-color:#dbc29d}
+body.d-home :is(.d-feature,.d-tile,.d-game-feature,.d-chapter-grid a){transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+body.d-home :is(.d-feature,.d-tile,.d-game-feature,.d-chapter-grid a):hover{transform:translateY(-2px);box-shadow:0 10px 24px #06040777}
+body.d-home .d-home-nav a[aria-current="location"]{border-color:#e4c392}
+@media(max-width:430px){
+ body[data-d-section] .d-section-nav{padding-inline:12px}
+ body[data-d-section] .d-section-nav strong{letter-spacing:.06em;font-size:9px;text-align:right}
+ body[data-d-section] :is(.row,.nav){min-width:0}
+ body[data-d-section] :is(.row,.nav)>:is(button,.btn,.d-action-link){min-width:0;overflow-wrap:anywhere}
+ body[data-d-section] main :is(button,.btn,.d-action-link){overflow-wrap:anywhere}
+ body[data-d-section] .rococo-card{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){body[data-d-section] :is(button,.btn,.d-action-link),body.d-home :is(.d-feature,.d-tile,.d-game-feature,.d-chapter-grid a){transition:none!important;transform:none!important}}
