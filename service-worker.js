@@ -1,5 +1,5 @@
-/* DYPERE 3.0.2 • layout release. Answer storage is never touched. */
-const CACHE = 'dypere-3-0-2-symmetri-20261020';
+/* DYPERE 3.0.2 | image repair 20261020-bilder2. Never changes answer storage. */
+const CACHE = 'dypere-3-0-2-gallery-20261020-bilder2';
 const ASSETS = [
   "./",
   "./bildeutfordring.html",
@@ -86,11 +86,34 @@ const ASSETS = [
   "./stillinger-bdsm/17_Frog_Tie.png",
   "./stillinger-bdsm/18_Pet_Play.png",
   "./stillinger-bdsm/19_Chest_Harness.png",
-  "./stillinger-bdsm/20_Face_Down.png"
+  "./stillinger-bdsm/20_Face_Down.png",
+  "./position-gallery.css",
+  "./position-gallery.js"
 ];
 const assetURLs = new Set(ASSETS.map(path => new URL(path, self.registration.scope).href));
+const core = ASSETS.filter(path => !/\.(png|svg)$/i.test(path));
+const media = ASSETS.filter(path => /\.(png|svg)$/i.test(path));
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    const request = path => new Request(new URL(path, self.registration.scope), {cache:'reload'});
+    // Required pages/scripts are atomic. Media are cached independently.
+    await cache.addAll(core.map(request));
+    const remaining = media.slice();
+    await Promise.all(Array.from({length:4}, async () => {
+      while (remaining.length) {
+        const path = remaining.shift();
+        const req = request(path);
+        try { await cache.add(req); }
+        catch (error) {
+          const previous = await caches.match(req);
+          if (previous && previous.ok) await cache.put(req, previous);
+          else console.warn('DYPERE: media not cached', path);
+        }
+      }
+    }));
+    await self.skipWaiting();
+  })());
 });
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
@@ -106,14 +129,14 @@ self.addEventListener('fetch', event => {
     try {
       const response = await fetch(event.request);
       if (response.ok) {
-        event.waitUntil(cache.put(event.request, response.clone()).catch(() => {}));
+        await cache.put(event.request, response.clone()).catch(() => {});
         return response;
       }
       return (await cache.match(event.request)) || response;
     } catch (error) {
       const cached = await cache.match(event.request);
       if (cached) return cached;
-      return new Response('Denne siden er ikke tilgjengelig uten nett. Åpne appen med nettilkobling først.', {status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
+      return new Response('Ikke tilgjengelig uten nett. Åpne appen med nettilkobling først.', {status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
     }
   })());
 });
