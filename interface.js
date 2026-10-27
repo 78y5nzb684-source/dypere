@@ -1,4 +1,4 @@
-/* DYPERE 3.0.3. Shared, content-preserving interface behaviours. */
+/* DYPERE 3.0.4. Shared, content-preserving interface behaviours. */
 (() => {
   'use strict';
   const body=document.body, app=document.querySelector('.app'), file=body.dataset.file;

@@ -1,5 +1,5 @@
-/* DYPERE 3.0.3 | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-3-layout-20261027';
+/* DYPERE 3.0.4 | image repair 20261020-bilder2. Never changes answer storage. */
+const CACHE = 'dypere-3-0-4-layout-20261027';
 const ASSETS = [
   "./",
   "./bildeutfordring.html",
@@ -21,7 +21,7 @@ const ASSETS = [
   "./stillinger-klassisk.html",
   "./stillinger.html",
   "./terninger.html",
-  "./interface.css?build=20261027-design",
+  "./interface.css?build=3.0.4-final",
   "./interface.js",
   "./spillbank.js",
   "./bildeprompts-extra.js",
@@ -87,7 +87,7 @@ const ASSETS = [
   "./stillinger-bdsm/18_Pet_Play.png",
   "./stillinger-bdsm/19_Chest_Harness.png",
   "./stillinger-bdsm/20_Face_Down.png",
-  "./position-gallery.css?build=20261027-design",
+  "./position-gallery.css?build=3.0.4-final",
   "./position-gallery.js"
 ];
 const assetURLs = new Set(ASSETS.map(path => new URL(path, self.registration.scope).href));

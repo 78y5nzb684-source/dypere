@@ -1,4 +1,4 @@
-/* DYPERE 3.0.3 • One layout system. No whole-page scaling or clipped action areas. */
+/* DYPERE 3.0.4 • One layout system. No whole-page scaling or clipped action areas. */
 :root{
  --bg:#17131a;--panel:#241c28;--panel-soft:#2e2431;--ink:#f7ebdf;--muted:#bfaeb8;
  --gold:#d8b889;--line:#60515d;--accent:#d8b889;--danger:#b82f42;
@@ -167,4 +167,33 @@ body[data-layout=home] .menu-body{gap:18px;justify-content:center}
  body[data-layout=home] .app{grid-template-rows:auto 1fr}
  body[data-layout=home] .app-heading{display:flex;grid-row:1;height:64px}
  body[data-layout=home] .menu-body{grid-row:2;justify-content:flex-start}
+}
+
+/* Page context stays visible; setup content follows the same reading order. */
+.app-heading{height:auto;min-height:64px;padding-block:8px}
+.setup-card>.intro{width:100%;text-align:left;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.setup-card>.fine{text-align:left}
+.setup-card>.text-button{align-self:flex-start}
+@media(min-width:700px),(max-height:500px) and (orientation:landscape){
+ .setup-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:auto auto auto auto;gap:16px 28px;align-content:center;align-items:start}
+ .setup-card>.intro{grid-column:1/-1;grid-row:1;margin:0}
+ .setup-card>.setup-fields{grid-column:1;grid-row:2/5;width:100%;max-width:none;margin:0}
+ .setup-card>.setup-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .setup-fields>.field:first-child{grid-column:1/-1}
+ .setup-card>.fine{grid-column:2;grid-row:2;margin:0}
+ .setup-card>.setup-actions{grid-column:2;grid-row:3;margin:0;align-self:start}
+ .setup-card>button{grid-column:2;grid-row:4;justify-self:start;align-self:start}
+}
+@media(max-height:500px) and (orientation:landscape){
+ .app{grid-template-rows:48px auto minmax(0,1fr)}
+ .app-heading,.compact-frame .app-heading{display:flex;grid-row:2;height:auto;min-height:32px;padding-block:2px;gap:0}
+ .app-heading>.eyebrow{display:none}
+ .app-heading h1{font-size:22px}
+ .question-stage .question-card{padding:12px}
+ .stage,.menu-body{grid-row:3}
+ .setup-card{gap:12px 24px;align-content:start}
+ .setup-card>.intro{padding-bottom:12px}
+ body[data-layout=home] .app{grid-template-rows:auto minmax(0,1fr)}
+ body[data-layout=home] .app-heading{grid-row:1}
+ body[data-layout=home] .menu-body{grid-row:2}
 }
