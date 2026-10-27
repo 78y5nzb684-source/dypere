@@ -1,35 +1,41 @@
-/* DYPERE 3.0.4 | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-4-layout-20261027';
+/* DYPERE 3.0.5 beta | image repair 20261020-bilder2. Never changes answer storage. */
+const CACHE = 'dypere-3-0-5-beta-r3';
 const ASSETS = [
   "./",
+  "./bildeprompts-extra.js?build=3.0.5-beta-r3",
   "./bildeutfordring.html",
   "./bli-kjent.html",
+  "./board-game.js?build=3.0.5-beta-r3",
+  "./brettspill.html",
+  "./card-editor-v2.js?build=3.0.5-beta-r3",
+  "./card-store.js?build=3.0.5-beta-r3",
+  "./evening.js?build=3.0.5-beta-r3",
   "./ffm.html",
+  "./game-engine.js?build=3.0.5-beta-r3",
+  "./hemmelig-match.html",
+  "./icons/icon-180.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
   "./index.html",
+  "./interface.css?build=3.0.5-beta-r3",
+  "./interface.js?build=3.0.5-beta-r3",
+  "./journey-bank.js?build=3.0.5-beta-r3",
+  "./journey-engine.js?build=3.0.5-beta-r3",
+  "./journey.css?build=3.0.5-beta-r3",
+  "./journey.js?build=3.0.5-beta-r3",
   "./kapittel-ii.html",
   "./kapittel-iii.html",
   "./kapittel-iv.html",
   "./kapittel-v.html",
+  "./kortpakker.html",
+  "./kortverksted.html",
+  "./kveldsmikser.html",
+  "./kveldsspill.html",
   "./lek-sammen.html",
   "./lek.html",
-  "./pa-kanten-meny.html",
-  "./pa-kanten-quiz.html",
-  "./pa-kanten.html",
-  "./quiz.html",
-  "./spill.html",
-  "./stillinger-bdsm.html",
-  "./stillinger-klassisk.html",
-  "./stillinger.html",
-  "./terninger.html",
-  "./interface.css?build=3.0.4-final",
-  "./interface.js",
-  "./spillbank.js",
-  "./bildeprompts-extra.js",
-  "./punishment-home.js",
   "./manifest.webmanifest",
-  "./icons/icon-180.png",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
+  "./match-game.js?build=3.0.5-beta-r3",
+  "./onskeliste.html",
   "./ornaments/bilde.svg",
   "./ornaments/bilde_ornate.svg",
   "./ornaments/dare.svg",
@@ -42,6 +48,46 @@ const ASSETS = [
   "./ornaments/terninger_ornate.svg",
   "./ornaments/truth.svg",
   "./ornaments/truth_ornate.svg",
+  "./pa-kanten-meny.html",
+  "./pa-kanten-quiz.html",
+  "./pa-kanten.html",
+  "./packs.js?build=3.0.5-beta-r3",
+  "./party-game.js?build=3.0.5-beta-r3",
+  "./play-cards.js?build=3.0.5-beta-r3",
+  "./play-common.js?build=3.0.5-beta-r3",
+  "./play-studio.css?build=3.0.5-beta-r3",
+  "./position-gallery.css?build=3.0.5-beta-r3",
+  "./position-gallery.js?build=3.0.5-beta-r3",
+  "./punishment-home.js?build=3.0.5-beta-r3",
+  "./punishment.html",
+  "./quick-photo-v2.js?build=3.0.5-beta-r3",
+  "./quiz.html",
+  "./release-polish.css?build=3.0.5-beta-r3",
+  "./spill.html",
+  "./spillbank.js?build=3.0.5-beta-r3",
+  "./stillinger-bdsm.html",
+  "./stillinger-bdsm/01_Kneeling.png",
+  "./stillinger-bdsm/02_Over_the_Knee.png",
+  "./stillinger-bdsm/03_Wrist_to_Ankle.png",
+  "./stillinger-bdsm/04_Matanawa.png",
+  "./stillinger-bdsm/05_Box_Tie.png",
+  "./stillinger-bdsm/06_Hip_Harness.png",
+  "./stillinger-bdsm/07_Suspension.png",
+  "./stillinger-bdsm/08_Yoke.png",
+  "./stillinger-bdsm/09_Ball_Tie.png",
+  "./stillinger-bdsm/10_Mummification.png",
+  "./stillinger-bdsm/11_Spreader_Bar.png",
+  "./stillinger-bdsm/12_Standing_Spread.png",
+  "./stillinger-bdsm/13_Spread_Eagle.png",
+  "./stillinger-bdsm/14_Chair.png",
+  "./stillinger-bdsm/15_Crab_Tie.png",
+  "./stillinger-bdsm/16_Hogtie.png",
+  "./stillinger-bdsm/17_Frog_Tie.png",
+  "./stillinger-bdsm/18_Pet_Play.png",
+  "./stillinger-bdsm/19_Chest_Harness.png",
+  "./stillinger-bdsm/20_Face_Down.png",
+  "./stillinger-klassisk.html",
+  "./stillinger.html",
   "./stillinger/01_Missionary.png",
   "./stillinger/02_Doggy_Style.png",
   "./stillinger/03_Flat_Iron.png",
@@ -67,28 +113,9 @@ const ASSETS = [
   "./stillinger/23_Butter_Churner.png",
   "./stillinger/24_Yourself_on_the_Shelf.png",
   "./stillinger/25_Mountain_Climber.png",
-  "./stillinger-bdsm/01_Kneeling.png",
-  "./stillinger-bdsm/02_Over_the_Knee.png",
-  "./stillinger-bdsm/03_Wrist_to_Ankle.png",
-  "./stillinger-bdsm/04_Matanawa.png",
-  "./stillinger-bdsm/05_Box_Tie.png",
-  "./stillinger-bdsm/06_Hip_Harness.png",
-  "./stillinger-bdsm/07_Suspension.png",
-  "./stillinger-bdsm/08_Yoke.png",
-  "./stillinger-bdsm/09_Ball_Tie.png",
-  "./stillinger-bdsm/10_Mummification.png",
-  "./stillinger-bdsm/11_Spreader_Bar.png",
-  "./stillinger-bdsm/12_Standing_Spread.png",
-  "./stillinger-bdsm/13_Spread_Eagle.png",
-  "./stillinger-bdsm/14_Chair.png",
-  "./stillinger-bdsm/15_Crab_Tie.png",
-  "./stillinger-bdsm/16_Hogtie.png",
-  "./stillinger-bdsm/17_Frog_Tie.png",
-  "./stillinger-bdsm/18_Pet_Play.png",
-  "./stillinger-bdsm/19_Chest_Harness.png",
-  "./stillinger-bdsm/20_Face_Down.png",
-  "./position-gallery.css?build=3.0.4-final",
-  "./position-gallery.js"
+  "./terninger.html",
+  "./var-stund.html",
+  "./wishlist.js?build=3.0.5-beta-r3"
 ];
 const assetURLs = new Set(ASSETS.map(path => new URL(path, self.registration.scope).href));
 const core = ASSETS.filter(path => !/\.(png|svg)$/i.test(path));
@@ -123,18 +150,26 @@ self.addEventListener('activate', event => {
   })());
 });
 self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET' || !assetURLs.has(event.request.url)) return;
+  if (event.request.method !== 'GET') return;
+  let cacheKey = event.request.url;
+  if (event.request.mode === 'navigate') {
+    const url = new URL(cacheKey);
+    const scope = new URL(self.registration.scope);
+    const canonical = new URL(url.pathname, url.origin).href;
+    if (url.origin === scope.origin && assetURLs.has(canonical)) cacheKey = canonical;
+  }
+  if (!assetURLs.has(cacheKey)) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     try {
       const response = await fetch(event.request, {cache: 'no-cache'});
       if (response.ok) {
-        await cache.put(event.request, response.clone()).catch(() => {});
+        await cache.put(cacheKey, response.clone()).catch(() => {});
         return response;
       }
-      return (await cache.match(event.request)) || response;
+      return (await cache.match(cacheKey)) || response;
     } catch (error) {
-      const cached = await cache.match(event.request);
+      const cached = await cache.match(cacheKey);
       if (cached) return cached;
       return new Response('Ikke tilgjengelig uten nett. Åpne appen med nettilkobling først.', {status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});
     }

@@ -1,0 +1,48 @@
+.new-play{--studio:#c6a1bd}
+.new-play .app{width:min(100%,1000px);max-width:1000px}
+.studio-stack{display:flex;flex-direction:column;gap:16px}
+.studio-panel{padding:22px;background:linear-gradient(135deg,#302332,#211b28);border:1px solid var(--line);border-radius:20px}
+.studio-panel h2{color:var(--gold);font-size:25px;margin-bottom:10px}
+.studio-panel p{line-height:1.55}
+.studio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.studio-panel .field{margin-block:12px}
+.studio-panel label{margin-bottom:6px}
+.studio-panel .button-row{margin-top:16px}
+.studio-panel .button-row button{height:auto;min-height:48px}
+.studio-status{font-size:13px;color:var(--gold);min-height:20px;margin-block:8px}
+.studio-card{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:250px;padding:28px;border:1px solid #a58a68;border-radius:20px;background:#2b2130;gap:16px;text-align:center}
+.studio-card:before{content:"";position:absolute;inset:8px;border:1px solid #a58a6855;border-radius:14px;pointer-events:none}
+.studio-card .card-copy{font:24px/1.45 Georgia,serif;overflow-wrap:anywhere;font-weight:400}
+.studio-card .eyebrow{color:var(--gold)}
+.studio-card .fine{line-height:1.5}
+.studio-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.studio-toolbar a{padding:10px;border-bottom:1px solid var(--line);font-size:14px;color:var(--gold)}
+.photo-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo-shortcut{width:100%;min-height:104px;flex-direction:column;gap:6px;background:linear-gradient(135deg,#3c283b,#28202e);border-color:#94788e}
+.photo-shortcut small{font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.photo-shortcut strong{font:25px/1.2 Georgia,serif;color:var(--gold)}
+.quick-photo-result{padding:16px;border:1px solid var(--line);border-radius:16px;line-height:1.5;font-family:Georgia,serif;margin-top:12px;overflow-wrap:anywhere}
+.board{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-block:12px}
+.board-tile{min-height:72px;padding:8px;border:1px solid var(--line);border-radius:12px;background:#271f2d;position:relative;display:flex;flex-direction:column;gap:6px;justify-content:space-between;font-size:11px;min-width:0;overflow-wrap:anywhere}
+.board-tile[data-kind=talk]{border-color:#8a7498}.board-tile[data-kind=guess]{border-color:#6e9a96}.board-tile[data-kind=challenge]{border-color:#bc8c9f}.board-tile[data-kind=joker]{border-color:var(--gold)}
+.board-tile .tile-num{font:18px/1 Georgia,serif;color:var(--gold)}
+.board-tokens{display:flex;gap:4px;min-height:20px}
+.board-token{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#d8b889;color:#241925;font-size:12px;font-weight:700;border:1px solid #f5e9da}
+.board-token.baby{background:#d4aecb}
+.board-players{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.board-players .active{color:var(--gold)}
+.board-die{font:40px/1 Georgia,serif;color:var(--gold);min-width:48px;text-align:center}
+.card-list{display:flex;flex-direction:column;gap:12px}
+.card-list article{padding:16px;border:1px solid var(--line);border-radius:14px;background:#251e2b;overflow-wrap:anywhere}
+.card-list article p{margin-block:8px;white-space:pre-wrap}
+.card-list article button{display:inline-flex;font-size:13px;min-height:44px;margin-right:8px}
+.editor-text{min-height:140px;resize:vertical}
+.studio-rules{font-size:14px;color:var(--muted)}
+.studio-rules summary{cursor:pointer;color:var(--gold);padding-block:12px}
+.studio-rules p{padding-bottom:12px}
+.studio-summary{text-align:center;padding:30px}
+.studio-summary h2{font-size:30px}
+.menu-list.expanded{grid-auto-rows:minmax(88px,auto)}
+@media(min-width:760px){.board-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:start}.studio-card{min-height:310px}}
+@media(max-width:600px){.studio-grid{grid-template-columns:1fr}.studio-panel{padding:16px}.board{gap:5px}.board-tile{min-height:72px;padding:5px;font-size:11px}.studio-card{padding:22px;min-height:230px}.studio-card .card-copy{font-size:22px}.photo-shortcut strong{font-size:22px}}
+@media(prefers-reduced-motion:no-preference){.board-token{animation:token-in .2s ease-out}@keyframes token-in{from{transform:scale(.6);opacity:.4}to{transform:scale(1);opacity:1}}}
