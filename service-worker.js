@@ -1,5 +1,5 @@
 /* DYPERE 3.0.2 | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-2-layout-20261027';
+const CACHE = 'dypere-3-0-2-layout-20261027-v2';
 const ASSETS = [
   "./",
   "./bildeutfordring.html",
@@ -21,7 +21,7 @@ const ASSETS = [
   "./stillinger-klassisk.html",
   "./stillinger.html",
   "./terninger.html",
-  "./interface.css",
+  "./interface.css?build=20261027-design",
   "./interface.js",
   "./spillbank.js",
   "./bildeprompts-extra.js",
@@ -87,7 +87,7 @@ const ASSETS = [
   "./stillinger-bdsm/18_Pet_Play.png",
   "./stillinger-bdsm/19_Chest_Harness.png",
   "./stillinger-bdsm/20_Face_Down.png",
-  "./position-gallery.css",
+  "./position-gallery.css?build=20261027-design",
   "./position-gallery.js"
 ];
 const assetURLs = new Set(ASSETS.map(path => new URL(path, self.registration.scope).href));
@@ -127,7 +127,7 @@ self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     try {
-      const response = await fetch(event.request);
+      const response = await fetch(event.request, {cache: 'no-cache'});
       if (response.ok) {
         await cache.put(event.request, response.clone()).catch(() => {});
         return response;
