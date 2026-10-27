@@ -1,4 +1,4 @@
-/* DYPERE 3.0.2 | gallery repair 20261020. No answer storage is read or changed. */
+/* DYPERE 3.0.3 | gallery repair 20261020. No answer storage is read or changed. */
 (() => {
   'use strict';
   const data = document.getElementById('positionItems');
