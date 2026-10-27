@@ -124,3 +124,47 @@ textarea{resize:none}input::placeholder,textarea::placeholder{color:#b8a6b1}.set
 .single-column{grid-template-columns:minmax(0,1fr)}
 
 .answer-detail-region{flex:1;min-height:0;display:flex;align-items:flex-start}.answer-detail-region p{font-size:16px;line-height:1.5;overflow-wrap:anywhere}.comparison-values button{width:100%;margin-top:12px}.comparison-values>div>span{display:block}
+
+/* Layout polish: keep content reachable at small heights and larger text sizes. */
+body{overflow-y:auto}
+.app{height:auto;min-height:var(--viewport-height)}
+.stage{flex:1 0 auto}
+.menu-body{flex:1 0 auto}
+.rococo-card{--card-art:url('./ornaments/dare.svg');flex:1 0 auto;min-height:220px}
+.rococo-card:before{background-image:var(--card-art)}
+.rococo-card[data-art=truth]{--card-art:url('./ornaments/truth.svg');background-color:#281e32;border-color:#aa91bc}
+.rococo-card[data-art=punishment]{--card-art:url('./ornaments/punishment.svg')}
+.rococo-card[data-art=bilde]{--card-art:url('./ornaments/bilde.svg');background-color:#302333;border-color:#b697aa}
+.rococo-card[data-art=terninger]{--card-art:url('./ornaments/terninger.svg');background-color:#1d302f;border-color:#98aca1}
+.rococo-copy{font-weight:400}
+.position-caption,.position-name{height:auto;max-height:none}
+.position-name{padding-block:4px}
+.position-stage .art{flex:none;height:clamp(220px,calc(var(--viewport-height) - 360px),640px);min-height:220px}
+.position-canvas{max-height:none}
+.position-stage{min-height:480px}
+body[data-layout=home] .app-header{display:none}
+body[data-layout=home] .app-heading{height:104px;gap:10px}
+body[data-layout=home] .menu-body{gap:18px;justify-content:center}
+.panic-button{height:auto;min-height:88px;padding:16px 20px;background:linear-gradient(115deg,#412431,#30212b);border-color:#946977;box-shadow:inset 0 1px 0 #ffffff0a}
+.panic-default strong{font-family:Georgia,serif;font-weight:400;font-size:21px;letter-spacing:.06em}
+.panic-button small{color:#d1b7bf}
+.panic-result strong{font-weight:500}
+@media(max-height:650px){body[data-layout=home] .app-heading{height:82px}.rococo-card{min-height:180px}.position-stage{min-height:400px}}
+@media(max-height:500px) and (orientation:landscape){
+ .app{grid-template-rows:48px minmax(0,1fr)}
+ .game-setup.active{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto auto auto;align-content:center}
+ .game-setup>.intro{grid-column:1/-1;grid-row:1}
+ .game-setup>.play-label{grid-column:1;grid-row:2}
+ .game-setup>.role-options,.game-setup>.photo-roles,.game-setup>#roller{grid-column:1;grid-row:3}
+ .game-setup>.play-label:has(+ .level-options),.game-setup>.play-label:has(+ #level),.game-setup>.play-label:has(+ #diceLevels){grid-column:2;grid-row:2}
+ .game-setup>.level-options,.game-setup>#level,.game-setup>#diceLevels{grid-column:2;grid-row:3}
+ .game-setup>.fine{grid-column:1/-1;grid-row:4}
+ .game-setup>.start-action{grid-column:2;grid-row:5}
+ .game-stage{grid-template-rows:auto minmax(32px,1fr) 48px 48px}
+ .rococo-card{min-height:220px}
+ .position-stage{min-height:270px;grid-template-rows:minmax(0,1fr) 48px auto}
+ .position-stage .art{height:270px;min-height:250px}
+ body[data-layout=home] .app{grid-template-rows:auto 1fr}
+ body[data-layout=home] .app-heading{display:flex;grid-row:1;height:64px}
+ body[data-layout=home] .menu-body{grid-row:2;justify-content:flex-start}
+}

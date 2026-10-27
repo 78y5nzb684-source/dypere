@@ -7,12 +7,12 @@
 .position-canvas .art-empty .empty-symbol{font:64px/1 Georgia,serif;color:var(--gold);opacity:.6}
 .position-canvas .art-empty.over-picture{background:#17131aeb;color:var(--ink)}
 .position-canvas #retryImage{font-size:14px;min-height:48px}
-.position-caption{height:98px;min-height:98px;max-height:98px;justify-content:center;gap:6px;overflow:visible}
-.position-name{height:68px;min-height:68px;max-height:68px;font-size:24px;line-height:1.18;display:grid;place-items:center;text-wrap:balance}
+.position-caption{height:auto;min-height:98px;max-height:none;justify-content:center;gap:6px;overflow:visible}
+.position-name{height:auto;min-height:68px;max-height:none;font-size:24px;line-height:1.18;display:grid;place-items:center;text-wrap:balance}
 .position-count{height:20px;min-height:20px;line-height:20px;font-variant-numeric:tabular-nums}
 .position-stage>button#draw{height:48px;min-height:48px;flex:none}
 .position-stage[data-state=loading]>button{opacity:.75}
-@media(max-height:650px){.position-caption{height:86px;min-height:86px;max-height:86px}.position-name{height:60px;min-height:60px;max-height:60px;font-size:22px}.position-canvas .art-empty{gap:8px;padding:10px;font-size:13px}.position-canvas .art-empty .empty-symbol{font-size:40px}}
+@media(max-height:650px){.position-caption{height:auto;min-height:86px;max-height:none}.position-name{height:auto;min-height:60px;max-height:none;font-size:22px}.position-canvas .art-empty{gap:8px;padding:10px;font-size:13px}.position-canvas .art-empty .empty-symbol{font-size:40px}}
 @media(max-width:360px){.position-name{font-size:22px}}
 @media(max-height:500px) and (orientation:landscape){.position-stage .art{height:100%}.position-caption{align-self:center}.position-canvas .art-empty .empty-symbol{display:none}}
 @media(prefers-reduced-motion:no-preference){.position-canvas.image-enter{animation:position-enter .18s ease-out}@keyframes position-enter{from{opacity:.7}to{opacity:1}}}

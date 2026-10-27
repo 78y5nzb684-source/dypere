@@ -1,5 +1,5 @@
 /* DYPERE 3.0.2 | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-2-gallery-20261020-bilder2';
+const CACHE = 'dypere-3-0-2-layout-20261027';
 const ASSETS = [
   "./",
   "./bildeutfordring.html",
