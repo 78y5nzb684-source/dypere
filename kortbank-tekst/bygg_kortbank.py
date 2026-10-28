@@ -9,7 +9,7 @@ import tempfile
 
 KINDS = {'Samtale': 'talk', 'Gjett': 'guess', 'Utfordring': 'challenge', 'Joker': 'joker', 'Ønskekort': 'wish'}
 ROOT = Path(__file__).resolve().parent
-MAX_CARDS = 2000
+MAX_CARDS = 10000
 
 
 def fail(path, line, message):

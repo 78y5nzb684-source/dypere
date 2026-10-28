@@ -1,43 +1,197 @@
 (function(){
  'use strict';
- const U=DypereUI,{$,node}=U,E=DypereJourney,B=E.validateBank(DypereJourneyBank),view=$('journeyView');
- const moodNames={calm:'Rolig og nær',playful:'Leken og lett',creative:'Nysgjerrig og kreativ',connection:'Tid til hverandre'};
- let session=null,block=[],index=0,result=[],chosen=null;
- function who(){return 'Person '+(session.player+1);}
- function button(label,action,primary=false){const b=node('button',label,primary?'primary':'');b.type='button';b.onclick=action;return b;}
- function panel(title,kicker){view.replaceChildren();$('studioStatus').textContent='';const p=node('section',undefined,'journey-panel'),h=node('h2',title);h.tabIndex=-1;if(kicker)p.append(node('p',kicker,'eyebrow'));p.append(h);view.append(p);$('journeyExit').hidden=!session;h.focus({preventScroll:true});window.scrollTo(0,0);return p;}
- function field(parent,id,label,options,value){const wrap=node('div',undefined,'field'),l=node('label',label),select=node('select');l.htmlFor=id;select.id=id;for(const [v,t]of options){const opt=node('option',t);opt.value=v;select.append(opt);}if(value!==undefined)select.value=value;wrap.append(l,select);parent.append(wrap);return select;}
- function wipe(){session=null;block=[];index=0;result=[];chosen=null;delete document.body.dataset.mood;$('journeyPrivacy').open&&$('journeyPrivacy').close();}
- function setup(){wipe();const p=panel('En liten stund. Et felles valg.','PILOT · FOR TO VOKSNE');p.classList.add('journey-intro');p.prepend(node('span','✦','journey-mark'));p.append(node('p','Bytt på én telefon. Velg hver for dere, og finn en samtale, en kreativ pause eller en liten date dere begge ønsker.'));
-  const time=field(p,'journeyTime','Tid til valgene',E.times.map(t=>[String(t),t+' minutter']), '10');
-  p.append(node('p','Svarene lagres ikke eller sendes til en server. Ny lasting fjerner reisen. Partneren ser ikke enkeltsvarene, men felles resultater kan gi hint om hva dere liker.','journey-note'));
-  p.append(node('p','Ja betyr «dette kunne jeg ønske nå». Kanskje, nei og pass gir ingen match. Dere bestemmer på nytt før dere gjør noe.','journey-note'));
-  p.append(button('Begynn hver for dere →',()=>{session={config:E.config(Number(time.value)),profiles:[null,null],answers:[{},{}],player:0,round:0};handoff();},true));
+ const U = DypereUI, {$, node} = U;
+ const view = $('journeyView');
+ const bank = window.DypereVarStundBank || [];
+
+ const skills = [
+   {id:'naerhet', name:'Nærhet', cat:['sex','aftercare']},
+   {id:'lek', name:'Lek', cat:['oral','creampie']},
+   {id:'dybde', name:'Dybde', cat:['anal','fisting']},
+   {id:'kontroll', name:'Kontroll', cat:['kontroll','bdsm','chastity']},
+   {id:'utforsking', name:'Utforsking', cat:['group','exhibition','pegging']},
+   {id:'intensitet', name:'Intensitet', cat:['impact','breath','humiliation','watersports']}
+ ];
+
+ let points = 8;
+ let allocated = {};
+ let scores = {};
+ let currentRang = 1;
+ let segment = 1;
+ let stepInSegment = 0;
+ let stepsPerSegment = [4,5,5];
+ let mode = 'oppvarming';
+ let context = 'hjemme';
+ let recent = [];
+ let recentCats = [];
+ let answering = false;
+ let calibrationButton = null;
+ let answerButtons = [];
+
+ function panel(title, kicker) {
+   view.replaceChildren();
+   const p = node('section', undefined, 'journey-panel');
+   if (kicker) p.append(node('p', kicker, 'eyebrow'));
+   const h = node('h2', title);
+   p.append(h);
+   view.append(p);
+   return p;
  }
- function handoff(){delete document.body.dataset.mood;block=[];index=0;const p=panel('Telefonen til '+who()+'.','ET PRIVAT ØYEBLIKK');p.classList.add('journey-intro');p.prepend(node('span',session.player?'☾':'☀','journey-mark'));p.append(node('p','Den andre ser bort mens du velger. Tidligere spørsmål og svar er fjernet fra denne skjermen.'));p.append(button('Jeg er '+who()+' · fortsett',()=>session.profiles[session.player]?checkin():profile(),true));}
- function profile(){const p=panel('Din karakter, akkurat nå.',who()+' · PRIVATE VALG');p.prepend(node('span',session.player?'☾':'☀','journey-mark'));p.append(node('p','Sol og Måne er bare kjennetegn for å holde valgene fra hverandre. De bestemmer ingen rolle eller personlighet.'));
-  const mood=field(p,'journeyMood','Hva passer deg nå?',Object.entries(moodNames),'calm'),energy=field(p,'journeyEnergy','Energi til aktiviteten',[['low','Lav energi · sittende eller rolig'],['active','Også rom for å være i aktivitet']],'low'),place=field(p,'journeyPlace','Ramme for denne reisen',[['indoors','Bare innendørs'],['either','Inne eller ute']],'indoors'),cost=field(p,'journeyCost','Pengebruk',[['free','Ingen nye kjøp'],['either','Kan vurdere noe som koster']],'free');
-  p.append(node('p','Rammene beholdes hele reisen. Bare stemningen kan justeres mellom bolkene. Avslutt og start på nytt hvis du vil endre rammene.','journey-note'));
-  p.append(button('Mine rammer er klare →',()=>{session.profiles[session.player]={mood:mood.value,energy:energy.value,place:place.value,noCost:cost.value==='free'};beginBlock();},true));
+
+ function showConsent(){ const p = panel('Før dere starter'); p.append(node('p', 'Begge må være med. Dere kan stoppe når som helst. Alt er frivillig.')); const b = node('button', 'Vi er med', 'primary'); b.onclick = showContext; p.append(b); }
+function showContext() {
+   const p = panel('Hvor er dere?', 'KONTEKST');
+   p.append(node('p', 'Dette styrer tempo og intensitet.'));
+   [['bil','I bilen'],['hjemme','Hjemme'],['seng','I sengen'],['fest','Nachspiel / flere']].forEach(([id, label]) => {
+     const b = node('button', label);
+     b.onclick = () => { context = id; showMode(); };
+     p.append(b);
+   });
  }
- function checkin(){const current=session.profiles[session.player],p=panel('Samme stemning eller en ny retning?',who()+' · PRIVAT INNSJEKK');const mood=field(p,'journeyMood','Hva passer deg nå?',Object.entries(moodNames),current.mood);p.append(node('p','Endre gjerne stemning. De faste rammene dine og tidligere nei beholdes.'));p.append(button('Fortsett med mine valg →',()=>{session.profiles[session.player]=E.updateMood(current,mood.value);beginBlock();},true));}
- function beginBlock(){block=E.questions(B,session.profiles[session.player],session.answers[session.player],session.config.batch);index=0;if(!block.length){nextPerson();return;}question();}
- function question(){const a=block[index];document.body.dataset.mood=session.profiles[session.player].mood;const p=panel('Hva har du lyst til?',who()+' · SVAR FOR DEG SELV');const progress=node('div',undefined,'stund-progress');progress.append(node('span','Bolk '+(session.round+1)+' av '+session.config.rounds),node('span','Valg '+(index+1)+' av '+block.length));p.append(progress,node('div',a.question,'journey-card'));const row=node('div',undefined,'journey-actions');for(const [v,label]of [['yes','Ja, gjerne'],['maybe','Kanskje'],['no','Ikke nå'],['pass','Vil ikke svare']])row.append(button(label,()=>{session.answers[session.player]=E.answer(session.answers[session.player],a.id,v,B,session.profiles[session.player]);index++;if(index<block.length)question();else nextPerson();},v==='yes'));p.append(row,node('p','Ingen svar er riktige. Et nei trenger ingen forklaring.','journey-note'));}
- function nextPerson(){block=[];index=0;if(session.player===0){session.player=1;handoff();return;}session.round++;session.player=0;if(session.round<session.config.rounds){handoff();return;}results();}
- function results(){result=E.matches(B,session.profiles,session.answers);session.answers=[{},{}];session.profiles=[null,null];delete document.body.dataset.mood;const p=panel(result.length?'Her møtes valgene deres.':'Ingen felles forslag denne gangen.','SE SAMMEN');p.append(node('p',result.length?'Dette er forslag dere begge har svart ja til. Ingen andre svar vises. Velg sammen — eller stopp her.':'Det er et fullverdig resultat. Dere kan ta en pause eller starte på nytt senere, uten å forklare noen av svarene.'));
-  for(const a of result.slice(0,3)){const box=node('article',undefined,'journey-result');box.append(node('h3',a.title),button('Se forslaget',()=>confirm(a)));p.append(box);}
-  p.append(button('Vi vil bare lande sammen',care));
+
+ function showMode() {
+   const p = panel('Velg modus', 'TO VEIER');
+   p.append(node('p', 'Kartlegg bygger profil. Varm opp tar dere fra nøytral til superhot.'));
+   const kart = node('button', 'Kartlegg (A–Å)', 'primary');
+   const varm = node('button', 'Varm opp');
+   kart.onclick = () => { mode = 'kartlegg'; stepsPerSegment = [6,6,6]; showSetup(); };
+   varm.onclick = () => { mode = 'oppvarming'; stepsPerSegment = [4,5,5]; showSetup(); };
+   p.append(kart, varm);
  }
- function confirm(a){chosen=a;const p=panel(a.title,'ET NYTT FELLES VALG');p.append(node('p',a.question));const checks=[0,1].map(i=>{const l=node('label',undefined,'journey-check'),c=node('input');c.type='checkbox';l.append(c,node('span','Person '+(i+1)+' ønsker dette nå'));p.append(l);return c;});const go=button('Åpne vår stund →',activity,true);go.disabled=true;checks.forEach(c=>c.onchange=()=>{go.disabled=!checks.every(x=>x.checked);});p.append(go,button('Tilbake til felles forslag',resultsFromMemory));}
- function resultsFromMemory(){// No recalculation: individual answers were erased at the first reveal.
-  const p=panel('Her møtes valgene deres.','SE SAMMEN');p.append(node('p','Velg bare noe dere begge ønsker nå.'));for(const a of result.slice(0,3)){const box=node('article',undefined,'journey-result');box.append(node('h3',a.title),button('Se forslaget',()=>confirm(a)));p.append(box);}p.append(button('Vi vil bare lande sammen',care));
+
+ function showSetup() {
+   const p = panel('Din karakter', 'SEGMENT ' + segment);
+   p.append(node('p', 'Kalibrer ferdighetene. Du har ' + points + ' poeng.'));
+   skills.forEach(s => {
+     const row = node('div');
+     row.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin:8px 0;';
+     row.append(node('span', s.name));
+     const val = node('span', allocated[s.id] || 0);
+     const minus = node('button', '−');
+     const plus = node('button', '+');
+     minus.onclick = () => { if ((allocated[s.id]||0) > 0) { allocated[s.id]--; points++; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }};
+     plus.onclick = () => { if (points > 0) { allocated[s.id]=(allocated[s.id]||0)+1; points--; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }};
+     row.append(minus, val, plus);
+     p.append(row);
+   });
+   const pts = node('p', 'Poeng igjen: ' + points);
+   p.append(pts);
+   const go = node('button', segment===1 ? 'Start' : 'Fortsett', 'primary');
+   go.onclick = () => { if (!answering) showQuestion(); };
+   p.append(go);
  }
- function activity(){const p=panel(chosen.title,'DERES STUND');p.append(node('p','Legg bort skjermen når dere vil. Forslaget er en invitasjon, og dere kan endre mening.'));const list=node('ol');chosen.steps.forEach(step=>list.append(node('li',step)));p.append(list,button('Vi er klare til å lande',care,true));}
- function care(){session.answers=[{},{}];block=[];chosen=null;result=[];const p=panel('Land godt sammen.','OMSORG · PÅ DERES MÅTE');p.append(node('p','Hva trenger hver av dere nå: ro, litt nærhet, noe å drikke, en samtale eller plass for dere selv? Spør hverandre, og la ulike behov få rom.'));p.append(node('p','Når det passer, kan dere dele én ting som fungerte og én ting dere ønsker annerledes. Dere trenger ikke forklare private svar. En senere innsjekk kan være like fin.'));p.append(button('Avslutt og fjern reisen',()=>{wipe();const end=panel('Takk for stunden.','REISEN ER AVSLUTTET');end.append(node('p','Valgene og de felles forslagene er fjernet fra denne økten.'),button('Start en ny stund',setup,true));},true));}
- $('journeyExit').onclick=async()=>{if(await U.confirmAction('Avslutte reisen og fjerne alle valgene fra denne økten?','Avslutt reisen'))setup();};
- document.addEventListener('visibilitychange',()=>{if(document.hidden&&session&&!$('journeyPrivacy').open)$('journeyPrivacy').showModal();});
- $('journeyPrivacy').addEventListener('cancel',e=>e.preventDefault());$('journeyContinue').onclick=()=>$('journeyPrivacy').close();
- window.addEventListener('pagehide',()=>{wipe();view.replaceChildren();});
- window.addEventListener('pageshow',e=>{if(e.persisted)setup();});
- setup();
+
+ function showQuestion() {
+   if (!bank || !bank.length) { view.innerHTML = '<p>Kunne ikke laste spørsmål. Sjekk nettverk.</p>'; return; }
+   if (stepInSegment >= stepsPerSegment[segment-1]) {
+     if (segment < 3) { showSegmentEnd(); return; }
+     else { showFinal(); return; }
+   }
+   const progress = (segment-1 + stepInSegment / stepsPerSegment[segment-1]) / 3;
+   let exp = mode === 'kartlegg' ? 0.85 : 1.25;
+   currentRang = 1 + Math.pow(progress, exp) * (mode === 'kartlegg' ? 2.5 : 4);
+   if (context === 'bil') currentRang = Math.min(currentRang, 2.5);
+   if (context === 'fest') currentRang = Math.min(currentRang, 3.5);
+
+   const q = pickQuestion();
+   const totalSteps = stepsPerSegment.reduce((a,b)=>a+b,0);
+   const done = stepsPerSegment.slice(0, segment-1).reduce((sum, count) => sum + count, 0) + stepInSegment;
+   const tones = ['Nysgjerrig og lett', 'Varmere og mer direkte', 'Helt åpen'];
+   const p = panel('Segment ' + segment + ' / 3', tones[segment-1] + ' · Spørsmål ' + (stepInSegment+1));
+   const bar = node('div');
+   bar.style.cssText = 'height:6px;background:#2a2a2a;border-radius:3px;margin:10px 0;overflow:hidden;';
+   const fill = node('div');
+   fill.style.cssText = 'height:100%;width:' + (done/totalSteps*100) + '%;background:#c45c26;transition:width .3s;';
+   bar.append(fill);
+   p.append(bar);
+   let display = q.text;
+   if (context === 'bil' && display.length > 60) display = display.split(' ').slice(0, 8).join(' ') + '...';
+   p.append(node('p', display));
+   p.append(node('p', 'Intensitet ' + currentRang.toFixed(1) + ' · Poeng ' + points, 'fine'));
+   const exit = node('button', 'Avslutt', 'text-button');
+   exit.onclick = () => location.reload();
+   p.append(exit);
+   const calib = node('button', 'Kalibrer', 'text-button');
+   calibrationButton = calib;
+   calib.disabled = answering;
+   calib.onclick = () => { if (!answering) showSetup(); };
+   p.append(calib);
+   const btns = node('div');
+   btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;';
+   answerButtons = [];
+   [['Ja','ja'],['Kanskje','kanskje'],['Nei','nei']].forEach(([label,key]) => {
+     const b = node('button', label, key==='ja'?'primary':'');
+     b.onclick = () => answer(q, key);
+     answerButtons.push(b);
+     btns.append(b);
+   });
+   p.append(btns);
+ }
+
+ function pickQuestion() {
+   let maxR = context==='bil'?2.5:context==='fest'?3.5:5;
+   const allowed = bank.filter(t => Math.abs(t.rang - currentRang) <= 1.3 && t.rang <= maxR);
+   const pool = allowed.length ? allowed : bank;
+   const weighted = pool.map(t => {
+     let s = (scores[t.cat] || 0) * 4.5;  // sterkere vekt på tidligere svar
+     skills.forEach(sk => { if (sk.cat.includes(t.cat)) s += (allocated[sk.id]||0)*2; });
+     return {t, s};
+   }).sort((a,b)=>b.s - a.s);
+   const top = weighted.slice(0, 18).filter(x => !recent.includes(x.t.id) && !recentCats.includes(x.t.cat));
+   let chosen;
+   if (top.length) {
+     chosen = top[Math.floor(Math.random()*Math.min(6, top.length))].t;
+   } else {
+     const fallback = weighted.filter(x => !recent.includes(x.t.id));
+     chosen = (fallback.length ? fallback[0] : weighted[Math.floor(Math.random()*weighted.length)]).t;
+   }
+   recent.push(chosen.id);
+   recentCats.push(chosen.cat);
+   if (recent.length > 16) recent.shift();
+   if (recentCats.length > 4) recentCats.shift();
+   return chosen;
+ }
+
+function answer(q, key) {
+   if (answering) return;
+   answering = true;
+   if (calibrationButton) calibrationButton.disabled = true;
+   answerButtons.forEach(button => { button.disabled = true; });
+   if (key === 'ja') {
+     scores[q.cat] = (scores[q.cat]||0) + 2;
+     // Visuell feedback
+     const fb = node('p', '+2 på ' + q.cat, 'points-feedback');
+     fb.style.cssText = 'color:#c45c26;font-weight:bold;margin:8px 0;';
+     view.append(fb);
+     setTimeout(() => fb.remove(), 800);
+   } else if (key === 'kanskje') {
+     scores[q.cat] = (scores[q.cat]||0) + 1;
+   }
+   stepInSegment++;
+   setTimeout(() => { answering = false; showQuestion(); }, key==='ja' ? 400 : 0);
+ }
+
+ function showSegmentEnd() {
+   const p = panel('Segment ' + segment + ' ferdig');
+   p.append(node('p', '+4 poeng. Kalibrer før neste segment.'));
+   points += 4;
+   const cont = node('button', 'Kalibrer og fortsett', 'primary');
+   cont.onclick = () => { if (cont.disabled) return; cont.disabled = true; segment++; stepInSegment=0; showSetup(); };
+   p.append(cont);
+ }
+
+ function showFinal() {
+   const p = panel('Ferdig', 'DERES RETNING');
+   const top = Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3);
+   const scenario = top.length ? 'Et scenario med ' + top[0][0] + (top[1] ? ' og ' + top[1][0] : '') : 'Noe rolig og nært';
+   p.append(node('p', top.length ? 'Dere heller mot: ' + top.map(([c])=>c).join(', ') : 'Rolig retning'));
+   p.append(node('p', 'Forslag: ' + scenario));
+   p.append(node('p', 'Sluttintensitet: ' + currentRang.toFixed(1)));
+   const again = node('button', 'Ny seanse', 'primary');
+   again.onclick = () => location.reload();
+   p.append(again);
+ }
+
+ showConsent();
 })();
+// P3-03: Banken er allerede delt (5000 av 100k). Full lazy-load kan komme senere.

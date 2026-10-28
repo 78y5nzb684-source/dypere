@@ -1,3 +1,31 @@
+
+// Premie basert på karakter (fra Vår stund hvis tilgjengelig)
+function getPrize(winnerName) {
+  const skills = window.DypereSkills || {};
+  const top = Object.entries(skills).sort((a,b)=>b[1]-a[1])[0];
+  const prizes = {
+    dybde: "En lang, dyp analøkt der vinneren bestemmer tempoet",
+    kontroll: "Full kontroll resten av kvelden – nektelse og edging",
+    intensitet: "Hard og direkte – vinneren tar det han/hun vil",
+    lek: "Oral og erting til vinneren er fornøyd",
+    naerhet: "Myk og nær sex med masse kos etterpå"
+  };
+  return prizes[top ? top[0] : "naerhet"] || "Vinneren velger kveldens retning";
+}
+
+function checkWinner() {
+  // Enkel: den som kommer først til mål
+  if (typeof positions !== "undefined") {
+    const finished = positions.findIndex(p => p >= 24);
+    if (finished !== -1) {
+      const name = "Person " + (finished+1);
+      const prize = getPrize(name);
+      const el = document.getElementById("gameCopy");
+      if (el) el.textContent = name + " vant! Premie: " + prize;
+    }
+  }
+}
+
 (function(){
  'use strict';const U=DypereUI,{$,node}=U,E=DypereGames,S=DypereCardStore,D=DypereBoardDecks,L=DypereBoardLibrary,key='DYPERE_BOARD_V2',names=['Mester','Baby'];
  let state=U.load(key,E.validBoard)||E.boardState(),busy=false,overviewOpen=null;
@@ -54,3 +82,9 @@
  $('boardToggle').onclick=()=>{overviewOpen=$('boardPanel').classList.contains('board-compact');render();};
  setupSettings();render();
 })();
+
+
+document.getElementById("boardNewRound")?.addEventListener("click", () => {
+  if (confirm("Starte en ny runde på samme brett?")) location.reload();
+});
+// P6-01: Brettet er 24 felt. Flere runder kan legges til med 'Ny runde'-knapp.
