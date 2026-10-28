@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: everyday
+NAVN: Hverdagsmagi
+BESKRIVELSE: Små gleder, gode vaner og en hyggeligere hverdag.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-everyday-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken helt vanlig ting gleder du deg oftest over?
+[SLUTT]
+
+[KORT base-board-everyday-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva er ditt beste tegn på at helgen har begynt?
+[SLUTT]
+
+[KORT base-board-everyday-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken lukt eller lyd får et sted til å føles hjemlig for deg?
+[SLUTT]
+
+[KORT base-board-everyday-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket lite ritual vil du helst ikke skynde deg gjennom?
+[SLUTT]
+
+[KORT base-board-everyday-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken enkel ting gjør den andre som gjør dagen din lettere?
+[SLUTT]
+
+[KORT base-board-everyday-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva ville du gjerne hatt ti minutter mer til i hverdagen?
+[SLUTT]
+
+[KORT base-board-everyday-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken oppgave blir hyggeligere når vi gjør den sammen?
+[SLUTT]
+
+[KORT base-board-everyday-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør en vanlig middag til en opplevelse du husker?
+[SLUTT]
+
+[KORT base-board-everyday-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva trenger vi mindre av for å få mer overskudd til hverandre?
+[SLUTT]
+
+[KORT base-board-everyday-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken liten vane kunne gjort at vi oftere merker at vi er et lag?
+[SLUTT]
+
+[KORT base-board-everyday-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken frokost den andre helst vil ha på en helt fri dag.
+[SLUTT]
+
+[KORT base-board-everyday-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken plass hjemme den andre liker best akkurat nå.
+[SLUTT]
+
+[KORT base-board-everyday-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville valgt frisk luft, musikk eller stillhet som en liten pause.
+[SLUTT]
+
+[KORT base-board-everyday-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken av ukens dager den andre helst ville gitt litt ekstra omsorg.
+[SLUTT]
+
+[KORT base-board-everyday-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken hverdagslyd den andre ville fjernet om det var mulig.
+[SLUTT]
+
+[KORT base-board-everyday-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket lite ritual den andre mener er mest undervurdert.
+[SLUTT]
+
+[KORT base-board-everyday-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre først ville gjort med en uventet, ledig time.
+[SLUTT]
+
+[KORT base-board-everyday-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken felles vane den andre håper dere fortsatt har om fem år.
+[SLUTT]
+
+[KORT base-board-everyday-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken praktisk lettelse den andre ville satt mest pris på neste uke.
+[SLUTT]
+
+[KORT base-board-everyday-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre mener er forskjellen på fri tid og ordentlig hvile.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn tre ting i rommet som gjør det hyggeligere å være her.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv ditt ideelle lille pusterom med én setning.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en oppdiktet meny til en helt vanlig tirsdag som høres ekstra fin ut.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si én liten ting den andre gjorde denne uken som du la merke til.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en hyggelig måte å gjøre en rutine kortere eller enklere på sammen.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg hver deres favorittpause og lag en kombinasjon som begge kunne likt.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv et godt hjem ved å bruke tre verb i stedet for tre ting.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et forslag til en telefonsvak halvtime uten krav om å være produktive.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en liten oppgave dere kan forenkle i stedet for å gjøre mer imponerende.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en trepunkts oppskrift på en god dag der ingen av punktene krever kjøp.
+[SLUTT]
+
+[KORT base-board-everyday-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Takknemlig detalj: si én liten ting som er bra med akkurat dette øyeblikket.
+[SLUTT]
+
+[KORT base-board-everyday-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Pausemeny: nevn én stille og én sosial pause hver.
+[SLUTT]
+
+[KORT base-board-everyday-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Senk listen: finn én hyggelig plan som får være veldig enkel.
+[SLUTT]
+
+[KORT base-board-everyday-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Kompliment til hverdagen: gi et vanlig øyeblikk et uvanlig fint navn.
+[SLUTT]
+
+[KORT base-board-everyday-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bytt briller: beskriv én rutine slik du tror den andre opplever den. Spør om det stemmer.
+[SLUTT]
+
+[KORT base-board-everyday-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Mindre er nok: velg noe dere kan droppe fra en tenkt perfekt kveld.
+[SLUTT]
+
+[KORT base-board-everyday-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Dagens lille seier: fortell om noe du fikk til, selv om ingen andre så det.
+[SLUTT]
+
+[KORT base-board-everyday-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+En hjelpende detalj: si hvilken liten avklaring som gjør en travel dag lettere.
+[SLUTT]
+
+[KORT base-board-everyday-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Ingen effektivisering: finn noe hyggelig som gjerne kan få ta litt tid.
+[SLUTT]
+
+[KORT base-board-everyday-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Godt nok: finn en plan dere begge kan glede dere til uten at alt må klaffe.
+[SLUTT]
+
+[KORT base-board-everyday-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en enkel drikkepause dere kan dele med det dere allerede har.
+[SLUTT]
+
+[KORT base-board-everyday-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en sang som kan følge en hverdagsoppgave dere gjør sammen.
+[SLUTT]
+
+[KORT base-board-everyday-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en dag dere vil ha en liten, skjermfri stund.
+[SLUTT]
+
+[KORT base-board-everyday-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en liten velkomst dere begge liker når dere møtes etter dagen.
+[SLUTT]
+
+[KORT base-board-everyday-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en rutine dere kan gjøre litt mer behagelig uten å legge til arbeid.
+[SLUTT]
+
+[KORT base-board-everyday-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal en pause der dere ikke skal planlegge eller løse noe.
+[SLUTT]
+
+[KORT base-board-everyday-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg ett praktisk spørsmål dere kan avklare tidlig for å gi mer ro senere.
+[SLUTT]
+
+[KORT base-board-everyday-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en enkel måte å vise at den andres innsats blir sett.
+[SLUTT]
+
+[KORT base-board-everyday-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag plass til én liten glede hver i den neste uken.
+[SLUTT]
+
+[KORT base-board-everyday-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en felles hverdagsvane som skal handle om trivsel, ikke prestasjon.
+[SLUTT]

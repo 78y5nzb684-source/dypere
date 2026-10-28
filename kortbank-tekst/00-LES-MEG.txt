@@ -1,0 +1,61 @@
+DYPERE – redigerbare tekstfiler til brettspillbanken
+
+Her ligger alle de 300 nye kortene, fordelt på seks pakker med 50 kort hver.
+De 58 eldre startkortene er ikke del av denne utskiftingen.
+
+SLIK REDIGERER DU
+1. Åpne ønsket .kort.txt-fil i Notisblokk eller en annen teksteditor.
+2. Finn teksten mellom TEKST: og [SLUTT]. Skriv den om som du ønsker.
+3. Lagre som UTF-8. Norske bokstaver og flere tekstlinjer støttes.
+4. Send én eller flere endrede filer tilbake til meg, eller hele ZIP-pakken.
+   Jeg bruker dem til å erstatte de aktuelle pakkene, kontrollerer banken,
+   tester spillet og publiserer den oppdaterte versjonen.
+   Pakker du ikke sender tilbake, beholder vi som de er.
+
+DETTE KAN DU ENDRE
+- TEKST: selve kortteksten, opptil 1200 tegn. Flere linjer er tillatt.
+- NIVÅ: 1, 2 eller 3. Kort åpnes fra tilsvarende kapittel på brettet.
+- TYPE: Samtale, Gjett, Utfordring, Joker eller Ønskekort.
+- AKTIV: ja eller nei. Bruk nei hvis du vil beholde et kort uten å bruke det.
+- BESKRIVELSE: en kort beskrivelse av pakken, opptil 300 tegn.
+
+BEHOLD DETTE VED VANLIG TEKSTREDIGERING
+- Filnavn, PAKKE-ID og kort-ID i [KORT ...]. ID-en gjør at favoritter og
+  lagret fremdrift fortsatt kjenner igjen samme kort etter en tekstendring.
+- NAVN bør beholdes: aktivering og tidligere pakkevalg bruker pakkenavnet.
+- Linjene TEKST: og [SLUTT] må stå alene og være med på hvert kort.
+- Ikke legg inn en linje som bare sier [SLUTT] inne i selve kortteksten.
+
+NYE ELLER FÆRRE KORT
+Du kan kopiere en hel kortblokk for å lage et nytt kort, men det nye kortet
+må få en ny, unik ID som begynner med base-board-. Eksempel:
+base-board-stories-talk-11
+Endre ikke ID-en til et eksisterende kort bare fordi du endrer teksten.
+Du kan fjerne en hel blokk, men AKTIV: nei er enklere hvis du er usikker.
+Samlet grense er 1000 kort i denne banken. Appen viser antall pakker og kort
+automatisk; det trenger ikke fortsatt være akkurat 300 kort.
+
+KONTROLL OG INNSETTING – DETTE KAN JEG GJØRE FOR DEG
+bygg_kortbank.py kontrollerer format, ID-er, typer, nivåer og tekstlengde.
+Ugyldige filer blir avvist før appfilen endres. Ved skriving tas en kopi av
+den gamle appfilen først. Spørreskjemaer og andre lagrede data berøres ikke.
+
+Hvis du selv vil bruke verktøyet med Python installert:
+  python bygg_kortbank.py --check
+Kontrollerer filene uten å endre appen.
+
+I prosjektmappen bruker jeg:
+  python kortbank-tekst/bygg_kortbank.py --write
+Dette bygger dypere/board-cards.js fra ALLE .kort.txt-filene i mappen.
+Tidligere appfil lagres i kortbank-backups/. Deretter kjører jeg spilltester,
+oppdaterer cache/build og publiserer. --write alene publiserer ingenting.
+
+Det er ikke nødvendig at du kjører disse kommandoene. Rediger og send filene.
+
+INNHOLD
+01-Smaa-historier.kort.txt
+02-Leken-duell.kort.txt
+03-Skaperverksted.kort.txt
+04-Nye-perspektiver.kort.txt
+05-Hverdagsmagi.kort.txt
+06-Ut-paa-eventyr.kort.txt

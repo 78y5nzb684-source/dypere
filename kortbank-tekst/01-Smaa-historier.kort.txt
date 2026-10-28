@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: stories
+NAVN: Små historier
+BESKRIVELSE: Minner, øyeblikk og detaljer dere kanskje har glemt.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-stories-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket lite øyeblikk fra den første tiden husker du overraskende godt?
+[SLUTT]
+
+[KORT base-board-stories-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om en gang vi lo av noe som ingen andre ville forstått.
+[SLUTT]
+
+[KORT base-board-stories-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken sang tar deg rett tilbake til en bestemt dag med oss?
+[SLUTT]
+
+[KORT base-board-stories-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva husker du om et måltid vi delte, bortsett fra maten?
+[SLUTT]
+
+[KORT base-board-stories-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell om en plan som gikk galt, men ble et godt minne.
+[SLUTT]
+
+[KORT base-board-stories-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilket sted har blitt annerledes for deg fordi vi har vært der sammen?
+[SLUTT]
+
+[KORT base-board-stories-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken hverdagslig dag fra forholdet ville du gjerne besøkt igjen?
+[SLUTT]
+
+[KORT base-board-stories-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når overrasket den andre deg ved å forstå noe uten mange ord?
+[SLUTT]
+
+[KORT base-board-stories-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilket minne beskriver best hvordan vi har forandret oss sammen?
+[SLUTT]
+
+[KORT base-board-stories-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva håper du at vi fortsatt vil fortelle om når vi blir eldre?
+[SLUTT]
+
+[KORT base-board-stories-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken av turene våre den andre først tenker på akkurat nå.
+[SLUTT]
+
+[KORT base-board-stories-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken liten detalj den andre husker fra første gang dere møttes.
+[SLUTT]
+
+[KORT base-board-stories-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken felles matopplevelse den andre ville gjentatt.
+[SLUTT]
+
+[KORT base-board-stories-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket bilde av oss den andre ville valgt til et lite album.
+[SLUTT]
+
+[KORT base-board-stories-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken intern vits den andre tror har lengst levetid.
+[SLUTT]
+
+[KORT base-board-stories-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken feilbestilling eller bomtur den andre husker best.
+[SLUTT]
+
+[KORT base-board-stories-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket sted den andre forbinder med en skikkelig god samtale.
+[SLUTT]
+
+[KORT base-board-stories-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres tradisjoner den andre helst vil bevare.
+[SLUTT]
+
+[KORT base-board-stories-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilket uventet øyeblikk den andre mener gjorde dere mer til et lag.
+[SLUTT]
+
+[KORT base-board-stories-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville kalt kapittelet om det siste året deres.
+[SLUTT]
+
+[KORT base-board-stories-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv et felles minne med tre ord. La den andre finne ut hvilket.
+[SLUTT]
+
+[KORT base-board-stories-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en filmtittel til en tur dere har vært på sammen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjenfortell et morsomt øyeblikk som om du var en svært høytidelig nyhetsleser.
+[SLUTT]
+
+[KORT base-board-stories-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tegn et enkelt kart over et sted som betyr noe for dere. La den andre gjette.
+[SLUTT]
+
+[KORT base-board-stories-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et minne og fortell det annenhver setning, fra hvert deres perspektiv.
+[SLUTT]
+
+[KORT base-board-stories-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en liten prisutdeling for en av deres mest kaotiske dager.
+[SLUTT]
+
+[KORT base-board-stories-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv den andre på en god dag med et bilde fra naturen, og forklar valget.
+[SLUTT]
+
+[KORT base-board-stories-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en fempunkts tidslinje over gode vendepunkter dere husker sammen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Fortell om et felles øyeblikk fra synsvinkelen til en tilfeldig kaffekopp.
+[SLUTT]
+
+[KORT base-board-stories-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en kort muntlig museumstekst om en gjenstand som symboliserer forholdet.
+[SLUTT]
+
+[KORT base-board-stories-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Minnebytte: si én ting fra denne uken dere gjerne vil huske.
+[SLUTT]
+
+[KORT base-board-stories-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lydspor: nynne eller beskriv en sang som passer til et felles minne.
+[SLUTT]
+
+[KORT base-board-stories-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Detaljjakt: velg et minne og legg til én liten detalj hver.
+[SLUTT]
+
+[KORT base-board-stories-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tittelrunde: gi denne kvelden et navn uten å diskutere først.
+[SLUTT]
+
+[KORT base-board-stories-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+To sannheter: fortell hver deres sanne detalj fra samme opplevelse.
+[SLUTT]
+
+[KORT base-board-stories-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortellerbytte: la den som vanligvis lytter, velge hvilket minne dere deler.
+[SLUTT]
+
+[KORT base-board-stories-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Postkort: si én setning dere kunne sendt hjem fra en tidligere tur.
+[SLUTT]
+
+[KORT base-board-stories-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tidshopp: velg noe fint fra i går, i fjor og den første tiden.
+[SLUTT]
+
+[KORT base-board-stories-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Et annet blikk: fortell hvilken del av den andres historie du ikke kjente fra før.
+[SLUTT]
+
+[KORT base-board-stories-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Bevar øyeblikket: velg én setning fra runden dere vil ta med videre.
+[SLUTT]
+
+[KORT base-board-stories-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et bilde dere kunne se på sammen etter spillet.
+[SLUTT]
+
+[KORT base-board-stories-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et gammelt felles favorittmåltid dere kan lage en annen dag.
+[SLUTT]
+
+[KORT base-board-stories-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg én sang fra den første tiden som dere vil høre igjen.
+[SLUTT]
+
+[KORT base-board-stories-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bestem et sted i nærområdet dere gjerne vil besøke på nytt.
+[SLUTT]
+
+[KORT base-board-stories-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et godt minne dere kunne gjenskapt en liten del av uten store forberedelser.
+[SLUTT]
+
+[KORT base-board-stories-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en historie dere vil skrive ned med hver deres versjon.
+[SLUTT]
+
+[KORT base-board-stories-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en liten tradisjon dere ønsker å vekke til live igjen.
+[SLUTT]
+
+[KORT base-board-stories-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg et lite album med fem bilder og én setning til hvert.
+[SLUTT]
+
+[KORT base-board-stories-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en erfaring dere ønsker mer av, og finn en enkel anledning til den.
+[SLUTT]
+
+[KORT base-board-stories-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn et minne dere vil takke hverandre for, og avslutt med deres egne ord.
+[SLUTT]

@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: adventure
+NAVN: Ut på eventyr
+BESKRIVELSE: Oppdag nye muligheter, fra sofaen til en liten tur.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-adventure-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket sted like i nærheten har du alltid vært litt nysgjerrig på?
+[SLUTT]
+
+[KORT base-board-adventure-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva gjør en liten tur til et eventyr for deg?
+[SLUTT]
+
+[KORT base-board-adventure-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Liker du best å oppdage en ny vei eller vende tilbake til en favoritt?
+[SLUTT]
+
+[KORT base-board-adventure-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken type utsikt gjør at du får lyst til å bli sittende?
+[SLUTT]
+
+[KORT base-board-adventure-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva ville du vist den andre hvis du var guide på et sted fra oppveksten?
+[SLUTT]
+
+[KORT base-board-adventure-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken nybegynneropplevelse kunne du tenke deg å dele uten å måtte bli god?
+[SLUTT]
+
+[KORT base-board-adventure-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er forskjellen på spontanitet som er gøy og spontanitet som blir stress for deg?
+[SLUTT]
+
+[KORT base-board-adventure-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan ser en god oppdagelsesdag ut når energien er lav?
+[SLUTT]
+
+[KORT base-board-adventure-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken type reise kunne lært oss noe nytt om hverandre uten å være stor eller dyr?
+[SLUTT]
+
+[KORT base-board-adventure-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva håper du at vi fortsatt tør å være nybegynnere i sammen?
+[SLUTT]
+
+[KORT base-board-adventure-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville valgt hav, skog, by eller et rolig sted hjemme som utsikt.
+[SLUTT]
+
+[KORT base-board-adventure-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre helst vil ha kart, guide eller tid til å finne veien selv.
+[SLUTT]
+
+[KORT base-board-adventure-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken liten ting den andre alltid ville hatt med på tur.
+[SLUTT]
+
+[KORT base-board-adventure-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre velger tidlig start eller en langsom formiddag på en fridag.
+[SLUTT]
+
+[KORT base-board-adventure-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket sted i nærområdet den andre først ville vist en besøkende.
+[SLUTT]
+
+[KORT base-board-adventure-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre helst vil lære noe nytt, smake noe nytt eller se noe nytt.
+[SLUTT]
+
+[KORT base-board-adventure-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvor mye av en hyggelig overraskelsestur den andre vil vite på forhånd.
+[SLUTT]
+
+[KORT base-board-adventure-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket vær den andre mener passer best til en liten oppdagelsesdag.
+[SLUTT]
+
+[KORT base-board-adventure-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken tilpasning som gjør en ukjent aktivitet mer fristende for den andre.
+[SLUTT]
+
+[KORT base-board-adventure-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre vil være mest glad for å huske fra en fremtidig tur: et sted, et øyeblikk eller en samtale.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på et navn til en liten ekspedisjon dere kunne gjort fra sofaen.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en tur dere kunne tenkt dere på bare fem ord.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag hver deres perfekte, lille pakkeliste med tre ting.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en oppdagelse dere kan gjøre uten å forlate rommet.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et forslag til en lokal tur med både en rolig og en mer aktiv variant.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv en fiktiv guidebokside om et sted dere allerede kjenner godt.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en ukjent aktivitet og finn en liten, tilgjengelig første prøve.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en plan A og en like hyggelig plan B til en tenkt fridag.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en ny måte å besøke et kjent sted på som ikke krever mer penger.
+[SLUTT]
+
+[KORT base-board-adventure-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et forslag til en dag der hver av dere får være guide for én liten del.
+[SLUTT]
+
+[KORT base-board-adventure-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Oppdagerblikk: finn én liten ting i rommet du ikke hadde lagt merke til før.
+[SLUTT]
+
+[KORT base-board-adventure-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Reisekort: velg et sted dere kjenner og gi det et nytt turistnavn.
+[SLUTT]
+
+[KORT base-board-adventure-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Værbytte: finn én hyggelig plan for sol og én for regn.
+[SLUTT]
+
+[KORT base-board-adventure-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nærmest først: nevn et lite sted dere kan glede dere til uten lang reise.
+[SLUTT]
+
+[KORT base-board-adventure-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+To tempoer: beskriv samme tur som både langsom og kort.
+[SLUTT]
+
+[KORT base-board-adventure-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Guidebytte: la hver av dere fortelle om et sted den andre ikke kjenner godt.
+[SLUTT]
+
+[KORT base-board-adventure-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hjemmeeventyr: finn en oppdagelse dere kan gjøre med en bok, et kart eller et minne.
+[SLUTT]
+
+[KORT base-board-adventure-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Uten handleliste: finn en ny opplevelse som bruker noe dere allerede har.
+[SLUTT]
+
+[KORT base-board-adventure-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Trygg start: si én ting du vil vite før du takker ja til en ukjent aktivitet.
+[SLUTT]
+
+[KORT base-board-adventure-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Felles kompass: finn én ting dere begge ønsker å oppdage mer av sammen.
+[SLUTT]
+
+[KORT base-board-adventure-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et sted dere vil lese eller snakke litt mer om sammen.
+[SLUTT]
+
+[KORT base-board-adventure-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en kort og tilgjengelig rute dere kan vurdere en annen dag.
+[SLUTT]
+
+[KORT base-board-adventure-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et kjent sted dere vil besøke med litt mer tid enn sist.
+[SLUTT]
+
+[KORT base-board-adventure-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en opplevelse dere kan ha hjemme hvis været eller energien sier stopp.
+[SLUTT]
+
+[KORT base-board-adventure-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en liten lokal oppdagelse med tydelig tidsramme og valgfri pengebruk.
+[SLUTT]
+
+[KORT base-board-adventure-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en aktivitet dere vil prøve uten å bestemme dere for å fortsette med den.
+[SLUTT]
+
+[KORT base-board-adventure-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+La hver av dere foreslå én liten del av en fremtidig fridag.
+[SLUTT]
+
+[KORT base-board-adventure-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en lavterskelvariant av en tur dere lenge har snakket om.
+[SLUTT]
+
+[KORT base-board-adventure-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal en liten overraskelse der rammene er kjente, men én hyggelig detalj er hemmelig.
+[SLUTT]
+
+[KORT base-board-adventure-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg et felles eventyrønske og det aller minste første steget som begge ønsker.
+[SLUTT]

@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: perspectives
+NAVN: Nye perspektiver
+BESKRIVELSE: Bli bedre kjent uten fasit, prestasjon eller forhør.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-perspectives-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva gjør at du kjenner deg velkommen når du kommer hjem?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken liten vane hjelper deg å finne ro etter en travel dag?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva liker du at noen spør deg om, men sjelden blir spurt om?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken egenskap setter du mer pris på nå enn før?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør det lett for deg å si at du trenger litt tid?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er forskjellen på en god overraskelse og en ubehagelig overraskelse for deg?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når føler du deg best forstått: når noen spør, lytter eller hjelper praktisk?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken forventning til en perfekt kveld kunne du gjerne gitt slipp på?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva har du lært om deg selv som du ønsker at vi skal ha mer plass til?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva betyr det for deg å kunne være både selvstendig og del av et lag?
+[SLUTT]
+
+[KORT base-board-perspectives-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre helst vil ha en stille eller en pratsom start på dagen.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken liten ting den andre savner først på en travel uke.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre helst ønsker selskap eller en pause etter mye sosialt.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre mener gjør et besøk ekstra hyggelig.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre liker best å få en konkret invitasjon eller flere alternativer.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken type hjelp den andre helst vil få når en plan blir vanskelig.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres forskjeller den andre mener er mest nyttig for dere.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre foretrekker: rask avklaring eller tid til å tenke seg om.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre vil ha mer plass til i et vanlig døgn.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilket ord den andre ønsker at neste måned skal preges av.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et hyggelig ord hver og fortell hva dere legger i det.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en god dag uten å nevne jobb eller gjøremål.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell én liten ting som har gitt deg energi denne uken.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg mellom ro, variasjon og fellesskap, og si hvorfor det passer deg i dag.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell om en preferanse du har endret med tiden. Den andre stiller ett åpent spørsmål.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fullfør setningen: Det er lettere for meg å slappe av når …
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv en hyggelig grense med egne ord, uten å måtte forklare hvorfor den finnes.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell hvordan en invitasjon kan høres ut når det også er lett å takke nei.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Si én ting du ønsker å bli spurt om før noen lager en plan på dine vegne.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn én forskjell dere kan gi plass til uten at noen trenger å endre seg.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lyttebytte: én snakker om noe hyggelig i et halvt minutt, den andre bare lytter.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ordforklaring: velg et hverdagsord og se om dere mener det samme med det.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Et nytt spørsmål: still et ufarlig spørsmål du faktisk er nysgjerrig på svaret på.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ingen løsning: del en liten observasjon uten å be den andre fikse noe.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Dobbel mulighet: nevn to forskjellige måter dere begge kan ha en god kveld på.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Speiling: gjengi noe fint du har forstått om den andre i dag. La dem korrigere.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ny vinkel: finn en fordel ved hver av to forskjellige preferanser dere har.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Plass til begge: si hva som gjør det greit for deg at den andre ønsker noe annet.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Rolig avklaring: velg en liten plan og si hva dere trenger å vite før dere bestemmer dere.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Felles språk: finn en enkel setning dere kan bruke når dere vil justere en plan.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en liten ting som kan gjøre morgendagen litt hyggeligere for begge.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en samtale dere vil gi mer tid til en annen dag.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg én måte å invitere hverandre med i en plan som passer dere begge.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Avtal en rolig stund uten krav om å finne på noe spesielt.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en liten forskjell dere vil gjøre enklere å leve godt med.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et spørsmål dere vil tenke litt på hver for dere og eventuelt dele senere.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal hvordan dere vil si fra når dere trenger å endre en avtale.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en hverdagsrutine der begge kan få litt mer av det de trenger.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg én ting dere vil slutte å måle opp mot andres forhold.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avslutt med et felles ønske som gir plass til at dere kan være forskjellige.
+[SLUTT]

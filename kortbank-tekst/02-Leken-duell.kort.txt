@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: duel
+NAVN: Leken duell
+BESKRIVELSE: Vennlige gjetninger, små dueller og mye latter.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-duel-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken fullstendig uviktig konkurranse tar du litt for alvorlig?
+[SLUTT]
+
+[KORT base-board-duel-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken ferdighet burde vi hatt et eget mesterskap i hjemme?
+[SLUTT]
+
+[KORT base-board-duel-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Når har du sist blitt lattermild på et veldig upassende tidspunkt?
+[SLUTT]
+
+[KORT base-board-duel-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken hverdagsoppgave kunne du gjort til et underholdningsprogram?
+[SLUTT]
+
+[KORT base-board-duel-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er den mest sjarmerende dårlige unnskyldningen du har hørt?
+[SLUTT]
+
+[KORT base-board-duel-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva tror du vi hadde blitt uventet gode på som konkurransepar?
+[SLUTT]
+
+[KORT base-board-duel-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken av våre små forskjeller gjør livet morsommere?
+[SLUTT]
+
+[KORT base-board-duel-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis vi startet en useriøs klubb, hva ville formålet og navnet vært?
+[SLUTT]
+
+[KORT base-board-duel-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Når er det lettest for deg å være leken uten å føle deg vurdert?
+[SLUTT]
+
+[KORT base-board-duel-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan kan vi beholde mer humor når en plan ikke går slik vi tenkte?
+[SLUTT]
+
+[KORT base-board-duel-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville valgt et quizlag eller et karaokeinnslag.
+[SLUTT]
+
+[KORT base-board-duel-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket dyr den andre mener ville vært den beste kollegaen.
+[SLUTT]
+
+[KORT base-board-duel-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville vært arrangør, kommentator eller deltaker i et raritetsmesterskap.
+[SLUTT]
+
+[KORT base-board-duel-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken helt vanlig ting den andre helst ville fått en gullmedalje for.
+[SLUTT]
+
+[KORT base-board-duel-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket spill den andre tror du ville blitt mest konkurransepreget av.
+[SLUTT]
+
+[KORT base-board-duel-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvem den andre ville valgt som lagkamerat blant fiktive karakterer.
+[SLUTT]
+
+[KORT base-board-duel-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken av dere den andre mener kunne holdt en seriøs tale om en potet.
+[SLUTT]
+
+[KORT base-board-duel-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre heller vil vinne på flaks eller tape med en genial plan.
+[SLUTT]
+
+[KORT base-board-duel-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres egenskaper den andre ville gitt et overdrevent superheltnavn.
+[SLUTT]
+
+[KORT base-board-duel-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre mener er deres sterkeste egenskap som lag når det blir kaos.
+[SLUTT]
+
+[KORT base-board-duel-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på det mest overbevisende slagordet for en helt vanlig skje.
+[SLUTT]
+
+[KORT base-board-duel-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nevn tre ting på bokstaven K som kunne vært med på en date.
+[SLUTT]
+
+[KORT base-board-duel-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hold en ti sekunders takketale for en oppdiktet, svært uviktig pris.
+[SLUTT]
+
+[KORT base-board-duel-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en tannbørste som om den var årets største teknologinyhet.
+[SLUTT]
+
+[KORT base-board-duel-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bytt på å finne på alternative navn til en sofa. Stopp før det slutter å være morsomt.
+[SLUTT]
+
+[KORT base-board-duel-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag hver deres restaurantnavn av to ting dere kan se i rommet.
+[SLUTT]
+
+[KORT base-board-duel-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gi værmeldingen for humøret ditt uten å bruke ordet humør.
+[SLUTT]
+
+[KORT base-board-duel-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Argumenter vennlig for at frokost burde serveres på et helt annet tidspunkt.
+[SLUTT]
+
+[KORT base-board-duel-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på en ny sport som kan forklares med tre setninger og ikke krever utstyr.
+[SLUTT]
+
+[KORT base-board-duel-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag sammen en ettminutts presentasjon av dere som et lag med absurd gode kvalifikasjoner.
+[SLUTT]
+
+[KORT base-board-duel-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Samarbeidsrunde: finn fem ord som høres hyggelige ut, annenhver gang.
+[SLUTT]
+
+[KORT base-board-duel-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Omvendt reklame: finn en sympatisk grunn til at en dårlig idé likevel er litt god.
+[SLUTT]
+
+[KORT base-board-duel-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Alfabetduell: si én hyggelig ting hver på neste bokstav dere velger.
+[SLUTT]
+
+[KORT base-board-duel-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Navnelek: gi hverandre et vennlig turneringsnavn for resten av runden.
+[SLUTT]
+
+[KORT base-board-duel-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Kommentatorpause: beskriv én liten ting den andre gjør som en sportsbragd.
+[SLUTT]
+
+[KORT base-board-duel-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Null poeng: fortell om et tap eller en bommert som ble en god historie.
+[SLUTT]
+
+[KORT base-board-duel-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hjemmelaget rekord: finn en ufarlig rekord dere begge allerede kan ha.
+[SLUTT]
+
+[KORT base-board-duel-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lagbygging: finn et felles heiarop som ikke trenger å ropes.
+[SLUTT]
+
+[KORT base-board-duel-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Feiring i miniatyr: finn en diskret måte å markere gode øyeblikk på sammen.
+[SLUTT]
+
+[KORT base-board-duel-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Uavgjort: velg noe dere begge er gode på, uten å kåre en vinner.
+[SLUTT]
+
+[KORT base-board-duel-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en liten ordlek dere kan ta én runde til av senere.
+[SLUTT]
+
+[KORT base-board-duel-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et brett- eller kortspill dere allerede har og kunne tatt frem en annen dag.
+[SLUTT]
+
+[KORT base-board-duel-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Planlegg en vennlig quiz med tre spørsmål hver om helt ufarlige temaer.
+[SLUTT]
+
+[KORT base-board-duel-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en morsom historie dere vil fortelle hverandre etter spillet.
+[SLUTT]
+
+[KORT base-board-duel-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på en liten premie som består av tid sammen og som begge ønsker.
+[SLUTT]
+
+[KORT base-board-duel-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en spillekveld der dere spiller på lag i stedet for mot hverandre.
+[SLUTT]
+
+[KORT base-board-duel-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en ufarlig ferdighet dere begge kunne prøvd som nybegynnere.
+[SLUTT]
+
+[KORT base-board-duel-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bestem en anledning der dere vil gjøre en vanlig oppgave litt mer leken.
+[SLUTT]
+
+[KORT base-board-duel-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en ny tradisjon for å feire forsøk, også når noe ikke lykkes.
+[SLUTT]
+
+[KORT base-board-duel-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg én måte å ta med humoren fra denne runden inn i morgendagen.
+[SLUTT]

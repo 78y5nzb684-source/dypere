@@ -1,0 +1,406 @@
+DYPERE KORTPAKKE 1
+PAKKE-ID: studio
+NAVN: Skaperverksted
+BESKRIVELSE: Lag små historier, nye ideer og noe helt deres eget.
+
+# Endre teksten mellom TEKST: og [SLUTT]. Behold kort-ID ved tekstendringer.
+
+[KORT base-board-studio-talk-01]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis vi kunne innrede et lite rom bare for trivsel, hva måtte vært der?
+[SLUTT]
+
+[KORT base-board-studio-talk-02]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken kreativ aktivitet likte du før du begynte å tenke på om du var flink?
+[SLUTT]
+
+[KORT base-board-studio-talk-03]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken farge passer til en skikkelig god dag for deg?
+[SLUTT]
+
+[KORT base-board-studio-talk-04]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville du laget hvis resultatet aldri skulle vises frem til noen?
+[SLUTT]
+
+[KORT base-board-studio-talk-05]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten detalj gjør et sted personlig for deg?
+[SLUTT]
+
+[KORT base-board-studio-talk-06]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva kunne vi skapt sammen på én time med det vi allerede har?
+[SLUTT]
+
+[KORT base-board-studio-talk-07]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilket uttrykk passer best til oss: en melodi, en skisse, en historie eller noe annet?
+[SLUTT]
+
+[KORT base-board-studio-talk-08]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når blir du mest inspirert: med rammer eller med helt blanke ark?
+[SLUTT]
+
+[KORT base-board-studio-talk-09]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan vil du at den andre skal støtte deg når du prøver noe du ikke mestrer ennå?
+[SLUTT]
+
+[KORT base-board-studio-talk-10]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne vi laget som bare ville hatt verdi fordi vi laget det sammen?
+[SLUTT]
+
+[KORT base-board-studio-guess-01]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken farge den andre ville valgt til en rolig lesekrok.
+[SLUTT]
+
+[KORT base-board-studio-guess-02]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre heller vil lage en spilleliste eller tegne et kart.
+[SLUTT]
+
+[KORT base-board-studio-guess-03]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket enkelt materiale den andre helst vil skape noe med.
+[SLUTT]
+
+[KORT base-board-studio-guess-04]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre liker best å finne på begynnelsen eller avslutningen av en historie.
+[SLUTT]
+
+[KORT base-board-studio-guess-05]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville kalt en kafé dere drev sammen.
+[SLUTT]
+
+[KORT base-board-studio-guess-06]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken sans den andre ville brukt som utgangspunkt for en liten utstilling.
+[SLUTT]
+
+[KORT base-board-studio-guess-07]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre ønsker frie valg eller ett tydelig oppdrag når dere lager noe.
+[SLUTT]
+
+[KORT base-board-studio-guess-08]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres ideer den andre mener fortjener et nytt forsøk.
+[SLUTT]
+
+[KORT base-board-studio-guess-09]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre tror er den viktigste ingrediensen i deres kreative samarbeid.
+[SLUTT]
+
+[KORT base-board-studio-guess-10]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken type prosjekt den andre ville likt å ha et helt år på å utvikle med deg.
+[SLUTT]
+
+[KORT base-board-studio-challenge-01]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på tre navn til et lite sted som bare eksisterer i fantasien.
+[SLUTT]
+
+[KORT base-board-studio-challenge-02]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en ny farge med to ting du allerede kjenner.
+[SLUTT]
+
+[KORT base-board-studio-challenge-03]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en historie på nøyaktig seks ord, én hver eller sammen.
+[SLUTT]
+
+[KORT base-board-studio-challenge-04]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tegn eller beskriv et symbol for denne kvelden.
+[SLUTT]
+
+[KORT base-board-studio-challenge-05]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et menykort med tre retter som er oppkalt etter gode egenskaper ved dere.
+[SLUTT]
+
+[KORT base-board-studio-challenge-06]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på et fiktivt reisemål og velg én attraksjon hver.
+[SLUTT]
+
+[KORT base-board-studio-challenge-07]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et lydspor med tre sangtitler som beskriver en helt vanlig dag sammen.
+[SLUTT]
+
+[KORT base-board-studio-challenge-08]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv et hverdagsobjekt uten å si hva det brukes til. Den andre gjetter.
+[SLUTT]
+
+[KORT base-board-studio-challenge-09]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et lite manifest for et vennlig hjem med tre setninger dere begge liker.
+[SLUTT]
+
+[KORT base-board-studio-challenge-10]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på en tradisjon som kombinerer én idé fra hver av dere, uten å kjøpe noe.
+[SLUTT]
+
+[KORT base-board-studio-joker-01]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ett ord hver: velg to ord og finn en hyggelig forbindelse mellom dem.
+[SLUTT]
+
+[KORT base-board-studio-joker-02]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Perspektivskifte: beskriv rommet som om dere så det for første gang.
+[SLUTT]
+
+[KORT base-board-studio-joker-03]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tittel først: finn på en boktittel og si én setning om hva boken handler om.
+[SLUTT]
+
+[KORT base-board-studio-joker-04]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Miniformat: lag en invitasjon på maks ti ord til en koselig kveld.
+[SLUTT]
+
+[KORT base-board-studio-joker-05]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Begrensning: finn en dateidé som bare trenger én ting dere allerede eier.
+[SLUTT]
+
+[KORT base-board-studio-joker-06]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Kombiner: slå sammen to av favorittstedene deres til et nytt sted.
+[SLUTT]
+
+[KORT base-board-studio-joker-07]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bygg videre: én starter med en vennlig idé, den andre legger til én detalj.
+[SLUTT]
+
+[KORT base-board-studio-joker-08]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tre sanser: beskriv et tenkt sted med lyd, lys og lukt.
+[SLUTT]
+
+[KORT base-board-studio-joker-09]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Redaktørbytte: velg hver deres favorittdetalj fra noe den andre nettopp fant på.
+[SLUTT]
+
+[KORT base-board-studio-joker-10]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Ta vare på ideen: si én ting fra runden som dere gjerne vil lage på ordentlig.
+[SLUTT]
+
+[KORT base-board-studio-wish-01]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et lite kreativt prosjekt som kan få være uperfekt.
+[SLUTT]
+
+[KORT base-board-studio-wish-02]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn to sanger dere vil legge i en felles spilleliste.
+[SLUTT]
+
+[KORT base-board-studio-wish-03]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Planlegg et hjemmelaget kort til hverandre en annen dag.
+[SLUTT]
+
+[KORT base-board-studio-wish-04]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et enkelt motiv dere begge kunne tegnet på hver deres måte.
+[SLUTT]
+
+[KORT base-board-studio-wish-05]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en idé til et måltid dere kan lage av det som allerede finnes hjemme.
+[SLUTT]
+
+[KORT base-board-studio-wish-06]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en liten fototur med et tema som ikke krever at noen blir fotografert.
+[SLUTT]
+
+[KORT base-board-studio-wish-07]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en gjenstand dere vil gi en ny, hyggelig bruk sammen.
+[SLUTT]
+
+[KORT base-board-studio-wish-08]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en kreativ tradisjon dere kan gjøre uten å dele resultatet offentlig.
+[SLUTT]
+
+[KORT base-board-studio-wish-09]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal et tidspunkt til et prosjekt der ingen av dere skal være eksperten.
+[SLUTT]
+
+[KORT base-board-studio-wish-10]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg noe dere har skapt i kveld som dere vil gi en fortsettelse.
+[SLUTT]
