@@ -2,9 +2,10 @@
  'use strict';
  const kinds=['photo','never','point','dilemma','challenge','talk','guess','joker','wish'];
  const roles=['Alle','Baby','Mester'];
+ const maxCards=2000;
  const labels={photo:'Bilde',never:'Jeg har aldri',point:'Hvem av oss',dilemma:'Dilemma',challenge:'Utfordring',talk:'Samtale',guess:'Gjett',joker:'Joker',wish:'Ønskeliste'};
  function validateCards(value){
-  if(!value||![1,2].includes(value.version)||!Array.isArray(value.cards)||value.cards.length>1000)throw Error('Kortfilen må ha versjon 1 eller 2 og maksimalt 1000 kort.');
+  if(!value||![1,2].includes(value.version)||!Array.isArray(value.cards)||value.cards.length>maxCards)throw Error('Kortfilen må ha versjon 1 eller 2 og maksimalt '+maxCards+' kort.');
   const ids=new Set();
   return value.cards.map(c=>{
    if(!c||typeof c.id!=='string'||!c.id||c.id.length>100||ids.has(c.id)||!kinds.includes(c.kind)||!roles.includes(c.role)||!['pair','group','both'].includes(c.audience)||typeof c.text!=='string'||!c.text.trim()||c.text.length>1200)throw Error('Et kort har ugyldig ID, type, rolle eller tekst.');
@@ -53,7 +54,7 @@
   const base=Math.floor(time/list.length);return list.map((kind,i)=>({kind,minutes:base+(i===list.length-1?time-base*list.length:0),done:false}));
  }
  function mutual(cards,a,b){if(a.length!==cards.length||b.length!==cards.length||[...a,...b].some(v=>!['yes','maybe','no','pass'].includes(v)))throw Error('Begge må fullføre sine valg.');return cards.filter((_,i)=>a[i]==='yes'&&b[i]==='yes');}
- function mergeCards(current,incoming){const existing=validateCards({version:2,cards:current}),next=validateCards({version:2,cards:incoming}),ids=new Set(existing.map(c=>c.id)),added=next.filter(c=>!ids.has(c.id));if(existing.length+added.length>1000)throw Error('Kortbanken kan ha maksimalt 1000 kort.');return {cards:[...existing,...added],added:added.length,kept:next.length-added.length};}
+ function mergeCards(current,incoming){const existing=validateCards({version:2,cards:current}),next=validateCards({version:2,cards:incoming}),ids=new Set(existing.map(c=>c.id)),added=next.filter(c=>!ids.has(c.id));if(existing.length+added.length>maxCards)throw Error('Kortbanken kan ha maksimalt '+maxCards+' kort.');return {cards:[...existing,...added],added:added.length,kept:next.length-added.length};}
  const api={kinds,roles,labels,validateCards,pick,choices,boardState,validBoard,validBoardSettings,chapter,tileKind,roll,choose,finish,eveningTimes,quickRounds,makeEvening,mutual,mergeCards};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.DypereGames=api;
 })(globalThis);

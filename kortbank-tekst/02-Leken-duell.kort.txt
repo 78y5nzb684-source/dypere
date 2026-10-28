@@ -404,3 +404,1204 @@ AKTIV: ja
 TEKST:
 Velg én måte å ta med humoren fra denne runden inn i morgendagen.
 [SLUTT]
+
+
+[KORT base-board-duel-talk-11]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket lite talent ville du meldt deg på en helt useriøs talentkonkurranse med?
+[SLUTT]
+
+[KORT base-board-duel-talk-12]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis kjøkkenutstyr hadde et fotballag, hvilken ting ville du valgt som kaptein?
+[SLUTT]
+
+[KORT base-board-duel-talk-13]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken regel i et vanlig spill ville blitt morsomst om den ble snudd på hodet?
+[SLUTT]
+
+[KORT base-board-duel-talk-14]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville du helst kommentert direkte: en snegle som krysser en sti eller en brødskive i brødristeren?
+[SLUTT]
+
+[KORT base-board-duel-talk-15]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken oppdiktet jobb hadde passet til måten du leter etter en ting du har mistet?
+[SLUTT]
+
+[KORT base-board-duel-talk-16]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket ord høres ut som det burde bety noe helt annet?
+[SLUTT]
+
+[KORT base-board-duel-talk-17]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis ukedagene stilte i en vennlig konkurranse, hva ville fredag vunnet i?
+[SLUTT]
+
+[KORT base-board-duel-talk-18]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken kjedelig gjenstand fortjener et mye mer dramatisk navn?
+[SLUTT]
+
+[KORT base-board-duel-talk-19]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville vært en god maskot for oss i en konkurranse om å improvisere?
+[SLUTT]
+
+[KORT base-board-duel-talk-20]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket dyr hadde vært den mest underholdende dommeren i et ordspill?
+[SLUTT]
+
+[KORT base-board-duel-talk-21]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken helt alminnelig ferdighet kunne du tenkt deg en tullete diplomsamling for?
+[SLUTT]
+
+[KORT base-board-duel-talk-22]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Om du fikk bestemme én lyd som alle spill startet med, hvilken ville du valgt?
+[SLUTT]
+
+[KORT base-board-duel-talk-23]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foretrekker du leker med én tydelig fasit eller leker der flere rare svar kan være gode? Gi et lite eksempel.
+[SLUTT]
+
+[KORT base-board-duel-talk-24]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør en vennlig rival til en morsom motspiller for deg?
+[SLUTT]
+
+[KORT base-board-duel-talk-25]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken type hint er best å få fra deg: et bilde i hodet, en lyd eller en omvei med ord?
+[SLUTT]
+
+[KORT base-board-duel-talk-26]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis vi laget en konkurranse der begge alltid vant noe, hva kunne vi konkurrert i?
+[SLUTT]
+
+[KORT base-board-duel-talk-27]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når synes du en tullete regel gjør et spill bedre, og når blir den bare i veien?
+[SLUTT]
+
+[KORT base-board-duel-talk-28]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken rolle ville du tatt i en improvisert historie: den som starter kaoset eller den som finner løsningen?
+[SLUTT]
+
+[KORT base-board-duel-talk-29]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er en passe liten utfordring når du vil leke, men er trøtt?
+[SLUTT]
+
+[KORT base-board-duel-talk-30]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva slags kategori kunne gitt oss en jevn ordduell selv om vi vet ulike ting?
+[SLUTT]
+
+[KORT base-board-duel-talk-31]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken ferdighet hos den andre ville du lånt i en vennlig konkurranse?
+[SLUTT]
+
+[KORT base-board-duel-talk-32]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Om spillet ga poeng for overraskende løsninger, hva slags oppgave ville du valgt til oss?
+[SLUTT]
+
+[KORT base-board-duel-talk-33]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er den hyggeligste måten noen kan si «den tar vi på nytt» på i et spill?
+[SLUTT]
+
+[KORT base-board-duel-talk-34]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken lek kunne du lært bort på tjue sekunder uten å bruke et eneste fagord?
+[SLUTT]
+
+[KORT base-board-duel-talk-35]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan merker vi at en konkurranse bør bli en samarbeidsrunde i stedet?
+[SLUTT]
+
+[KORT base-board-duel-talk-36]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kan gjøre det morsomt å prøve en idé du ikke tror vil fungere?
+[SLUTT]
+
+[KORT base-board-duel-talk-37]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvis dere skulle lage en ny regel for å få begge like mye plass i en ordlek, hva ville den vært?
+[SLUTT]
+
+[KORT base-board-duel-talk-38]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilket tegn kan vi bruke for å gjøre en lek enklere uten å måtte forklare oss?
+[SLUTT]
+
+[KORT base-board-duel-talk-39]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan kunne et spill belønnet at du hjelper motspilleren med en god idé?
+[SLUTT]
+
+[KORT base-board-duel-talk-40]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva ville du kalt en seier der den beste delen var det den andre fant på?
+[SLUTT]
+
+[KORT base-board-duel-guess-11]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger i stillhet mellom paraply og solhatt. Gjett hva de ville gitt en snømann på ferie.
+[SLUTT]
+
+[KORT base-board-duel-guess-12]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville valgt som transport til månen: heis, seilbåt eller luftballong med te-servering.
+[SLUTT]
+
+[KORT base-board-duel-guess-13]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på et dyr de ville invitert som programleder. Gjett dyret etter ett lydløst hint.
+[SLUTT]
+
+[KORT base-board-duel-guess-14]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville lagt en hemmelig dør bak en bokhylle, et kjøleskap eller et bilde i et eventyrhus.
+[SLUTT]
+
+[KORT base-board-duel-guess-15]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger en ting dere kan se. Få vite om den er større eller mindre enn en sko, og gjett tingen.
+[SLUTT]
+
+[KORT base-board-duel-guess-16]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville kalt en robot som alltid kommer fem minutter for tidlig. Ett treffende ord er nok.
+[SLUTT]
+
+[KORT base-board-duel-guess-17]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger rød, gul eller blå som farge på en oppdiktet lykkesokk. Gjett fargen før den blir sagt.
+[SLUTT]
+
+[KORT base-board-duel-guess-18]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville ledet en parade av ender eller et orkester av katter.
+[SLUTT]
+
+[KORT base-board-duel-guess-19]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger en frukt som kunne vært en skurk i en barnefilm. Gjett hvilken etter ett beskrivende ord.
+[SLUTT]
+
+[KORT base-board-duel-guess-20]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken superkraft den andre ville gitt en støvsuger: fly, synge eller finne bortkomne sokker.
+[SLUTT]
+
+[KORT base-board-duel-guess-21]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger en helt vanlig ting som ville vært rar i en hatt. Still ett ja- eller nei-spørsmål før du gjetter.
+[SLUTT]
+
+[KORT base-board-duel-guess-22]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville ha med en pratende lykt eller et syngende kart på en oppdiktet oppdagelsesreise.
+[SLUTT]
+
+[KORT base-board-duel-guess-23]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre lager et navn på et hotell for pingviner. Få første bokstav og gjett ett ord som kan være med i navnet.
+[SLUTT]
+
+[KORT base-board-duel-guess-24]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken hverdagsting den andre ville sendt til en oppfinner for å gjøre den unødvendig luksuriøs. Få ett hint om bruken.
+[SLUTT]
+
+[KORT base-board-duel-guess-25]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger et yrke som en drage kunne hatt. Gjett etter to korte hint som ikke nevner ild.
+[SLUTT]
+
+[KORT base-board-duel-guess-26]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville selge i en butikk der alle varene må begynne på samme bokstav som den andres navn.
+[SLUTT]
+
+[KORT base-board-duel-guess-27]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger et sted i rommet som mål for et tenkt postkort. Få en høytidelig værmelding derfra og gjett stedet.
+[SLUTT]
+
+[KORT base-board-duel-guess-28]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket dyr den andre ville valgt til å forklare internett. Den andre gir ett hint om undervisningsstilen.
+[SLUTT]
+
+[KORT base-board-duel-guess-29]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre finner på en premie for å komme sist med stil. Gjett hva premien er etter et hint om formen.
+[SLUTT]
+
+[KORT base-board-duel-guess-30]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket ord den andre forbinder med både «ferie» og «lommer». Begge kan forklare hvorfor svaret deres passer.
+[SLUTT]
+
+[KORT base-board-duel-guess-31]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en gjenstand dere kan se og nevner en helt feil bruksanvisning. Gjett hva den egentlig er.
+[SLUTT]
+
+[KORT base-board-duel-guess-32]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken kjent eventyrfigur den andre ville ansatt som bibliotekar. Få ett hint om arbeidsvanene.
+[SLUTT]
+
+[KORT base-board-duel-guess-33]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en ting som kunne vært maskot for mandag. Gjett etter ett hint om humøret til maskoten.
+[SLUTT]
+
+[KORT base-board-duel-guess-34]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre finner på en tittel til en konkurranse i å vente. Få høre første bokstav og ett vanlig ord i tittelen før du gjetter resten.
+[SLUTT]
+
+[KORT base-board-duel-guess-35]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre tenker på en ny sport for dyr. Få vite dyret og gjett hva som kunne gitt ett poeng.
+[SLUTT]
+
+[KORT base-board-duel-guess-36]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken hverdagsgjenstand den andre ville forsvart i en oppdiktet rettssak. Få vite hva den er anklaget for.
+[SLUTT]
+
+[KORT base-board-duel-guess-37]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger to synlige ting som skal smeltes sammen til en oppfinnelse. Få høre bruksområdet og gjett én av tingene.
+[SLUTT]
+
+[KORT base-board-duel-guess-38]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken ferdighet den andre ville trengt for å vinne et mesterskap på en planet uten tyngdekraft. Få ett hint om reglene.
+[SLUTT]
+
+[KORT base-board-duel-guess-39]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre gir et vanlig ord en ny betydning. Få ett hint om den opprinnelige betydningen og gjett ordet. Hør deretter en setning der ordet brukes med den nye betydningen.
+[SLUTT]
+
+[KORT base-board-duel-guess-40]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg hver deres gjenstand som kan redde en veldig kjedelig fest i en tegnefilm. Gi ett hint om løsningen og gjett hverandres ting.
+[SLUTT]
+
+[KORT base-board-duel-challenge-11]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nevn annenhver ting som får plass i en skuff. Dere har tre turer hver og kan ikke gjenta noe.
+[SLUTT]
+
+[KORT base-board-duel-challenge-12]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Forklar hva en sokk er uten å bruke ordene fot, sko eller klær. La den andre prøve med et annet plagg etterpå.
+[SLUTT]
+
+[KORT base-board-duel-challenge-13]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på et nytt ord for den siste lille biten av en kjeks. Den andre velger en passende ordbokforklaring.
+[SLUTT]
+
+[KORT base-board-duel-challenge-14]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si en helt vanlig setning som om du var en vennlig robot. Den andre svarer som en litt distré robot.
+[SLUTT]
+
+[KORT base-board-duel-challenge-15]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nevn tre ting som kunne gjort en bussholdeplass til et hyggeligere sted, uten å bygge noe stort.
+[SLUTT]
+
+[KORT base-board-duel-challenge-16]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en banan en yrkestittel og hold et jobbintervju med ett spørsmål og ett svar.
+[SLUTT]
+
+[KORT base-board-duel-challenge-17]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si tre navn på en oppdiktet båt. Den andre bestemmer hvilken som passer til en båt som aldri forlater brygga.
+[SLUTT]
+
+[KORT base-board-duel-challenge-18]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en ting i rommet og beskriv den med tre ord som alle begynner på ulike bokstaver.
+[SLUTT]
+
+[KORT base-board-duel-challenge-19]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en setning med ordene «måke», «mandag» og «medalje». Den andre kan lage en helt annen med de samme ordene.
+[SLUTT]
+
+[KORT base-board-duel-challenge-20]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en overskrift om en liten hverdagshendelse der en tøffel spiller hovedrollen.
+[SLUTT]
+
+[KORT base-board-duel-challenge-21]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en vennlig bruksanvisning for hvordan man åpner en dør, som om det var et sjeldent kunsthåndverk.
+[SLUTT]
+
+[KORT base-board-duel-challenge-22]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag et rim med to linjer om været. Det er lov å finne på ett nytt ord for å få det til.
+[SLUTT]
+
+[KORT base-board-duel-challenge-23]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bytt på å legge ett ord til en setning. Stopp etter tolv ord, og gi setningen en tittel sammen.
+[SLUTT]
+
+[KORT base-board-duel-challenge-24]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag hver deres forklaring på hvorfor månen har glemt paraplyen sin. Bruk høyst tre setninger hver.
+[SLUTT]
+
+[KORT base-board-duel-challenge-25]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et kort ord og si det baklengs i rolig tempo. La den andre gjette ordet, og bytt roller.
+[SLUTT]
+
+[KORT base-board-duel-challenge-26]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på en kafé som bare serverer usynlige ting. Beskriv dagens spesialitet, og la den andre bestille.
+[SLUTT]
+
+[KORT base-board-duel-challenge-27]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hold en høytidelig åpningstale for en ny skuff. Den andre stiller ett spørsmål som lokalavisens reporter.
+[SLUTT]
+
+[KORT base-board-duel-challenge-28]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Argumenter i tjue sekunder for at tirsdag trenger et nytt navn. Den andre foreslår navnet.
+[SLUTT]
+
+[KORT base-board-duel-challenge-29]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell en minihistorie med en kopp som helt og en trekkfull dør som hindring. Den andre velger en hyggelig slutt.
+[SLUTT]
+
+[KORT base-board-duel-challenge-30]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag hver deres nye ord som blander to eksisterende ord. Forklar hva det betyr og hvor man kan bruke det.
+[SLUTT]
+
+[KORT base-board-duel-challenge-31]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn tre ulike måter å bruke en tom eske på i en oppdiktet verden. Velg den rareste som også er lett å forstå.
+[SLUTT]
+
+[KORT base-board-duel-challenge-32]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv en sykkel som om du prøvde å forklare den til en nysgjerrig fisk. Den andre stiller fiskens første spørsmål.
+[SLUTT]
+
+[KORT base-board-duel-challenge-33]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et ord med fire bokstaver. Lag muntlig en setning der ordene begynner med de fire bokstavene i rekkefølge.
+[SLUTT]
+
+[KORT base-board-duel-challenge-34]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på tre regler for en kø der alle helst vil stå bakerst. Den andre foreslår hvordan køen kommer seg videre.
+[SLUTT]
+
+[KORT base-board-duel-challenge-35]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et lite mysterium på tre setninger om en forsvunnet tepose. Avslutt med en løsning som ingen kan få skylden for.
+[SLUTT]
+
+[KORT base-board-duel-challenge-36]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Start med et vanlig mål, som å lage frokost. Bytt på å legge til én absurd hindring hver, og finn så en enkel felles løsning.
+[SLUTT]
+
+[KORT base-board-duel-challenge-37]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på et produkt som bare virker på onsdager. Gi det et navn, en nyttig egenskap og en litt upraktisk begrensning.
+[SLUTT]
+
+[KORT base-board-duel-challenge-38]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg et dyr som ordfører i et oppdiktet sted. Hold hver deres korte valgtale om to helt forskjellige saker.
+[SLUTT]
+
+[KORT base-board-duel-challenge-39]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Beskriv et rom med tre regler som bryter med hverdagen. Den andre forklarer hvordan de ville hentet en kopp vann der.
+[SLUTT]
+
+[KORT base-board-duel-challenge-40]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en duell mellom to årstider med én påstand og ett vennlig motsvar hver. Avslutt med hva de kan lære av hverandre.
+[SLUTT]
+
+[KORT base-board-duel-joker-11]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Felles ordjakt: finn fire ting som kan være runde. Si annenhver, og godta både små og store svar.
+[SLUTT]
+
+[KORT base-board-duel-joker-12]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en bokstav og finn sammen et navn, et sted og en matrett som begynner på den. Oppdiktede steder er lov.
+[SLUTT]
+
+[KORT base-board-duel-joker-13]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bytt på å si hyggelige ord med én stavelse. Ta tre turer hver uten å telle poeng.
+[SLUTT]
+
+[KORT base-board-duel-joker-14]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fullfør en reklame sammen: «Denne stolen er perfekt for deg som ...». Legg til én god og én tullete fordel.
+[SLUTT]
+
+[KORT base-board-duel-joker-15]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn to ting i rommet som kunne vært et komisk detektivpar. Gi dem et felles navn.
+[SLUTT]
+
+[KORT base-board-duel-joker-16]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag hver deres lydeffekt til en oppdiktet dør. Ingen må lage høy lyd for at den skal være dramatisk.
+[SLUTT]
+
+[KORT base-board-duel-joker-17]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tenk på en farge samtidig og si den på tre. Finn etterpå én ting som kunne hatt begge fargene.
+[SLUTT]
+
+[KORT base-board-duel-joker-18]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn tre grunner til at en potteplante kunne trivdes som ferievikar. Dere kan si én grunn hver og den siste sammen.
+[SLUTT]
+
+[KORT base-board-duel-joker-19]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et enkelt ord og si det med stemmen til en rolig forteller. Den andre gir fortellingen en vennlig tittel.
+[SLUTT]
+
+[KORT base-board-duel-joker-20]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bytt på å navngi ting som finnes på et kjøkken. Etter seks svar velger dere én som burde hatt egen fanfare.
+[SLUTT]
+
+[KORT base-board-duel-joker-21]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et tullete navn på et værfenomen dere gjerne ville opplevd i en tegnefilm.
+[SLUTT]
+
+[KORT base-board-duel-joker-22]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si én ting hver som ville gjort en oppdiktet skattejakt triveligere for den som fant skatten sist.
+[SLUTT]
+
+[KORT base-board-duel-joker-23]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en miniordbok: velg et vanlig ord og gi det hver deres nye, vennlige betydning.
+[SLUTT]
+
+[KORT base-board-duel-joker-24]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Begynn med «Vi åpnet døren, og der sto ...». Fortsett historien med én kort setning hver, to turer hver.
+[SLUTT]
+
+[KORT base-board-duel-joker-25]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn et ord som kan passe til både en fest og en værmelding. Forklar to ulike bruksmåter.
+[SLUTT]
+
+[KORT base-board-duel-joker-26]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et oppdiktet dyr av første del av ett dyr og siste del av et annet. Bestem hva det spiser til frokost.
+[SLUTT]
+
+[KORT base-board-duel-joker-27]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg to ting i rommet som vil på ferie. La dem forhandle om reisemål med én replikk hver.
+[SLUTT]
+
+[KORT base-board-duel-joker-28]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en felles kategori som både en vannkanne og en bok kan passe i. Det er lov å finne på en ny kategori.
+[SLUTT]
+
+[KORT base-board-duel-joker-29]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en trepunkts ønskeliste for en robot som nettopp har oppdaget fritid.
+[SLUTT]
+
+[KORT base-board-duel-joker-30]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bytt på å beskrive en tenkt iskrem uten å nevne smak. Etter fire detaljer finner dere på et navn sammen.
+[SLUTT]
+
+[KORT base-board-duel-joker-31]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en gjenstand med to helt forskjellige mulige liv i et eventyr. Velg det livet dere helst ville fulgt videre.
+[SLUTT]
+
+[KORT base-board-duel-joker-32]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag tre korte tips til en turist som besøker en by av puter. Tipsene må henge sammen med materialet.
+[SLUTT]
+
+[KORT base-board-duel-joker-33]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gi et gammelt ordtak en vennlig ny slutt. Den andre forklarer i hvilken tullete situasjon det kunne vært nyttig.
+[SLUTT]
+
+[KORT base-board-duel-joker-34]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell annenhver setning om en heis som får en overraskende jobb. Avslutt etter seks setninger.
+[SLUTT]
+
+[KORT base-board-duel-joker-35]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn et felles forslag til hvordan en konkurranse kan ende med en overraskelse for begge, uten at noen taper noe.
+[SLUTT]
+
+[KORT base-board-duel-joker-36]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en liten handel i en verden uten penger: hva kan en sky bytte med et tre, og hva får begge ut av det?
+[SLUTT]
+
+[KORT base-board-duel-joker-37]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på et eventyrproblem som bare kan løses ved at to ulike talenter samarbeider. Del ut talentene mellom dere.
+[SLUTT]
+
+[KORT base-board-duel-joker-38]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på en tullete regel for å beskrive en kopp. Forklar regelen i én setning og la den andre prøve den.
+[SLUTT]
+
+[KORT base-board-duel-joker-39]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn tre ting dere kunne gitt poeng for i denne runden som ikke handler om å svare riktig.
+[SLUTT]
+
+[KORT base-board-duel-joker-40]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag hver deres hederspris til den andre i en oppdiktet turnering. Navnet på prisen skal si noe om en idé eller ferdighet du setter pris på.
+[SLUTT]
+
+[KORT base-board-duel-wish-11]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et senere måltid der dere vil starte med én vennlig gåte hver. Det er lov å finne på gåtene selv.
+[SLUTT]
+
+[KORT base-board-duel-wish-12]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en kort navnelek til neste gang dere venter sammen: gi tre synlige ting nye navn.
+[SLUTT]
+
+[KORT base-board-duel-wish-13]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kommende pause der dere kan lage én felles setning med annenhvert ord.
+[SLUTT]
+
+[KORT base-board-duel-wish-14]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en ting dere allerede har hjemme som kan få hovedrollen i et lite eventyr en annen dag.
+[SLUTT]
+
+[KORT base-board-duel-wish-15]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en fem minutters tegnestund der begge tegner et oppdiktet dyr. Dere kan beskrive dyrene muntlig i stedet.
+[SLUTT]
+
+[KORT base-board-duel-wish-16]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et tema til en liten muntlig quiz med to spørsmål hver. Avtal at spørsmålene skal kunne forklares etterpå.
+[SLUTT]
+
+[KORT base-board-duel-wish-17]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en runde «hva ville denne tingen sagt?» neste gang dere rydder sammen.
+[SLUTT]
+
+[KORT base-board-duel-wish-18]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kjent sang dere kan gi en ny, tullete tittel senere. Dere trenger ikke synge den.
+[SLUTT]
+
+[KORT base-board-duel-wish-19]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en anledning til å lage hver deres vennlige avisoverskrift om samme helt vanlige dag.
+[SLUTT]
+
+[KORT base-board-duel-wish-20]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en bokstav. På neste korte tur kan dere finne tre ting som begynner med den.
+[SLUTT]
+
+[KORT base-board-duel-wish-21]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en kveld der hver av dere tar med ett nytt ord, ekte eller oppdiktet, som den andre kan gjette betydningen av.
+[SLUTT]
+
+[KORT base-board-duel-wish-22]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et rom dere senere kan gi navn etter en oppdiktet oppdagelsesreisende. Bestem bare navnet nå.
+[SLUTT]
+
+[KORT base-board-duel-wish-23]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en ti minutters lek der dere først lager hver deres enkle ordoppgave og deretter bytter.
+[SLUTT]
+
+[KORT base-board-duel-wish-24]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en vanlig oppgave dere kan fortelle som en sportsreportasje i ett minutt neste gang dere gjør den.
+[SLUTT]
+
+[KORT base-board-duel-wish-25]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et tema til to bittesmå historier dere vil fortelle senere, med samme start og ulik slutt.
+[SLUTT]
+
+[KORT base-board-duel-wish-26]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en hjemmelaget quiz der dere gir poeng for et godt resonnement selv når svaret ikke er riktig.
+[SLUTT]
+
+[KORT base-board-duel-wish-27]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg to ting dere allerede eier som kan få hver sin muntlige reklame på en senere lekekveld.
+[SLUTT]
+
+[KORT base-board-duel-wish-28]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en kveld dere kan lage tre spørsmål til et intervju med en fiktiv skapning. La den andre velge skapningen.
+[SLUTT]
+
+[KORT base-board-duel-wish-29]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en kort samlerunde der dere legger merke til morsomme, ekte ord i hverdagen og deler ett hver senere.
+[SLUTT]
+
+[KORT base-board-duel-wish-30]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et motiv til en tegnestund senere: et kjøretøy, et dyr eller et sted. Dere kan bytte på å fullføre samme tegning hvis begge vil.
+[SLUTT]
+
+[KORT base-board-duel-wish-31]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en miniutgave av «tre hint»: hver velger tre hverdagsord og forbereder tre hint til hvert.
+[SLUTT]
+
+[KORT base-board-duel-wish-32]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et spill dere kjenner, og foreslå én enkel variant som gjør en vanligvis vanskelig del lettere for begge.
+[SLUTT]
+
+[KORT base-board-duel-wish-33]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en kort rute der dere en dag kan finne på vennlige stedsnavn til tre stopp underveis.
+[SLUTT]
+
+[KORT base-board-duel-wish-34]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en kveld der dere lager en helt useriøs årsrapport over små ting dere har fått til som lag.
+[SLUTT]
+
+[KORT base-board-duel-wish-35]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en lek dere vil teste i både konkurranseversjon og samarbeidsversjon. Bestem hva én kort runde skal bestå av.
+[SLUTT]
+
+[KORT base-board-duel-wish-36]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Planlegg et lite mesterskap med tre valgfrie grener: én med ord, én med fantasi og én som den andre velger.
+[SLUTT]
+
+[KORT base-board-duel-wish-37]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå en lekekveld der dere bytter på å være regelmaker. Hver får bare legge til én regel før dere prøver den.
+[SLUTT]
+
+[KORT base-board-duel-wish-38]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en fremtidig anledning der dere vil lage en minihistorie med en åpning skrevet av én og en slutt bestemt av den andre.
+[SLUTT]
+
+[KORT base-board-duel-wish-39]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en liten utfordring hver dere vil lære av den andre senere, uten poeng eller tidsfrist.
+[SLUTT]
+
+[KORT base-board-duel-wish-40]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå at dere etter neste spillrunde velger én regel å beholde, én å forenkle og ett nytt påfunn dere begge har lyst til å prøve.
+[SLUTT]

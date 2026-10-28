@@ -1,0 +1,25 @@
+DYPERE 3.0.7 beta – firedoblet brettspillbank
+
+1200 originalskrevne kort i seks redigerbare pakker. De 300 eksisterende
+kortene er beholdt, og 900 kort er lagt til. Ingen ny bildebank.
+
+Hver pakke inneholder 200 kort: 40 Samtale, 40 Gjett, 40 Utfordring,
+40 Joker og 40 Ønskekort. Per type: 16 nivå 1, 16 nivå 2, 8 nivå 3.
+Kortene brukes fra tilsvarende kapittel på brettet.
+
+Pakker: Små historier, Leken duell, Skaperverksted, Nye perspektiver,
+Hverdagsmagi og Ut på eventyr. Alle de nye kortene er skrevet på norsk.
+
+De 58 eldre startkortene beholdes i tillegg. Felles bank har dermed 1258
+startkort, hvorav 1234 tilhører brettspillets fem korttyper.
+
+Redigerbar kildebank: kortbank-tekst/*.kort.txt.
+Behold eksisterende ID-er ved tekstendringer. Bruk nye ID-er fra 41 når
+du legger til kort av samme pakke og type. Se 00-LES-MEG.txt.
+Konvertering validerer alle filer før skriving og tar sikkerhetskopi.
+Kortgrensen i konverteringen og JSON-importen er økt til 2000.
+
+Lagrede runder, favoritter og deaktiverte pakker bruker samme ID-er og
+pakkenavn. Oppdateringen starter ikke en ny runde automatisk.
+
+Build: 3.0.7-beta-r1. Beta under videre testing.

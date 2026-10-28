@@ -404,3 +404,1204 @@ AKTIV: ja
 TEKST:
 Velg noe dere har skapt i kveld som dere vil gi en fortsettelse.
 [SLUTT]
+
+[KORT base-board-studio-talk-11]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis en blyant kunne tegne én ting av seg selv for deg, hva ville du bedt om?
+[SLUTT]
+
+[KORT base-board-studio-talk-12]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville vært en god åpningslyd i et lite radioprogram dere laget sammen?
+[SLUTT]
+
+[KORT base-board-studio-talk-13]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken helt vanlig ting i rommet kunne vært hovedfigur i en tegneserie?
+[SLUTT]
+
+[KORT base-board-studio-talk-14]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket mønster ville du tegnet på en paraply som skulle gjøre regnvær hyggeligere?
+[SLUTT]
+
+[KORT base-board-studio-talk-15]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis du kunne gi en ukedag et nytt navn, hvilken dag og hvilket navn?
+[SLUTT]
+
+[KORT base-board-studio-talk-16]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva synes du er morsomst å finne på: en rar oppfinnelse eller en troverdig figur?
+[SLUTT]
+
+[KORT base-board-studio-talk-17]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken lyd fra hverdagen ville du gjort om til starten på en melodi?
+[SLUTT]
+
+[KORT base-board-studio-talk-18]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville du pyntet en helt tom eske med hvis den skulle romme en god idé?
+[SLUTT]
+
+[KORT base-board-studio-talk-19]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvis rommet vårt var en liten scene, hvor ville forestillingen begynt?
+[SLUTT]
+
+[KORT base-board-studio-talk-20]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken matvare har et navn som kunne passet på en eventyrfigur?
+[SLUTT]
+
+[KORT base-board-studio-talk-21]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville du kalt et fiktivt museum for ting folk vanligvis overser?
+[SLUTT]
+
+[KORT base-board-studio-talk-22]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken enkel form kunne vært utgangspunktet for en figur du ville tegne?
+[SLUTT]
+
+[KORT base-board-studio-talk-23]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis vi laget et lite spill uten utstyr, hva skulle spillerne forsøke å få til?
+[SLUTT]
+
+[KORT base-board-studio-talk-24]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva ville du valgt som gjennomgående detalj i en historie vi skrev sammen?
+[SLUTT]
+
+[KORT base-board-studio-talk-25]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan ville du gjort et kart nyttig for noen som heller følger stemninger enn veier?
+[SLUTT]
+
+[KORT base-board-studio-talk-26]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken vanlig gjenstand kunne fått et morsomt ekstra formål uten å bli mer komplisert?
+[SLUTT]
+
+[KORT base-board-studio-talk-27]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør en oppdiktet person interessant for deg når historien bare varer ett minutt?
+[SLUTT]
+
+[KORT base-board-studio-talk-28]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken begrensning ville gitt oss gode ideer: tre farger, fem ord eller ett rom?
+[SLUTT]
+
+[KORT base-board-studio-talk-29]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis vi laget en lydvandring gjennom et hjem, hvilke tre stopp ville du valgt?
+[SLUTT]
+
+[KORT base-board-studio-talk-30]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva kunne vært temaet for en liten samling som bare besto av ting vi kunne beskrive?
+[SLUTT]
+
+[KORT base-board-studio-talk-31]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken hverdagsregel ville du snudd på i en fantasiby?
+[SLUTT]
+
+[KORT base-board-studio-talk-32]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan ville du vist forskjellen på travelhet og forventning i to enkle strektegninger?
+[SLUTT]
+
+[KORT base-board-studio-talk-33]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva burde komme først i en felles skaperrunde: samle mange forslag eller prøve ett raskt?
+[SLUTT]
+
+[KORT base-board-studio-talk-34]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis en historie hadde to fortellere, hva kunne de legge merke til hos den samme figuren?
+[SLUTT]
+
+[KORT base-board-studio-talk-35]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken idé ville blitt mer interessant hvis vi lot resultatet være litt uferdig?
+[SLUTT]
+
+[KORT base-board-studio-talk-36]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne vi laget med én tydelig forskjell mellom våre to utgaver som selve poenget?
+[SLUTT]
+
+[KORT base-board-studio-talk-37]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvis vi bare fikk beholde én scene fra en oppdiktet film, hva måtte den få frem?
+[SLUTT]
+
+[KORT base-board-studio-talk-38]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan kunne et lite verk vise både orden og overraskelse uten at den ene vinner?
+[SLUTT]
+
+[KORT base-board-studio-talk-39]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne gjøre en oppfinnelse verdifull selv om den aldri skulle bli et produkt?
+[SLUTT]
+
+[KORT base-board-studio-talk-40]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken historie kunne vi fortelle på nytt om et år, og la endringene være en del av verket?
+[SLUTT]
+
+[KORT base-board-studio-guess-11]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket dyr den andre ville brukt som figur på en hjemmelaget sparebøsse. La dem velge først.
+[SLUTT]
+
+[KORT base-board-studio-guess-12]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger en værtype i hodet. Gjett hvilken de ville brukt som bakgrunn i en tegning.
+[SLUTT]
+
+[KORT base-board-studio-guess-13]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville gitt en fiktiv robot et praktisk eller et tullete navn.
+[SLUTT]
+
+[KORT base-board-studio-guess-14]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre ser for seg et bokmerke. Gjett om det har et ord, en figur eller et mønster på seg.
+[SLUTT]
+
+[KORT base-board-studio-guess-15]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket kjøkkenredskap den andre ville gjort til en superhelt i en stripe.
+[SLUTT]
+
+[KORT base-board-studio-guess-16]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Be den andre velge mellom høyt tårn og liten hule som hjem for en eventyrfigur. Gjett valget.
+[SLUTT]
+
+[KORT base-board-studio-guess-17]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville åpnet en fortelling med en lyd, en replikk eller et landskap.
+[SLUTT]
+
+[KORT base-board-studio-guess-18]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på en farge til en oppdiktet måne. Gjett fargen og hør valget etterpå.
+[SLUTT]
+
+[KORT base-board-studio-guess-19]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville tegnet en snill drage med store ører eller bitte små vinger.
+[SLUTT]
+
+[KORT base-board-studio-guess-20]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilket navn den andre ville gitt en båt som aldri skal ha det travelt.
+[SLUTT]
+
+[KORT base-board-studio-guess-21]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger en enkel lyd å bruke som signal for at en idé er klar. Gjett lyden.
+[SLUTT]
+
+[KORT base-board-studio-guess-22]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville laget en dukke av en sokk eller en figur av en papirlapp.
+[SLUTT]
+
+[KORT base-board-studio-guess-23]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en rar egenskap til en tenkt heis. Gjett hva heisen gjør mellom etasjene.
+[SLUTT]
+
+[KORT base-board-studio-guess-24]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken detalj den andre ville beholdt i en miniatyr av hjemmet deres.
+[SLUTT]
+
+[KORT base-board-studio-guess-25]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville endret først i en historie som føles for forutsigbar.
+[SLUTT]
+
+[KORT base-board-studio-guess-26]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en tittel til et bilde av en tom stol. Gjett stemningen i tittelen før den avsløres.
+[SLUTT]
+
+[KORT base-board-studio-guess-27]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre ville brukt farger eller størrelse for å vise hvem som er viktigst i en tegnet scene.
+[SLUTT]
+
+[KORT base-board-studio-guess-28]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre finner på en butikk som bare selger opplevelser. Gjett ett tilbud fra butikken.
+[SLUTT]
+
+[KORT base-board-studio-guess-29]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket sted den andre ville valgt som startpunkt for en fiktiv skattejakt innendørs.
+[SLUTT]
+
+[KORT base-board-studio-guess-30]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville gitt som svakhet til en figur som ellers kan alt.
+[SLUTT]
+
+[KORT base-board-studio-guess-31]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger hva en oppfunnet maskin hjelper med på en mandag. Gjett oppgaven.
+[SLUTT]
+
+[KORT base-board-studio-guess-32]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre vil reparere en rar idé eller kombinere den med en ny når den står fast.
+[SLUTT]
+
+[KORT base-board-studio-guess-33]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken gjenstand den andre ville brukt som forteller i en historie om en reise.
+[SLUTT]
+
+[KORT base-board-studio-guess-34]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre ser for seg et lite teater uten skuespillere. Gjett hva som spiller hovedrollen.
+[SLUTT]
+
+[KORT base-board-studio-guess-35]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville fjernet fra en idé for å gjøre den tydeligere, og la dem gi sitt eget forslag.
+[SLUTT]
+
+[KORT base-board-studio-guess-36]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger én ting som skal gjentas i tre ulike scener. Gjett detaljen og spør hva den binder sammen.
+[SLUTT]
+
+[KORT base-board-studio-guess-37]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken del av et felles prosjekt den andre helst ville overlate til tilfeldighetene.
+[SLUTT]
+
+[KORT base-board-studio-guess-38]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre finner en forklaring på hvorfor en oppdiktet figur alltid kommer for tidlig. Gjett forklaringen.
+[SLUTT]
+
+[KORT base-board-studio-guess-39]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville prioritert i en utstilling på ett bord: en tydelig fortelling eller mange små oppdagelser.
+[SLUTT]
+
+[KORT base-board-studio-guess-40]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger en helt enkel idé som kunne tålt ti forskjellige utgaver. Gjett hvilken idé de ser for seg.
+[SLUTT]
+
+[KORT base-board-studio-challenge-11]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en værmelding for en planet der det regner noe annet enn vann.
+[SLUTT]
+
+[KORT base-board-studio-challenge-12]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si tre mulige replikker fra en sokk som endelig har funnet makkeren sin.
+[SLUTT]
+
+[KORT base-board-studio-challenge-13]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tegn i lufta et transportmiddel som ikke finnes. Den andre foreslår hvor det skal.
+[SLUTT]
+
+[KORT base-board-studio-challenge-14]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en stol et eventyrlig navn og en praktisk spesialevne.
+[SLUTT]
+
+[KORT base-board-studio-challenge-15]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en minireklame på to setninger for en oppfinnelse som bare hjelper på tirsdager.
+[SLUTT]
+
+[KORT base-board-studio-challenge-16]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en ny høflig hilsen med ett ord og en liten bevegelse hver for dere.
+[SLUTT]
+
+[KORT base-board-studio-challenge-17]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv et frimerke fra et land der alle hus har hjul.
+[SLUTT]
+
+[KORT base-board-studio-challenge-18]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en liten rytme med fingrene på ditt eget kne. Den andre lager et mulig svar.
+[SLUTT]
+
+[KORT base-board-studio-challenge-19]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en overskrift til lokalavisen i en by bebodd av paraplyer.
+[SLUTT]
+
+[KORT base-board-studio-challenge-20]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en ting dere kan se, og finn tre nye navn som beskriver hvordan den ser ut.
+[SLUTT]
+
+[KORT base-board-studio-challenge-21]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag et passord for en fantasiklubb og si hva klubben møtes for å gjøre.
+[SLUTT]
+
+[KORT base-board-studio-challenge-22]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si åpningsreplikken til en tegnefilm om en litt glemsk nøkkel.
+[SLUTT]
+
+[KORT base-board-studio-challenge-23]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en fortelling på fire setninger der første og siste setning er helt like, men betyr noe forskjellig.
+[SLUTT]
+
+[KORT base-board-studio-challenge-24]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv en oppfinnelse som gjør en kjedelig ventetid litt morsommere uten en skjerm.
+[SLUTT]
+
+[KORT base-board-studio-challenge-25]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tenk dere en park på størrelse med et spisebord. Velg én attraksjon og én snarvei.
+[SLUTT]
+
+[KORT base-board-studio-challenge-26]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på tre kapitler i bruksanvisningen til en sky som har flyttet inn i en leilighet.
+[SLUTT]
+
+[KORT base-board-studio-challenge-27]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tegn eller beskriv samme lille hus med hver deres særegne detalj. Kombiner de to detaljene.
+[SLUTT]
+
+[KORT base-board-studio-challenge-28]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en scene der en dør og et vindu er uenige om utsikten, og finner noe de liker sammen.
+[SLUTT]
+
+[KORT base-board-studio-challenge-29]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn på en samling med tre gjenstander fra en oppdiktet reise. Fortell hva én av dem brukes til.
+[SLUTT]
+
+[KORT base-board-studio-challenge-30]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bygg en figur muntlig: én gir figuren et mål, den andre gir den en overraskende vane.
+[SLUTT]
+
+[KORT base-board-studio-challenge-31]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et skilt til en fantasihage der besøkende blir invitert til noe annet enn å være stille.
+[SLUTT]
+
+[KORT base-board-studio-challenge-32]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv et spillbrett med fire ruter som får helt vanlige ord til å gjøre rare ting.
+[SLUTT]
+
+[KORT base-board-studio-challenge-33]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn to ulike avslutninger på en historie som begynner med at noen får en pakke uten avsender.
+[SLUTT]
+
+[KORT base-board-studio-challenge-34]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en kort dialog mellom en klokke som går sakte og en kalender som vil ha ferie.
+[SLUTT]
+
+[KORT base-board-studio-challenge-35]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en minifortelling der en tilsynelatende feil viser seg å være nyttig. Bruk maksimalt fem setninger.
+[SLUTT]
+
+[KORT base-board-studio-challenge-36]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Utform et tenkt rom som kan brukes både til konsentrasjon og lek. Forklar hvordan det skifter funksjon.
+[SLUTT]
+
+[KORT base-board-studio-challenge-37]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på et spill der dere vinner ved å oppdage ulike ting, og beskriv én prøverunde.
+[SLUTT]
+
+[KORT base-board-studio-challenge-38]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et lite lydlandskap av tre selvvalgte lyder etter tur. Gi stedet et navn når dere er ferdige.
+[SLUTT]
+
+[KORT base-board-studio-challenge-39]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en oppfunnet figur og fortell samme hendelse fra figurens og en forbipasserendes synsvinkel.
+[SLUTT]
+
+[KORT base-board-studio-challenge-40]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn på en utstilling med tre stopp om noe så lite som å åpne et vindu. Gi hvert stopp en egen vinkel.
+[SLUTT]
+
+[KORT base-board-studio-joker-11]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Baklengs start: si siste setning i et lite eventyr. Den andre finner en mulig første setning.
+[SLUTT]
+
+[KORT base-board-studio-joker-12]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bitteliten scene: en figur mister en knapp. Fortell hva figuren gjør med det på to setninger.
+[SLUTT]
+
+[KORT base-board-studio-joker-13]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nytt bruksområde: velg en ting dere ser, og gi den en oppgave i en tegnefilm.
+[SLUTT]
+
+[KORT base-board-studio-joker-14]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Stumfilm: vis med egne hender hvordan en tenkt figur prøver å finne en plass å sitte.
+[SLUTT]
+
+[KORT base-board-studio-joker-15]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ordlotteri: velg ett ord hver uten å samrå dere. Lag et navn på en oppfinnelse som bruker begge.
+[SLUTT]
+
+[KORT base-board-studio-joker-16]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fargeblind oppfinnelse: beskriv en regnbue uten å bruke navn på farger.
+[SLUTT]
+
+[KORT base-board-studio-joker-17]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lyd før bilde: lag en kort lyd. Den andre beskriver et fantasilandskap som kunne passet.
+[SLUTT]
+
+[KORT base-board-studio-joker-18]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Liten målestokk: finn på en fornøyelsespark som får plass i en skoeske.
+[SLUTT]
+
+[KORT base-board-studio-joker-19]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Én bokstav: bytt én bokstav i et vanlig ord og forklar hva det nye ordet kan bety.
+[SLUTT]
+
+[KORT base-board-studio-joker-20]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Pausebilde: beskriv et øyeblikk rett før noe morsomt kommer til å skje i en tegnet scene.
+[SLUTT]
+
+[KORT base-board-studio-joker-21]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Dagens oppfinnelse: gi et usynlig redskap et navn og demonstrer hvordan det brukes.
+[SLUTT]
+
+[KORT base-board-studio-joker-22]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tredje løsning: finn en leken måte å frakte en tenkt kaffekopp på uten å bære eller trille den.
+[SLUTT]
+
+[KORT base-board-studio-joker-23]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Uventet forteller: la en lampe beskrive hva som gjør et rom hyggelig. Svar med to setninger hver.
+[SLUTT]
+
+[KORT base-board-studio-joker-24]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Formatbytte: ta en vanlig beskjed, som at middagen er klar, og gjør den til en filmtittel.
+[SLUTT]
+
+[KORT base-board-studio-joker-25]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Byttehandel: hver finner på en egenskap til en figur. Bytt egenskapene og se hva slags figurer dere får.
+[SLUTT]
+
+[KORT base-board-studio-joker-26]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Åpen dør: en oppdiktet dør fører til et helt vanlig sted med én umulig detalj. Velg detaljen sammen.
+[SLUTT]
+
+[KORT base-board-studio-joker-27]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Kun spørsmål: lag en dialog på fire replikker der alle replikkene er spørsmål.
+[SLUTT]
+
+[KORT base-board-studio-joker-28]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tre påstander: beskriv en tenkt oppfinnelse med to nyttige egenskaper og én komisk begrensning.
+[SLUTT]
+
+[KORT base-board-studio-joker-29]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Reparatørrunde: finn på en eventyrbro som har mistet formålet sitt. Gi den en ny oppgave.
+[SLUTT]
+
+[KORT base-board-studio-joker-30]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+En ting mindre: forestill dere en kafé uten bord. Hvordan blir den et hyggelig sted å møtes?
+[SLUTT]
+
+[KORT base-board-studio-joker-31]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Nærbilde: beskriv en liten del av en oppdiktet maskin. Den andre finner på resten.
+[SLUTT]
+
+[KORT base-board-studio-joker-32]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ulik sjanger: fortell samme ufarlige hendelse som først et mysterium og så en naturdokumentar.
+[SLUTT]
+
+[KORT base-board-studio-joker-33]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ny mottaker: forklar hva en heis er til en figur som kan fly, uten å kalle den en boks.
+[SLUTT]
+
+[KORT base-board-studio-joker-34]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Felles stafett: si ett ord hver til dere har en setning som kunne startet en underlig historie.
+[SLUTT]
+
+[KORT base-board-studio-joker-35]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Idédugnad uten rangering: lag fire ulike forklaringer på hvorfor et torg har en enslig lenestol.
+[SLUTT]
+
+[KORT base-board-studio-joker-36]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+To spor: finn på to figurer som ønsker den samme tingen av helt ulike grunner.
+[SLUTT]
+
+[KORT base-board-studio-joker-37]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Rekkefølgen snus: finn opp en feiring som starter med takkekortet. Hva skjer så?
+[SLUTT]
+
+[KORT base-board-studio-joker-38]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Langsom avsløring: beskriv en oppdiktet gjenstand med én detalj hver til dere har en felles forestilling.
+[SLUTT]
+
+[KORT base-board-studio-joker-39]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Uperfekt mesterverk: velg en med vilje skjev detalj som gjør en tenkt skulptur mer interessant.
+[SLUTT]
+
+[KORT base-board-studio-joker-40]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Åpent verk: lag en historie med et tomrom i midten. Gi hver deres mulige forklaring uten å velge en fasit.
+[SLUTT]
+
+[KORT base-board-studio-wish-11]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en dag dere vil bruke fem minutter på å tegne en kopp på hver deres måte.
+[SLUTT]
+
+[KORT base-board-studio-wish-12]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn én vanlig lyd dere vil legge merke til og beskrive med et nytt ord neste gang dere går ut.
+[SLUTT]
+
+[KORT base-board-studio-wish-13]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et ord dere vil tegne som en liten figur en annen dag.
+[SLUTT]
+
+[KORT base-board-studio-wish-14]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Avtal å finne på et nytt navn til middagen neste gang dere lager mat sammen.
+[SLUTT]
+
+[KORT base-board-studio-wish-15]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en bok dere allerede har, og planlegg å gi et kapittel en alternativ tittel.
+[SLUTT]
+
+[KORT base-board-studio-wish-16]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en tom emballasje dere kan gjøre til en enkel figur før den sorteres som vanlig.
+[SLUTT]
+
+[KORT base-board-studio-wish-17]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kveld dere vil lage en liten spilleliste med én sang til hver årstid.
+[SLUTT]
+
+[KORT base-board-studio-wish-18]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bestem en anledning der dere vil skrive en kort beskjed til hverandre på maks sju ord.
+[SLUTT]
+
+[KORT base-board-studio-wish-19]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en ting hjemme dere vil beskrive som om den var en museumsgjenstand, neste gang dere ser den.
+[SLUTT]
+
+[KORT base-board-studio-wish-20]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Avtal å lage en liten ordlek av et stedsnavn på neste gåtur.
+[SLUTT]
+
+[KORT base-board-studio-wish-21]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et vindu dere vil bruke som ramme for en femminutters skisse en annen dag.
+[SLUTT]
+
+[KORT base-board-studio-wish-22]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en enkel figur dere vil prøve å tegne uten å løfte pennen, når dere har papir tilgjengelig.
+[SLUTT]
+
+[KORT base-board-studio-wish-23]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg et kvarter der dere lager hvert deres forslag til et nytt spill med bare ord.
+[SLUTT]
+
+[KORT base-board-studio-wish-24]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en reiserute dere kjenner, og bestem dere for å lage et fantasikart av den senere.
+[SLUTT]
+
+[KORT base-board-studio-wish-25]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal en liten utstilling hjemme med tre ting dere allerede eier, valgt etter et felles tema.
+[SLUTT]
+
+[KORT base-board-studio-wish-26]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en historie dere vil fortelle i tre tegnede ruter neste gang dere har papir.
+[SLUTT]
+
+[KORT base-board-studio-wish-27]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en kort tekst dere selv har skrevet, som dere vil gi en morsom alternativ overskrift.
+[SLUTT]
+
+[KORT base-board-studio-wish-28]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg å lage en ti sekunders værmelding for humøret til en oppdiktet by på en rolig kveld.
+[SLUTT]
+
+[KORT base-board-studio-wish-29]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en hverdagsoppgave dere vil lage en ny, litt morsom bruksanvisning til sammen.
+[SLUTT]
+
+[KORT base-board-studio-wish-30]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal å finne én ting hver som kan inspirere et felles mønster, uten å samle eller kjøpe noe.
+[SLUTT]
+
+[KORT base-board-studio-wish-31]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bestem et tema for to korte lydopptak dere kan lage med ting dere allerede har.
+[SLUTT]
+
+[KORT base-board-studio-wish-32]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en liten fortelling dere vil gi to forskjellige avslutninger i løpet av et ledig kvarter.
+[SLUTT]
+
+[KORT base-board-studio-wish-33]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg et måltid dere allerede pleier å lage, men gi menyen navn fra en oppdiktet verden.
+[SLUTT]
+
+[KORT base-board-studio-wish-34]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn et sted på en vanlig tur der dere senere vil finne på en figur som kunne bodd der.
+[SLUTT]
+
+[KORT base-board-studio-wish-35]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Sett av tjue minutter til å finne opp ett enkelt spill, prøve én runde og endre én regel sammen.
+[SLUTT]
+
+[KORT base-board-studio-wish-36]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal å lage to ulike omslag til en bok som ikke finnes, med papir dere allerede har.
+[SLUTT]
+
+[KORT base-board-studio-wish-37]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en liten idé fra denne runden og gi den en startdato der dere bare skal lage første utkast.
+[SLUTT]
+
+[KORT base-board-studio-wish-38]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Planlegg en fortellerstafett på en annen kveld: ett minutt hver, tre bytter og en valgfri slutt.
+[SLUTT]
+
+[KORT base-board-studio-wish-39]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg et tema dere vil lage en miniatyrutstilling om, med bare tre egne tegninger.
+[SLUTT]
+
+[KORT base-board-studio-wish-40]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal å ta frem et lite verk dere har laget selv senere, og la hver av dere legge til én ny detalj.
+[SLUTT]
+

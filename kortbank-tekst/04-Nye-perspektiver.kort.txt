@@ -404,3 +404,1204 @@ AKTIV: ja
 TEKST:
 Avslutt med et felles ønske som gir plass til at dere kan være forskjellige.
 [SLUTT]
+
+[KORT base-board-perspectives-talk-11]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva får et ukjent sted til å virke lett å finne frem på for deg?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-12]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken detalj legger du merke til først når du ser et bilde av et landskap?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-13]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva gjør en benk til et sted du faktisk har lyst til å sette deg?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-14]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken lyd forbinder du med at en by våkner?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-15]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva avgjør om en kopp er passe stor for deg?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-16]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken liten ting gjør en forklaring lett å følge?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-17]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva ville du helst hatt utsikt til fra en togtur: kyst, skog eller gater med folk?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-18]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva er en god pause for deg når du bare har fem minutter?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-19]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket tegn på at våren er her oppdager du gjerne først?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-20]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva gjør at en oppskrift virker overkommelig før du har begynt?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-21]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken del av en vanlig tur vil du helst ha en plan for, og hva kan være åpent?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-22]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva tenker du på først når noen sier at et sted er livlig?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-23]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når hjelper en detaljert forklaring deg, og når ville et eksempel vært enklere?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-24]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva avgjør om du oppfatter en tom kalender som frihet eller som noe du vil fylle?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-25]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva kan gjøre en kort tur interessant selv om dere går samme vei som sist?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-26]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken forskjell er det for deg mellom noe som er enkelt og noe som er kjedelig?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-27]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan merker du at en meny har passe mange valgmuligheter?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-28]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva ville du brukt for å forklare avstand til noen som ikke kjenner kilometer?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-29]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør en regel i et spill lett å godta, selv når den ikke hjelper deg å vinne?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-30]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken del av en opplevelse blir tydeligere for deg når du forteller om den etterpå?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-31]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva får en gjenstand til å føles velbrukt på en hyggelig måte i stedet for bare slitt?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-32]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan velger du hva du vil se først når du har kort tid på et nytt sted?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-33]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er et godt tegn på at to personer fordeler en oppgave på en måte som fungerer?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-34]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken verdi kan det ha å gjøre noe langsomt selv om en raskere måte finnes?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-35]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Når kan det være mer rettferdig at to personer får forskjellige alternativer enn at de får det samme?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-36]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne vært en god målestokk for en vellykket utflukt hvis man ikke teller steder eller bilder?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-37]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken forskjell gjør det å få være med og lage en regel sammenlignet med bare å få den forklart?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-38]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Når ville du valgt en løsning som er lett å endre senere, selv om den er litt mindre elegant nå?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-39]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan kan en felles plan gi plass til at dere legger merke til ulike ting underveis?
+[SLUTT]
+
+[KORT base-board-perspectives-talk-40]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva ville du ønsket at en fremmed forsto om en vanlig dag her hvis de bare så ett lite utsnitt?
+[SLUTT]
+
+[KORT base-board-perspectives-guess-11]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre først ville sett etter på et kart: vann, veier, steder å stoppe eller høyder.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-12]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger et tidspunkt på dagen som passer en tom park. Gjett tidspunktet.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-13]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre helst leser et skilt før de ser på en museumsgjenstand, eller omvendt.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-14]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken plass den andre ville valgt på en nesten tom kafé.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-15]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på hva som gjør en sti innbydende. Gjett én detalj.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-16]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville sett på helheten eller undersøkt én detalj først i et stort puslespill.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-17]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken lyd den andre ville fjernet fra en tenkt stilleplass.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-18]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger et tegn på at et bibliotek er hyggelig. Gjett tegnet.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-19]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville fulgt en kjent rute eller prøvd en liten omvei når dere har god tid.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-20]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville pakket først til en gratis ettermiddagstur i nærområdet.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-21]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på en søndagstur. Gjett om de ville valgt rolig tempo, jevn fart eller mange stopp.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-22]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville brukt farger, symboler eller ord for å merke innholdet i tre bokser.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-23]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger hva de ville trengt å vite før en togtur uten fast mål. Gjett det viktigste spørsmålet.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-24]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre synes gjør en oppgave enklere å begynne på: en tidsramme eller et lite første steg.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-25]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre helst lærer et nytt spill ved å lese reglene eller spille en prøverunde.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-26]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre ser for seg en hyggelig gate. Gjett hvilken ting de mener det må være plass til.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-27]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville prioritert på et kart for gående: snarveier, rolige veier eller steder å hvile.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-28]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre opplever en lang samtale som kortere med en aktivitet eller uten noe annet å gjøre.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-29]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en hverdagsoppgave de helst gjør helt ferdig før neste begynner. Gjett oppgaven.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-30]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville endret på en komplisert billettautomat for å gjøre den lettere å forstå.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-31]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken opplysning den andre ønsker først i en invitasjon til en ukjent aktivitet.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-32]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger mellom god oversikt og lett tilgang som viktigst i en kjøkkenhylle. Gjett valget.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-33]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre helst sparer beste biten til slutt eller begynner med den i en liten opplevelse.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-34]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville sett etter for å avgjøre om et torg fungerer for mange forskjellige mennesker.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-35]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger et tegn på at en felles plan er fleksibel nok. Gjett hvordan de ville merket det.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-36]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken ting den andre ville latt folk velge selv i et ellers nøye planlagt arrangement.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-37]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre tenker på en oppgave der to ulike fremgangsmåter kan fungere like godt. Gjett et mulig eksempel.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-38]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre mener et kart aldri helt kan fortelle om et sted.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-39]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett om den andre vil ha færre valg eller tydeligere forskjeller mellom valgene når alt virker likt.
+[SLUTT]
+
+[KORT base-board-perspectives-guess-40]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger et lite tegn på at samarbeid flyter godt. Gjett tegnet og la dem beskrive sin egen versjon.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-11]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Se på samme gjenstand. Si én ting hver dere la merke til, før dere forklarer hvorfor.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-12]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv veien fra ytterdøren til et kjent sted med bare landemerker, uten høyre og venstre.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-13]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et hverdagsord, som snart eller passe, og gi hvert deres konkrete eksempel.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-14]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Se dere rundt og finn hver deres ting som gjør rommet mer praktisk.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-15]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en god utsikt uten å bruke ordet vakker.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-16]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et tall mellom én og ti for hvor mye lyd en kafé gjerne kan ha. Sammenlign begrunnelsene.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-17]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Forklar hva som gjør et sted koselig ved å nevne bare ting en besøkende kan se eller høre.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-18]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en gjenstand i rommet og beskriv den først med form, så med funksjon.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-19]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell hver deres tegn på at et måltid er enkelt å lage.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-20]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en kort veibeskrivelse til et tenkt sted, og la den andre si hvilken opplysning de savner.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-21]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nevn én fordel med å sitte ved vinduet og én med å sitte lenger inne.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-22]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn hver deres eksempel på en ting som er liten i størrelse, men nyttig i hverdagen.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-23]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv samme vanlige reise som henholdsvis en som har god tid og en som vil frem raskt.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-24]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en enkel oppgave og finn to forskjellige steder man kan begynne.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-25]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en pakkeliste med tre ting til en liten tur. Sammenlign hva dere prioriterte.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-26]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Forklar en regel fra et spill dere kjenner, og finn ett eksempel som gjør regelen tydelig.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-27]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ta et nøytralt utsagn, som at et rom er fullt. Finn to ulike ting det kan bety i praksis.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-28]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg én ting som er ryddig for deg. Beskriv hva som gjør den lett å bruke, ikke bare pen å se på.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-29]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Sammenlign hvordan dere ville vist en gjest rundt: hele oversikten først eller ett sted om gangen.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-30]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag to rimelige planer for samme ledige time: én med mye variasjon og én med få skifter.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-31]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv samme regnværsdag fra synsvinkelen til en gartner og en som jobber med å tørke klær.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-32]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en hverdagsgjenstand og nevn én ting den gjør lett og én ting den gjør litt vanskeligere.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-33]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn to måter å avgjøre hvem som starter i et spill, og si når hver av dem passer.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-34]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en tenkt utflukt og bytt på å spørre om én praktisk detalj som ville gjort planen tydeligere.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-35]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en regel for et felles venterom som både gir ro og plass til ulike behov. Gjør den konkret.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-36]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Planlegg en liten aktivitet der dere kan velge ulikt underveis og likevel avslutte sammen.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-37]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gi hver deres forklaring på hvorfor en kjent gjenstand har den formen den har. Skill mellom det dere vet og det dere gjetter.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-38]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et enkelt veiskilt for en som ikke kan språket. Beskriv hva skiltet må vise og hva som kan misforstås.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-39]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg et fiktivt arrangement og vurder det etter to mål: hvor mange som blir med, og hvor lett det er å delta.
+[SLUTT]
+
+[KORT base-board-perspectives-challenge-40]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en plan som fungerer både om dere vil bli lenge og om dere vil dra tidlig. Si hvor valget kan ligge åpent.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-11]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nær og fjern: beskriv samme ting som om du så den på én meters og hundre meters avstand.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-12]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ordet får et bilde: forklar «travel» uten å bruke en person som eksempel.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-13]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Annen målestokk: anslå bredden på et kjent rom i skritt i stedet for meter.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-14]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Førsteinntrykk: velg en gjenstand og si hva en besøkende kanskje ville trodd den ble brukt til.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-15]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Sanseskifte: beskriv et kjent sted bare gjennom lydene du forbinder med det.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-16]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+To navn: finn to ulike, men rimelige navn på samme hjørne av rommet.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-17]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Vanlig på nytt: forklar hva en kø er til noen som aldri har sett en.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-18]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Liten oppdagelse: finn en detalj dere begge kan se, men kanskje ikke har lagt merke til før.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-19]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Forskjellige kart: én beskriver en gate med butikker, den andre med trær og benker.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-20]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ord som flytter seg: velg nær eller langt, og finn to steder der ordet ville betydd ulik avstand.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-21]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bytt briller: beskriv en bussholdeplass som en som søker ly, og så som en som leter etter informasjon.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-22]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ny besøkende: hva ville dere forklart først til en som for første gang skulle bruke et bibliotek?
+[SLUTT]
+
+[KORT base-board-perspectives-joker-23]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Rimelig uenighet: velg mellom tidlig avreise og rolig morgen. Finn én god grunn til hvert valg.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-24]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tomt eller ledig: finn to situasjoner der det samme tomme bordet kan oppfattes forskjellig.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-25]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Omvendt mål: velg en vanlig aktivitet og spør hva som skjer hvis målet blir å gjøre færre ting.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-26]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+To slags orden: beskriv hvordan samme hylle kan ordnes etter bruk og etter utseende.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-27]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+En detalj endres: gjør en vanlig gåtur enklere for en som vil stoppe ofte, med bare ett nytt grep.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-28]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Uten fasit: anslå hvor mange ulike valg som ligger i å dekke et bord for to. Se hvilke dere kommer på.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-29]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Sett utenfra: beskriv et kjent hverdagsritual som om det var en ny oppfinnelse.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-30]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fordel bytter side: finn noe som er en fordel på en lang tur og en ulempe på en kort tur.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-31]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+To gode grunner: velg en vanlig oppgave og finn en grunn til å gjøre den alene og en til å gjøre den sammen.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-32]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Kart og terreng: si én opplysning du trenger fra et kart, og én du helst oppdager på stedet.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-33]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Neste spørsmål: én beskriver et tenkt tilbud om en gratis aktivitet. Den andre stiller bare ett spørsmål før de vurderer det.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-34]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Uventet ekspert: hvilken ting ville en som vasker et rom legge merke til før en som bare er på besøk?
+[SLUTT]
+
+[KORT base-board-perspectives-joker-35]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+En regel får et unntak: velg en enkel regel for en piknik. Finn et praktisk unntak som fortsatt ivaretar hensikten.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-36]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Prøv en annen forklaring: finn to mulige grunner til at en kafé har stilt alle stolene ulikt.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-37]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+To brukere: velg en hverdagsgjenstand og foreslå én endring for en venstrehendt og én for en høyrehendt.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-38]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lån et tidsperspektiv: hva ville dere vurdert annerledes ved en plan hvis den skulle vare én time eller et helt år?
+[SLUTT]
+
+[KORT base-board-perspectives-joker-39]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Synlig og usynlig arbeid: tenk på et hyggelig felles måltid og nevn én oppgave man ser og én man lett overser.
+[SLUTT]
+
+[KORT base-board-perspectives-joker-40]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Bygg en mellomløsning: én ønsker en fast rute, den andre vil utforske. Lag en liten tur med plass til begge deler.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-11]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+På neste gåtur: velg én lyd hver å legge merke til, og sammenlign når dere kommer hjem.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-12]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kjent gjenstand dere vil se nærmere på i morgen og finne en detalj dere aldri har beskrevet.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-13]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Avtal å la hver av dere velge ett stopp på en kort tur en annen dag.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-14]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et vanlig måltid der dere vil sammenligne hva som gjør det hyggelig, før dere endrer noe.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-15]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et vindu dere vil se gjennom på to ulike tider av dagen og legge merke til forskjellen.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-16]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Neste gang dere leser en kort tekst sammen: velg hver deres setning som fanger interessen.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-17]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Sett av fem minutter til å beskrive samme sted fra hukommelsen og se hva dere husker ulikt.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-18]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et ord fra denne runden som dere vil finne et nytt, konkret eksempel på i løpet av uka.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-19]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Neste gang dere venter sammen: legg merke til én ting som gjør ventestedet lett å bruke.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-20]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en benk eller et hjørne ute dere vil besøke og vurdere som et lite sted å ta pause.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-21]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Planlegg en frokost der dere begge velger én liten detalj uten at den trenger å passe til den andres valg.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-22]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Avtal å vise hverandre en praktisk detalj hjemme som dere setter pris på, neste gang dere får tid.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-23]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+På neste kjente rute: la én velge hva dere skal se etter, og la den andre velge tempoet.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-24]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en enkel oppgave dere vil prøve med hver deres fremgangsmåte og sammenligne etterpå.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-25]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal en ledig halvtime der dere velger både et sikkert utgangspunkt og en valgfri fortsettelse.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-26]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Neste gang dere lærer et spill: prøv både et kort regelreferat og en prøverunde før dere bestemmer dere for hva som hjelper.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-27]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en liten plan dere vil beskrive med både et kart og noen få ord en annen dag.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-28]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en hylle eller skuff dere vil undersøke med spørsmålet: Er dette lett å finne, bruke og legge tilbake?
+[SLUTT]
+
+[KORT base-board-perspectives-wish-29]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg å se på en kjent utsikt fra et litt annet sted uten å gjøre turen lengre.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-30]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Neste gang dere lager mat: velg ett trinn der dere vil sammenligne hva som virker logisk å gjøre først.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-31]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal å spørre hva den andre mener med «snart» neste gang ordet får praktisk betydning.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-32]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en aktivitet dere vil prøve med en tydelig sluttid, og se hvordan rammen påvirker opplevelsen.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-33]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en ledig stund der dere vil ta hver deres lille avstikker og fortelle om én ting dere oppdaget.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-34]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en gratis opplevelse i nærområdet dere vil vurdere etter både tilgjengelighet og interesse.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-35]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Planlegg en liten utflukt med to mulige avslutninger, slik at dere kan velge etter dagsformen.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-36]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg én hverdagsregel hjemme dere vil beskrive hensikten med og deretter vurdere om formen fortsatt passer.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-37]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal et lite samarbeid der dere bytter hvem som lager oversikten og hvem som velger detaljene.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-38]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en felles plan dere vil gjøre enkel å justere, og bestem når dere vil vurdere den på nytt.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-39]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en kjent aktivitet dere vil gjennomføre med færre valg én gang og flere valg en annen gang.
+[SLUTT]
+
+[KORT base-board-perspectives-wish-40]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Planlegg å fortelle om samme lille opplevelse hver for dere før dere sammenligner hva som ble viktigst.
+[SLUTT]
+

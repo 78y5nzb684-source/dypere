@@ -404,3 +404,1204 @@ AKTIV: ja
 TEKST:
 Finn et minne dere vil takke hverandre for, og avslutt med deres egne ord.
 [SLUTT]
+
+
+[KORT base-board-stories-talk-11]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken lyd forbinder du med et hyggelig sted vi har vært? Det kan være fra en helt vanlig dag.
+[SLUTT]
+
+[KORT base-board-stories-talk-12]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva la du først merke til ved måten vi snakket sammen på?
+[SLUTT]
+
+[KORT base-board-stories-talk-13]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken lukt gir deg lyst til å bli sittende litt lenger? Har vi opplevd den sammen, eller kunne vi gjort det?
+[SLUTT]
+
+[KORT base-board-stories-talk-14]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om en liten omvei som ga deg noe fint å se. Vi trenger ikke ha gått den sammen.
+[SLUTT]
+
+[KORT base-board-stories-talk-15]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket ord eller uttrykk har du begynt å bruke oftere etter at vi møttes?
+[SLUTT]
+
+[KORT base-board-stories-talk-16]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva i dette rommet kunne hjulpet deg med å huske denne kvelden senere?
+[SLUTT]
+
+[KORT base-board-stories-talk-17]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken enkel ting gjorde vi sist som du gjerne gjør igjen?
+[SLUTT]
+
+[KORT base-board-stories-talk-18]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken årstid passer best til ditt første inntrykk av oss? Hva ved den passer?
+[SLUTT]
+
+[KORT base-board-stories-talk-19]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva pleier du å få øye på underveis som andre lett går forbi?
+[SLUTT]
+
+[KORT base-board-stories-talk-20]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken liten detalj fra en melding mellom oss har festet seg? Du kan beskrive den uten å finne frem telefonen.
+[SLUTT]
+
+[KORT base-board-stories-talk-21]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om et sted du likte som liten, og én ting du ville vist meg der.
+[SLUTT]
+
+[KORT base-board-stories-talk-22]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket hverdagsøyeblikk ville blitt et fint bilde selv om ingen tok det?
+[SLUTT]
+
+[KORT base-board-stories-talk-23]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når har vi fordelt en liten oppgave mellom oss på en måte som fungerte bra?
+[SLUTT]
+
+[KORT base-board-stories-talk-24]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva har du oppdaget at vi legger merke til på forskjellige måter?
+[SLUTT]
+
+[KORT base-board-stories-talk-25]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken del av en helt vanlig dag med meg ville du fortalt om til noen som aldri har møtt oss?
+[SLUTT]
+
+[KORT base-board-stories-talk-26]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Har vi hatt en stund som gikk saktere enn klokken? Fortell hva som gjorde den slik, eller beskriv en stund du ønsker deg.
+[SLUTT]
+
+[KORT base-board-stories-talk-27]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten vane hos oss hadde vært vanskelig å forklare uten å smile?
+[SLUTT]
+
+[KORT base-board-stories-talk-28]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva overrasket deg ved stedet vi sist gikk inn på sammen?
+[SLUTT]
+
+[KORT base-board-stories-talk-29]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken tur, om så bare til butikken, husker du på grunn av samtalen underveis?
+[SLUTT]
+
+[KORT base-board-stories-talk-30]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilket lite problem har vi løst på en måte som var veldig typisk oss? Velg gjerne noe helt praktisk.
+[SLUTT]
+
+[KORT base-board-stories-talk-31]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når har en pause i planene vært den beste delen av dagen?
+[SLUTT]
+
+[KORT base-board-stories-talk-32]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken matlukt, bakgrunnslyd eller lyssetting kunne gjort en vanlig kveld minneverdig for oss?
+[SLUTT]
+
+[KORT base-board-stories-talk-33]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva har blitt lettere å gjøre sammen siden vi møttes, selv om det bare er å velge hva vi skal se?
+[SLUTT]
+
+[KORT base-board-stories-talk-34]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten forskjell mellom oss håper du at vi fortsatt ler varmt av om ti år?
+[SLUTT]
+
+[KORT base-board-stories-talk-35]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvis vi bare kunne bevare lyden fra én felles stund, hvilken ville du valgt og hvorfor?
+[SLUTT]
+
+[KORT base-board-stories-talk-36]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne vi gjøre i dag som fremtidige oss ville kalt starten på en god vane?
+[SLUTT]
+
+[KORT base-board-stories-talk-37]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken vanlig gjenstand ville du lagt i en tidskapsel for denne tiden av livet vårt?
+[SLUTT]
+
+[KORT base-board-stories-talk-38]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva vil du at en historie om oss skal vise gjennom en liten handling, uten å si det rett ut?
+[SLUTT]
+
+[KORT base-board-stories-talk-39]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken felles opplevelse har fått deg til å legge merke til en ny side ved et kjent sted?
+[SLUTT]
+
+[KORT base-board-stories-talk-40]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva håper du at vi en dag vil savne litt fra akkurat denne hverdagen?
+[SLUTT]
+
+[KORT base-board-stories-guess-11]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på en farge fra et sted dere har vært sammen. Få ett hint om stedet og gjett fargen.
+[SLUTT]
+
+[KORT base-board-stories-guess-12]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken duft den andre ville valgt til en hyggelig inngangsdør: kaffe, regn eller nystekt brød. Legg gjerne til et eget forslag.
+[SLUTT]
+
+[KORT base-board-stories-guess-13]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger én lyd fra en tur eller et møte mellom dere. Gjett om det var stemmer, en naturlyd eller en lyd fra en maskin eller gjenstand.
+[SLUTT]
+
+[KORT base-board-stories-guess-14]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre først ville vist deg på sitt gamle hjemsted.
+[SLUTT]
+
+[KORT base-board-stories-guess-15]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg hver deres detalj fra rommet som ville hjulpet dere å huske kvelden. Gjett den andres før dere viser.
+[SLUTT]
+
+[KORT base-board-stories-guess-16]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre husker best hva dere spiste, hva dere snakket om eller hvordan stedet så ut sist dere delte et måltid.
+[SLUTT]
+
+[KORT base-board-stories-guess-17]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre tenker på noe dere begge har sett nylig. Be om ett fargehint og gjett hva det er.
+[SLUTT]
+
+[KORT base-board-stories-guess-18]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken av dagens små pauser den andre helst ville forlenget.
+[SLUTT]
+
+[KORT base-board-stories-guess-19]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville kalt en kafé oppkalt etter en felles opplevelse. Ett ord i svaret er nok til å få et smil.
+[SLUTT]
+
+[KORT base-board-stories-guess-20]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger et sted dere kjenner. Still to ja- eller nei-spørsmål om lydene der, og gjett stedet.
+[SLUTT]
+
+[KORT base-board-stories-guess-21]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre ville startet et album om dere med et ansikt, et landskap eller en hverdagsdetalj.
+[SLUTT]
+
+[KORT base-board-stories-guess-22]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken værtype den andre forbinder med tiden da dere møttes. Det er følelsen som teller.
+[SLUTT]
+
+[KORT base-board-stories-guess-23]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en felles hverdagshendelse. Få vite om den skjedde inne eller ute, og gjett hendelsen med to forsøk.
+[SLUTT]
+
+[KORT base-board-stories-guess-24]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken liten ting fra et felles måltid den andre ville tatt med til en ny variant av kvelden.
+[SLUTT]
+
+[KORT base-board-stories-guess-25]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvem av dere den andre tror ville husket veien, og hvem som ville husket et artig skilt fra samme tur.
+[SLUTT]
+
+[KORT base-board-stories-guess-26]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en felles samtale uten å røpe innholdet. Få et hint om stedet og gjett anledningen.
+[SLUTT]
+
+[KORT base-board-stories-guess-27]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken pauseknapp den andre ville brukt på en travel dag sammen: utsikt, varm drikke eller fem minutter uten planer.
+[SLUTT]
+
+[KORT base-board-stories-guess-28]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Tenk på et sted dere begge kjenner. Gjett hvilken detalj den andre ville beskrevet først til en som aldri hadde vært der.
+[SLUTT]
+
+[KORT base-board-stories-guess-29]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres små samarbeidsvaner den andre tror en gjest ville oppdaget først.
+[SLUTT]
+
+[KORT base-board-stories-guess-30]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en kjent hverdagsting. Få et hint om et minne den vekker, og gjett tingen.
+[SLUTT]
+
+[KORT base-board-stories-guess-31]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilket av deres felles uttrykk den andre kunne sett for seg på et postkort.
+[SLUTT]
+
+[KORT base-board-stories-guess-32]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre ville husket en vellykket dag gjennom starten, et uventet avbrekk eller slutten. Hør hvilket eksempel de tenkte på.
+[SLUTT]
+
+[KORT base-board-stories-guess-33]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken liten stund den andre ville brukt som åpningsscene i en fortelling om dere.
+[SLUTT]
+
+[KORT base-board-stories-guess-34]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville latt ligge fremme etter en hyggelig kveld for å bli minnet om den neste morgen.
+[SLUTT]
+
+[KORT base-board-stories-guess-35]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre velger en felles opplevelse og nevner en ting som skjedde rett før. Gjett hva som fulgte.
+[SLUTT]
+
+[KORT base-board-stories-guess-36]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken enkel tradisjon den andre tror dere kunne holdt på med også på et helt nytt sted.
+[SLUTT]
+
+[KORT base-board-stories-guess-37]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg hver deres lille ting ved hverdagen nå som dere tror vil bli nostalgisk senere. Gjett før dere deler.
+[SLUTT]
+
+[KORT base-board-stories-guess-38]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hvilken av deres ulike måter å legge merke til ting på den andre mener gjør en tur rikere.
+[SLUTT]
+
+[KORT base-board-stories-guess-39]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Den andre beskriver et mulig godt minne fra neste år med bare tre sanseinntrykk. Gjett hva dere gjør der.
+[SLUTT]
+
+[KORT base-board-stories-guess-40]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville kalt siste side i et album om denne perioden. Det trenger ikke være samme tittel for å passe sammen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-11]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om noe dere gjorde nylig som om du skrev en bildetekst. Bruk høyst to setninger.
+[SLUTT]
+
+[KORT base-board-stories-challenge-12]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv et hyggelig sted uten å si navnet. Bruk én lyd, én farge og én ting man kan gjøre der.
+[SLUTT]
+
+[KORT base-board-stories-challenge-13]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en liten lyd med stemmen som minner om en tur, en kafé eller et annet sted. La den andre foreslå hvor dere er.
+[SLUTT]
+
+[KORT base-board-stories-challenge-14]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en helt vanlig ting dere ser. Fortell hvorfor den ville vært nyttig i en historie om denne kvelden.
+[SLUTT]
+
+[KORT base-board-stories-challenge-15]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en regnværsdag en innbydende tittel og foreslå én enkel ting dere kunne gjort den dagen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-16]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om førsteinntrykket ditt av et felles sted som om du beskrev det til en som sto utenfor døren.
+[SLUTT]
+
+[KORT base-board-stories-challenge-17]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn tre detaljer som skiller akkurat denne kvelden fra en vilkårlig kveld.
+[SLUTT]
+
+[KORT base-board-stories-challenge-18]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en kort melding fra fremtidige dere som takker for en helt vanlig ting dere gjorde denne uken.
+[SLUTT]
+
+[KORT base-board-stories-challenge-19]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell om en liten opplevelse med bare fem ord. Den andre kan legge til en mulig sjette.
+[SLUTT]
+
+[KORT base-board-stories-challenge-20]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et minne fra i dag og gi det en passende lydtekst, som «dør knirker» eller «latter ved bordet».
+[SLUTT]
+
+[KORT base-board-stories-challenge-21]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en hverdagsreise fra dagens første skritt til dagens første hyggelige detalj. Hold det til tre setninger.
+[SLUTT]
+
+[KORT base-board-stories-challenge-22]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en liten felles vane et kjærlig navn som høres ut som et lokalt arrangement.
+[SLUTT]
+
+[KORT base-board-stories-challenge-23]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell om et felles sted fra synsvinkelen til noen som besøker det for første gang. Den andre legger til én detalj du glemte.
+[SLUTT]
+
+[KORT base-board-stories-challenge-24]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en meny med tre retter oppkalt etter gode øyeblikk. Det holder å si navnene; dere trenger ikke planlegge maten.
+[SLUTT]
+
+[KORT base-board-stories-challenge-25]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjenfortell en liten felles hendelse baklengs i tre etapper, fra siste øyeblikk til starten.
+[SLUTT]
+
+[KORT base-board-stories-challenge-26]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et kort lydspor til en vanlig dag sammen: nevn morgenlyden, ettermiddagslyden og kveldslyden.
+[SLUTT]
+
+[KORT base-board-stories-challenge-27]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell om en felles opplevelse uten å nevne hva dere gjorde. Beskriv bare omgivelsene og stemningen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-28]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn to minner eller mulige fremtidige opplevelser som ville passet ved siden av hverandre i et album. Forklar forbindelsen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-29]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gi en liten ting dere løste sammen en tittel og en sluttreplikk, som i en vennlig kortfilm.
+[SLUTT]
+
+[KORT base-board-stories-challenge-30]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag tre stopp på en muntlig vandring gjennom et sted dere kjenner. La den andre velge hvor dere ville tatt en pause.
+[SLUTT]
+
+[KORT base-board-stories-challenge-31]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Beskriv en fremtidig hyggelig søndag som om du allerede husket den. Hold deg til tre konkrete detaljer.
+[SLUTT]
+
+[KORT base-board-stories-challenge-32]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en radioreportasje på tjue sekunder fra et helt vanlig sted dere har vært. La de små lydene få hovedrollen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-33]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en felles opplevelse og fortell hva en tilfeldig forbipasserende kunne sett, uten å gjette hva personen tenkte.
+[SLUTT]
+
+[KORT base-board-stories-challenge-34]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et tenkt lite arkiv over dere: bestem én ting å bevare, én lyd å huske og én setning å skrive.
+[SLUTT]
+
+[KORT base-board-stories-challenge-35]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Beskriv en kjent felles opplevelse gjennom tre detaljer som vanligvis havner utenfor bildet.
+[SLUTT]
+
+[KORT base-board-stories-challenge-36]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en muntlig tidskapsel på tre setninger: slik ser en vanlig dag ut nå, dette ler vi av, og dette gleder vi oss til.
+[SLUTT]
+
+[KORT base-board-stories-challenge-37]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en opplevelse og finn én detalj dere var enige om og én dere husker forskjellig. La begge versjonene få plass i fortellingen.
+[SLUTT]
+
+[KORT base-board-stories-challenge-38]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Formuler baksideteksten til en liten bok om deres mest alminnelige dag. Få den til å høres verdt å lese ut.
+[SLUTT]
+
+[KORT base-board-stories-challenge-39]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Bygg en fortelling om et fremtidig minne annenhver setning. Start på et virkelig sted og avslutt med en liten vane dere kjenner.
+[SLUTT]
+
+[KORT base-board-stories-challenge-40]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Forklar hvordan tre hverdagsgjenstander kunne fortalt historien om denne perioden i livet deres.
+[SLUTT]
+
+[KORT base-board-stories-joker-11]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Sett et bokmerke i kvelden: si én detalj hver dere har lagt merke til akkurat nå.
+[SLUTT]
+
+[KORT base-board-stories-joker-12]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lytt i fem sekunder. Velg hver deres lyd som kunne vært med i et minne om stedet.
+[SLUTT]
+
+[KORT base-board-stories-joker-13]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Del én god lukt dere gjerne ville hatt som bakgrunn i en helt vanlig morgen.
+[SLUTT]
+
+[KORT base-board-stories-joker-14]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et felles ord som kunne vært overskriften på et postkort fra sofaen.
+[SLUTT]
+
+[KORT base-board-stories-joker-15]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fortell hver deres lille høydepunkt fra dagen. Det trenger ikke ha skjedd sammen.
+[SLUTT]
+
+[KORT base-board-stories-joker-16]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Fullfør hver deres setning: «Et sted jeg gjerne viser deg, er ...».
+[SLUTT]
+
+[KORT base-board-stories-joker-17]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg én farge hver som passer til en god dag. Fortell hva fargen minner dere om.
+[SLUTT]
+
+[KORT base-board-stories-joker-18]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn den minste detaljen ved et kjent sted som dere begge kjenner igjen.
+[SLUTT]
+
+[KORT base-board-stories-joker-19]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si én ting hver som gjorde dagens overgang fra dag til kveld hyggeligere.
+[SLUTT]
+
+[KORT base-board-stories-joker-20]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi et vanlig stopp i hverdagen et nytt navn basert på noe dere har sett der.
+[SLUTT]
+
+[KORT base-board-stories-joker-21]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv dagens vær med ett ord, og velg et annet ord for hvordan en hyggelig pause kunne føltes.
+[SLUTT]
+
+[KORT base-board-stories-joker-22]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Nevn en helt vanlig ting dere har gjort sammen som kunne vært starten på en liten tradisjon.
+[SLUTT]
+
+[KORT base-board-stories-joker-23]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en vennlig overskrift på en liten felles tabbe. La humoren ligge i situasjonen.
+[SLUTT]
+
+[KORT base-board-stories-joker-24]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Fortell hver deres versjon av hvilken detalj dere først la merke til på et felles sted.
+[SLUTT]
+
+[KORT base-board-stories-joker-25]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en gjenstand i nærheten og gi den en oppdiktet kort historie om hvordan den endte akkurat her.
+[SLUTT]
+
+[KORT base-board-stories-joker-26]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Del et minne fra før dere møttes som kunne forklart hvorfor dere liker et bestemt sted eller en bestemt lyd.
+[SLUTT]
+
+[KORT base-board-stories-joker-27]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en liten hverdagsscene hver. Finn én detalj som kunne koblet scenene sammen.
+[SLUTT]
+
+[KORT base-board-stories-joker-28]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en felles opplevelse som begynte med «vi skulle bare». Hvis dere ikke kommer på en, finn på en ufarlig plan som kunne startet slik.
+[SLUTT]
+
+[KORT base-board-stories-joker-29]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Si én liten ting dere ville beholdt fra en god kveld selv om sted, mat og vær måtte endres.
+[SLUTT]
+
+[KORT base-board-stories-joker-30]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Se for dere at dette rommet er tomt i morgen. Hvilken liten detalj ville dere husket fra akkurat nå?
+[SLUTT]
+
+[KORT base-board-stories-joker-31]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+La hver av dere velge en pause fra en vanlig dag. Sett dem sammen til starten og slutten på en tenkt kortfilm.
+[SLUTT]
+
+[KORT base-board-stories-joker-32]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Nevn én ting dere har lært om hvordan dere liker å bruke tid sammen. Gi den et konkret eksempel.
+[SLUTT]
+
+[KORT base-board-stories-joker-33]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn et lite felles «før og etter»: noe dere først gjorde på én måte og nå gjør litt annerledes.
+[SLUTT]
+
+[KORT base-board-stories-joker-34]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en kjent rute og legg til et tenkt stopp som dere tror kunne blitt et godt minne.
+[SLUTT]
+
+[KORT base-board-stories-joker-35]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Fortell hvilken hverdagslyd dere ville savnet mest hvis dere flyttet til et helt annet sted.
+[SLUTT]
+
+[KORT base-board-stories-joker-36]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en felles setning som begynner med «Vi trodde det bare var en vanlig ...» og slutter hyggelig.
+[SLUTT]
+
+[KORT base-board-stories-joker-37]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg hver deres uanselige ting fra den siste tiden. Forklar hvorfor den kunne fortjent en plass i historien om dere.
+[SLUTT]
+
+[KORT base-board-stories-joker-38]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Se for dere at dere gjenforteller denne kvelden om fem år. Si hver deres første setning.
+[SLUTT]
+
+[KORT base-board-stories-joker-39]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en liten måte dere allerede tar hensyn til hverandres tempo på. Beskriv situasjonen uten å gi karakterer.
+[SLUTT]
+
+[KORT base-board-stories-joker-40]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg én detalj dere vil prøve å oppdage neste gang dere er på et kjent sted sammen.
+[SLUTT]
+
+[KORT base-board-stories-wish-11]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kommende morgen der dere vil legge merke til én god lyd før dere finner frem telefonen.
+[SLUTT]
+
+[KORT base-board-stories-wish-12]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en kort tur forbi et sted dere forbinder med et godt øyeblikk, når det passer for begge.
+[SLUTT]
+
+[KORT base-board-stories-wish-13]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en hverdagsting dere vil ta et bilde av neste gang den gjør dere glade.
+[SLUTT]
+
+[KORT base-board-stories-wish-14]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn et lite minne dere vil gi en bildetekst på én setning senere.
+[SLUTT]
+
+[KORT base-board-stories-wish-15]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en sang som kan få følge en vanlig oppgave dere gjør sammen en annen dag.
+[SLUTT]
+
+[KORT base-board-stories-wish-16]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå et vindu, en benk eller et annet sted dere kan ta en fem minutters pause sammen.
+[SLUTT]
+
+[KORT base-board-stories-wish-17]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Bestem en duft fra mat eller natur dere vil legge merke til neste gang dere møter den.
+[SLUTT]
+
+[KORT base-board-stories-wish-18]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en liten historie fra tiden før dere møttes som dere vil fortelle mer av en annen kveld.
+[SLUTT]
+
+[KORT base-board-stories-wish-19]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå ett bilde hver til en enkel samling kalt «helt vanlige gode dager».
+[SLUTT]
+
+[KORT base-board-stories-wish-20]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en kommende dag der dere vil dele én detalj fra dagen som den andre ikke var med på.
+[SLUTT]
+
+[KORT base-board-stories-wish-21]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn en kort, kjent rute dere vil gå i et annet lys eller på en annen tid av dagen.
+[SLUTT]
+
+[KORT base-board-stories-wish-22]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå én setning dere kan notere etter neste hyggelige opplevelse sammen.
+[SLUTT]
+
+[KORT base-board-stories-wish-23]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et minne dere vil markere med noe enkelt dere allerede har, som en sang eller en varm drikke.
+[SLUTT]
+
+[KORT base-board-stories-wish-24]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bestem et kjent sted dere vil besøke med oppgaven å oppdage én ny detalj hver.
+[SLUTT]
+
+[KORT base-board-stories-wish-25]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en liten pause midt i en vanlig oppgave der dere kan si hva som fungerer godt i samarbeidet.
+[SLUTT]
+
+[KORT base-board-stories-wish-26]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en av dagens hyggelige detaljer dere vil prøve å få plass til igjen neste uke.
+[SLUTT]
+
+[KORT base-board-stories-wish-27]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn to gamle bilder eller egne minner dere vil sette ved siden av hverandre og snakke kort om senere.
+[SLUTT]
+
+[KORT base-board-stories-wish-28]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en liten tradisjon som ikke krever bestemt vær, pengebruk eller et stort tidsrom.
+[SLUTT]
+
+[KORT base-board-stories-wish-29]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en matrett dere allerede kan lage, og finn en liten detalj som kan knytte den til en god opplevelse.
+[SLUTT]
+
+[KORT base-board-stories-wish-30]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Avtal en valgfri ti minutters fortellerstund der dere deler én historie hver om et sted dere liker.
+[SLUTT]
+
+[KORT base-board-stories-wish-31]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg noe fra denne uken dere vil skrive ned med dato, så det ikke forsvinner blant de store hendelsene.
+[SLUTT]
+
+[KORT base-board-stories-wish-32]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en kveld der dere lager en kort spilleliste med én sang hver fra to ulike perioder i livet.
+[SLUTT]
+
+[KORT base-board-stories-wish-33]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en hverdagslig overgang dere vil gjøre hyggeligere, som å komme hjem eller rydde av bordet. Foreslå ett lite grep.
+[SLUTT]
+
+[KORT base-board-stories-wish-34]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg et felles sted dere vil beskrive hver for dere før dere sammenligner hva dere la merke til.
+[SLUTT]
+
+[KORT base-board-stories-wish-35]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå et enkelt tegn på årstiden dere vil oppsøke sammen, fra det første løvet til det siste kveldslyset.
+[SLUTT]
+
+[KORT base-board-stories-wish-36]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg tre små detaljer dere vil notere fra en kommende dag: én lyd, én handling og én setning.
+[SLUTT]
+
+[KORT base-board-stories-wish-37]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn noe dere gjerne vil at fremtidige dere skal huske om livet akkurat nå. Velg en enkel måte å bevare det på.
+[SLUTT]
+
+[KORT base-board-stories-wish-38]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå en liten opplevelse dere vil gjenta om et år for å se hva dere legger merke til da.
+[SLUTT]
+
+[KORT base-board-stories-wish-39]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en vanlig dag dere vil lage et minialbum av, med høyst tre bilder eller tre korte notater.
+[SLUTT]
+
+[KORT base-board-stories-wish-40]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Avtal å spørre hverandre etter neste felles opplevelse: «Hva vil du huske fra dette?» La svarene være forskjellige.
+[SLUTT]

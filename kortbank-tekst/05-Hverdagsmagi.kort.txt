@@ -404,3 +404,1203 @@ AKTIV: ja
 TEKST:
 Velg en felles hverdagsvane som skal handle om trivsel, ikke prestasjon.
 [SLUTT]
+
+[KORT base-board-everyday-talk-11]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken kopp, skål eller tallerken velger du helst når du bare lager noe til deg selv?
+[SLUTT]
+
+[KORT base-board-everyday-talk-12]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva er det hyggeligste du kan høre fra kjøkkenet uten å se hva som foregår?
+[SLUTT]
+
+[KORT base-board-everyday-talk-13]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken liten hverdagsluksus finnes allerede hjemme hos dere?
+[SLUTT]
+
+[KORT base-board-everyday-talk-14]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Er en god søndagsmorgen ryddig og klar, eller litt rotete med god tid? Fortell hvorfor.
+[SLUTT]
+
+[KORT base-board-everyday-talk-15]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken gjenstand bruker du gjerne helt til den nesten faller fra hverandre?
+[SLUTT]
+
+[KORT base-board-everyday-talk-16]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva vil du helst ha innen rekkevidde når du setter deg til rette for kvelden?
+[SLUTT]
+
+[KORT base-board-everyday-talk-17]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken rett smaker ekstra godt som rester dagen etter?
+[SLUTT]
+
+[KORT base-board-everyday-talk-18]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Når på dagen liker du at det kommer litt liv i huset?
+[SLUTT]
+
+[KORT base-board-everyday-talk-19]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva foretrekker du å gjøre ferdig med en gang, bare for den gode følelsen etterpå?
+[SLUTT]
+
+[KORT base-board-everyday-talk-20]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilket lite tegn forteller deg at en kopp med noe varmt er laget akkurat slik du liker den?
+[SLUTT]
+
+[KORT base-board-everyday-talk-21]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken vanlig ting ser finere ut i kveldslys?
+[SLUTT]
+
+[KORT base-board-everyday-talk-22]
+TYPE: Samtale
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva kan gjøre en ventestund hjemme overraskende hyggelig?
+[SLUTT]
+
+[KORT base-board-everyday-talk-23]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når dere gjør hver deres ting i samme rom, hva liker du ved det?
+[SLUTT]
+
+[KORT base-board-everyday-talk-24]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva er en god måte å spørre om hjelp på som gjør det lett å svare ærlig?
+[SLUTT]
+
+[KORT base-board-everyday-talk-25]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilke av deres ulike hverdagsvaner utfyller hverandre på en morsom måte?
+[SLUTT]
+
+[KORT base-board-everyday-talk-26]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvis ettermiddagen fikk ett kvarter ekstra, hvor ville det vært finest å plassere det?
+[SLUTT]
+
+[KORT base-board-everyday-talk-27]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gjør at et lite initiativ føles som en invitasjon og ikke som en ny oppgave?
+[SLUTT]
+
+[KORT base-board-everyday-talk-28]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken felles oppgave ville du gitt en mer leken ramme dersom det var helt valgfritt?
+[SLUTT]
+
+[KORT base-board-everyday-talk-29]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken hyggelig ting er lett å overse fordi den skjer så ofte?
+[SLUTT]
+
+[KORT base-board-everyday-talk-30]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvordan liker du at en plan justeres når du plutselig har mindre overskudd enn ventet?
+[SLUTT]
+
+[KORT base-board-everyday-talk-31]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten tradisjon fra et annet hjem kunne du lånt og gjort til deres egen?
+[SLUTT]
+
+[KORT base-board-everyday-talk-32]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva gir en kveld hjemme særpreg selv om dere bruker det dere alltid har?
+[SLUTT]
+
+[KORT base-board-everyday-talk-33]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Når er det fint å få et konkret forslag, og når vil du heller velge selv?
+[SLUTT]
+
+[KORT base-board-everyday-talk-34]
+TYPE: Samtale
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken forventning til en vanlig fridag kunne dere gjort litt romsligere?
+[SLUTT]
+
+[KORT base-board-everyday-talk-35]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva betyr gjestfrihet mellom dere når ingen andre er på besøk?
+[SLUTT]
+
+[KORT base-board-everyday-talk-36]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva vil du helst bevare ved hverdagen deres dersom den blir travlere?
+[SLUTT]
+
+[KORT base-board-everyday-talk-37]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken forskjell mellom dere kan få mer plass uten at dere må gjøre alt hver for dere?
+[SLUTT]
+
+[KORT base-board-everyday-talk-38]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvordan kan dere gi rom til en ny vane uten at den blir en avtale som må bestås?
+[SLUTT]
+
+[KORT base-board-everyday-talk-39]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilket lite valg gjør en vanlig kveld mer til deres egen, selv om dere bare har en halvtime?
+[SLUTT]
+
+[KORT base-board-everyday-talk-40]
+TYPE: Samtale
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva kunne dere gjøre litt sjeldnere for å gi mer plass til en hyggelig, vanlig stund?
+[SLUTT]
+
+[KORT base-board-everyday-guess-11]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg i hodet: frokost ved bordet, i sofaen eller ute. La den andre gjette valget ditt.
+[SLUTT]
+
+[KORT base-board-everyday-guess-12]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre vil sette på en velkjent sang eller oppdage en ny mens middagen lages.
+[SLUTT]
+
+[KORT base-board-everyday-guess-13]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken hverdagsrett tror du den andre kunne spist to dager på rad med glede?
+[SLUTT]
+
+[KORT base-board-everyday-guess-14]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken liten ting den andre helst vil ha fast plass til ved inngangsdøren.
+[SLUTT]
+
+[KORT base-board-everyday-guess-15]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+La den andre gjette hva du først ser etter når du åpner kjøleskapet uten en plan.
+[SLUTT]
+
+[KORT base-board-everyday-guess-16]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre vil velge mykt lampelys, dagslys eller et godt leselys akkurat nå.
+[SLUTT]
+
+[KORT base-board-everyday-guess-17]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hvilken kopp i huset tror du den andre ville valgt til en rolig søndagsmorgen?
+[SLUTT]
+
+[KORT base-board-everyday-guess-18]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett om den andre helst gjør litt og litt eller alt i én omgang når noe skal ryddes.
+[SLUTT]
+
+[KORT base-board-everyday-guess-19]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Den andre velger én lyd som er hyggelig hjemme. Still to ja- eller nei-spørsmål før du gjetter.
+[SLUTT]
+
+[KORT base-board-everyday-guess-20]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville lagt på en skive når det bare skal smake kjent og godt.
+[SLUTT]
+
+[KORT base-board-everyday-guess-21]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hva tror du den andre helst gjør mens noe står i ovnen: leser, smårydder eller setter seg ned?
+[SLUTT]
+
+[KORT base-board-everyday-guess-22]
+TYPE: Gjett
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gjett hvilken plass en liten bukett med det som finnes ute, ville fått hvis den andre bestemte.
+[SLUTT]
+
+[KORT base-board-everyday-guess-23]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken oppgave tror du den andre gjerne gjør på sin egen måte? Sjekk om du traff.
+[SLUTT]
+
+[KORT base-board-everyday-guess-24]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva den andre helst ville sluppet å ta stilling til etter en lang dag: mat, klær eller kveldens plan.
+[SLUTT]
+
+[KORT base-board-everyday-guess-25]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre tenker på en vanlig situasjon der litt bedre lys ville hjulpet. Gjett hvilken.
+[SLUTT]
+
+[KORT base-board-everyday-guess-26]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hva som ville gjort det hyggeligere for den andre å komme hjem akkurat i dag.
+[SLUTT]
+
+[KORT base-board-everyday-guess-27]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva tror du den andre foretrekker når en oppgave deles: gjøre den samtidig eller fordele hver sin del?
+[SLUTT]
+
+[KORT base-board-everyday-guess-28]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken rutine den andre kunne gjort langsommere uten å kjede seg.
+[SLUTT]
+
+[KORT base-board-everyday-guess-29]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten vane tror du den andre forbinder mest med dere som par?
+[SLUTT]
+
+[KORT base-board-everyday-guess-30]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett om den andre vil ha selskap eller arbeidsro når en hverdagsoppgave krever konsentrasjon.
+[SLUTT]
+
+[KORT base-board-everyday-guess-31]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Den andre velger en gjenstand hjemme som fortjener litt heder. Gjett ut fra én ledetråd.
+[SLUTT]
+
+[KORT base-board-everyday-guess-32]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hva tror du er den andres ideelle varsel før en hyggelig, spontan plan: nå, om ti minutter eller i morgen?
+[SLUTT]
+
+[KORT base-board-everyday-guess-33]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjett hvilken enkel hjemmekveld den andre ville valgt etter tre travle dager.
+[SLUTT]
+
+[KORT base-board-everyday-guess-34]
+TYPE: Gjett
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Hvilken liten endring tror du ville gjort en felles morgen mindre preget av hastverk?
+[SLUTT]
+
+[KORT base-board-everyday-guess-35]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett om den andre synes en god rutine først og fremst sparer tid, sparer valg eller skaper noe å glede seg til.
+[SLUTT]
+
+[KORT base-board-everyday-guess-36]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva tror du den andre helst vil få beholde som sin egen vane, selv om dere deler mye?
+[SLUTT]
+
+[KORT base-board-everyday-guess-37]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett når den andre lettest merker omtanke: før en travel stund, midt i den eller etterpå.
+[SLUTT]
+
+[KORT base-board-everyday-guess-38]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hvilken liten ting tror du den andre ville tatt med seg fra dagens hverdag til et helt nytt hjem?
+[SLUTT]
+
+[KORT base-board-everyday-guess-39]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gjett hva den andre ville valgt som et tegn på en vellykket fridag uten å telle noe som ble gjort.
+[SLUTT]
+
+[KORT base-board-everyday-guess-40]
+TYPE: Gjett
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hva tror du den andre helst vil kunne si uten forklaring: «jeg trenger ro», «bli med» eller «vi tar det senere»?
+[SLUTT]
+
+[KORT base-board-everyday-challenge-11]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gi en helt vanlig gjenstand i rommet en kort takketale for jobben den gjør.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-12]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en felles frokostmeny der dere velger én ting hver fra det dere pleier å ha.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-13]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en vaskemaskins arbeidsdag som om du var en entusiastisk sportskommentator i tjue sekunder.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-14]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Pek ut en liten fargekombinasjon i rommet som dere begge synes fungerer.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-15]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Si tre ting som kan gjøre en regnkveld hjemme hyggelig uten strømmetjenester.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-16]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tegn en kopp i luften med fingeren. Den andre finner på et navn til den fiktive kaféen deres.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-17]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Sett sammen en tenkt radiokanal for matlaging: navn, én sang og et kort slagord.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-18]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg hver deres mest undervurderte kjøkkenredskap og gi det en setning med ros.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-19]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Beskriv en vanlig gjøremålsliste som en liten reise med start, stoppested og mål.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-20]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Finn på en høytidelig tittel til den som nettopp har båret inn handleposer eller tømt en søppelbøtte.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-21]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lag en fiktiv værmelding for stua med temperatur, stemning og anbefalt aktivitet.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-22]
+TYPE: Utfordring
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg et ord dere synes passer til lyden av et hjem som er i ferd med å våkne.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-23]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Dere har en tenkt kurv med brød, frukt og et teppe. Planlegg en piknik i stua på tretti sekunder.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-24]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Gjør om «vi burde finne på noe» til to konkrete invitasjoner som er lette å takke ja eller nei til.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-25]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn en oppgave dere kan gjøre sammen på to ulike måter, og la begge velge sin foretrukne variant.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-26]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planlegg en ti minutters kveldspause med en tydelig begynnelse og slutt, uten noen oppgave inni.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-27]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Si en praktisk detalj dere liker forskjellig. Lag en vennlig løsning som gir plass til begge preferansene.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-28]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Skriv eller si en trelinjers anmeldelse av hjemmet deres fra perspektivet til en fornøyd pute.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-29]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en vanlig middag og gi den en ny ramme med navn, musikk eller bordplass, uten nye innkjøp.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-30]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag et vennlig uttrykk dere kan bruke når dere vil avslutte planleggingen og bare være til stede.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-31]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Finn tre måter å gjøre en helt ordinær tirsdag gjenkjennelig fin på. Velg den enkleste.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-32]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Bytt på å legge til én lyd i en muntlig beskrivelse av deres ideelle rolige morgen.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-33]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lag en invitasjon til en kveld der dere kan ha det hyggelig og samtidig holde på med ulike ting.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-34]
+TYPE: Utfordring
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en valgfri plan dere kunne strøket fra en travel helg. Finn hva dere ville brukt rommet til.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-35]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag et forslag til to likeverdige versjoner av en hjemmedate: én med overskudd og én med lite energi.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-36]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Gi en tenkt ny samboer ett råd hver om hvordan man kan gjøre felles oppgaver mindre masete.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-37]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en meny med tre måter å si «jeg er her» på som ikke krever svar med en gang.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-38]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Finn en hyggelig felles vane som tåler å bli avlyst. Si hvordan dere kan ta den opp igjen uten å ta igjen det tapte.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-39]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Lag en liten velkomst for hverandre som kan fungere både på en god dag og på en dag man helst vil være stille.
+[SLUTT]
+
+[KORT base-board-everyday-challenge-40]
+TYPE: Utfordring
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg én forskjell i hvordan dere liker å bruke en fridag. Sett sammen en prøveplan med rom til begge.
+[SLUTT]
+
+[KORT base-board-everyday-joker-11]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lydsporet skifter: nynn en kort melodi som passer til oppvask, og la den andre døpe låten.
+[SLUTT]
+
+[KORT base-board-everyday-joker-12]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Dagens museum: velg en nyttig ting i rommet og gi den en morsom utstillingstekst.
+[SLUTT]
+
+[KORT base-board-everyday-joker-13]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Minihotell: finn på navnet på rommet dere sitter i, som om det var et lite pensjonat.
+[SLUTT]
+
+[KORT base-board-everyday-joker-14]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Mellomrom: sitt i ro i tjue sekunder og fortell etterpå om én lyd dere la merke til.
+[SLUTT]
+
+[KORT base-board-everyday-joker-15]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Rim til rutinen: lag et kort, dårlig rim om brødskiver eller sokker. Dårlige rim er hele poenget.
+[SLUTT]
+
+[KORT base-board-everyday-joker-16]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Hverdagsmedalje: del ut en oppdiktet pris til en gjenstand som sjelden får oppmerksomhet.
+[SLUTT]
+
+[KORT base-board-everyday-joker-17]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Kaffepause uten kaffe: finn én ting som gjør en pause god, uavhengig av hva som er i koppen.
+[SLUTT]
+
+[KORT base-board-everyday-joker-18]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Tre gode ord: velg hver ett adjektiv til en tenkt kveld hjemme og finn et tredje sammen.
+[SLUTT]
+
+[KORT base-board-everyday-joker-19]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Baklengs middag: presenter desserten først og avslør til slutt hva den oppdiktede middagen var.
+[SLUTT]
+
+[KORT base-board-everyday-joker-20]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Stille reklame: lag en fem sekunders stum reklame for en stol, en lampe eller et annet møbel.
+[SLUTT]
+
+[KORT base-board-everyday-joker-21]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Gammel favoritt: nevn noe enkelt du likte å gjøre hjemme før smarttelefonen fikk plass i livet.
+[SLUTT]
+
+[KORT base-board-everyday-joker-22]
+TYPE: Joker
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Lav stemme: beskriv en matrett som en hviskende radioreportasje i ti sekunder, eller bruk vanlig stemme hvis du foretrekker det.
+[SLUTT]
+
+[KORT base-board-everyday-joker-23]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ekstra fridag: dere får fri en tilfeldig onsdag uten mer penger. Velg bare én liten ting dere vil gjøre.
+[SLUTT]
+
+[KORT base-board-everyday-joker-24]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Planen krymper: gjør en tenkt hjemmedate med fire innslag om til ett godt innslag.
+[SLUTT]
+
+[KORT base-board-everyday-joker-25]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Én ting av gangen: nevn hver deres beste aktivitet som ikke blir bedre av å kombinere den med noe annet.
+[SLUTT]
+
+[KORT base-board-everyday-joker-26]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Rutinen får gjest: hvordan ville dere gjort en vanlig kveld hyggelig for en som besøkte dere for første gang?
+[SLUTT]
+
+[KORT base-board-everyday-joker-27]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ta imot: den ene foreslår en enkel hjelp. Den andre øver på et tydelig ja, nei eller et alternativ.
+[SLUTT]
+
+[KORT base-board-everyday-joker-28]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+En annen overskrift: gi «bare en vanlig dag» en overskrift som gjør plass til noe dere faktisk likte.
+[SLUTT]
+
+[KORT base-board-everyday-joker-29]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Pause på signal: velg en lyd dere kunne brukt som en vennlig påminnelse om å ta en liten pause, uten å lage en alarm nå.
+[SLUTT]
+
+[KORT base-board-everyday-joker-30]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Samme bord, to menyer: si hver deres ideelle kveldsmat og finn én ingrediens eller idé de deler.
+[SLUTT]
+
+[KORT base-board-everyday-joker-31]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Lånt blikk: beskriv rommet som om dere var her for første gang og oppdag én hyggelig detalj.
+[SLUTT]
+
+[KORT base-board-everyday-joker-32]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Kveldens reserveplan: velg en aktivitet dere kan foreslå hvis ingen av dere orker den opprinnelige planen.
+[SLUTT]
+
+[KORT base-board-everyday-joker-33]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Godt vertskap: den ene er vert for en tenkt stillekveld. Den andre velger hvilken praktisk detalj som gjør den god.
+[SLUTT]
+
+[KORT base-board-everyday-joker-34]
+TYPE: Joker
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Husets ordbok: finn på et ord for den gode følelsen av å oppdage at noen allerede har gjort en liten oppgave. Lag en setning med ordet.
+[SLUTT]
+
+[KORT base-board-everyday-joker-35]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Plass til ulikhet: velg et felles tidspunkt der dere fint kan gjøre hver deres ting, og fortell hva som gjør det behagelig.
+[SLUTT]
+
+[KORT base-board-everyday-joker-36]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Forenkleren: beskriv en hjemmedate som kan gjøres klar på to minutter med ting som allerede ligger fremme.
+[SLUTT]
+
+[KORT base-board-everyday-joker-37]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Frivillig tradisjon: finn på en årlig markering av noe hverdagslig som bare skal gjentas hvis begge har lyst.
+[SLUTT]
+
+[KORT base-board-everyday-joker-38]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Mild landing: finn en setning som lar dere skifte fra travelhet til samvær uten at humøret må endre seg med en gang.
+[SLUTT]
+
+[KORT base-board-everyday-joker-39]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Hjem på film: velg én scene fra hverdagen deres som forteller noe fint uten at noen sier noe.
+[SLUTT]
+
+[KORT base-board-everyday-joker-40]
+TYPE: Joker
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Liten avslutning: velg et mulig siste innslag i en god kveld som gjør det enkelt å finne ro etterpå.
+[SLUTT]
+
+[KORT base-board-everyday-wish-11]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en kveld denne uken der dere spiser kveldsmat fra det som allerede finnes, uten å pynte på resultatet.
+[SLUTT]
+
+[KORT base-board-everyday-wish-12]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en morgen dere kunne ønske å høre én sang sammen før dagen begynner.
+[SLUTT]
+
+[KORT base-board-everyday-wish-13]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Be om en fremtidig pause på fem minutter ved et vindu, med utsikt som eneste innslag.
+[SLUTT]
+
+[KORT base-board-everyday-wish-14]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en dag dere vil lage en enkel favorittrett og spise den på en annen plass enn vanlig.
+[SLUTT]
+
+[KORT base-board-everyday-wish-15]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en gammel favorittfilm dere kunne se en liten bit av sammen en annen kveld.
+[SLUTT]
+
+[KORT base-board-everyday-wish-16]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ønsk deg at dere neste gang det regner, tar en kort pause og hører på regnet fra der dere er.
+[SLUTT]
+
+[KORT base-board-everyday-wish-17]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en framtidig kveld med hver deres bok, hobby eller aktivitet i samme rom.
+[SLUTT]
+
+[KORT base-board-everyday-wish-18]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en enkel snack dere allerede liker, og foreslå den til neste felles spillekveld.
+[SLUTT]
+
+[KORT base-board-everyday-wish-19]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ønsk deg at dere setter av ti minutter til å høre på et albumspor den andre velger.
+[SLUTT]
+
+[KORT base-board-everyday-wish-20]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Foreslå en rolig helgefrokost der det er lov å bli sittende etter at maten er spist.
+[SLUTT]
+
+[KORT base-board-everyday-wish-21]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Velg en vanlig kopp hver som dere vil bruke til neste lille hjemmekafé.
+[SLUTT]
+
+[KORT base-board-everyday-wish-22]
+TYPE: Ønskekort
+NIVÅ: 1
+AKTIV: ja
+TEKST:
+Ønsk deg en kveld der dere gjenser et gammelt bilde dere begge er glade i og forteller om én detalj.
+[SLUTT]
+
+[KORT base-board-everyday-wish-23]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en hjemmedate med høyst tre ting å gjøre klart, og si hva de tre kan være.
+[SLUTT]
+
+[KORT base-board-everyday-wish-24]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en framtidig matlagingsstund der én velger musikken og den andre velger en enkel rett.
+[SLUTT]
+
+[KORT base-board-everyday-wish-25]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ønsk deg en liten stund etter en travel dag der du først får lande før dere bestemmer resten av kvelden.
+[SLUTT]
+
+[KORT base-board-everyday-wish-26]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en søndag der dere lager hver deres korte liste over hyggelige muligheter og velger én felles.
+[SLUTT]
+
+[KORT base-board-everyday-wish-27]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en valgfri hverdagsoppgave dere kunne dele annerledes én gang, bare for å prøve.
+[SLUTT]
+
+[KORT base-board-everyday-wish-28]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ønsk deg en kveldsmat der dere forteller hver sin morsomme observasjon fra dagen, uten å oppsummere alt.
+[SLUTT]
+
+[KORT base-board-everyday-wish-29]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en liten smaksprøve av to ting dere allerede har, og en uhøytidelig favorittkåring.
+[SLUTT]
+
+[KORT base-board-everyday-wish-30]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en dag dere vil gjøre en felles oppgave med en kort pause halvveis.
+[SLUTT]
+
+[KORT base-board-everyday-wish-31]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ønsk deg en framtidig ettermiddag med en tydelig slutt på gjøremålene, selv om noe får vente.
+[SLUTT]
+
+[KORT base-board-everyday-wish-32]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Foreslå en stille stund der dere kan være sammen uten å holde en samtale i gang.
+[SLUTT]
+
+[KORT base-board-everyday-wish-33]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Velg en favoritt fra barndommens enkle kveldsmat som dere kunne lage eller snakke om en annen dag.
+[SLUTT]
+
+[KORT base-board-everyday-wish-34]
+TYPE: Ønskekort
+NIVÅ: 2
+AKTIV: ja
+TEKST:
+Ønsk deg en invitasjon til en liten aktivitet med to mulige tidspunkter, slik at det er lett å velge.
+[SLUTT]
+
+[KORT base-board-everyday-wish-35]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå at dere prøver én kveld uten å fylle ledige minutter med nye planer.
+[SLUTT]
+
+[KORT base-board-everyday-wish-36]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en liten felles opplevelse dere kan glede dere til i en travel uke, og lag en enda enklere reservevariant.
+[SLUTT]
+
+[KORT base-board-everyday-wish-37]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Ønsk deg en framtidig fridag med både en avtalt felles stund og plass til hver deres ønsker.
+[SLUTT]
+
+[KORT base-board-everyday-wish-38]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Foreslå at dere prøver en ny liten tradisjon én gang før dere avgjør om den skal gjentas.
+[SLUTT]
+
+[KORT base-board-everyday-wish-39]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Velg en vanlig situasjon der du ønsker mer forutsigbarhet, og foreslå én konkret avklaring dere kan prøve.
+[SLUTT]
+
+[KORT base-board-everyday-wish-40]
+TYPE: Ønskekort
+NIVÅ: 3
+AKTIV: ja
+TEKST:
+Ønsk deg en kveld der dere avslutter med å velge hva som kan få vente til en annen dag.
+[SLUTT]

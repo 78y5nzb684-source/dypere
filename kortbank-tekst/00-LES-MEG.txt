@@ -1,6 +1,6 @@
 DYPERE – redigerbare tekstfiler til brettspillbanken
 
-Her ligger alle de 300 nye kortene, fordelt på seks pakker med 50 kort hver.
+Her ligger alle 1200 kort, fordelt på seks pakker med 200 kort hver.
 De 58 eldre startkortene er ikke del av denne utskiftingen.
 
 SLIK REDIGERER DU
@@ -29,11 +29,11 @@ BEHOLD DETTE VED VANLIG TEKSTREDIGERING
 NYE ELLER FÆRRE KORT
 Du kan kopiere en hel kortblokk for å lage et nytt kort, men det nye kortet
 må få en ny, unik ID som begynner med base-board-. Eksempel:
-base-board-stories-talk-11
+base-board-stories-talk-41
 Endre ikke ID-en til et eksisterende kort bare fordi du endrer teksten.
 Du kan fjerne en hel blokk, men AKTIV: nei er enklere hvis du er usikker.
-Samlet grense er 1000 kort i denne banken. Appen viser antall pakker og kort
-automatisk; det trenger ikke fortsatt være akkurat 300 kort.
+Samlet grense er 2000 kort i denne banken. Appen viser antall pakker og kort
+automatisk; det trenger ikke fortsatt være akkurat 1200 kort.
 
 KONTROLL OG INNSETTING – DETTE KAN JEG GJØRE FOR DEG
 bygg_kortbank.py kontrollerer format, ID-er, typer, nivåer og tekstlengde.

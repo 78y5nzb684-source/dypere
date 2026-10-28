@@ -9,6 +9,7 @@ import tempfile
 
 KINDS = {'Samtale': 'talk', 'Gjett': 'guess', 'Utfordring': 'challenge', 'Joker': 'joker', 'Ønskekort': 'wish'}
 ROOT = Path(__file__).resolve().parent
+MAX_CARDS = 2000
 
 
 def fail(path, line, message):
@@ -96,8 +97,8 @@ def load_bank(folder):
         pack, content = parse_pack(path)
         packs.append(pack)
         cards.extend(content)
-    if len(cards) > 1000:
-        raise ValueError('Banken kan ha maksimalt 1000 kort.')
+    if len(cards) > MAX_CARDS:
+        raise ValueError(f'Banken kan ha maksimalt {MAX_CARDS} kort.')
     for label, values in [('kort-ID', [c['id'] for c in cards]), ('pakke-ID', [p['id'] for p in packs]), ('pakkenavn', [p['name'].casefold() for p in packs])]:
         if len(set(values)) != len(values):
             raise ValueError(f'Banken har gjentatt {label}. Ingen appfil er skrevet.')
