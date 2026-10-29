@@ -20,7 +20,7 @@
  let currentRang = 1;
  let segment = 1;
  let stepInSegment = 0;
- let stepsPerSegment = [4,5,5];
+ let stepsPerSegment = [7,7,7];
  let mode = 'oppvarming';
  let context = 'hjemme';
  let recent = [];
@@ -88,8 +88,8 @@ function showContext() {
    p.append(node('p', 'Kartlegg bygger profil. Varm opp tar dere fra nøytral til superhot.'));
    const kart = node('button', 'Kartlegg (A–Å)', 'primary');
    const varm = node('button', 'Varm opp');
-   kart.onclick = () => { mode = 'kartlegg'; stepsPerSegment = [6,6,6]; showSetup(); };
-   varm.onclick = () => { mode = 'oppvarming'; stepsPerSegment = [4,5,5]; showSetup(); };
+   kart.onclick = () => { mode = 'kartlegg'; stepsPerSegment = [8,8,8]; showSetup(); };
+   varm.onclick = () => { mode = 'oppvarming'; stepsPerSegment = [7,7,7]; showSetup(); };
    p.append(kart, varm);
  }
 
