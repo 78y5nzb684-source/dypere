@@ -29,7 +29,7 @@
  }
  function publicCard(c){return {id:c.id,cat:c.cat,rang:c.rang,text:c.text};}
  function createSession(options,indexedBank){
-  if(!options||![3,4].includes(options.participantCount))throw Error('Velg tre eller fire deltakere.');
+  if(!options||![2,3,4].includes(options.participantCount))throw Error('Velg to, tre eller fire deltakere.');
   const participantCount=options.participantCount,context=options.context||'hjemme',mode=options.mode||'oppvarming';
   if(!contexts.has(context)||!modes.has(mode))throw Error('Ugyldig kontekst eller modus.');
   if(!Array.isArray(indexedBank)||indexedBank.length>50000)throw Error('Ugyldig kortbank.');

@@ -36,7 +36,9 @@
 @media(max-height:500px) and (orientation:landscape){.journey-page .app-heading{display:flex;height:auto;min-height:70px}.journey-page .app-footer{display:block}.journey-card{min-height:110px}}
 .journey-name-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
 .journey-name-grid input{width:100%;min-height:50px;box-sizing:border-box}
-.journey-party{padding:24px 14px;font-size:18px;line-height:1.45}
+.journey-party{padding:18px 14px;min-height:64px;font-size:18px;line-height:1.45}
+.journey-parties .journey-party:first-child{grid-column:1/-1}
+.journey-intro>.journey-note{margin:18px 0 0}
 .journey-handoff{text-align:center}.journey-handoff .journey-mark{margin:24px 0 8px}
 .journey-skill-list{display:grid;gap:10px;margin-block:24px}
 .journey-skill{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:50px}

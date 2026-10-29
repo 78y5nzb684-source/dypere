@@ -25,6 +25,7 @@
     return repeated ? name + ' · person ' + (i+1) : name;
   }
   function groupLabel(i) {
+    if(participantCount === 2)return 'Paret';
     return participantCount === 3 ? (i < 2 ? 'Paret' : 'Tredjepersonen') : (i < 2 ? 'Par A' : 'Par B');
   }
   function clearMemory() {
@@ -46,14 +47,15 @@
   function showParty() {
     clearMemory();
     const p = panel('Hvem er med?', 'VÅR STUND'); p.classList.add('journey-intro');
-    p.append(node('p','Et par og en tredjeperson, eller to par. Én telefon går på rundgang, og hver av dere svarer for seg selv.'));
-    const row = actions(p);
-    row.append(button('Par + én · 3 personer', () => { participantCount=3; showNames(); }, 'journey-party'),
+    p.append(node('p','For dere to, et par og én til, eller to par. Svar hver for dere på én telefon.'));
+    const row = actions(p);row.classList.add('journey-parties');
+    row.append(button('Bare oss to · 2 personer', () => { participantCount=2; showNames(); }, 'journey-party primary'),
+      button('Par + én · 3 personer', () => { participantCount=3; showNames(); }, 'journey-party'),
       button('To par · 4 personer', () => { participantCount=4; showNames(); }, 'journey-party'));
     p.append(node('p','Kun for voksne 18+. Alle skal ønske å være med.','journey-note'));
   }
   function showNames() {
-    const p = panel('Gjør plass til alle', participantCount === 3 ? 'PAR + ÉN' : 'TO PAR');
+    const p = panel('Gjør plass til alle', participantCount === 2 ? 'BARE OSS TO' : participantCount === 3 ? 'PAR + ÉN' : 'TO PAR');
     p.append(node('p','Bruk navn eller kallenavn, så blir det tydelig hvem som har telefonen.'));
     const fields = node('div',undefined,'journey-name-grid'), inputs = [];
     for (let i=0; i<participantCount; i++) {
@@ -145,7 +147,7 @@
     if(pending?.pid!==pid || pending?.qid!==q.id)pending=null;
     const p=panel('Ditt svar',personName(pid)+' · PRIVAT'),progress=node('div',undefined,'stund-progress');
     progress.append(node('span','Bolk '+snap.segment+' av 3'),node('span','Kort '+own.questionNumber+' av '+snap.totalQuestions));
-    p.append(progress,node('p','Svar for deg selv, med denne gruppen i tankene.','journey-note'),node('div',q.text,'journey-card'));
+    p.append(progress,node('p',participantCount===2?'Svar for deg selv, med dere to i tankene.':'Svar for deg selv, med denne gruppen i tankene.','journey-note'),node('div',q.text,'journey-card'));
     const choiceRow=node('div',undefined,'journey-answer-row');
     choiceRow.setAttribute('role','group');choiceRow.setAttribute('aria-label','Ditt private svar');
     const next=button('Neste kort',()=>{

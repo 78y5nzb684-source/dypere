@@ -46,7 +46,7 @@
       const master=one('.photo-role[data-role="Mester"]').getAttribute('aria-pressed')==='true';
       all('[data-live-role]').forEach(b=>{const selected=b.dataset.liveRole===(master?'Mester':'Baby');b.classList.toggle('selected',selected);b.setAttribute('aria-pressed',String(selected))});
       const extra=one('#level option[value="Drøye"]');
-      if(extra){extra.disabled=master;if(master&&id('level').value==='Drøye'){id('level').value='Alle';id('level').dispatchEvent(new Event('change',{bubbles:true}))}}
+      if(extra&&!id('level').hasAttribute('data-dynamic-photo-levels')){extra.disabled=master;if(master&&id('level').value==='Drøye'){id('level').value='Alle';id('level').dispatchEvent(new Event('change',{bubbles:true}))}}
       // Do not expose an undefined helper when a valid level has no old description.
       if(id('levelInfo')?.textContent==='undefined')id('levelInfo').textContent='Valgt nivå gjelder ved neste trekk.';
     }
