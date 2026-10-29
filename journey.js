@@ -12,6 +12,8 @@
    {id:'utforsking', name:'Utforsking', cat:['group','exhibition','pegging']},
    {id:'intensitet', name:'Intensitet', cat:['impact','breath','humiliation','watersports']}
  ];
+ const skillByCategory = new Map(skills.flatMap(sk => sk.cat.map(cat => [cat, sk.id])));
+ const exploredGroups = new Set();
 
  let points = 8;
  let allocated = {};
@@ -94,6 +96,14 @@ function showContext() {
    if (context === 'fest') currentRang = Math.min(currentRang, 3.5);
 
    const q = pickQuestion();
+   if (!q) {
+     const p = panel('Ingen spørsmål tilgjengelig');
+     p.append(node('p', 'Ingen spørsmål i banken passer denne konteksten. Prøv en annen kontekst eller en større bank.'));
+     const again = node('button', 'Ny seanse', 'primary');
+     again.onclick = () => location.reload();
+     p.append(again);
+     return;
+   }
    const totalSteps = stepsPerSegment.reduce((a,b)=>a+b,0);
    const done = stepsPerSegment.slice(0, segment-1).reduce((sum, count) => sum + count, 0) + stepInSegment;
    const tones = ['Nysgjerrig og lett', 'Varmere og mer direkte', 'Helt åpen'];
@@ -131,20 +141,41 @@ function showContext() {
  function pickQuestion() {
    let maxR = context==='bil'?2.5:context==='fest'?3.5:5;
    const allowed = bank.filter(t => Math.abs(t.rang - currentRang) <= 1.3 && t.rang <= maxR);
-   const pool = allowed.length ? allowed : bank;
-   const weighted = pool.map(t => {
+   const pool = allowed.length ? allowed : bank.filter(t => t.rang <= maxR);
+   if (!pool.length) return null;
+   // Apply the complete history window before ranking. A prefix of one
+   // popular category must not make the rest of the eligible bank disappear.
+   const fresh = pool.filter(t => !recent.includes(t.id) && !recentCats.includes(t.cat));
+   const unused = fresh.length ? fresh : pool.filter(t => !recent.includes(t.id));
+   const candidates = unused.length ? unused : pool;
+   const categories = new Map();
+   candidates.forEach(t => {
+     if (!categories.has(t.cat)) categories.set(t.cat, []);
+     categories.get(t.cat).push(t);
+   });
+   const weighted = Array.from(categories, ([cat, cards]) => {
+     const t = cards[0];
      let s = (scores[t.cat] || 0) * 4.5;  // sterkere vekt på tidligere svar
      skills.forEach(sk => { if (sk.cat.includes(t.cat)) s += (allocated[sk.id]||0)*2; });
-     return {t, s};
+     return {cat, cards, s, group: skillByCategory.get(cat) || 'unmapped'};
    }).sort((a,b)=>b.s - a.s);
-   const top = weighted.slice(0, 18).filter(x => !recent.includes(x.t.id) && !recentCats.includes(x.t.cat));
-   let chosen;
-   if (top.length) {
-     chosen = top[Math.floor(Math.random()*Math.min(6, top.length))].t;
-   } else {
-     const fallback = weighted.filter(x => !recent.includes(x.t.id));
-     chosen = (fallback.length ? fallback[0] : weighted[Math.floor(Math.random()*weighted.length)]).t;
+   // Category first, card second: file order and bank size are not tie-breakers.
+   let ranked = weighted;
+   if (!skills.some(sk => (allocated[sk.id] || 0) > 0)) {
+     // Without a character prior, sample each available skill before exploiting
+     // early answers. Unmapped categories share one sampling slot; their
+     // individual category labels, scores and final-result semantics stay intact.
+     const unexplored = weighted.filter(x => !exploredGroups.has(x.group));
+     if (unexplored.length) {
+       const groups = Array.from(new Set(unexplored.map(x => x.group)));
+       const group = groups[Math.floor(Math.random()*groups.length)];
+       ranked = unexplored.filter(x => x.group === group);
+     }
    }
+   const top = ranked.filter(x => x.s === ranked[0].s);
+   const selected = top[Math.floor(Math.random()*top.length)];
+   const chosen = selected.cards[Math.floor(Math.random()*selected.cards.length)];
+   exploredGroups.add(selected.group);
    recent.push(chosen.id);
    recentCats.push(chosen.cat);
    if (recent.length > 16) recent.shift();
