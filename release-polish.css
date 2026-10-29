@@ -65,3 +65,14 @@ legend{font-size:13px;color:var(--gold);padding:0 6px}
 @media print{.new-play .app{display:none!important}}
 .storage-warning{padding:12px;border:1px solid #b89b72;border-radius:12px;background:#423027;color:#ffe0b4;font-size:14px}
 @media(max-width:759px){.board-view-toggle{display:flex}.board-panel.board-compact{display:none}.board-controls{position:sticky;top:8px;z-index:2;background:var(--bg);padding:6px 0}.board-console .studio-card{min-height:210px}.board-console .button-row{position:sticky;bottom:8px;background:var(--bg);padding:6px 0;z-index:2}}
+
+/* Dictionary: contained scrolling and the existing dark/gold interface. */
+.dictionary-entry{align-self:center;min-width:120px}
+.dictionary-dialog[open]{display:flex;flex-direction:column;gap:20px;max-height:calc(100dvh - 48px)}
+.dictionary-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none}
+.dictionary-heading h2{font:30px/1.2 Georgia,serif;color:var(--gold);margin:0}
+.dictionary-heading button{min-width:72px}
+.dictionary-content{margin:0;overflow-y:auto;overscroll-behavior:contain;min-height:0;display:grid;gap:20px}
+.dictionary-content>div{display:grid;gap:6px}
+.dictionary-content dt{font-weight:600;overflow-wrap:anywhere}
+.dictionary-content dd{margin:0;color:var(--muted);font-size:16px;line-height:1.5;overflow-wrap:anywhere}

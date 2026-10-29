@@ -34,22 +34,3 @@
 .journey-curtain>div{max-width:400px;text-align:center}.journey-curtain h2{font:32px Georgia,serif;color:var(--gold)}.journey-curtain button{width:100%;margin-top:24px}
 @media(max-width:500px){.journey-result{align-items:flex-start;flex-direction:column;gap:12px}.journey-result button{width:100%}.journey-card{padding:18px}.journey-page .app-heading{min-height:78px;height:auto}.journey-page .app-header{min-height:48px}.journey-page .app-brand{font-size:20px}}
 @media(max-height:500px) and (orientation:landscape){.journey-page .app-heading{display:flex;height:auto;min-height:70px}.journey-page .app-footer{display:block}.journey-card{min-height:110px}}
-.journey-name-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
-.journey-name-grid input{width:100%;min-height:50px;box-sizing:border-box}
-.journey-party{padding:18px 14px;min-height:64px;font-size:18px;line-height:1.45}
-.journey-parties .journey-party:first-child{grid-column:1/-1}
-.journey-intro>.journey-note{margin:18px 0 0}
-.journey-handoff{text-align:center}.journey-handoff .journey-mark{margin:24px 0 8px}
-.journey-skill-list{display:grid;gap:10px;margin-block:24px}
-.journey-skill{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:50px}
-.journey-skill-controls{display:flex;align-items:center;gap:12px}
-.journey-skill-controls button{width:46px;min-height:46px;padding:0;font-size:24px}
-.journey-skill-controls span{min-width:24px;text-align:center;font-variant-numeric:tabular-nums}
-.journey-answer-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:20px}
-.journey-answer-row button{min-height:54px;padding:12px 8px}
-.journey-answer-row button[aria-pressed=true]{background:var(--gold);color:#211923;border-color:var(--gold);font-weight:700}
-.journey-panel button:disabled{opacity:.4;cursor:default}.journey-exit{display:block;margin:18px auto 0}
-.journey-match{border:1px solid var(--line);border-radius:18px;padding:20px;margin-block:16px;background:#17131a66}
-.journey-match p{color:var(--ink);font-size:20px;margin-top:0}.journey-match button{width:100%;margin-top:12px;min-height:50px}
-.journey-care{padding-left:22px}.journey-care li{line-height:1.65;margin-block:12px}
-@media(max-width:500px){.journey-name-grid{grid-template-columns:1fr}.journey-actions{grid-template-columns:1fr}.journey-panel .journey-answer-row{gap:7px}.journey-card{min-height:140px}}
