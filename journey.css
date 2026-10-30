@@ -34,3 +34,8 @@
 .journey-curtain>div{max-width:400px;text-align:center}.journey-curtain h2{font:32px Georgia,serif;color:var(--gold)}.journey-curtain button{width:100%;margin-top:24px}
 @media(max-width:500px){.journey-result{align-items:flex-start;flex-direction:column;gap:12px}.journey-result button{width:100%}.journey-card{padding:18px}.journey-page .app-heading{min-height:78px;height:auto}.journey-page .app-header{min-height:48px}.journey-page .app-brand{font-size:20px}}
 @media(max-height:500px) and (orientation:landscape){.journey-page .app-heading{display:flex;height:auto;min-height:70px}.journey-page .app-footer{display:block}.journey-card{min-height:110px}}
+
+/* Party selection: keep all three compositions visible and easy to tap. */
+.journey-party-options{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-top:24px}
+.journey-party-choice{width:100%;min-height:64px;margin:0;font-size:17px;line-height:1.35;padding:14px 16px}
+.journey-panel .journey-group-summary{font-size:13px;line-height:1.45;color:var(--gold);margin:0 0 14px}

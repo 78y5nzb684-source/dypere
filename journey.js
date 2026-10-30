@@ -3,6 +3,14 @@
  const U = DypereUI, {$, node} = U;
  const view = $('journeyView');
  const bank = window.DypereVarStundBank || [];
+ const partyOptions = [
+   {id:'couple', label:'Ett par', count:2},
+   {id:'two-couples', label:'To par', count:4},
+   {id:'couple-plus-one', label:'Et par + én ekstra', count:3}
+ ].map(Object.freeze);
+ let party = null;
+ let sessionStarted = false;
+ let panelRevision = 0;
 
  const skills = [
    {id:'naerhet', name:'Nærhet', cat:['sex','aftercare','sensory']},
@@ -63,39 +71,71 @@
  }
 
  function panel(title, kicker) {
+   panelRevision++;
    view.replaceChildren();
    const p = node('section', undefined, 'journey-panel');
    if (kicker) p.append(node('p', kicker, 'eyebrow'));
    const h = node('h2', title);
    p.append(h);
+   if (party) p.append(node('p', party.label + ' · ' + party.count + ' deltakere', 'journey-group-summary'));
    view.append(p);
    return p;
  }
 
- function showConsent(){ const p = panel('Før dere starter'); p.append(node('p', 'Begge må være med. Dere kan stoppe når som helst. Alt er frivillig.')); const b = node('button', 'Vi er med', 'primary'); b.onclick = showContext; p.append(b); }
+ function bindPanelAction(button, action) {
+   const revision = panelRevision;
+   button.onclick = () => { if (revision === panelRevision && !button.disabled) action(); };
+ }
+
+ function showParty() {
+   if (sessionStarted || answering) return;
+   const p = panel('Hvem er med?', 'DERES STUND');
+   p.append(node('p', 'Velg hvem som deltar. Dere bruker én felles profil og svarer sammen.'));
+   const options = node('div', undefined, 'journey-party-options');
+   partyOptions.forEach((option, i) => {
+     const b = node('button', option.label + ' · ' + option.count + ' deltakere', 'journey-party-choice' + (i === 0 ? ' primary' : ''));
+     bindPanelAction(b, () => { party = option; showConsent(); });
+     options.append(b);
+   });
+   p.append(options);
+ }
+
+ function showConsent() {
+   if (!party || sessionStarted) return;
+   const p = panel('Før dere starter');
+   p.append(node('p', 'Alle må være med. Dere kan stoppe når som helst. Alt er frivillig.'));
+   p.append(node('p', 'Svar sammen med én felles profil. Alle skal være enige i svaret dere velger.'));
+   const b = node('button', 'Vi er med', 'primary');
+   bindPanelAction(b, showContext);
+   const change = node('button', 'Endre gruppe', 'text-button');
+   bindPanelAction(change, showParty);
+   p.append(b, change);
+ }
 function showContext() {
+   if (!party || sessionStarted) return;
    const p = panel('Hvor er dere?', 'KONTEKST');
    p.append(node('p', 'Dette styrer tempo og intensitet.'));
    [['bil','I bilen'],['hjemme','Hjemme'],['seng','I sengen'],['fest','Nachspiel / flere']].forEach(([id, label]) => {
      const b = node('button', label);
-     b.onclick = () => { context = id; showMode(); };
+     bindPanelAction(b, () => { context = id; showMode(); });
      p.append(b);
    });
  }
 
  function showMode() {
+   if (!party || sessionStarted) return;
    const p = panel('Velg modus', 'TO VEIER');
    p.append(node('p', 'Kartlegg bygger profil. Varm opp tar dere fra nøytral til superhot.'));
    const kart = node('button', 'Kartlegg (A–Å)', 'primary');
    const varm = node('button', 'Varm opp');
-   kart.onclick = () => { mode = 'kartlegg'; stepsPerSegment = [8,8,8]; showSetup(); };
-   varm.onclick = () => { mode = 'oppvarming'; stepsPerSegment = [7,7,7]; showSetup(); };
+   bindPanelAction(kart, () => { mode = 'kartlegg'; stepsPerSegment = [8,8,8]; showSetup(); });
+   bindPanelAction(varm, () => { mode = 'oppvarming'; stepsPerSegment = [7,7,7]; showSetup(); });
    p.append(kart, varm);
  }
 
  function showSetup() {
-   const p = panel('Din karakter', 'SEGMENT ' + segment);
-   p.append(node('p', 'Kalibrer ferdighetene. Du har ' + points + ' poeng.'));
+   const p = panel('Deres felles karakter', 'SEGMENT ' + segment);
+   p.append(node('p', 'Kalibrer deres felles ferdigheter. Dere har ' + points + ' poeng.'));
    skills.forEach(s => {
      const row = node('div');
      row.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin:8px 0;';
@@ -103,19 +143,26 @@ function showContext() {
      const val = node('span', allocated[s.id] || 0);
      const minus = node('button', '−');
      const plus = node('button', '+');
-     minus.onclick = () => { if ((allocated[s.id]||0) > 0) { allocated[s.id]--; points++; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }};
-     plus.onclick = () => { if (points > 0) { allocated[s.id]=(allocated[s.id]||0)+1; points--; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }};
+     bindPanelAction(minus, () => { if ((allocated[s.id]||0) > 0) { allocated[s.id]--; points++; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }});
+     bindPanelAction(plus, () => { if (points > 0) { allocated[s.id]=(allocated[s.id]||0)+1; points--; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }});
      row.append(minus, val, plus);
      p.append(row);
    });
    const pts = node('p', 'Poeng igjen: ' + points);
    p.append(pts);
    const go = node('button', segment===1 ? 'Start' : 'Fortsett', 'primary');
-   go.onclick = () => { if (!answering) showQuestion(); };
+   bindPanelAction(go, () => { if (!answering) showQuestion(); });
    p.append(go);
+   if (!sessionStarted) {
+     const change = node('button', 'Endre gruppe', 'text-button');
+     bindPanelAction(change, showParty);
+     p.append(change);
+   }
  }
 
  function showQuestion() {
+   if (!party) { showParty(); return; }
+   sessionStarted = true;
    if (!indexedBank || !indexedBank.length) { showUnavailable('Kunne ikke laste en gyldig kortbank. Start på nytt eller gå tilbake til hovedmenyen.'); return; }
    if (stepInSegment >= stepsPerSegment[segment-1]) {
      if (segment < 3) { showSegmentEnd(); return; }
@@ -154,7 +201,7 @@ function showContext() {
    const calib = node('button', 'Kalibrer', 'text-button');
    calibrationButton = calib;
    calib.disabled = answering;
-   calib.onclick = () => { if (!answering) showSetup(); };
+   bindPanelAction(calib, () => { if (!answering) showSetup(); });
    p.append(calib);
    const btns = node('div');
    btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;';
@@ -252,6 +299,6 @@ function answer(q, key) {
    p.append(again);
  }
 
- showConsent();
+ showParty();
 })();
 // P3-03: Banken er allerede delt (5000 av 100k). Full lazy-load kan komme senere.
