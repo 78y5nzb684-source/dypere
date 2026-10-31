@@ -1,0 +1,43 @@
+DYPERE – redigerbar tekstbank, 3.0.16 beta
+
+spraak.json
+86 ferdige spørsmålsfamilier som dekker alle de 5000 eksisterende kortene.
+question er hele spørsmålet. Ingen generiske setningsbiter settes inn.
+explanation vises under «Hva betyr dette?». topic er en kort temabeskrivelse.
+repeatKey samler kjente synonymer så samme avatar ikke får temaet på nytt.
+Ikke endre oppslagsnøklene uten også å kontrollere kortbankens familier.
+Nye kortfamilier må få en oppføring her. Rå korttekst brukes som reserve.
+
+kategorier.json
+groups inneholder de sju poengkategoriene og koblingen til 26 råkategorier.
+names bestemmer de forståelige visningsnavnene på råkategoriene.
+Visningsnavn kan endres uten å endre ID-er eller poengvekter.
+Å flytte en råkategori til en annen gruppe endrer hvordan poeng styrer trekk.
+
+scenarier.json
+Tre enkle, ikke-grafiske rammer for en kveld. Disse er ikke en ferdig stor
+bank med konkrete seksuelle scenarioer. Alle har begynnelse, hoveddel,
+avrunding og omsorg etterpå. groups angir tillatt deltakerantall.
+skills bestemmer hvilke felles kategorisignaler som rangerer forslaget.
+Appen velger ikke bestemte handlinger eller roller på grunnlag av skår.
+
+Slik gjør du
+1. Ta kopi. Rediger tekstverdier i JSON-filene i en vanlig teksteditor.
+2. Kjør: python tekstbank/bygg-tekstbank.py (fra appmappen).
+3. Kjør kvalitetskontroll før publisering. Send gjerne hele tekstbankmappen.
+4. Nye publiseringer må få nytt versjons-/buildnummer og service-worker-cache.
+De bygde JS-filene lastes av appen og inngår i offline-cachen.
+JSON-filene er redigerbare kilder og inneholder ingen brukerdata.
+
+Poeng og personvern
+Hver avatar starter med 16 poeng og får 4 + 4 mellom bolkene.
+Ja gir 2, Kanskje 1, Nei 0. Speiling 4,5 og fokusvekt 2 er beholdt.
+21 eller 24 spørsmål per avatar, tre bolker, med separat økthistorikk.
+Avatarer og svar lever bare i minnet i den åpne siden. Ingen innlogging,
+ingen sending av svar til server og ingen lagring av denne økten.
+På en delt telefon er dette skjerming av svar, ikke et sikkert kontosystem.
+
+Begrensning
+Den opprinnelige banken fordeler de samme familiene på alle fem rangene.
+En høyere beregnet rang garanterer derfor ikke en faglig gradert innholds-
+progresjon. Kort-ID-er, råkategorier, rang og rekkefølge er ikke endret.

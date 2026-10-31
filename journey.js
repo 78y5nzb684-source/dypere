@@ -1,304 +1,137 @@
 (function(){
  'use strict';
- const U = DypereUI, {$, node} = U;
- const view = $('journeyView');
- const bank = window.DypereVarStundBank || [];
- const partyOptions = [
-   {id:'couple', label:'Ett par', count:2},
-   {id:'two-couples', label:'To par', count:4},
-   {id:'couple-plus-one', label:'Et par + én ekstra', count:3}
- ].map(Object.freeze);
- let party = null;
- let sessionStarted = false;
- let panelRevision = 0;
-
- const skills = [
-   {id:'naerhet', name:'Nærhet', cat:['sex','aftercare','sensory']},
-   {id:'munn', name:'Munn', cat:['oral','cum','spitting']},
-   {id:'dybde', name:'Dypere', cat:['anal','fisting','plug']},
-   {id:'styring', name:'Styring', cat:['kontroll','bdsm','chastity','daddy']},
-   {id:'lek', name:'Lek', cat:['creampie','feet','pet','wax']},
-   {id:'risiko', name:'Risiko', cat:['group','exhibition','pegging','latex']},
-   {id:'kraft', name:'Kraft', cat:['impact','breath','humiliation','watersports','medical']}
- ];
-
- let points = 8;
- let allocated = {};
- let scores = {};
- let currentRang = 1;
- let segment = 1;
- let stepInSegment = 0;
- let stepsPerSegment = [7,7,7];
- let mode = 'oppvarming';
- let context = 'hjemme';
- let recent = [];
- let recentCats = [];
- let answering = false;
- let calibrationButton = null;
- let answerButtons = [];
- let currentQuestion = null;
- let currentPosition = null;
- const seenText = new Set();
- const seenFamilies = new Set();
- const indexedBank = indexQuestions(bank);
-
- function normalizeQuestion(text) {
-   return text.normalize('NFKC').toLowerCase().replace(/[\p{P}\p{S}]/gu, ' ').replace(/\s+/gu, ' ').trim();
+ const U=DypereUI,{node,$}=U,M=window.DypereJourneyModel;
+ const view=$('journeyView'),exit=$('journeyExit');
+ const skills=window.DypereJourneyCategories,names=window.DypereJourneyCategoryNames;
+ const language=window.DypereJourneyLanguage||{},entries=M.index(window.DypereVarStundBank);
+ let profiles=[],active=0,segment=1,step=0,mode='oppvarming',lengths=[7,7,7];
+ let revision=0,started=false,finished=false,busy=false,exiting=false,current=null;
+ let setupIndex=0,result=null,scenarioIndex=0,custom='',chosen=false;
+ const currentProfile=()=>profiles[active];
+ function panel(title,kicker){
+   revision++;view.replaceChildren();const p=node('section',undefined,'journey-panel');
+   if(kicker)p.append(node('p',kicker,'eyebrow'));
+   const h=node('h2',title);h.tabIndex=-1;p.append(h);view.append(p);h.focus();return p;
  }
-
- function questionFamily(text) {
-   // Generic positive question frames only. Preserve content words, people,
-   // negation, numbers and word order; do not infer themes or synonyms.
-   const normalized = normalizeQuestion(text);
-   const core = normalized
-     .replace(/^(?:har du lyst til å|har du lyst til|har du lyst på|har du lyst å prøve|har du lyst å|ønsker du å|ønsker du|er du klar til å|er du klar til|vil du prøve|vil du utforske|vil du ha|frister det med|frister tanken på|er du klar for|kunne du tenke deg|skal vi prøve|skal vi leke med|skal vi leke|skal vi teste)(?:\s+|$)/u, '')
-     .replace(/(?:^|\s+)(?:i kveld|akkurat nå)$/u, '')
-     .replace(/^å(?:\s+|$)/u, '').trim();
-   return core ? 'core:' + core : 'text:' + normalized;
+ function button(label,action,cls=''){
+   const b=node('button',label,cls),r=revision;b.type='button';
+   b.onclick=()=>{if(r===revision&&!b.disabled&&!exiting)action(b);};return b;
  }
-
- function indexQuestions(source) {
-   if (!Array.isArray(source)) return null;
-   const ids = new Set(), entries = [];
-   for (const q of source) {
-     if (!q || typeof q.id !== 'string' || !q.id.trim() || ids.has(q.id) || typeof q.cat !== 'string' || !q.cat.trim() || !Number.isInteger(q.rang) || q.rang < 1 || q.rang > 5 || typeof q.text !== 'string' || !q.text.trim() || q.text.length > 1200) return null;
-     const textKey = normalizeQuestion(q.text);
-     if (!textKey) return null;
-     ids.add(q.id);
-     entries.push({card: Object.freeze({id:q.id, cat:q.cat, rang:q.rang, text:q.text}), textKey, familyKey:questionFamily(q.text)});
-   }
-   return entries;
+ function showParty(){
+   if(started)return;const p=panel('Hvem er med?','DERES STUND');
+   p.append(node('p','Begynn med to avatarer. Dere svarer etter tur på én telefon.'));
+   p.append(button('To deltakere',()=>selectParty(2),'primary journey-party-choice'));
+   const more=node('details',undefined,'journey-more'),summary=node('summary','Legg til flere deltakere');more.append(summary);
+   const options=node('div',undefined,'journey-party-options');
+   options.append(button('Tre deltakere',()=>selectParty(3),'journey-party-choice'),button('Fire deltakere',()=>selectParty(4),'journey-party-choice'));more.append(options);p.append(more);
  }
-
- function panel(title, kicker) {
-   panelRevision++;
-   view.replaceChildren();
-   const p = node('section', undefined, 'journey-panel');
-   if (kicker) p.append(node('p', kicker, 'eyebrow'));
-   const h = node('h2', title);
-   p.append(h);
-   if (party) p.append(node('p', party.label + ' · ' + party.count + ' deltakere', 'journey-group-summary'));
-   view.append(p);
-   return p;
+ function selectParty(count){profiles=Array.from({length:count},(_,i)=>M.profile('avatar-'+(i+1)));showMode();}
+ function showMode(){
+   const p=panel('Hva har dere lyst til?','TO VEIER');
+   p.append(node('p','Velg om dere vil finne en retning for denne stunden eller bli bedre kjent med interessene deres.'));
+   const options=node('div',undefined,'journey-party-options');
+   const choose=value=>{mode=value;lengths=value==='kartlegg'?[8,8,8]:[7,7,7];setupIndex=0;showSetup();};
+   options.append(button('Varm opp',()=>choose('oppvarming'),'primary journey-party-choice'),node('p','En stund hjemme, med plass til å finne stemningen sammen.','journey-note'),button('Kartlegg',()=>choose('kartlegg'),'journey-party-choice'),node('p','Utforsk interesser og fantasier, uavhengig av hvor dere er.','journey-note'));
+   p.append(options,button('Endre deltakere',showParty,'text-button'));
  }
-
- function bindPanelAction(button, action) {
-   const revision = panelRevision;
-   button.onclick = () => { if (revision === panelRevision && !button.disabled) action(); };
- }
-
- function showParty() {
-   if (sessionStarted || answering) return;
-   const p = panel('Hvem er med?', 'DERES STUND');
-   p.append(node('p', 'Velg hvem som deltar. Dere bruker én felles profil og svarer sammen.'));
-   const options = node('div', undefined, 'journey-party-options');
-   partyOptions.forEach((option, i) => {
-     const b = node('button', option.label + ' · ' + option.count + ' deltakere', 'journey-party-choice' + (i === 0 ? ' primary' : ''));
-     bindPanelAction(b, () => { party = option; showConsent(); });
-     options.append(b);
+ function showSetup(){
+   const a=profiles[setupIndex],first=segment===1;
+   const p=panel(first?'Lag avataren din':'Juster avataren din',first?'AVATAR '+(setupIndex+1):a.name);
+   p.append(node('p',first?'Velg et navn og fordel poeng på det du er nysgjerrig på. Poengene viser interesser, ikke ferdigheter.':'Har interessene dine endret seg? Du har fått fire nye poeng og kan flytte poeng mellom kategoriene.'));
+   const label=node('label','Avatarnavn');label.htmlFor='avatarName';
+   const input=node('input');input.id='avatarName';input.type='text';input.maxLength=24;input.autocomplete='off';input.value=a.name;input.placeholder='Velg et navn';
+   if(first)p.append(label,input);
+   const pts=node('p','Poeng igjen: '+a.points,'journey-budget');pts.setAttribute('aria-live','polite');p.append(pts);
+   skills.forEach(s=>{
+     const row=node('div',undefined,'avatar-category'),info=node('details'),summary=node('summary',s.name),copy=node('p',s.cat.map(c=>names[c]||c).join(' · '),'journey-note');info.append(summary,copy);
+     const controls=node('div',undefined,'avatar-category-controls'),value=node('output',a.allocated[s.id]||0);value.setAttribute('aria-label',s.name+' poeng');
+     const update=delta=>{if(delta>0&&a.points<1||delta<0&&!(a.allocated[s.id]>0))return;a.allocated[s.id]=(a.allocated[s.id]||0)+delta;a.points-=delta;value.textContent=a.allocated[s.id];pts.textContent='Poeng igjen: '+a.points;minus.disabled=!a.allocated[s.id];};
+     const minus=button('−',()=>update(-1)),plus=button('+',()=>update(1));
+     minus.setAttribute('aria-label','Fjern poeng fra '+s.name);plus.setAttribute('aria-label','Legg poeng til '+s.name);minus.disabled=!(a.allocated[s.id]>0);
+     controls.append(minus,value,plus);row.append(info,controls);p.append(row);
    });
-   p.append(options);
- }
-
- function showConsent() {
-   if (!party || sessionStarted) return;
-   const p = panel('Før dere starter');
-   p.append(node('p', 'Alle må være med. Dere kan stoppe når som helst. Alt er frivillig.'));
-   p.append(node('p', 'Svar sammen med én felles profil. Alle skal være enige i svaret dere velger.'));
-   const b = node('button', 'Vi er med', 'primary');
-   bindPanelAction(b, showContext);
-   const change = node('button', 'Endre gruppe', 'text-button');
-   bindPanelAction(change, showParty);
-   p.append(b, change);
- }
-function showContext() {
-   if (!party || sessionStarted) return;
-   const p = panel('Hvor er dere?', 'KONTEKST');
-   p.append(node('p', 'Dette styrer tempo og intensitet.'));
-   [['bil','I bilen'],['hjemme','Hjemme'],['seng','I sengen'],['fest','Nachspiel / flere']].forEach(([id, label]) => {
-     const b = node('button', label);
-     bindPanelAction(b, () => { context = id; showMode(); });
-     p.append(b);
-   });
- }
-
- function showMode() {
-   if (!party || sessionStarted) return;
-   const p = panel('Velg modus', 'TO VEIER');
-   p.append(node('p', 'Kartlegg bygger profil. Varm opp tar dere fra nøytral til superhot.'));
-   const kart = node('button', 'Kartlegg (A–Å)', 'primary');
-   const varm = node('button', 'Varm opp');
-   bindPanelAction(kart, () => { mode = 'kartlegg'; stepsPerSegment = [8,8,8]; showSetup(); });
-   bindPanelAction(varm, () => { mode = 'oppvarming'; stepsPerSegment = [7,7,7]; showSetup(); });
-   p.append(kart, varm);
- }
-
- function showSetup() {
-   const p = panel('Deres felles karakter', 'SEGMENT ' + segment);
-   p.append(node('p', 'Kalibrer deres felles ferdigheter. Dere har ' + points + ' poeng.'));
-   skills.forEach(s => {
-     const row = node('div');
-     row.style.cssText = 'display:flex;justify-content:space-between;align-items:center;margin:8px 0;';
-     row.append(node('span', s.name));
-     const val = node('span', allocated[s.id] || 0);
-     const minus = node('button', '−');
-     const plus = node('button', '+');
-     bindPanelAction(minus, () => { if ((allocated[s.id]||0) > 0) { allocated[s.id]--; points++; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }});
-     bindPanelAction(plus, () => { if (points > 0) { allocated[s.id]=(allocated[s.id]||0)+1; points--; val.textContent = allocated[s.id]; pts.textContent = 'Poeng igjen: ' + points; }});
-     row.append(minus, val, plus);
-     p.append(row);
-   });
-   const pts = node('p', 'Poeng igjen: ' + points);
-   p.append(pts);
-   const go = node('button', segment===1 ? 'Start' : 'Fortsett', 'primary');
-   bindPanelAction(go, () => { if (!answering) showQuestion(); });
-   p.append(go);
-   if (!sessionStarted) {
-     const change = node('button', 'Endre gruppe', 'text-button');
-     bindPanelAction(change, showParty);
-     p.append(change);
+   let consent=null;
+   if(first){
+     const box=node('label',undefined,'journey-check');consent=node('input');consent.type='checkbox';consent.checked=a.consent;
+     box.append(consent,node('span','Jeg er over 18, ønsker å delta og vet at jeg kan stoppe eller endre mening.'));
+     p.append(box,node('p','Svar for deg selv. Et ja til en fantasi er ikke en avtale om å gjennomføre noe. Svarene beholdes bare i denne åpne økten.','journey-note'));
    }
+   const error=node('p',undefined,'journey-error');error.setAttribute('role','alert');p.append(error);
+   p.append(button('Fortsett',()=>{
+     if(first){
+       const name=input.value.normalize('NFKC').trim().replace(/\s+/gu,' ');
+       if(!name||name.length>24){error.textContent='Gi avataren et navn på 1–24 tegn.';input.focus();return;}
+       if(profiles.some((x,i)=>i!==setupIndex&&x.name.toLocaleLowerCase('nb')===name.toLocaleLowerCase('nb'))){error.textContent='Velg et annet navn, så det er lett å skille avatarene.';input.focus();return;}
+       if(!consent.checked){error.textContent='Bekreft at du ønsker å delta før du fortsetter.';consent.focus();return;}
+       a.name=name;a.consent=true;
+     }
+     setupIndex++;if(setupIndex<profiles.length){showSetupHandoff();return;}active=0;step=0;showHandoff();
+   },'primary'));
+   if(!started)p.append(button('Endre deltakere',showParty,'text-button'));
  }
-
- function showQuestion() {
-   if (!party) { showParty(); return; }
-   sessionStarted = true;
-   if (!indexedBank || !indexedBank.length) { showUnavailable('Kunne ikke laste en gyldig kortbank. Start på nytt eller gå tilbake til hovedmenyen.'); return; }
-   if (stepInSegment >= stepsPerSegment[segment-1]) {
-     if (segment < 3) { showSegmentEnd(); return; }
-     else { showFinal(); return; }
+ function showSetupHandoff(){
+   const a=profiles[setupIndex],p=panel('Gi telefonen videre','ET EGET ØYEBLIKK');
+   p.append(node('p',a.name?'Nå er det '+a.name+' sin tur til å justere avataren.':'Neste deltaker kan nå lage sin egen avatar.'));p.append(button('Jeg er klar',showSetup,'primary'));
+ }
+ function showHandoff(){
+   current=null;busy=false;const a=currentProfile(),p=panel('Din tur, '+a.name,'GI TELEFONEN VIDERE');
+   p.append(node('p','Svar for deg selv. De andre trenger ikke se hvilke svar du velger.'));p.append(button('Jeg er '+a.name,showQuestion,'primary'));
+ }
+ function showQuestion(){
+   if(busy||finished)return;started=true;if(!entries?.length){showUnavailable();return;}
+   const a=currentProfile(),rank=M.rank(mode,segment,step,lengths);if(!current)current=M.pick(a,entries,rank);
+   if(!current){showUnavailable();return;}
+   const q=current,l=language[M.family(q.text).slice(5)],tones=['Nysgjerrig og åpen','Finn deres retning','Ta med det som passer'];
+   const p=panel(a.name,tones[segment-1]),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
+   progress.setAttribute('aria-label','Fremdrift for '+a.name);p.append(progress,node('p',l?.question||q.text,'avatar-question'));
+   if(l){const details=node('details',undefined,'question-explanation');details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));p.append(details);}
+   const row=node('div',undefined,'journey-answer-actions'),r=revision;
+   [['Ja','ja'],['Kanskje','kanskje'],['Nei','nei']].forEach(([label,key])=>row.append(button(label,()=>{
+     if(busy||r!==revision||current!==q)return;busy=true;Array.from(row.children).forEach(b=>b.disabled=true);
+     M.vote(a,q,key);current=null;step++;
+     setTimeout(()=>{busy=false;if(finished)return;if(step>=lengths[segment-1])advance();else showQuestion();},160);
+   },key==='ja'?'primary':'')));p.append(row);
+ }
+ function advance(){
+   active++;step=0;if(active<profiles.length){showHandoff();return;}
+   if(segment===3){finished=true;showFinal();return;}
+   segment++;active=0;setupIndex=0;profiles.forEach(a=>{a.points+=4;});showSetupHandoff();
+ }
+ function showUnavailable(){
+   finished=true;const p=panel('Ingen nye spørsmål tilgjengelig');p.append(node('p','Det finnes ikke flere nye spørsmål som passer denne økten. Tidligere spørsmål blir ikke gjentatt.'));
+   p.append(button('Se retningen dere har funnet',showFinal,'primary'));
+ }
+ function buildResult(){
+   const shared=skills.map(s=>({id:s.id,name:s.name,value:Math.min(...profiles.map(a=>s.cat.reduce((n,c)=>n+(a.scores[c]||0),0)))})).filter(s=>s.value>0).sort((a,b)=>b.value-a.value);
+   const candidates=(window.DypereJourneyScenarios||[]).filter(s=>s.groups.includes(profiles.length)).map((s,i)=>({s,i,weight:shared.filter(t=>s.skills.includes(t.id)).reduce((v,t)=>v+t.value,0)})).sort((a,b)=>b.weight-a.weight||a.i-b.i).map(x=>x.s);
+   return {shared,candidates};
+ }
+ function showFinal(){
+   if(!result)result=buildResult();const s=result.candidates[scenarioIndex],p=panel(s?s.title:'Deres egen retning','ET FORSLAG TIL DERES STUND');
+   p.append(node('p',result.shared.length?'Dere har vist interesse for '+result.shared.slice(0,3).map(t=>t.name.toLowerCase()).join(', ')+'.':'Svarene gir foreløpig ingen tydelig felles kategoriretning. Velg sammen hva dere ønsker videre.'));
+   p.append(node('p','Dette er en ramme dere kan tilpasse, ikke en avtale om bestemte handlinger eller roller.','journey-note'));
+   if(s){
+     const list=node('ol',undefined,'scenario-steps');
+     [['Begynn sammen',s.intro],['Deres hoveddel',custom||s.main],['Avrunding',s.closing],['Omsorg etterpå',s.aftercare]].forEach(([label,text])=>{const li=node('li');li.append(node('strong',label),node('p',text));list.append(li);});p.append(list);
+     p.append(button(chosen?'Valgt sammen':'Velg dette sammen',async b=>{
+       b.disabled=true;const r=revision;const yes=await U.confirmAction('Har alle lest forslaget og lyst til å velge denne rammen sammen?','Ja, vi velger dette');
+       if(r!==revision)return;b.disabled=false;if(yes){chosen=true;showFinal();}
+     },'primary'));
+     const edit=node('details',undefined,'scenario-edit');edit.append(node('summary','Tilpass forslaget'));
+     const label=node('label','Skriv deres egen hoveddel');label.htmlFor='scenarioCustom';const input=node('textarea');input.id='scenarioCustom';input.maxLength=2000;input.rows=5;input.value=custom||s.main;
+     edit.append(label,input,button('Bruk tilpasningen',()=>{custom=input.value.trim().slice(0,2000);chosen=false;showFinal();}));p.append(edit);
+     if(result.candidates.length>1)p.append(button('Vis et annet forslag',()=>{scenarioIndex=(scenarioIndex+1)%result.candidates.length;custom='';chosen=false;showFinal();},'text-button'));
    }
-   const progress = (segment-1 + stepInSegment / stepsPerSegment[segment-1]) / 3;
-   let exp = mode === 'kartlegg' ? 0.85 : 1.25;
-   currentRang = 1 + Math.pow(progress, exp) * (mode === 'kartlegg' ? 2.5 : 4);
-   if (context === 'bil') currentRang = Math.min(currentRang, 2.5);
-   if (context === 'fest') currentRang = Math.min(currentRang, 3.5);
-
-   const position = segment + ':' + stepInSegment;
-   if (!currentQuestion || currentPosition !== position) {
-     currentQuestion = pickQuestion();
-     currentPosition = currentQuestion ? position : null;
-   }
-   const q = currentQuestion;
-   if (!q) { showUnavailable('Det er ingen nye spørsmål som passer rammene nå. Økten er avsluttet uten å gjenta tidligere tekst eller varianter.'); return; }
-   const totalSteps = stepsPerSegment.reduce((a,b)=>a+b,0);
-   const done = stepsPerSegment.slice(0, segment-1).reduce((sum, count) => sum + count, 0) + stepInSegment;
-   const tones = ['Nysgjerrig og lett', 'Varmere og mer direkte', 'Helt åpen'];
-   const p = panel('Segment ' + segment + ' / 3', tones[segment-1] + ' · Spørsmål ' + (stepInSegment+1));
-   const bar = node('div');
-   bar.style.cssText = 'height:6px;background:#2a2a2a;border-radius:3px;margin:10px 0;overflow:hidden;';
-   const fill = node('div');
-   fill.style.cssText = 'height:100%;width:' + (done/totalSteps*100) + '%;background:#c45c26;transition:width .3s;';
-   bar.append(fill);
-   p.append(bar);
-   let display = q.text;
-   if (context === 'bil' && display.length > 60) display = display.split(' ').slice(0, 8).join(' ') + '...';
-   p.append(node('p', display));
-   p.append(node('p', 'Intensitet ' + currentRang.toFixed(1) + ' · Poeng ' + points, 'fine'));
-   const exit = node('button', 'Avslutt', 'text-button');
-   exit.onclick = () => location.reload();
-   p.append(exit);
-   const calib = node('button', 'Kalibrer', 'text-button');
-   calibrationButton = calib;
-   calib.disabled = answering;
-   bindPanelAction(calib, () => { if (!answering) showSetup(); });
-   p.append(calib);
-   const btns = node('div');
-   btns.style.cssText = 'display:flex;gap:8px;margin-top:12px;';
-   answerButtons = [];
-   [['Ja','ja'],['Kanskje','kanskje'],['Nei','nei']].forEach(([label,key]) => {
-     const b = node('button', label, key==='ja'?'primary':'');
-     b.onclick = () => answer(q, key);
-     answerButtons.push(b);
-     btns.append(b);
-   });
-   p.append(btns);
+   p.append(button('Ny stund',async b=>{b.disabled=true;const r=revision;const yes=await U.confirmAction('Starte på nytt og fjerne avatarene og svarene fra denne økten?','Ja, start på nytt');if(r!==revision)return;if(yes)location.reload();else b.disabled=false;},'text-button'));
  }
-
- function showUnavailable(message) {
-   currentQuestion = null;
-   currentPosition = null;
-   const p = panel('Ingen nye spørsmål tilgjengelig');
-   p.append(node('p', message));
-   const again = node('button', 'Ny seanse', 'primary');
-   again.onclick = () => location.reload();
-   p.append(again);
+ async function requestExit(){
+   if(exiting)return;exiting=true;const yes=await U.confirmAction('Vil du avslutte og gå til hovedmenyen? Avatarer og svar fra denne økten blir fjernet.','Ja, avslutt');
+   exiting=false;if(yes){finished=true;profiles=[];current=null;result=null;location.assign('./index.html');}
  }
-
- function pickQuestion() {
-   if (!indexedBank) return null;
-   const maxR = context==='bil'?2.5:context==='fest'?3.5:5;
-   // Every fallback keeps the complete session and history constraints.
-   const fresh = indexedBank.filter(x => x.card.rang <= maxR && !recent.includes(x.card.id) && !recentCats.includes(x.card.cat) && !seenText.has(x.textKey) && !seenFamilies.has(x.familyKey));
-   const allowed = fresh.filter(x => Math.abs(x.card.rang - currentRang) <= 1.3);
-   const pool = allowed.length ? allowed : fresh;
-   if (!pool.length) return null;
-   const categories = new Map();
-   pool.forEach(x => {
-     if (!categories.has(x.card.cat)) categories.set(x.card.cat, []);
-     categories.get(x.card.cat).push(x);
-   });
-   const weighted = Array.from(categories, ([cat, entries]) => {
-     let s = (scores[cat] || 0) * 4.5;
-     skills.forEach(sk => { if (sk.cat.includes(cat)) s += (allocated[sk.id]||0)*2; });
-     return {entries, s};
-   }).sort((a,b)=>b.s - a.s);
-   // Equal category scores have equal chances regardless of row count/order.
-   const top = weighted.filter(x => x.s === weighted[0].s);
-   const category = top[Math.floor(Math.random()*top.length)];
-   const entry = category.entries[Math.floor(Math.random()*category.entries.length)];
-   const chosen = entry.card;
-   seenText.add(entry.textKey);
-   seenFamilies.add(entry.familyKey);
-   recent.push(chosen.id);
-   recentCats.push(chosen.cat);
-   if (recent.length > 16) recent.shift();
-   if (recentCats.length > 4) recentCats.shift();
-   return chosen;
- }
-
-function answer(q, key) {
-   if (answering || !currentQuestion || q !== currentQuestion || currentPosition !== segment + ':' + stepInSegment || !['ja','kanskje','nei'].includes(key)) return;
-   answering = true;
-   if (calibrationButton) calibrationButton.disabled = true;
-   answerButtons.forEach(button => { button.disabled = true; });
-   if (key === 'ja') {
-     scores[q.cat] = (scores[q.cat]||0) + 2;
-     // Visuell feedback
-     const fb = node('p', '+2 på ' + q.cat, 'points-feedback');
-     fb.style.cssText = 'color:#c45c26;font-weight:bold;margin:8px 0;';
-     view.append(fb);
-     setTimeout(() => fb.remove(), 800);
-   } else if (key === 'kanskje') {
-     scores[q.cat] = (scores[q.cat]||0) + 1;
-   }
-   currentQuestion = null;
-   currentPosition = null;
-   stepInSegment++;
-   setTimeout(() => { answering = false; showQuestion(); }, key==='ja' ? 400 : 0);
- }
-
- function showSegmentEnd() {
-   const p = panel('Segment ' + segment + ' ferdig');
-   p.append(node('p', '+4 poeng. Kalibrer før neste segment.'));
-   points += 4;
-   const cont = node('button', 'Kalibrer og fortsett', 'primary');
-   cont.onclick = () => { if (cont.disabled) return; cont.disabled = true; segment++; stepInSegment=0; showSetup(); };
-   p.append(cont);
- }
-
- function showFinal() {
-   const p = panel('Ferdig', 'DERES RETNING');
-   const top = Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3);
-   const scenario = top.length ? 'Et scenario med ' + top[0][0] + (top[1] ? ' og ' + top[1][0] : '') : 'Noe rolig og nært';
-   p.append(node('p', top.length ? 'Dere heller mot: ' + top.map(([c])=>c).join(', ') : 'Rolig retning'));
-   p.append(node('p', 'Forslag: ' + scenario));
-   p.append(node('p', 'Sluttintensitet: ' + currentRang.toFixed(1)));
-   const again = node('button', 'Ny seanse', 'primary');
-   again.onclick = () => location.reload();
-   p.append(again);
- }
-
+ exit.onclick=requestExit;
+ document.querySelectorAll('.app-header a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();requestExit();}));
+ const curtain=$('journeyPrivacy'),resume=$('journeyContinue');
+ document.addEventListener('visibilitychange',()=>{if(document.hidden&&started&&!finished&&!curtain.open)curtain.showModal();});
+ resume.onclick=()=>curtain.close();
  showParty();
 })();
-// P3-03: Banken er allerede delt (5000 av 100k). Full lazy-load kan komme senere.

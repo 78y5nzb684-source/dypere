@@ -36,15 +36,16 @@
  document.querySelectorAll('[data-quick-photo]').forEach(b => {
    b.onclick = () => {
      const role = b.dataset.quickPhoto;
+     const label = role === 'Baby' ? 'Bildeforslag til henne' : 'Bildeforslag til ham';
      const pool = role === 'Baby' ? babyPrompts : mesterPrompts;
      out.hidden = false;
      out.replaceChildren();
      if (!pool.length) {
-       out.append(U.node('p', role + ' · Ingen prompter tilgjengelig.'));
+       out.append(U.node('p', label + ' · Ingen forslag tilgjengelig.'));
        return;
      }
      const prompt = pool[Math.floor(Math.random() * pool.length)];
-     out.append(U.node('p', role + ' · ' + prompt));
+     out.append(U.node('p', label + ' · ' + prompt));
    };
  });
 })();
