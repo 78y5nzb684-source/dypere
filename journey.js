@@ -15,6 +15,8 @@
  const notes=new Map();let reportFilter='yes',reportBody=null,reportData=null;
  const S=window.DypereSessionPlanner;
  let shortSession=false,sourceProfiles=[],shortQueue=[],today=S.options(),runStep=0;
+ let shortPlan=null,activityChoice=null;const activitySeen=new Set(),A=window.DypereActivityRegistry;
+ A.validate().forEach(error=>console.warn('Aktivitetsregister:',error));
  const sessionOverrides=new Map();
  function copyProfile(p){return {...p,allocated:{...p.allocated},treeAllocated:p.treeAllocated.map(a=>({...a})),treePoints:[...p.treePoints],scores:{...p.scores},recent:[...p.recent],recentCats:[...p.recentCats],seenText:new Set(p.seenText),seenFamilies:new Set(p.seenFamilies),seenTopics:new Set(p.seenTopics),answers:[...p.answers]};}
  function remember(details){history.push({details,profiles:profiles.map(copyProfile),active,segment,step,setupIndex,question:current});}
@@ -140,7 +142,7 @@
    const q=current,l=language[M.family(q.text).slice(5)];
    const p=panel(a.name,'AVATAR '+(active+1)+' · '+(importedSession?'DERES FELLES UTVALG':['BRED UTFORSKNING','FINN FELLES INTERESSER','AVKLAR DET SOM PASSER'][segment-1]),false),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
    const topic=l?.topic||q.topic||q.text;
-   const text='«'+topic+'» – hva frister'+(importedSession?' denne gangen':'')+'?';
+   const text='«'+topic+'» – hva frister'+(importedSession?' i kveld':'')+'?';
    const question=node('p',text,'avatar-question');question.id='avatarQuestion';question.tabIndex=-1;
    progress.setAttribute('aria-label','Fremdrift for '+a.name);progress.setAttribute('aria-valuetext','Spørsmål '+(progress.value+1)+' av '+progress.max);p.append(progress,question);
 
@@ -154,7 +156,7 @@
    for(const direction of definitions)quick.append(button(direction.label,()=>quickAnswer({[direction.id]:'ja'})));
    if(definitions.length>1)quick.append(button(definitions.length===2?'Begge retninger':'Alle retninger',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
    quick.append(button('Ikke aktuelt',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'nei'])))));
-   quick.setAttribute('aria-label','Velg det du liker');quick.setAttribute('role','group');quick.setAttribute('aria-describedby','avatarQuestion');p.append(node('p','Velg det du liker. Ett trykk går videre.','question-hint'),quick);
+   quick.setAttribute('aria-label','Velg det du liker');quick.setAttribute('role','group');quick.setAttribute('aria-describedby','avatarQuestion');p.append(node('p',shortSession?'Velg det som frister i kveld. Ett trykk går videre.':'Velg det du liker. Ett trykk går videre.','question-hint'),quick);
    precise.append(node('p','Her kan du svare ulikt for hver retning.','journey-note'));for(const direction of definitions){
      const group=node('fieldset',undefined,'direction-row');group.append(node('legend',direction.label));
      const row=node('div',undefined,'direction-options'),buttons=[];row.setAttribute('aria-describedby','avatarQuestion');
@@ -168,15 +170,18 @@
    const clarify=node('details',undefined,'question-clarify');clarify.append(node('summary','Aktualitet denne gangen'));
    const label=node('label','Er temaet aktuelt denne gangen?'),actuality=node('select');actuality.id='questionActuality';label.htmlFor=actuality.id;
    for(const [value,text] of [['uavklart','Ikke avklart'],['ja','Aktuelt denne gangen'],['senere','Bare kartlegging nå']]){const option=node('option',text);option.value=value;actuality.append(option);}actuality.value=initialActuality;clarify.append(label,actuality);p.append(clarify);
+   if(shortSession){clarify.hidden=true;const base=sourceProfiles[active],summary=definitions.map(d=>d.label+': '+({ja:'liker',kanskje:'nysgjerrig'})[base.preferences[shortQueue[step].item.topic.id]?.[d.id]]).join(' · ');const baseline=node('details',undefined,'question-profile-basis');baseline.append(node('summary','Fra profilen din'),node('p',summary,'journey-note'));p.append(baseline);}
    const r=revision;
    function submit(){
      if(r!==revision||busy||current!==q||Date.now()<answerReadyAt)return;
      remember({preferences:{...draft},actuality:actuality.value});
-     if(!M.voteDirections(a,q,draft,{actuality:actuality.value})){history.pop();return;}
-     if(shortSession)sessionOverrides.set(sourceProfiles[active].id+':'+q.id,{...draft});
+     const currentActuality=shortSession?(Object.values(draft).includes('ja')?'ja':'uavklart'):actuality.value;
+     if(!M.voteDirections(a,q,draft,{actuality:currentActuality})){history.pop();return;}
+     if(shortSession)sessionOverrides.set(sourceProfiles[active].id+':'+q.id,{preferences:{...draft},actuality:currentActuality});
      answerReadyAt=Date.now()+300;result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
      if(shortSession){
-       if(step>=shortQueue.length){finished=true;showFinal();return;}
+       while(step<shortQueue.length&&!S.canStillMatch(shortQueue[step].item,profiles))step++;
+       if(step>=shortQueue.length||S.enough(profiles,entries,today,shortPlan.items.length)){finished=true;showFinal();return;}
        const next=shortQueue[step].personIndex,changed=active!==next;active=next;if(changed)showHandoff();else showQuestion();return;
      }
      if(step>=lengths[segment-1])advance();else showQuestion();
@@ -351,78 +356,86 @@
  resume.onclick=()=>curtain.close();
 
  function showToday(people){
-  people=people.map(person=>{const copy={...person,preferences:{...person.preferences}};for(const [key,prefs] of sessionOverrides){const prefix=person.id+':';if(!key.startsWith(prefix))continue;const qid=key.slice(prefix.length),topic=P.catalog.find(t=>window.DypereProfileQuestionIds[t.id]===qid);if(topic)copy.preferences[topic.id]={...Object.fromEntries(Object.entries(person.preferences[topic.id]||{}).filter(([,v])=>v==='nei')),...prefs};}return copy;});
   sourceProfiles=people;shortSession=false;finished=false;
-  const p=panel('Denne gangen','VÅR STUND');p.append(node('p','Profilene gir oss utgangspunktet. Velg bare det som gjelder nå.'));
+  const p=panel('Hvordan er kvelden?','VÅR STUND');p.append(node('p','Profilene er utgangspunktet. Nå finner vi det som frister dere i kveld.'));
   const fields=node('div',undefined,'session-fields');
-  const select=(caption,id,rows,value,change)=>{const label=node('label',caption),input=node('select');label.htmlFor=id;input.id=id;for(const [v,text] of rows){const option=node('option',text);option.value=String(v);input.append(option);}input.value=String(value);input.onchange=()=>change(Number(input.value));fields.append(label,input);return input;};
+  function select(caption,id,rows,value,change){const label=node('label',caption),input=node('select');label.htmlFor=id;input.id=id;for(const [v,text] of rows){const option=node('option',text);option.value=String(v);input.append(option);}input.value=String(value);input.onchange=()=>{change(Number(input.value));update();};fields.append(label,input);}
   select('Hvor mye tid har dere?','todayMinutes',[[15,'En kort stund · omtrent 15 minutter'],[30,'God tid · omtrent 30 minutter'],[60,'En lang stund · omtrent en time']],today.minutes,value=>{today.minutes=value;});
-  select('Hvilket nivå passer nå?','todayLevel',[[2,'Mykere'],[3,'Variert'],[5,'Hele det felles utvalget']],today.max,value=>{today.max=value;today.topics=[];renderSuggestions();update();});p.append(fields);
-  const question=node('h3','Vil dere utforske noe nytt?'),choices=node('div',undefined,'session-choice');choices.setAttribute('role','group');choices.setAttribute('aria-label','Utforskning denne gangen');
-  const no=button('Det vi allerede liker',()=>setExplore(false)),yes=button('Utforsk noe nytt',()=>setExplore(true));choices.append(no,yes);p.append(question,choices);
-  const discovery=node('div',undefined,'session-discovery'),searchLabel=node('label','Hva er dere nysgjerrige på?'),search=node('input');searchLabel.htmlFor='todaySearch';search.id='todaySearch';search.type='search';search.placeholder='Søk etter et tema';search.autocomplete='off';
-  const suggestions=node('div',undefined,'session-suggestions'),selectionStatus=node('p',undefined,'journey-note');selectionStatus.setAttribute('role','status');
-  discovery.append(searchLabel,search,node('p','Velg opptil tre temaer. Bare det som mangler, blir avklart.','journey-note'),selectionStatus,suggestions);p.append(discovery);
+  select('Hvilket nivå passer nå?','todayLevel',[[2,'Mykere'],[3,'Variert'],[5,'Hele det felles utvalget']],today.max,value=>{today.max=value;});p.append(fields);
+  const curiosity=node('details',undefined,'session-curiosity');curiosity.append(node('summary','Nysgjerrigheter i kveld'),node('p','Slå på bare for den som ønsker spørsmål om sine registrerte nysgjerrigheter. Ellers bruker vi bare det du liker.','journey-note'));
+  people.forEach(person=>{
+   const count=Object.values(person.preferences).filter(prefs=>Object.values(prefs).includes('kanskje')).length;
+   if(!count)return;
+   const label=node('label',undefined,'session-topic'),input=node('input');input.type='checkbox';input.checked=today.curiosity[person.id]===true;input.setAttribute('data-curiosity-profile',person.id);input.onchange=()=>{if(input.checked)today.curiosity[person.id]=true;else delete today.curiosity[person.id];update();};
+   label.append(input,node('span',person.name+' er nysgjerrig i kveld'));curiosity.append(label);
+  });if(people.some(person=>Object.values(person.preferences).some(prefs=>Object.values(prefs).includes('kanskje'))))p.append(curiosity);
   const summary=node('p',undefined,'session-summary');summary.setAttribute('role','status');p.append(summary);
-  const start=button('Se vårt forslag',()=>prepareShortSession(people),'primary');start.id='todayContinue';p.append(start,button('Endre profiler',()=>{shortSession=false;showProfileImport(people);},'text-button'));
-  function update(){
-   const plan=S.build(people,entries,today),questions=plan.queue.length;
-   no.setAttribute('aria-pressed',String(!today.explore));yes.setAttribute('aria-pressed',String(today.explore));discovery.hidden=!today.explore;
-   selectionStatus.textContent=today.topics.length+' av 3 temaer valgt';
-   summary.textContent=plan.known.length+' temaer har kompatible ja for alle deltakerne innenfor nivået.'+(questions?' '+questions+(questions===1?' kort avklaring før forslaget.':' korte avklaringer før forslaget.'):' Ingen ny spørsmålsrunde.');
-   start.textContent=questions?'Avklar og se forslaget':'Se vårt forslag';start.disabled=!plan.items.length||today.explore&&!today.topics.length;
-   if(!plan.items.length)summary.textContent='Ingen felles treff innenfor nivået. Dere kan velge et annet nivå eller utforske et tema. Ingen trenger å endre grensene sine.';
-  }
-  function setExplore(value){today.explore=value;renderSuggestions();update();}
-  function renderSuggestions(){
-   suggestions.replaceChildren();const query=search.value.trim().toLocaleLowerCase('nb'),known=new Set(S.build(people,entries,{...today,explore:false}).known.map(x=>x.topic.id));
-   const all=S.candidates(people,entries,today.max).filter(x=>!known.has(x.topic.id));
-   const selected=all.filter(x=>today.topics.includes(x.topic.id)),others=all.filter(x=>!today.topics.includes(x.topic.id)&&(!query||[x.topic.label,...x.topic.aliases].some(s=>s.toLocaleLowerCase('nb').includes(query))));
-   // Suggest topics someone mentioned first; catalogue search also permits a new shared topic.
-   others.sort((a,b)=>Number(people.some(p=>Object.values(p.preferences[b.topic.id]||{}).some(v=>v==='ja'||v==='kanskje')))-Number(people.some(p=>Object.values(p.preferences[a.topic.id]||{}).some(v=>v==='ja'||v==='kanskje')))||a.topic.label.localeCompare(b.topic.label,'nb'));
-   const shown=[...selected,...others.slice(0,12)];
-   for(const item of shown){const label=node('label',undefined,'session-topic'),box=node('input');box.type='checkbox';box.value=item.topic.id;box.checked=today.topics.includes(item.topic.id);box.disabled=!box.checked&&today.topics.length>=3;box.onchange=()=>{today.topics=box.checked?[...today.topics,item.topic.id]:today.topics.filter(id=>id!==item.topic.id);update();const focusId=item.topic.id;renderSuggestions();suggestions.querySelectorAll('input').forEach(el=>{if(el.value===focusId)el.focus();});};label.append(box,node('span',item.topic.label));suggestions.append(label);}
-   if(!shown.length)suggestions.append(node('p','Ingen tilgjengelige temaer i dette søket innenfor nivået og profilgrensene.','journey-note'));
-  }
-  search.oninput=renderSuggestions;renderSuggestions();update();
+  const start=button('Finn det som passer i kveld',()=>prepareShortSession(people),'primary');start.id='todayContinue';p.append(start);
+  const extra=node('details',undefined,'journey-more'),edit=node('a','Les eller rediger en interesseprofil','text-link');edit.href='./kartlegging.html?mode=edit';extra.append(node('summary','Profiler og tilpasning'),button('Endre deltakere',()=>showProfileImport(people),'text-button'),edit);p.append(extra);
+  function update(){const available=S.candidates(people,entries,today);const included=people.filter(p=>today.curiosity[p.id]).map(p=>p.name);summary.textContent=available.length?'En kort runde om kveldens ønsker.'+(included.length?' Nysgjerrigheter er med for '+included.join(' og ')+'.':' Nysgjerrigheter er ikke med i kveld.'):'Ingen kompatible interesser innenfor kveldens valg. Dere kan justere nivå eller åpne for registrert nysgjerrighet. Nei og ubesvarte valg tas ikke med.';start.disabled=!available.length;}
+  update();
  }
  function prepareShortSession(people){
-  const plan=S.build(people,entries,today);if(!plan.items.length||today.explore&&!today.topics.length)return;
-  sourceProfiles=people;shortSession=true;importedSession=true;shortQueue=plan.queue.filter(item=>!sessionOverrides.has(people[item.personIndex].id+':'+item.card.id));sessionQuestions=[];
+  const key=JSON.stringify([people.map(person=>person.id),S.options(today)]),plan=shortPlan?.key===key?shortPlan:S.build(people,entries,today);plan.key=key;if(!plan.items.length)return;
+  sourceProfiles=people;shortPlan=plan;shortSession=true;importedSession=true;sessionQuestions=[];
   profiles=people.map((saved,index)=>{
    const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.allowed=Object.fromEntries(plan.items.map(item=>[item.card.id,item.allowed[index]]));
-   plan.items.forEach(item=>{const override=sessionOverrides.get(saved.id+':'+item.card.id),prefs=override||Object.fromEntries(item.allowed[index].filter(id=>saved.preferences[item.topic.id]?.[id]).map(id=>[id,saved.preferences[item.topic.id][id]]));M.voteDirections(person,item.card,prefs,{actuality:'uavklart',origin:override?'question':'profile'});});return person;
+   for(const item of plan.items){const answer=sessionOverrides.get(saved.id+':'+item.card.id);if(!answer)continue;const preferences=Object.fromEntries(Object.entries(answer.preferences).filter(([id])=>item.allowed[index].includes(id)));M.voteDirections(person,item.card,preferences,{actuality:answer.actuality});}return person;
   });
-  result=null;scenarioIndex=0;custom='';customDraft=null;chosen=false;confirmations.clear();reportData=null;history.length=0;step=0;segment=1;setupIndex=0;current=null;restoredChoice=null;answerReadyAt=0;lengths=[Math.max(1,shortQueue.length)];active=shortQueue[0]?.personIndex||0;started=true;finished=false;
-  if(shortQueue.length)showHandoff();else showFinal();
+  shortQueue=plan.queue.filter(item=>!profiles[item.personIndex].answers.some(a=>a.id===item.card.id));
+  result=null;scenarioIndex=0;custom='';customDraft=null;chosen=false;activityChoice=null;activitySeen.clear();confirmations.clear();reportData=null;history.length=0;step=0;segment=1;setupIndex=0;current=null;restoredChoice=null;answerReadyAt=0;lengths=[Math.max(1,shortQueue.length)];active=shortQueue[0]?.personIndex||0;started=true;finished=false;
+  while(step<shortQueue.length&&!S.canStillMatch(shortQueue[step].item,profiles))step++;
+  if(S.enough(profiles,entries,today,plan.items.length)){finished=true;showFinal();}else if(step<shortQueue.length){active=shortQueue[step].personIndex;showHandoff();}else showFinal();
+ }
+ function eveningResult(){
+  const exact=S.pool(profiles,entries),possible=M.match(profiles,entries).filter(item=>item.pairs.some(pair=>pair.nesten));
+  return {exact,possible,shared:[],candidates:[]};
+ }
+ function chooseActivity(choices){
+  let available=choices.filter(row=>!activitySeen.has(row.activity.id));
+  if(!available.length){activitySeen.clear();available=choices;}
+  const next=A.choose(available,activityChoice?.activity.id);
+  if(next)activitySeen.add(next.activity.id);activityChoice=next;
+ }
+ function activityRoles(choice){
+  const labels=new Map();
+  for(const binding of choice.bindings)for(const pair of binding.pairs){
+   const route=pair.routes.find(r=>r.confirmed&&(!binding.requirement.routes?.length||binding.requirement.routes.some(w=>w[0]===r.aDirection&&w[1]===r.bDirection)));
+   if(!route)continue;
+   for(const [index,direction] of [[pair.a,route.aDirection],[pair.b,route.bDirection]])if(!labels.has(index))labels.set(index,choice.activity.roleLabels?.[direction]||binding.item.directions.find(d=>d.id===direction)?.label||direction);
+  }
+  return profiles.map((person,index)=>person.name+': '+(labels.get(index)||'etter tur')).join(' · ');
  }
  function showShortProposal(){
-  finished=true;if(!result)result=buildResult();if(scenarioIndex>=result.candidates.length)scenarioIndex=0;
-  const s=result.candidates[scenarioIndex],p=panel(result.exact.length&&s?s.title:'Ingen felles retning ennå','DERES STUND');
-  if(!result.exact.length){p.append(node('p','Avklaringene ga ikke nok kompatible ja til et felles forslag innenfor rammene deres. Dere kan la det være med det eller velge et annet utvalg.'),button('Endre denne stunden',()=>showToday(sourceProfiles),'primary'),button('Se svargrunnlaget',showMatch,'text-button'));return;}
-  p.append(node('p','Omtrent '+today.minutes+' minutter · '+({2:'Mykere',3:'Variert',5:'Hele det felles utvalget'})[today.max],'session-meta'));
-  p.append(node('p',s.intro),node('p',s.main));
-  const basis=result.exact.filter(item=>s.skills.includes(item.categoryId));
-  const source=node('details',undefined,'scenario-basis');source.append(node('summary','Bygger på '+basis.length+(basis.length===1?' kompatibelt tema':' kompatible temaer')));
-  const list=node('ul');basis.forEach(item=>list.append(node('li',language[item.key]?.topic||item.topic||item.cat)));source.append(list,node('p','Profilvalg er tidligere interesser. Bare egne avklaringer er nye svar i denne stunden.','journey-note'));p.append(source);
-  p.append(node('p','Et ferdig forslag til ramme. Dere kan endre retning eller stoppe underveis.','journey-note'));
-  const start=button('Start stunden',()=>{chosen=true;runStep=0;showRunning();},'primary');start.id='startTogether';p.append(start);
-  const extras=node('details',undefined,'journey-more');extras.append(node('summary','Tilpass eller se grunnlaget'),button('Endre denne stunden',()=>showToday(sourceProfiles),'text-button'),button('Se alle svar og treff',showMatch,'text-button'));
-  if(result.candidates.length>1)extras.append(button('Vis et annet forslag',()=>{scenarioIndex=(scenarioIndex+1)%result.candidates.length;chosen=false;showShortProposal();},'text-button'));p.append(extras);
+  finished=true;result=eveningResult();const choices=A.eligible(result.exact,profiles.length,today);
+  const currentChoice=activityChoice&&choices.find(row=>row.activity.id===activityChoice.activity.id);
+  if(currentChoice)activityChoice=currentChoice;else chooseActivity(choices);
+  if(!activityChoice){
+   const p=panel(result.exact.length?'Ingen passende aktivitet i registeret ennå':'Ingen felles retning i kveld','DERES STUND');
+   p.append(node('p',result.exact.length?'Dere har felles ønsker, men ingen registrert aktivitet oppfyller alle kravene. Treffene vises uten at vi finner på et annet opplegg.':'Svarene ga ikke en avklart felles retning innenfor kveldens rammer. Det er også et gyldig resultat.'),button('Se kveldens treff',showMatch,'primary'),button('Endre kveldens rammer',()=>showToday(sourceProfiles),'text-button'));
+   if(history.length)p.append(button('Forrige',previous,'text-button'));return;
+  }
+  const activity=activityChoice.activity,p=panel(activity.title,'ET FORSLAG FOR I KVELD');
+  p.setAttribute('data-activity-id',activity.id);p.append(node('p','Omtrent '+activity.minutes+' minutter','session-meta'),node('p',activity.description,'session-action'),node('p',activityRoles(activityChoice),'activity-roles'));
+  const start=button('Start aktiviteten',()=>{chosen=true;runStep=0;showRunning();},'primary');start.id='startTogether';p.append(start);
+  if(choices.length>1)p.append(button('Et annet forslag',()=>{chooseActivity(choices);showShortProposal();},'text-button'));
+  const why=node('details',undefined,'scenario-basis');why.append(node('summary','Hvorfor dette forslaget?'));const ul=node('ul');for(const item of activityChoice.evidence)ul.append(node('li',(language[item.key]?.topic||item.topic||item.cat)+' · kompatible ja i kveld'));why.append(ul,button('Se kveldens svar',showMatch,'text-button'));p.append(why);
+  const extra=node('details',undefined,'journey-more');extra.append(node('summary','Endre kveldens rammer'),button('Tilbake til dagsformen',()=>showToday(sourceProfiles),'text-button'));if(history.length)extra.append(button('Endre forrige svar',previous,'text-button'));p.append(extra);
  }
  function showRunning(){
-  const s=result.candidates[scenarioIndex],stages=[['Begynn sammen',s.intro],['Hoveddel',s.main],['Avrunding',s.closing],['Omsorg etterpå',s.aftercare]];
-  const portions=[.2,.5,.1,.2],minutes=portions.map(fraction=>Math.max(1,Math.round(today.minutes*fraction)));
-  minutes[1]=today.minutes-minutes[0]-minutes[2]-minutes[3];
-  finished=false;const p=panel(stages[runStep][0],'DERES STUND · DEL '+(runStep+1)+' AV '+stages.length);p.append(node('p','Omtrent '+minutes[runStep]+' minutter · dere bestemmer tempoet','session-meta'),node('p',stages[runStep][1],'session-action'));
-  const progress=node('progress');progress.max=stages.length;progress.value=runStep+1;progress.setAttribute('aria-label','Del '+(runStep+1)+' av '+stages.length);p.append(progress);
-  p.append(button(runStep===stages.length-1?'Avrund stunden':'Neste del',()=>{if(runStep<stages.length-1){runStep++;showRunning();}else{finished=true;const done=panel('Takk for stunden','AVRUNDET');done.append(node('p','Dere kan se tilbake på grunnlaget eller starte en ny stund.'),button('Se svargrunnlaget',showMatch,'primary'),button('Ny stund',()=>location.reload(),'text-button'));}},'primary'));
+  if(!activityChoice)return;const activity=activityChoice.activity;
+  finished=false;const p=panel(activity.title,'DEL '+(runStep+1)+' AV '+activity.steps.length);p.setAttribute('data-activity-id',activity.id);
+  p.append(node('p',activityRoles(activityChoice),'activity-roles'),node('p',activity.steps[runStep],'session-action'));
+  const progress=node('progress');progress.max=activity.steps.length;progress.value=runStep+1;progress.setAttribute('aria-label','Del '+(runStep+1)+' av '+activity.steps.length);p.append(progress);
+  p.append(button(runStep===activity.steps.length-1?'Avrund stunden':'Neste del',()=>{if(runStep<activity.steps.length-1){runStep++;showRunning();}else{finished=true;const done=panel('Takk for stunden','AVRUNDET');done.append(node('p','Kveldens svar har ikke endret interesseprofilene deres.'),button('Se kveldens treff',showMatch,'primary'),button('Ny stund',()=>location.reload(),'text-button'));}},'primary'));
   if(runStep)p.append(button('Forrige del',()=>{runStep--;showRunning();},'text-button'));
   p.append(button('Pause',()=>{if(!curtain.open)curtain.showModal();},'text-button'),button('Tilbake til forslaget',showShortProposal,'text-button'));
  }
  function showWelcome(){
   const p=panel('Deres utgangspunkt','VÅR STUND');p.append(node('p','Lag profilen din én gang. Last inn profilene når dere vil finne en felles retning.'));
-  const link=node('a','Min interesseprofil','primary profile-start');link.href='./kartlegging.html';p.append(link,button('Last inn profiler',()=>showProfileImport(),'primary'));
+  p.append(button('Last inn profiler',()=>showProfileImport(),'primary'));
+  const link=node('a','Les eller rediger en interesseprofil','profile-start');link.href='./kartlegging.html?mode=edit';p.append(link);
+  const create=node('a','Lag en ny interesseprofil','text-link');create.href='./kartlegging.html?mode=new';p.append(create);
   const old=node('details',undefined,'journey-more');old.append(node('summary','Uten profilfil'),button('Start uten profil',showParty,'text-button'));p.append(old);
  }
  function showProfileImport(initial=[]){
@@ -430,7 +443,7 @@
   let reading=false;status.setAttribute('role','status');
   p.append(node('p','Velg din egen og partnernes profilfiler. 2–4 deltakere. Filene leses bare på denne enheten.'));
   const label=node('label','Velg profilfiler'),input=node('input');input.type='file';input.multiple=true;input.accept='.json,application/json';input.id='sessionProfileFiles';label.htmlFor=input.id;
-  const start=button('Fortsett',()=>{if(!reading&&loaded.length>=2){today=S.options();sessionOverrides.clear();showToday(loaded);}},'primary');start.id='profilesContinue';
+  const start=button('Fortsett',()=>{if(!reading&&loaded.length>=2){today=S.options();shortPlan=null;sessionOverrides.clear();showToday(loaded);}},'primary');start.id='profilesContinue';
   function update(){
    list.replaceChildren();loaded.forEach((person,i)=>{const row=node('div',undefined,'loaded-profile');row.append(node('span',person.name),button('Fjern '+person.name,()=>{loaded.splice(i,1);update();},'text-button'));list.append(row);});
    start.disabled=reading||loaded.length<2;

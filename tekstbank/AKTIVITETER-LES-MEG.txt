@@ -1,0 +1,36 @@
+DYPERE – aktivitetsregister
+
+Kilde: aktiviteter.json. Nettstedet leser den tilsvarende activity-database.js.
+32 ikke-grafiske aktiviteter og samtalerammer fordelt på sju kategorier.
+Det er et startregister, ikke en komplett database med seksuelle scenarioer.
+
+Hver oppføring har:
+  id: stabil, unik aktivitets-ID.
+  enabled: om oppføringen kan trekkes.
+  title og description: kort overskrift og beskrivelse på sluttsiden.
+  genres: kategori-ID-er for organisering. En kategori alene gir aldri et treff.
+  level: øvre nivåvalg må være minst dette nivået. Dette er sortering, ikke medisinsk risikovurdering.
+  minutes: veiledende varighet; aktiviteten må få plass innenfor kveldens tid.
+  groups: tillatt antall deltakere, 2–4.
+  requires: alle krav i listen må være oppfylt.
+    anyOf: minst én av de eksakte profiltema-ID-ene må være bekreftet i kveld.
+    routes: valgfri liste med kompatible retninger, eksempelvis gi/motta.
+  steps: korte deler som vises én om gangen etter start.
+  roleLabels: valgfrie, aktivitetsspesifikke navn på eksisterende retninger.
+
+Bare spørsmål besvart i denne kvelden kan gi grunnlag for et forslag.
+Tidligere profil-ja gir spørsmål, ikke automatisk ja i kveld.
+Profil-kanskje krever at den aktuelle personen åpner for nysgjerrighet i kveld.
+Nei og ubesvart åpner aldri en ny retning.
+Alle deltakere må ha en kompatibel forbindelse i hvert påkrevd tema.
+Tilfeldighet skjer først etter at alle krav er kontrollert.
+«Et annet forslag» unngår allerede viste forslag til det tillatte utvalget er brukt opp.
+Manglende dekning vises ærlig; ingen generell ramme settes inn som en påstått aktivitetsmatch.
+
+Redigering:
+  1. Endre aktiviteter.json. Behold gamle ID-er.
+  2. Kjør valgfritt: python tekstbank/bygg-aktiviteter.py
+  3. Test innhold, tema-ID-er, roller, grenser og tomt resultat før publisering.
+  4. Oppdater versjon og tjenestearbeiderens hurtigbuffer som ved andre innholdsendringer.
+
+Dette registeret er offentlig appinnhold. Ikke legg personlige profiler eller reelle svar i det.
