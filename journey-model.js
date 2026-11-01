@@ -97,6 +97,7 @@
  function voteDirections(p,q,preferences,details={}){
    const defs=directions(q),keys=new Set(defs.map(d=>d.id));
    if(!defs.length||!preferences||typeof preferences!=='object'||Array.isArray(preferences)||Object.entries(preferences).some(([id,v])=>!keys.has(id)||!['ja','kanskje','nei','–'].includes(v)))return false;
+   if(p.allowed&&Object.entries(preferences).some(([id,v])=>(v==='ja'||v==='kanskje')&&!p.allowed[q.id]?.includes(id)))return false;
    const selected=Object.freeze(Object.fromEntries(defs.map(d=>[d.id,preferences[d.id]||'–'])));
    const key=aggregate(selected),l=window.DypereJourneyLanguage?.[family(q.text).slice(5)];
    const previous=p.answers.findIndex(a=>a.id===q.id);

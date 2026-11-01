@@ -9,7 +9,7 @@
  let profiles=[],active=0,segment=1,step=0,mode='oppvarming',lengths=[12,6,6];
  let revision=0,started=false,finished=false,busy=false,exiting=false,current=null;
  let setupIndex=0,result=null,scenarioIndex=0,custom='',chosen=false,customOpen=false,customDraft=null,pendingAnswer=null;
- const history=[];let restoredChoice=null;
+ const history=[];let restoredChoice=null;let importedSession=false,sessionQuestions=[];const P=window.DypereInterestProfiles;
  const sessionId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
  const confirmations=new Map();
  const notes=new Map();let reportFilter='yes',reportBody=null,reportData=null;
@@ -46,7 +46,7 @@
  }
  function selectParty(count){
    profiles=Array.from({length:count},(_,i)=>M.profile('avatar-'+(i+1)));
-   result=null;scenarioIndex=0;custom='';chosen=false;segment=1;active=0;step=0;setupIndex=0;customOpen=false;customDraft=null;pendingAnswer=null;current=null;started=false;finished=false;busy=false;history.length=0;confirmations.clear();reportData=null;reportFilter='yes';showMode();
+   result=null;scenarioIndex=0;custom='';chosen=false;segment=1;active=0;step=0;setupIndex=0;customOpen=false;customDraft=null;pendingAnswer=null;current=null;started=false;finished=false;busy=false;history.length=0;confirmations.clear();reportData=null;reportFilter='yes';importedSession=false;sessionQuestions=[];showMode();
  }
  function showMode(){
    const p=panel('Hvordan vil dere starte?','TO VEIER');
@@ -131,22 +131,22 @@
  }
  function showQuestion(){
    if(busy||finished)return;started=true;if(!entries?.length){showUnavailable('bank');return;}
-   const a=currentProfile(),rank=M.rank(mode,segment,step,lengths);if(!current)current=M.pick(a,entries,rank,Math.random,profiles);
+   const a=currentProfile(),rank=M.rank(mode,segment,step,lengths);if(!current)current=importedSession?sessionQuestions[step]:M.pick(a,entries.filter(e=>!e.card.id.startsWith('profile-')),rank,Math.random,profiles);
    if(!current){showUnavailable('pool');return;}
    const q=current,l=language[M.family(q.text).slice(5)];
-   const p=panel(a.name,'AVATAR '+(active+1)+' · '+['BRED UTFORSKNING','FINN FELLES INTERESSER','AVKLAR DET SOM PASSER'][segment-1],false),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
-   const text='Er du nysgjerrig på '+((a.tone==='direkte'?l?.directTopic:l?.topic)||q.topic||q.text).toLocaleLowerCase('nb')+'?';
+   const p=panel(a.name,'AVATAR '+(active+1)+' · '+(importedSession?'DERES FELLES UTVALG':['BRED UTFORSKNING','FINN FELLES INTERESSER','AVKLAR DET SOM PASSER'][segment-1]),false),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
+   const text=(importedSession?'Hva frister denne gangen innen ':'Er du nysgjerrig på ')+((a.tone==='direkte'?l?.directTopic:l?.topic)||q.topic||q.text).toLocaleLowerCase('nb')+'?';
    const question=node('p',text,'avatar-question');question.id='avatarQuestion';question.tabIndex=-1;
    progress.setAttribute('aria-label','Fremdrift for '+a.name);progress.setAttribute('aria-valuetext','Spørsmål '+(progress.value+1)+' av '+progress.max);p.append(progress,question);
 
    if(l?.explanation){const details=node('details',undefined,'question-explanation');details.open=false;details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));
      const link=node('a','Åpne ordboken','text-link');link.href='#ordbok';link.setAttribute('aria-haspopup','dialog');link.onclick=e=>{e.preventDefault();showDictionary(link);};details.append(link,node('p','Ubesvart betyr ukjent. Trykk på et valgt svar for å fjerne det.','journey-note'));if(segment===1&&step===0)details.append(node('p','Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.','journey-note'));p.append(details);}
-   const draft={...(restoredChoice?.preferences||{})},initialActuality=restoredChoice?.actuality||'uavklart';restoredChoice=null;
-   p.classList.add('question-panel');let choiceRevision=0;const definitions=M.directions(q);
+   const draft={...(restoredChoice?.preferences||{})},initialActuality=restoredChoice?.actuality||(importedSession?'ja':'uavklart');restoredChoice=null;
+   p.classList.add('question-panel');let choiceRevision=0;const definitions=M.directions(q).filter(d=>!importedSession||a.allowed[q.id]?.includes(d.id));
    const quick=node('div',undefined,'question-quick'),precise=node('details',undefined,'question-precise');precise.append(node('summary','Nysgjerrig eller flere valg'));
    function quickAnswer(values){if(r!==revision)return;Object.keys(draft).forEach(k=>delete draft[k]);Object.assign(draft,values);submit();}
    for(const direction of definitions)quick.append(button(direction.label,()=>quickAnswer({[direction.id]:'ja'})));
-   if(definitions.length>1)quick.append(button('Begge',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
+   if(definitions.length>1)quick.append(button(definitions.length===2?'Begge':'Alle disse',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
    quick.append(button('Ikke aktuelt',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'nei'])))));
    quick.setAttribute('aria-label','Velg det du liker');quick.setAttribute('role','group');quick.setAttribute('aria-describedby','avatarQuestion');p.append(node('p','Velg det du liker. Ett trykk går videre.','question-hint'),quick);
    precise.append(node('p','Her kan du svare ulikt for hver retning.','journey-note'));for(const direction of definitions){
@@ -174,7 +174,7 @@
  }
  function advance(){
    active++;step=0;if(active<profiles.length){showHandoff();return;}
-   if(segment===3){finished=true;showMatch();return;}
+   if(importedSession||segment===3){finished=true;showMatch();return;}
    segment++;active=0;setupIndex=0;profiles.forEach(a=>{a.points=a.treePoints[segment-1];});showSetupHandoff();
  }
  function showUnavailable(reason){
@@ -183,7 +183,7 @@
    p.append(button('Se hva dere matchet på',showMatch,'primary'));if(history.length)p.append(button('Forrige',previous,'text-button'));
  }
  function buildResult(){
-   const exact=M.match(profiles,entries).filter(item=>profiles.every((_,index)=>item.pairs.some(pair=>pair.compatible&&(pair.a===index||pair.b===index))));
+   const exact=M.match(profiles,entries).filter(item=>(!importedSession||item.answers.every(a=>a.actuality==='ja'))&&profiles.every((_,index)=>item.pairs.some(pair=>pair.compatible&&(pair.a===index||pair.b===index))));
    const shared=skills.map(s=>({id:s.id,name:s.name,value:exact.filter(item=>item.categoryId===s.id).length})).filter(s=>s.value>0).sort((a,b)=>b.value-a.value);
    const ranked=(window.DypereJourneyScenarios||[]).filter(s=>s.groups.includes(profiles.length)).map((s,i)=>({s,i,weight:shared.filter(t=>s.skills.includes(t.id)).reduce((v,t)=>v+t.value,0)})).sort((a,b)=>b.weight-a.weight||a.i-b.i);
    const positive=ranked.filter(x=>x.weight>0);return {shared,candidates:(positive.length?positive:ranked).map(x=>x.s),neutral:!positive.length};
@@ -332,5 +332,32 @@
  const curtain=$('journeyPrivacy'),resume=$('journeyContinue');
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&started&&!finished&&!curtain.open&&!document.querySelector('.studio-dialog[open]'))curtain.showModal();});
  resume.onclick=()=>curtain.close();
- showParty();
+
+ function showWelcome(){
+  const p=panel('Deres utgangspunkt','VÅR STUND');p.append(node('p','Lag profilen din én gang. Last inn profilene når dere vil finne en felles retning.'));
+  const link=node('a','Min interesseprofil','primary profile-start');link.href='./kartlegging.html';p.append(link,button('Last inn profiler',showProfileImport,'primary'));
+  const old=node('details',undefined,'journey-more');old.append(node('summary','Uten profilfil'),button('Start uten profil',showParty,'text-button'));p.append(old);
+ }
+ function showProfileImport(){
+  const p=panel('Last inn profilene','DERES FELLES UTVALG'),loaded=[],status=node('p'),list=node('div'),summary=node('p',undefined,'journey-note');status.setAttribute('role','status');
+  p.append(node('p','Velg din egen og partnernes profilfiler. 2–4 deltakere. Filene leses bare her på enheten.'));
+  const label=node('label','Velg profilfiler'),input=node('input');input.type='file';input.multiple=true;input.accept='.json,application/json';input.id='sessionProfileFiles';label.htmlFor=input.id;
+  const options=node('details',undefined,'question-clarify');options.append(node('summary','Tilpass utvalget'));
+  function check(text){const l=node('label'),c=node('input');c.type='checkbox';l.append(c,node('span',text));options.append(l);c.onchange=update;return c;}
+  const curious=check('Ta med nysgjerrighet'),explore=check('Spør om ubesvarte partnerinteresser');
+  const maxLabel=node('label','Øvre nivå denne gangen'),max=node('select');max.id='sessionMax';maxLabel.htmlFor=max.id;for(const [v,t] of [[2,'Mykere utvalg'],[3,'Variert utvalg'],[5,'Hele det felles utvalget']]){const o=node('option',t);o.value=String(v);max.append(o);}max.value='3';max.onchange=update;options.append(maxLabel,max);
+  const amountLabel=node('label','Temaer per deltaker'),amount=node('select');amount.id='sessionAmount';amountLabel.htmlFor=amount.id;for(const v of [8,12,24]){const o=node('option',String(v));o.value=String(v);amount.append(o);}amount.value='12';amount.onchange=update;options.append(amountLabel,amount);
+  const start=button('Finn vår stund',()=>{
+   const candidates=selection();if(!candidates.length)return;
+   // Sample across the permitted range, then progress from soft to more intense.
+   const limit=Math.min(Number(amount.value),candidates.length),selected=Array.from({length:limit},(_,i)=>candidates[Math.floor(i*candidates.length/limit)]);
+   profiles=loaded.map((saved,i)=>{const a=M.profile('avatar-'+(i+1));a.name=saved.name;a.tone='diskret';a.allowed=Object.fromEntries(selected.map(x=>[x.card.id,x.item.allowed[i]]));return a;});
+   importedSession=true;sessionQuestions=selected.map(x=>x.card);lengths=[sessionQuestions.length];active=0;segment=1;step=0;history.length=0;current=null;result=null;reportData=null;chosen=false;confirmations.clear();finished=false;started=true;showHandoff();
+  },'primary');
+  function selection(){if(loaded.length<2)return [];const plan=P.plan(loaded,{curious:curious.checked,explore:explore.checked});return plan.items.map(item=>{const id=window.DypereProfileQuestionIds[item.topic.id],entry=entries.find(e=>e.card.id===id);if(!entry)return null;const level=Math.max(...loaded.map(a=>a.levels[item.topic.id]||entry.card.rang));return {item,card:{...entry.card,rang:level}};}).filter(x=>x&&x.card.rang<=Number(max.value)).sort((a,b)=>a.card.rang-b.card.rang||Number(a.item.uncertain)-Number(b.item.uncertain)||a.card.id.localeCompare(b.card.id));}
+  function update(){list.replaceChildren();loaded.forEach((a,i)=>{const row=node('div',undefined,'loaded-profile');row.append(node('span',a.name),button('Fjern '+a.name,()=>{loaded.splice(i,1);update();},'text-button'));list.append(row);});const candidates=selection();summary.textContent=loaded.length<2?'Legg inn minst to profiler.':candidates.length?candidates.length+(candidates.length===1?' tema passer':' temaer passer')+' alle deltakerne. Vi starter mykere og holder oss innenfor valgt nivå.':'Ingen felles temaer i dette utvalget. Dere kan velge nysgjerrighet eller endre profilene. Et nei blir ikke overstyrt.';start.disabled=!candidates.length;}
+  input.onchange=async()=>{const r=revision;try{const files=Array.from(input.files||[]);if(loaded.length+files.length>4)throw Error('Det er plass til opptil fire profiler.');const batch=await Promise.all(files.map(async f=>{if(f.size>2000000)throw Error('En av profilfilene er for stor.');return P.parse(await f.text());}));if(r!==revision)return;if(new Set([...loaded,...batch].map(a=>a.id)).size!==loaded.length+batch.length)throw Error('Samme profil er valgt flere ganger.');loaded.push(...batch);status.textContent='';update();}catch(e){if(r===revision)status.textContent=e.message;}finally{input.value='';}};
+  p.append(label,input,list,status,options,summary,start,button('Tilbake',showWelcome,'text-button'));update();
+ }
+ showWelcome();
 })();
