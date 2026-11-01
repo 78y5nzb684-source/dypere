@@ -11,7 +11,19 @@
     ],
     "explanation": "Du blir holdt tilbake like før du kommer, og må vente. Ikke det samme som å bli låst i bur.",
     "topic": "Nektelse",
-    "directTopic": "Nektelse"
+    "directTopic": "Nektelse",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "du får ikke komme": {
     "retning": "aktiv",
@@ -25,7 +37,19 @@
     ],
     "explanation": "Du får ikke orgasme i det hele tatt denne gangen, selv om du er nær. Orgasmen kommer senere.",
     "topic": "Orgasmenekt",
-    "directTopic": "Orgasmenekt"
+    "directTopic": "Orgasmenekt",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "orgasm denial": {
     "retning": "aktiv",
@@ -39,7 +63,19 @@
     ],
     "explanation": "En annen bestemmer når du får orgasme, eller om du får det. Gjelder over tid, ikke bare i øyeblikket.",
     "topic": "Orgasmenekt",
-    "directTopic": "Orgasmenekt"
+    "directTopic": "Orgasmenekt",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "edging": {
     "retning": "aktiv",
@@ -53,7 +89,19 @@
     ],
     "explanation": "Du føres nesten til orgasme, så stopper det, og så videre. Til forskjell fra nekt får du komme til slutt.",
     "topic": "Orgasmeutsettelse",
-    "directTopic": "Orgasmeutsettelse"
+    "directTopic": "Orgasmeutsettelse",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "full kontroll": {
     "retning": "aktiv",
@@ -67,7 +115,19 @@
     ],
     "explanation": "En annen tar alle valg en periode: stilling, tempo, når det stopper. Du sier fra bare når noe ikke fungerer.",
     "topic": "Full kontroll",
-    "directTopic": "Full kontroll"
+    "directTopic": "Full kontroll",
+    "directions": [
+      {
+        "id": "lede",
+        "label": "Lede",
+        "complement": "folge"
+      },
+      {
+        "id": "folge",
+        "label": "Følge",
+        "complement": "lede"
+      }
+    ]
   },
   "han bestemmer": {
     "retning": "aktiv",
@@ -81,7 +141,19 @@
     ],
     "explanation": "Som full kontroll, men uformelt og uten krav om at det skal vare. Brukes når en tar styringen underveis.",
     "topic": "Å la partneren bestemme",
-    "directTopic": "Å la partneren bestemme"
+    "directTopic": "Å la partneren bestemme",
+    "directions": [
+      {
+        "id": "lede",
+        "label": "Lede",
+        "complement": "folge"
+      },
+      {
+        "id": "folge",
+        "label": "Følge",
+        "complement": "lede"
+      }
+    ]
   },
   "chastity": {
     "retning": "aktiv",
@@ -95,7 +167,19 @@
     ],
     "explanation": "Kontroll over når du får orgasme, over lengre tid enn en kveld. Buret er ett av flere virkemidler.",
     "topic": "Kyskhet",
-    "directTopic": "Kyskhet"
+    "directTopic": "Kyskhet",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "cage": {
     "retning": "aktiv",
@@ -109,7 +193,19 @@
     ],
     "explanation": "Selve kyskhetsburet som settes på. Det er en gjenstand, ikke en avtale i seg selv.",
     "topic": "Kyskhetsbur",
-    "directTopic": "Kyskhetsbur"
+    "directTopic": "Kyskhetsbur",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "nektelse med bur": {
     "retning": "aktiv",
@@ -123,7 +219,19 @@
     ],
     "explanation": "Buret på og orgasmen holdt tilbake samtidig. Kombinasjonen av gjenstand og avtale.",
     "topic": "Nektelse med bur",
-    "directTopic": "Nektelse med bur"
+    "directTopic": "Nektelse med bur",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "bli bundet": {
     "retning": "aktiv",
@@ -137,7 +245,19 @@
     ],
     "explanation": "Du blir festet med tau, belter eller liknende, så du ikke kommer løs selv. Hender og føtter er vanligst.",
     "topic": "Binding",
-    "directTopic": "Binding"
+    "directTopic": "Binding",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "bli brukt": {
     "retning": "aktiv",
@@ -151,7 +271,19 @@
     ],
     "explanation": "Du blir brukt til den andres nytelse uten å bli spurt underveis. Du er med, men styrer ikke.",
     "topic": "En rolle der partneren styrer",
-    "directTopic": "Å bli brukt i avtalt lek"
+    "directTopic": "Å bli brukt i avtalt lek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "objectification": {
     "retning": "aktiv",
@@ -165,7 +297,19 @@
     ],
     "explanation": "Du blir omtalt og behandlet som en ting, ikke som person. Ingen small talk, ingen navn.",
     "topic": "Tingliggjøring",
-    "directTopic": "Tingliggjøring"
+    "directTopic": "Tingliggjøring",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "cnc": {
     "retning": "aktiv",
@@ -179,7 +323,19 @@
     ],
     "explanation": "Avtalt rollespill der du protesterer og blir tatt likevel. Motstanden er en del av leken, men stoppord gjelder.",
     "topic": "Avtalt rollespill med motstand",
-    "directTopic": "Avtalt rollespill med motstand"
+    "directTopic": "Avtalt rollespill med motstand",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "impact": {
     "retning": "aktiv",
@@ -193,7 +349,19 @@
     ],
     "explanation": "Paraplybegrep for all slaglek. Sier ingenting om redskap eller styrke - det avklares i de andre spørsmålene.",
     "topic": "Slaglek",
-    "directTopic": "Slaglek"
+    "directTopic": "Slaglek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "hard spanking": {
     "retning": "aktiv",
@@ -207,7 +375,19 @@
     ],
     "explanation": "Spanking med håndflate, hardt. Huden blir varm og rød.",
     "topic": "Intens slaglek",
-    "directTopic": "Intens slaglek"
+    "directTopic": "Intens slaglek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "hardere slag": {
     "retning": "aktiv",
@@ -221,7 +401,19 @@
     ],
     "explanation": "Samme slag som dere allerede bruker, bare kraftigere. Relativt til det dere gjør i dag.",
     "topic": "Hardere slag",
-    "directTopic": "Hardere slag"
+    "directTopic": "Hardere slag",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "paddle": {
     "retning": "aktiv",
@@ -235,7 +427,19 @@
     ],
     "explanation": "Flat slagspade, oftest i lær eller tre. Gir bredere og tyngre slag enn håndflaten.",
     "topic": "Slagredskap med flat form",
-    "directTopic": "Slagredskap med flat form"
+    "directTopic": "Slagredskap med flat form",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "cane": {
     "retning": "aktiv",
@@ -249,7 +453,19 @@
     ],
     "explanation": "Tynn stokk i tre eller karbon. Gir skarpe, presise slag som setter seg, og merker.",
     "topic": "Slaglek med stokk",
-    "directTopic": "Slaglek med stokk"
+    "directTopic": "Slaglek med stokk",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "flogger": {
     "retning": "aktiv",
@@ -263,7 +479,19 @@
     ],
     "explanation": "Redskap med flere remmer. Gir bredt, sviende treff over større hudflate, ikke presise enkeltmerker.",
     "topic": "Slaglek med flerhalet pisk",
-    "directTopic": "Slaglek med flerhalet pisk"
+    "directTopic": "Slaglek med flerhalet pisk",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "choking": {
     "retning": "aktiv",
@@ -277,7 +505,19 @@
     ],
     "explanation": "Kvelertak betyr trykk mot halsen. Det kan gi alvorlig skade, og det finnes ingen trygg måte å gjøre det på.",
     "topic": "Kvelertak",
-    "directTopic": "Kvelertak"
+    "directTopic": "Kvelertak",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "breath play": {
     "retning": "aktiv",
@@ -291,7 +531,19 @@
     ],
     "explanation": "Pustekontroll betyr at pust eller lufttilførsel begrenses. Dette er en risikofylt praksis, ikke en fremgangsmåte som beskrives her.",
     "topic": "Pustekontroll",
-    "directTopic": "Pustekontroll"
+    "directTopic": "Pustekontroll",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "degradation": {
     "retning": "aktiv",
@@ -305,7 +557,19 @@
     ],
     "explanation": "Du blir snakket ned til, men med ord som er avtalt på forhånd. Skal kjennes, ikke såre.",
     "topic": "Avtalt nedverdigelse",
-    "directTopic": "Avtalt nedverdigelse"
+    "directTopic": "Avtalt nedverdigelse",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "name calling": {
     "retning": "aktiv",
@@ -319,7 +583,19 @@
     ],
     "explanation": "Korte, faste tilrop underveis. Ordene avtales på forhånd, ellers faller de feil ut.",
     "topic": "Kallenavn i avtalt lek",
-    "directTopic": "Kallenavn i avtalt lek"
+    "directTopic": "Kallenavn i avtalt lek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "verbal humiliation": {
     "retning": "aktiv",
@@ -333,7 +609,19 @@
     ],
     "explanation": "Satt sammenhengende ned med ord, som en monolog om deg. Mer enn enkeltord, mer krevende enn kallenavn.",
     "topic": "Verbal ydmykelse",
-    "directTopic": "Verbal ydmykelse"
+    "directTopic": "Verbal ydmykelse",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "oral": {
     "retning": "aktiv",
@@ -347,7 +635,19 @@
     ],
     "explanation": "Munn mot kjønn. Kan gis og mottas, og kan vare kort eller lenge.",
     "topic": "Oralsex",
-    "directTopic": "Oralsex"
+    "directTopic": "Oralsex",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "dyp munn": {
     "retning": "aktiv",
@@ -361,7 +661,19 @@
     ],
     "explanation": "Munnen brukes dypere enn vanlig, så langt ned du klarer. Kan gi brekninger, og det er greit.",
     "topic": "Dyp oralsex",
-    "directTopic": "Dyp oralsex"
+    "directTopic": "Dyp oralsex",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "facefuck": {
     "retning": "aktiv",
@@ -375,7 +687,19 @@
     ],
     "explanation": "Den andre styrer tempo og dybde med munnen din. Du holder deg fast og blir tatt, til forskjell fra dyp munn der du styrer.",
     "topic": "Styrt oralsex",
-    "directTopic": "Styrt penetrasjon av munnen"
+    "directTopic": "Styrt penetrasjon av munnen",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "komme i munnen": {
     "retning": "aktiv",
@@ -389,7 +713,19 @@
     ],
     "explanation": "Utløsning i munnen. Ikke det samme som å svelge - det er et eget valg etterpå.",
     "topic": "Utløsning i munnen",
-    "directTopic": "Utløsning i munnen"
+    "directTopic": "Utløsning i munnen",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "swallow": {
     "retning": "aktiv",
@@ -403,7 +739,19 @@
     ],
     "explanation": "Du svelger etterpå i stedet for å spytte. Kan kombineres med komme i munnen, men er et eget valg.",
     "topic": "Svelging av sæd",
-    "directTopic": "Svelging av sæd"
+    "directTopic": "Svelging av sæd",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "rimming": {
     "retning": "aktiv",
@@ -417,7 +765,19 @@
     ],
     "explanation": "Tunge mot anus. Kan gjøres på begge, og krever at man ikke er sjenert for lukt eller hår.",
     "topic": "Rimming",
-    "directTopic": "Rimming"
+    "directTopic": "Rimming",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "komme på ansiktet": {
     "retning": "aktiv",
@@ -431,7 +791,19 @@
     ],
     "explanation": "Utløsning på ansiktet. Avklar om øyne og hår skal skjermes.",
     "topic": "Utløsning på ansiktet",
-    "directTopic": "Utløsning på ansiktet"
+    "directTopic": "Utløsning på ansiktet",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "facial": {
     "retning": "aktiv",
@@ -445,7 +817,19 @@
     ],
     "explanation": "Samme som komme på ansiktet, men brukt som eget ord om treffet. Brukes når det er selve bildet som tenner.",
     "topic": "Utløsning på ansiktet",
-    "directTopic": "Utløsning på ansiktet"
+    "directTopic": "Utløsning på ansiktet",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "cum play": {
     "retning": "aktiv",
@@ -459,7 +843,19 @@
     ],
     "explanation": "Sæd brukes videre etterpå - på hud, i munnen, som glidemiddel. Kommer etter utløsningen, ikke i stedet for.",
     "topic": "Sæd som del av lek",
-    "directTopic": "Lek med sæd"
+    "directTopic": "Lek med sæd",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "creampie": {
     "retning": "aktiv",
@@ -473,7 +869,19 @@
     ],
     "explanation": "Utløsning inni, uten kondom. Forutsetter at dere har avklart prevensjon.",
     "topic": "Utløsning inni",
-    "directTopic": "Utløsning inni partneren"
+    "directTopic": "Utløsning inni partneren",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "komme inni": {
     "retning": "aktiv",
@@ -487,7 +895,19 @@
     ],
     "explanation": "Selve øyeblikket der den andre kommer inni deg. Brukes når det er øyeblikket, ikke resultatet, som er poenget.",
     "topic": "Utløsning inni",
-    "directTopic": "Utløsning inni"
+    "directTopic": "Utløsning inni",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "fylt": {
     "retning": "aktiv",
@@ -501,7 +921,19 @@
     ],
     "explanation": "Følelsen etterpå, av å være full og at det renner ut. Et eget ønske, ikke bare selve utløsningen.",
     "topic": "Følelsen etter utløsning inni",
-    "directTopic": "Sæd som blir værende inni"
+    "directTopic": "Sæd som blir værende inni",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "spytting": {
     "retning": "aktiv",
@@ -515,7 +947,19 @@
     ],
     "explanation": "Spytt som gest, ofte i munnen eller på ansiktet. Mengde og treff avklares.",
     "topic": "Spytting",
-    "directTopic": "Spytting"
+    "directTopic": "Spytting",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "spytt på": {
     "retning": "aktiv",
@@ -529,7 +973,19 @@
     ],
     "explanation": "Spytt brukt som fukt eller som treff på huden, ikke som gest i munnen.",
     "topic": "Spytt på kroppen",
-    "directTopic": "Spytt på kroppen"
+    "directTopic": "Spytt på kroppen",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "anal med fingre": {
     "retning": "aktiv",
@@ -543,7 +999,19 @@
     ],
     "explanation": "En eller flere fingre i anus. Billigste inngang og lettest å dosere. Glidemiddel er ikke valgfritt.",
     "topic": "Anal stimulering med fingre",
-    "directTopic": "Anal stimulering med fingre"
+    "directTopic": "Anal stimulering med fingre",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "forsiktig anal": {
     "retning": "aktiv",
@@ -557,7 +1025,19 @@
     ],
     "explanation": "Penetrering bak i rolig tempo, med tid til å venne seg til. Fokus på å ikke stresse, ikke på dybde.",
     "topic": "Forsiktig anal",
-    "directTopic": "Forsiktig analsex"
+    "directTopic": "Forsiktig analsex",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "dyp anal": {
     "retning": "aktiv",
@@ -571,7 +1051,19 @@
     ],
     "explanation": "Penetrering som går lenger inn enn vanlig. Krever at du er varmet opp først.",
     "topic": "Dyp anal",
-    "directTopic": "Dyp analsex"
+    "directTopic": "Dyp analsex",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "hard anal": {
     "retning": "aktiv",
@@ -585,7 +1077,19 @@
     ],
     "explanation": "Raskt og kraftig bak. Forutsetter at du allerede er vant, ellers blir det bare ubehag.",
     "topic": "Hard anal",
-    "directTopic": "Hard analsex"
+    "directTopic": "Hard analsex",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "gaping": {
     "retning": "aktiv",
@@ -599,7 +1103,19 @@
     ],
     "explanation": "Du blir holdt åpen etter penetrering, så det vises. Sekunder, ikke minutter - det lukker seg raskt.",
     "topic": "Anal utvidelse",
-    "directTopic": "Anal utvidelse"
+    "directTopic": "Anal utvidelse",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "anal med plug": {
     "retning": "aktiv",
@@ -613,7 +1129,19 @@
     ],
     "explanation": "En plugg settes inn og blir sittende. Brukes ofte som oppvarming, eller som eget poeng.",
     "topic": "Analplugg",
-    "directTopic": "Analplugg"
+    "directTopic": "Analplugg",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "remote plug": {
     "retning": "aktiv",
@@ -627,7 +1155,19 @@
     ],
     "explanation": "Plugg med fjernkontroll, så den andre kan endre på den uten å være nær deg.",
     "topic": "Fjernstyrt analplugg",
-    "directTopic": "Fjernstyrt analplugg"
+    "directTopic": "Fjernstyrt analplugg",
+    "directions": [
+      {
+        "id": "styre",
+        "label": "Styre leketøyet",
+        "complement": "bruke"
+      },
+      {
+        "id": "bruke",
+        "label": "Bruke leketøyet",
+        "complement": "styre"
+      }
+    ]
   },
   "plug hele kvelden": {
     "retning": "aktiv",
@@ -641,7 +1181,19 @@
     ],
     "explanation": "Pluggen blir sittende over lang tid mens dere gjør andre ting. Glidemiddel må fylles på underveis.",
     "topic": "Analplugg over tid",
-    "directTopic": "Analplugg over tid"
+    "directTopic": "Analplugg over tid",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "forsiktig fisting": {
     "retning": "aktiv",
@@ -657,7 +1209,19 @@
     "topic": "Fisting, område uavklart",
     "area": "uavklart",
     "categoryId": "lek",
-    "directTopic": "Fisting, område uavklart"
+    "directTopic": "Fisting, område uavklart",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "gradvis fisting": {
     "retning": "aktiv",
@@ -673,7 +1237,19 @@
     "topic": "Fisting, område uavklart",
     "area": "uavklart",
     "categoryId": "lek",
-    "directTopic": "Fisting, område uavklart"
+    "directTopic": "Fisting, område uavklart",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "vaginal fisting": {
     "retning": "aktiv",
@@ -689,7 +1265,19 @@
     "topic": "Vaginal fisting",
     "area": "vaginal",
     "categoryId": "lek",
-    "directTopic": "Vaginal fisting"
+    "directTopic": "Vaginal fisting",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "anal fisting": {
     "retning": "aktiv",
@@ -705,7 +1293,19 @@
     "topic": "Anal fisting",
     "area": "anal",
     "categoryId": "dybde",
-    "directTopic": "Anal fisting"
+    "directTopic": "Anal fisting",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "pegging": {
     "retning": "aktiv",
@@ -719,7 +1319,19 @@
     ],
     "explanation": "Anal penetrering der den ene bruker strap-on på den andre. Rollene kan byttes, og gjør det ofte.",
     "topic": "Penetrasjon med strap-on",
-    "directTopic": "Penetrasjon med strap-on"
+    "directTopic": "Penetrasjon med strap-on",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "strap on": {
     "retning": "aktiv",
@@ -733,7 +1345,19 @@
     ],
     "explanation": "Selen med redskapet på. Gjenstanden, ikke handlingen. Brukes også vaginalt.",
     "topic": "Strap-on",
-    "directTopic": "Strap-on"
+    "directTopic": "Strap-on",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "blindfold": {
     "retning": "aktiv",
@@ -747,7 +1371,19 @@
     ],
     "explanation": "Bind for øynene, så du ikke ser. Alt annet blir merkbart sterkere.",
     "topic": "Bind for øynene",
-    "directTopic": "Bind for øynene"
+    "directTopic": "Bind for øynene",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "sensory deprivation": {
     "retning": "aktiv",
@@ -761,7 +1397,19 @@
     ],
     "explanation": "Mer enn bind: øyne, hørsel, eller begge. Du mister oversikt over tid og rom, og det er hele poenget.",
     "topic": "Begrensning av sanseinntrykk",
-    "directTopic": "Begrensning av sanseinntrykk"
+    "directTopic": "Begrensning av sanseinntrykk",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "hot wax": {
     "retning": "aktiv",
@@ -775,7 +1423,19 @@
     ],
     "explanation": "Stearin dryppes på huden. Bruk varmelys, ikke fargestifter - de svir.",
     "topic": "Vokslek",
-    "directTopic": "Vokslek"
+    "directTopic": "Vokslek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "temperature play": {
     "retning": "aktiv",
@@ -789,7 +1449,19 @@
     ],
     "explanation": "Veksling mellom varmt og kaldt - voks, is, metall, varmt vann. Kontrasten er poenget.",
     "topic": "Temperaturlek",
-    "directTopic": "Temperaturlek"
+    "directTopic": "Temperaturlek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "feet": {
     "retning": "aktiv",
@@ -803,7 +1475,19 @@
     ],
     "explanation": "Føtter som eget interesseområde. Kan være å se på, ta på, eller å ha dem i fanget.",
     "topic": "Føtter",
-    "directTopic": "Føtter"
+    "directTopic": "Føtter",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "tær": {
     "retning": "aktiv",
@@ -817,7 +1501,19 @@
     ],
     "explanation": "Tærne spesielt - suge, slikke, bite lett. Snevring av føtter.",
     "topic": "Tær",
-    "directTopic": "Tær"
+    "directTopic": "Tær",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "foot worship": {
     "retning": "aktiv",
@@ -831,7 +1527,19 @@
     ],
     "explanation": "Føttene får all oppmerksomhet en stund. Vask, massasje, kyss, tunge - i den rekkefolgen.",
     "topic": "Føtter i fokus",
-    "directTopic": "Føtter i fokus"
+    "directTopic": "Føtter i fokus",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "latex": {
     "retning": "aktiv",
@@ -845,7 +1553,19 @@
     ],
     "explanation": "Klær eller tilbehør i lateks. Stramt, glatt, kaldt mot hud - og helt lydtett.",
     "topic": "Lateks",
-    "directTopic": "Lateks"
+    "directTopic": "Lateks",
+    "directions": [
+      {
+        "id": "bruke",
+        "label": "Ha på selv",
+        "complement": "se"
+      },
+      {
+        "id": "se",
+        "label": "Se partneren med",
+        "complement": "bruke"
+      }
+    ]
   },
   "leather": {
     "retning": "aktiv",
@@ -859,7 +1579,19 @@
     ],
     "explanation": "Skinn som klær eller utstyr. Varmere og mykere enn lateks, lukter og knirker.",
     "topic": "Lær og skinn",
-    "directTopic": "Lær og skinn"
+    "directTopic": "Lær og skinn",
+    "directions": [
+      {
+        "id": "bruke",
+        "label": "Ha på selv",
+        "complement": "se"
+      },
+      {
+        "id": "se",
+        "label": "Se partneren med",
+        "complement": "bruke"
+      }
+    ]
   },
   "halsbånd": {
     "retning": "aktiv",
@@ -873,7 +1605,19 @@
     ],
     "explanation": "Bånd rundt halsen som symbol på rolle. Kan ha bjelle eller ring, og kan tas på uten at noe annet skjer.",
     "topic": "Halsbånd",
-    "directTopic": "Halsbånd"
+    "directTopic": "Halsbånd",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "leash": {
     "retning": "aktiv",
@@ -887,7 +1631,19 @@
     ],
     "explanation": "Bånd festet til halsbandet, så den andre kan fore deg rundt. Forutsetter halsbånd.",
     "topic": "Bånd i rollespill",
-    "directTopic": "Bånd i rollespill"
+    "directTopic": "Bånd i rollespill",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "pet": {
     "retning": "aktiv",
@@ -901,7 +1657,19 @@
     ],
     "explanation": "Du er kjæledyr en stund: på gulvet, med halsbånd, uten ord. Rollen, ikke rammen.",
     "topic": "Kjæledyrrolle",
-    "directTopic": "Kjæledyrrolle"
+    "directTopic": "Kjæledyrrolle",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "pet play": {
     "retning": "aktiv",
@@ -915,7 +1683,19 @@
     ],
     "explanation": "Rammen rundt det å være kjæledyr - navn, bånd, kommandoer, godbiter. Mer planlagt enn bare rollen.",
     "topic": "Kjæledyrrollespill",
-    "directTopic": "Kjæledyrrollespill"
+    "directTopic": "Kjæledyrrollespill",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "daddy": {
     "retning": "aktiv",
@@ -929,7 +1709,19 @@
     ],
     "explanation": "Rollen som den voksne, trygge parten. Ikke nødvendigvis eldre i alder, men den som holder rammen.",
     "topic": "Omsorgsrolle i voksent rollespill",
-    "directTopic": "Omsorgsrolle i voksent rollespill"
+    "directTopic": "Omsorgsrolle i voksent rollespill",
+    "directions": [
+      {
+        "id": "lede",
+        "label": "Lede",
+        "complement": "folge"
+      },
+      {
+        "id": "folge",
+        "label": "Følge",
+        "complement": "lede"
+      }
+    ]
   },
   "little": {
     "retning": "aktiv",
@@ -943,7 +1735,19 @@
     ],
     "explanation": "Rollen som den lille. Ikke alder, men posisjon - den som blir tatt vare på.",
     "topic": "Mottakerrolle i voksent rollespill",
-    "directTopic": "Mottakerrolle i voksent rollespill"
+    "directTopic": "Mottakerrolle i voksent rollespill",
+    "directions": [
+      {
+        "id": "lede",
+        "label": "Lede",
+        "complement": "folge"
+      },
+      {
+        "id": "folge",
+        "label": "Følge",
+        "complement": "lede"
+      }
+    ]
   },
   "dd lg": {
     "retning": "aktiv",
@@ -957,7 +1761,19 @@
     ],
     "explanation": "Dynamikken mellom de to rollene, med omsorg og regler. Krever at rollene er avklart før dere begynner.",
     "topic": "DD/LG, voksne rollespill",
-    "directTopic": "DD/LG, voksne rollespill"
+    "directTopic": "DD/LG, voksne rollespill",
+    "directions": [
+      {
+        "id": "lede",
+        "label": "Lede",
+        "complement": "folge"
+      },
+      {
+        "id": "folge",
+        "label": "Følge",
+        "complement": "lede"
+      }
+    ]
   },
   "risiko": {
     "retning": "sym",
@@ -970,7 +1786,14 @@
     ],
     "explanation": "Muligheten for å bli oppdaget, uten at det skjer. Spenningen i det, ikke selve stedet.",
     "topic": "Risiko",
-    "directTopic": "Risiko"
+    "directTopic": "Risiko",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "public": {
     "retning": "sym",
@@ -983,7 +1806,14 @@
     ],
     "explanation": "Sex på et sted der andre faktisk kan se. Ute, i bil, på fest. Mer enn bare risikoen.",
     "topic": "Offentlige omgivelser som tema",
-    "directTopic": "Offentlige omgivelser som tema"
+    "directTopic": "Offentlige omgivelser som tema",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "remote toy ute": {
     "retning": "aktiv",
@@ -997,7 +1827,19 @@
     ],
     "explanation": "Leketøy med fjernkontroll, båret ute blant folk. Den andre styrer uten at noen ser det.",
     "topic": "Fjernstyrt leketøy ute",
-    "directTopic": "Fjernstyrt leketøy ute"
+    "directTopic": "Fjernstyrt leketøy ute",
+    "directions": [
+      {
+        "id": "styre",
+        "label": "Styre leketøyet",
+        "complement": "bruke"
+      },
+      {
+        "id": "bruke",
+        "label": "Bruke leketøyet",
+        "complement": "styre"
+      }
+    ]
   },
   "tredjeperson": {
     "retning": "sym",
@@ -1010,7 +1852,14 @@
     ],
     "explanation": "En tredje voksen er med. Kan være til stede, eller bare som fantasi mens dere er to.",
     "topic": "En ekstra deltaker",
-    "directTopic": "En ekstra deltaker"
+    "directTopic": "En ekstra deltaker",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "group": {
     "retning": "sym",
@@ -1023,7 +1872,14 @@
     ],
     "explanation": "Flere enn to sammen, tre eller flere. Bredere enn en tredje person, som bare er en.",
     "topic": "Flere deltakere",
-    "directTopic": "Flere deltakere"
+    "directTopic": "Flere deltakere",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "se på": {
     "retning": "sym",
@@ -1036,7 +1892,19 @@
     ],
     "explanation": "Du ser på mens andre har sex. Du er ikke med selv - det er forskjellen fra gruppe.",
     "topic": "Å se på andre",
-    "directTopic": "Å se på andre"
+    "directTopic": "Å se på andre",
+    "directions": [
+      {
+        "id": "se",
+        "label": "Se på",
+        "complement": "bliSett"
+      },
+      {
+        "id": "bliSett",
+        "label": "Bli sett",
+        "complement": "se"
+      }
+    ]
   },
   "kos etter": {
     "retning": "sym",
@@ -1049,7 +1917,19 @@
     ],
     "explanation": "Nærhet etterpå, uten krav. Ligger, holder, prater.",
     "topic": "Kos etter",
-    "directTopic": "Kos etter"
+    "directTopic": "Kos etter",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "aftercare": {
     "retning": "sym",
@@ -1062,7 +1942,19 @@
     ],
     "explanation": "Hele etterspillet: vann, pledd, prat, sjekk av hvordan det gikk. Mer enn kos.",
     "topic": "Omsorg etterpå",
-    "directTopic": "Omsorg etterpå"
+    "directTopic": "Omsorg etterpå",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "myk landing": {
     "retning": "sym",
@@ -1075,7 +1967,19 @@
     ],
     "explanation": "Rolig nedtrapping fra intensitet til vanlig igjen, over tid. For når det har vært hardt.",
     "topic": "Myk landing",
-    "directTopic": "Myk landing"
+    "directTopic": "Myk landing",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "medical play": {
     "retning": "aktiv",
@@ -1089,7 +1993,19 @@
     ],
     "explanation": "Rammen: hvitt, hansker, skjema, undersøkelsesbenk. Rollespillet rundt, ikke selve undersøkelsen.",
     "topic": "Medisinsk rollespill",
-    "directTopic": "Medisinsk rollespill"
+    "directTopic": "Medisinsk rollespill",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "undersøkelse": {
     "retning": "aktiv",
@@ -1103,7 +2019,19 @@
     ],
     "explanation": "Selve undersøkelsen. Spekulum, stetoskop, palpering. Handlingen, uten rammen rundt.",
     "topic": "Undersøkelser i rollespill",
-    "directTopic": "Undersøkelser i rollespill"
+    "directTopic": "Undersøkelser i rollespill",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "vanlig sex": {
     "retning": "sym",
@@ -1116,7 +2044,14 @@
     ],
     "explanation": "Penetrering uten noe ekstra på. Utgangspunktet dere måler alt annet mot.",
     "topic": "Vanlig sex",
-    "directTopic": "Vanlig sex"
+    "directTopic": "Vanlig sex",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "myk sex": {
     "retning": "sym",
@@ -1129,7 +2064,14 @@
     ],
     "explanation": "Rolig tempo, mye nærhet, lite overraskelser. Sex uten at det skal være noe mer.",
     "topic": "Rolig sex",
-    "directTopic": "Rolig sex"
+    "directTopic": "Rolig sex",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "hard sex": {
     "retning": "sym",
@@ -1142,7 +2084,14 @@
     ],
     "explanation": "Høyt tempo og kraft. Nær røff, men uten at det skal være uvorrent.",
     "topic": "Hard sex",
-    "directTopic": "Hard sex"
+    "directTopic": "Hard sex",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "rough sex": {
     "retning": "sym",
@@ -1155,7 +2104,14 @@
     ],
     "explanation": "Hardt og litt uvorrent - hår, hofter, biting, dytting. Mer kaos enn hard sex.",
     "topic": "Røff sex",
-    "directTopic": "Røff sex"
+    "directTopic": "Røff sex",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "uten pause": {
     "retning": "sym",
@@ -1168,7 +2124,14 @@
     ],
     "explanation": "Sammenhengende forløp uten planlagte stopp. Du får ikke hente deg inn underveis.",
     "topic": "Sex uten pause",
-    "directTopic": "Sex uten pause"
+    "directTopic": "Sex uten pause",
+    "directions": [
+      {
+        "id": "sammen",
+        "label": "Delta sammen",
+        "complement": "sammen"
+      }
+    ]
   },
   "watersports": {
     "retning": "aktiv",
@@ -1182,7 +2145,19 @@
     ],
     "explanation": "Urin som del av leken. Paraplybegrepet, brukt om hele temæt.",
     "topic": "Urin som del av lek",
-    "directTopic": "Urin som del av lek"
+    "directTopic": "Urin som del av lek",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   },
   "piss": {
     "retning": "aktiv",
@@ -1196,6 +2171,18 @@
     ],
     "explanation": "Selve det å tisse på eller i den andre. Handlingen, ikke temæt. Mengde og sted avklares.",
     "topic": "Å bli tisset på",
-    "directTopic": "Å bli tisset på"
+    "directTopic": "Å bli tisset på",
+    "directions": [
+      {
+        "id": "gi",
+        "label": "Gi",
+        "complement": "motta"
+      },
+      {
+        "id": "motta",
+        "label": "Motta",
+        "complement": "gi"
+      }
+    ]
   }
 }

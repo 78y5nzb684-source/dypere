@@ -135,3 +135,5 @@
 .interest-tree,.interest-tree ul{list-style:none;padding-left:14px;border-left:1px solid var(--line)}
 .interest-tree li{margin:12px 0;font-size:14px;line-height:1.5}
 .interest-tree strong{color:var(--gold)}
+
+.direction-row{border:0;border-top:1px solid var(--line);padding:16px 0;margin:18px 0}.direction-row legend{color:var(--gold);padding:0 8px 0 0}.direction-options{display:flex;gap:8px;flex-wrap:wrap}.direction-options button{flex:1;min-height:48px;padding:10px 12px}.direction-options button[aria-pressed=true]{background:var(--gold);color:#17131a;border-color:var(--gold)}.direction-row .text-button{font-size:12px;min-height:36px}.match-answer{white-space:normal;min-width:110px;line-height:1.7}

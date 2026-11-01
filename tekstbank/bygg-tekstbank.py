@@ -14,6 +14,10 @@ assert len({s['id'] for s in scenarios})==len(scenarios)
 assert len(categories['tree'])==4 and len({r['id'] for r in categories['tree']})==4
 assert all(r['groups'] and all(g in {s['id'] for s in categories['groups']} for g in r['groups']) for r in categories['tree'])
 for key,value in language.items():
+    directions=value.get('directions')
+    assert isinstance(directions,list) and directions
+    assert len({d['id'] for d in directions})==len(directions)
+    assert all(d.get('label','').strip() and any(c['id']==d['complement'] and c['complement']==d['id'] for c in directions) for d in directions)
     assert isinstance(key,str) and key
     assert isinstance(value.get('explanation'),str) and value['explanation'].strip()
     assert all(isinstance(value.get(f),str) and value[f].strip() for f in ['topic','directTopic'])

@@ -86,39 +86,51 @@
    if(p.recent.length>16)p.recent.shift();if(p.recentCats.length>4)p.recentCats.shift();
    return entry.card;
  }
- function vote(p,q,key,details={}){
-   if(!['ja','kanskje','nei'].includes(key))return false;
-   const l=window.DypereJourneyLanguage?.[family(q.text).slice(5)];
-   const value={ja:2,kanskje:1,nei:0}[key];
+ function directions(q){
+   const rows=window.DypereJourneyLanguage?.[family(q.text).slice(5)]?.directions;
+   return Array.isArray(rows)?rows.map(row=>({...row})):[];
+ }
+ function aggregate(preferences){
+   const votes=Object.values(preferences);
+   return votes.includes('ja')?'ja':votes.includes('kanskje')?'kanskje':votes.length&&votes.every(v=>v==='nei')?'nei':'–';
+ }
+ function voteDirections(p,q,preferences,details={}){
+   const defs=directions(q),keys=new Set(defs.map(d=>d.id));
+   if(!defs.length||!preferences||typeof preferences!=='object'||Array.isArray(preferences)||Object.entries(preferences).some(([id,v])=>!keys.has(id)||!['ja','kanskje','nei','–'].includes(v)))return false;
+   const selected=Object.freeze(Object.fromEntries(defs.map(d=>[d.id,preferences[d.id]||'–'])));
+   const key=aggregate(selected),l=window.DypereJourneyLanguage?.[family(q.text).slice(5)];
    const previous=p.answers.findIndex(a=>a.id===q.id);
-   if(previous>=0){
-     const old=p.answers[previous],oldValue={ja:2,kanskje:1,nei:0}[old.vote];
-     if(oldValue){p.scores[old.cat]=(p.scores[old.cat]||0)-oldValue;if(!p.scores[old.cat])delete p.scores[old.cat];}
-   }
-   if(value)p.scores[q.cat]=(p.scores[q.cat]||0)+value;
-   const entry=Object.freeze({id:q.id,cat:q.cat,family:family(q.text),vote:key,profileId:p.id,categoryId:q.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(q.cat))?.id,area:q.area||l?.area||null,role:key==='nei'?'uavklart':(['gi','motta','begge','sammen'].includes(details.role)?details.role:'uavklart'),actuality:key==='nei'?'nei':(['ja','senere'].includes(details.actuality)?details.actuality:'uavklart')});
-   if(previous>=0)p.answers[previous]=entry;else p.answers.push(entry);return true;
+   if(previous>=0){const old=p.answers[previous],oldValue={ja:2,kanskje:1,nei:0}[old.vote]||0;p.scores[old.cat]=Math.max(0,(p.scores[old.cat]||0)-oldValue);if(!p.scores[old.cat])delete p.scores[old.cat];}
+   const value={ja:2,kanskje:1,nei:0}[key]||0;if(value)p.scores[q.cat]=(p.scores[q.cat]||0)+value;
+   const answer=Object.freeze({id:q.id,cat:q.cat,family:family(q.text),profileId:p.id,categoryId:q.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(q.cat))?.id,area:q.area||l?.area||null,preferences:selected,vote:key,actuality:['ja','senere'].includes(details.actuality)?details.actuality:'uavklart'});
+   if(previous>=0)p.answers[previous]=answer;else p.answers.push(answer);return true;
  }
  function responses(profiles,entries){
+   const positive=v=>v==='ja'||v==='kanskje';
    return entries.map(entry=>{
      const source=entry.card||entry,l=window.DypereJourneyLanguage?.[family(source.text).slice(5)];
      const card={...source,categoryId:source.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(source.cat))?.id,area:source.area||l?.area||null};
-     const answers=profiles.map(p=>{const answer=p.answers.findLast(a=>a.id===card.id);return {profileId:p.id,name:p.name,vote:answer?.vote||'–',role:answer?.role||'uavklart',actuality:answer?.actuality||'uavklart'};});
+     const defs=directions(card);
+     const answers=profiles.map(p=>{const answer=p.answers.findLast(a=>a.id===card.id);return {profileId:p.id,name:p.name,answered:!!answer,vote:answer?.vote||'–',preferences:answer?.preferences||{},actuality:answer?.actuality||'uavklart'};});
      const pairs=[];
      for(let a=0;a<answers.length;a++)for(let b=a+1;b<answers.length;b++){
-       const av=answers[a].vote,bv=answers[b].vote;
-       if(['ja','kanskje'].includes(av)&&['ja','kanskje'].includes(bv)){const x=answers[a],y=answers[b],sym=window.DypereJourneyLanguage?.[family(card.text).slice(5)]?.retning==='sym';const compatible=card.area==='uavklart'?false:sym?x.role==='sammen'&&y.role==='sammen':(x.role==='gi'||x.role==='begge')&&(y.role==='motta'||y.role==='begge')||(y.role==='gi'||y.role==='begge')&&(x.role==='motta'||x.role==='begge');pairs.push({a,b,nesten:av!=='ja'||bv!=='ja',beggeJa:av==='ja'&&bv==='ja',compatible:av==='ja'&&bv==='ja'&&compatible,status:av!=='ja'||bv!=='ja'?'Mulig treff':compatible&&x.actuality==='ja'&&y.actuality==='ja'?'Kompatible ønsker':'Felles interesse'});}
+       const x=answers[a],y=answers[b],routes=[];
+       for(const d of defs){const av=x.preferences[d.id]||'–',bv=y.preferences[d.complement]||'–';if(positive(av)&&positive(bv))routes.push({aDirection:d.id,bDirection:d.complement,aVote:av,bVote:bv,confirmed:av==='ja'&&bv==='ja'});}
+       const compatible=card.area!=='uavklart'&&routes.some(r=>r.confirmed),possible=routes.length>0;
+       const common=positive(x.vote)&&positive(y.vote);
+       if(!possible&&!common)continue;
+       const needsClarification=!possible&&defs.some(d=>positive(x.preferences[d.id])&&(y.preferences[d.complement]||'–')==='–'||positive(y.preferences[d.complement])&&(x.preferences[d.id]||'–')==='–');
+       const status=compatible?(x.actuality==='ja'&&y.actuality==='ja'?'Kompatible ønsker':'Kompatibel retning'):possible?'Mulig treff':needsClarification?'Felles interesse – retning uavklart':'Felles interesse – ingen kompatibel retning';
+       pairs.push({a,b,routes,compatible,beggeJa:compatible,nesten:possible&&!compatible,needsClarification,status});
      }
-     pairs.sort((a,b)=>Number(b.nesten)-Number(a.nesten)||Number(b.beggeJa)-Number(a.beggeJa)||a.a-b.a||a.b-b.b);
-     return {...card,key:family(card.text).slice(5),answers,pairs,nesten:pairs.some(p=>p.nesten),jaCount:answers.filter(a=>a.vote==='ja').length,kanskjeCount:answers.filter(a=>a.vote==='kanskje').length};
-   }).filter(e=>e.answers.some(a=>a.vote!=='–'));
+     pairs.sort((a,b)=>Number(b.compatible)-Number(a.compatible)||Number(b.nesten)-Number(a.nesten)||a.a-b.a||a.b-b.b);
+     return {...card,key:family(card.text).slice(5),directions:defs,answers,pairs,nesten:pairs.some(p=>p.nesten),jaCount:answers.filter(a=>a.vote==='ja').length,kanskjeCount:answers.filter(a=>a.vote==='kanskje').length};
+   }).filter(e=>e.answers.some(a=>a.answered));
  }
- function match(profiles,entries){
-   return responses(profiles,entries).filter(e=>e.pairs.length).sort((a,b)=>Number(b.nesten)-Number(a.nesten)||Number(b.jaCount>=2)-Number(a.jaCount>=2)||a.id.localeCompare(b.id));
- }
+ function match(profiles,entries){return responses(profiles,entries).filter(e=>e.pairs.some(p=>p.routes.length)).sort((a,b)=>Number(b.pairs.some(p=>p.compatible))-Number(a.pairs.some(p=>p.compatible))||a.id.localeCompare(b.id));}
  function chemistry(profiles){
    const raw=categories.map(s=>({id:s.id,name:s.name,value:profiles.reduce((sum,p)=>sum+p.answers.filter(a=>(a.categoryId||categories.find(c=>c.cat.includes(a.cat))?.id)===s.id&&a.vote==='ja').length,0)}));
    const max=Math.max(0,...raw.map(s=>s.value));return raw.map(s=>({...s,score:max?Math.round(s.value/max*100):0}));
  }
- window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,vote,responses,match,chemistry,leaves,treeNodes,allocate,priority});
+ window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,directions,aggregate,voteDirections,responses,match,chemistry,leaves,treeNodes,allocate,priority});
 })();

@@ -141,19 +141,28 @@
    if(segment===1&&step===0)p.append(node('p','Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.','journey-note'));
    if(l?.explanation){const details=node('details',undefined,'question-explanation');details.open=a.tone==='direkte';details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));
      const link=node('a','Åpne ordboken','text-link');link.href='#ordbok';link.setAttribute('aria-haspopup','dialog');link.onclick=e=>{e.preventDefault();showDictionary(link);};details.append(link);p.append(details);}
-   const clarify=node('details',undefined,'question-clarify');clarify.open=segment>1&&profiles.some(other=>other.id!==a.id&&other.answers.some(answer=>answer.id===q.id&&answer.vote!=='nei'));clarify.append(node('summary','Rolle og aktualitet (valgfritt)'));
-   function choice(id,label,options){const wrap=node('label',label),select=node('select');select.id=id;wrap.htmlFor=id;for(const [value,text] of options){const option=node('option',text);option.value=value;select.append(option);}select.value='uavklart';clarify.append(wrap,select);return select;}
-   const role=choice('questionRole','Hvilken rolle interesserer deg?',l?.retning==='sym'?[['uavklart','Ikke avklart'],['sammen','Delta sammen']]:[['uavklart','Ikke avklart'],['gi','Gi / lede'],['motta','Motta / følge'],['begge','Begge roller']]);
-   const actuality=choice('questionActuality','Er temaet aktuelt denne gangen?',[['uavklart','Ikke avklart'],['ja','Aktuelt denne gangen'],['senere','Bare kartlegging nå']]);if(restoredChoice){role.value=restoredChoice.role;actuality.value=restoredChoice.actuality;restoredChoice=null;}p.append(clarify);
-   const row=node('div',undefined,'journey-answer-actions'),r=revision;row.setAttribute('role','group');row.setAttribute('aria-describedby','avatarQuestion');
-   [['Ja','ja'],['Kanskje','kanskje'],['Nei','nei']].forEach(([label,key])=>row.append(button(label,()=>{
-     if(r!==revision||current!==q||busy&&pendingAnswer?.q!==q)return;
-     const first=!pendingAnswer;
-     if(first){remember({role:role.value,actuality:actuality.value});pendingAnswer={q};busy=true;}
-     M.vote(a,q,key,{role:role.value,actuality:actuality.value});result=null;reportData=null;chosen=false;confirmations.clear();
-     Array.from(row.children).forEach(b=>b.setAttribute('aria-pressed',String(b.textContent===label)));
-     if(first)setTimeout(()=>{pendingAnswer=null;busy=false;if(finished||r!==revision)return;current=null;step++;if(step>=lengths[segment-1])advance();else showQuestion();},220);
-   },key==='ja'?'primary':'')));p.append(row);
+   const draft={...(restoredChoice?.preferences||{})},initialActuality=restoredChoice?.actuality||'uavklart';restoredChoice=null;
+   p.append(node('p','Velg for hver retning. Ubesvarte valg blir stående som ukjent.','journey-note'));
+   for(const direction of M.directions(q)){
+     const group=node('fieldset',undefined,'direction-row');group.append(node('legend',direction.label));
+     const row=node('div',undefined,'direction-options'),buttons=[];row.setAttribute('aria-describedby','avatarQuestion');
+     function refresh(){buttons.forEach(([b,key])=>b.setAttribute('aria-pressed',String(draft[direction.id]===key)));}
+     for(const [label,key] of [['Liker','ja'],['Nysgjerrig','kanskje'],['Ikke aktuelt','nei']]){
+       const b=button(label,()=>{if(r!==revision)return;draft[direction.id]=key;refresh();});buttons.push([b,key]);row.append(b);
+     }
+     group.append(row,button('Nullstill',()=>{if(r!==revision)return;delete draft[direction.id];refresh();},'text-button'));refresh();p.append(group);
+   }
+   const clarify=node('details',undefined,'question-clarify');clarify.append(node('summary','Aktualitet denne gangen'));
+   const label=node('label','Er temaet aktuelt denne gangen?'),actuality=node('select');actuality.id='questionActuality';label.htmlFor=actuality.id;
+   for(const [value,text] of [['uavklart','Ikke avklart'],['ja','Aktuelt denne gangen'],['senere','Bare kartlegging nå']]){const option=node('option',text);option.value=value;actuality.append(option);}actuality.value=initialActuality;clarify.append(label,actuality);p.append(clarify);
+   const r=revision;
+   p.append(button('Neste',()=>{
+     if(r!==revision||busy||current!==q)return;
+     remember({preferences:{...draft},actuality:actuality.value});
+     if(!M.voteDirections(a,q,draft,{actuality:actuality.value})){history.pop();return;}
+     result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
+     if(step>=lengths[segment-1])advance();else showQuestion();
+   },'primary'));
    const back=button('Forrige',previous,'text-button');back.disabled=!history.length;p.append(back);question.focus();
  }
  function advance(){
@@ -167,7 +176,7 @@
    p.append(button('Se hva dere matchet på',showMatch,'primary'));if(history.length)p.append(button('Forrige',previous,'text-button'));
  }
  function buildResult(){
-   const exact=M.match(profiles,entries).filter(item=>item.answers.every(answer=>answer.vote==='ja'));
+   const exact=M.match(profiles,entries).filter(item=>profiles.every((_,index)=>item.pairs.some(pair=>pair.compatible&&(pair.a===index||pair.b===index))));
    const shared=skills.map(s=>({id:s.id,name:s.name,value:exact.filter(item=>item.categoryId===s.id).length})).filter(s=>s.value>0).sort((a,b)=>b.value-a.value);
    const ranked=(window.DypereJourneyScenarios||[]).filter(s=>s.groups.includes(profiles.length)).map((s,i)=>({s,i,weight:shared.filter(t=>s.skills.includes(t.id)).reduce((v,t)=>v+t.value,0)})).sort((a,b)=>b.weight-a.weight||a.i-b.i);
    const positive=ranked.filter(x=>x.weight>0);return {shared,candidates:(positive.length?positive:ranked).map(x=>x.s),neutral:!positive.length};
@@ -212,19 +221,18 @@
    let value='';try{value=localStorage.getItem(noteKey(id))||'';}catch(_){}
    notes.set(id,value);return value;
  }
+ const answerLabels={ja:'Liker',kanskje:'Nysgjerrig',nei:'Ikke aktuelt','–':'Ubesvart'};
+ function answerText(item,answer){return item.directions.map(d=>d.label+': '+answerLabels[answer.preferences[d.id]||'–']).join('; ');}
  function phrase(item,pair,full=true){
-   const topic=language[item.key]?.topic||item.topic||item.key;
-   const a=item.answers[pair.a],b=item.answers[pair.b];
-   if(!full)return topic+' — '+a.name+' og '+b.name;
-   const roleNames={gi:'gi / lede',motta:'motta / følge',begge:'begge roller',sammen:'delta sammen',uavklart:'rolle uavklart'};
-   return topic+' — '+a.name+': '+roleNames[a.role]+'; '+b.name+': '+roleNames[b.role]+'. '+pair.status+'.';
+   const topic=language[item.key]?.topic||item.topic||item.key,a=item.answers[pair.a],b=item.answers[pair.b];
+   const label=id=>item.directions.find(d=>d.id===id)?.label||id;
+   const routes=pair.routes.map(route=>a.name+': '+label(route.aDirection)+' ('+answerLabels[route.aVote]+'); '+b.name+': '+label(route.bDirection)+' ('+answerLabels[route.bVote]+')');
+   return topic+' — '+(routes.length?routes.join(' / '):a.name+' og '+b.name)+'. '+pair.status+'.';
  }
  function reportRows(){
-   const all=M.responses(profiles,entries);
-   if(reportFilter==='all')return all.sort((a,b)=>Number(b.nesten)-Number(a.nesten)||Number(b.jaCount>=2)-Number(a.jaCount>=2)||a.id.localeCompare(b.id));
-   return M.match(profiles,entries).filter(item=>item.pairs.some(pair=>reportFilter==='yes'?pair.beggeJa:pair.nesten));
+   return M.responses(profiles,entries).filter(item=>reportFilter==='all'||pairsFor(item).length).sort((a,b)=>Number(b.pairs.some(p=>p.compatible))-Number(a.pairs.some(p=>p.compatible))||a.id.localeCompare(b.id));
  }
- function pairsFor(item){return item.pairs.filter(pair=>reportFilter==='yes'?pair.beggeJa:reportFilter==='mixed'?!pair.beggeJa:true);}
+ function pairsFor(item){return item.pairs.filter(pair=>reportFilter==='yes'?pair.compatible:reportFilter==='mixed'?pair.nesten||pair.needsClarification:true);}
  function svgElement(tag,attrs={}){
    const el=document.createElementNS('http://www.w3.org/2000/svg',tag);
    for(const [key,value] of Object.entries(attrs))el.setAttribute(key,String(value));return el;
@@ -246,12 +254,12 @@
    const p=panel('Deres kjemi','DERES MATCH');p.classList.add('match-panel');
    p.append(node('p','Registrerte interesser. Ubesvart betyr ukjent.'),radar());
    const legend=node('dl',undefined,'match-scores');M.chemistry(profiles).forEach(axis=>{const row=node('div');row.append(node('dt',axis.name),node('dd',axis.score+' / 100'));legend.append(row);});p.append(legend);
-   const yes=reportData.filter(x=>x.pairs.some(pair=>pair.beggeJa)).length,maybe=reportData.filter(x=>x.kanskjeCount>=2).length;
-   p.append(node('p',profiles.length===2?yes+(yes===1?' tema har':' temaer har')+' dere begge sagt ja til. '+maybe+' sier begge kanskje.':yes+(yes===1?' tema har':' temaer har')+' minst to sagt ja til. '+maybe+' har minst to svart kanskje på.','match-count'));
+   const yes=reportData.filter(x=>x.pairs.some(pair=>pair.compatible)).length,maybe=M.responses(profiles,entries).filter(x=>x.pairs.some(pair=>pair.nesten||pair.needsClarification)).length;
+   p.append(node('p',yes+' temaer har kompatible retninger. '+maybe+' trenger avklaring.','match-count'));
    appendInterestTrees(p);
    const filters=node('div',undefined,'match-filters');filters.setAttribute('role','group');filters.setAttribute('aria-label','Velg hvilke svar som vises');
    const buttons=[];
-   [['Begge ja','yes'],['Til avklaring','mixed'],['Alt','all']].forEach(([label,key])=>{
+   [['Treff','yes'],['Til avklaring','mixed'],['Alt','all']].forEach(([label,key])=>{
      const b=button(label,()=>{reportFilter=key;buttons.forEach(([el,value])=>el.setAttribute('aria-pressed',String(value===key)));renderMatches();});
      b.setAttribute('aria-pressed',String(reportFilter===key));buttons.push([b,key]);filters.append(b);
    });p.append(filters);
@@ -285,8 +293,8 @@
      items.forEach(item=>{
        const pairs=pairsFor(item),shown=pairs.length?pairs:[null];
        shown.forEach((pair,i)=>{
-         const row=node('tr',undefined,pair?.nesten?'nesten':'');item.answers.forEach(answer=>{const td=node('td',answer.vote,'match-vote match-answer '+answer.vote);if(answer.vote!=='–'&&answer.vote!=='nei'){td.append(node('p',({gi:'Gi / lede',motta:'Motta / følge',begge:'Begge roller',sammen:'Sammen',uavklart:'Rolle uavklart'})[answer.role],'journey-note'),node('p',({ja:'Aktuelt nå',senere:'Bare kartlegging',uavklart:'Aktualitet uavklart'})[answer.actuality],'journey-note'));}row.append(td);});
-         const cell=node('td');cell.append(node('p',pair?phrase(item,pair,false):(Array.isArray(language[item.key]?.question)?language[item.key].question[0]:item.text),'match-sentence'));
+         const row=node('tr',undefined,pair?.nesten?'nesten':'');item.answers.forEach(answer=>{const td=node('td',answerText(item,answer),'match-answer');td.append(node('p',({ja:'Aktuelt nå',senere:'Bare kartlegging',uavklart:'Aktualitet uavklart'})[answer.actuality],'journey-note'));row.append(td);});
+         const cell=node('td');cell.append(node('p',pair?phrase(item,pair,false):(language[item.key]?.topic||item.topic||item.key),'match-sentence'));
          if(pair)cell.append(node('span',pair.status,'match-near'));
          if(pair?.compatible&&pair.status==='Kompatible ønsker'){const key=item.id+':'+pair.a+':'+pair.b;const confirm=button(confirmations.get(key)?.length===2?'Valgt sammen':'Bekreft hver for dere',()=>confirmPair(item,pair,key),'text-button');confirm.disabled=confirmations.get(key)?.length===2;cell.append(confirm);}
          {
@@ -304,7 +312,7 @@
  function exportMatch(){
    const lines=['Deres kjemi','Registrerte interesser. Ubesvart betyr ukjent.','',...M.chemistry(profiles).map(s=>s.name+': '+s.score+' av 100'),''];
    for(const skill of skills){const items=reportRows().filter(item=>item.categoryId===skill.id);if(!items.length)continue;lines.push(skill.name);
-     for(const item of items){const pairs=pairsFor(item);for(const pair of pairs.length?pairs:[null])lines.push(item.answers.map(a=>a.name+': '+a.vote).join(' | '),pair?phrase(item,pair):(language[item.key]?.question?.[0]||item.text),...(pair?.nesten?['nesten']:[]));const note=readNote(item.id);if(note)lines.push('Notat: '+note);lines.push('');}}
+     for(const item of items){const pairs=pairsFor(item);for(const pair of pairs.length?pairs:[null])lines.push(item.answers.map(a=>a.name+': '+answerText(item,a)+'; '+({ja:'Aktuelt nå',senere:'Bare kartlegging',uavklart:'Aktualitet uavklart'})[a.actuality]).join(' | '),pair?phrase(item,pair):(language[item.key]?.topic||item.topic||item.key),...(pair?.nesten?['nesten']:[]));const note=readNote(item.id);if(note)lines.push('Notat: '+note);lines.push('');}}
    lines.push('Dette er interesser, ikke avtaler.');
    const url=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'})),a=node('a');a.href=url;a.download='dypere-matchrapport.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
  }
