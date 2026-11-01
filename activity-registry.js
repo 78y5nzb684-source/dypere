@@ -6,7 +6,7 @@
  function records(){const ids=new Set();return (Array.isArray(bank?.activities)?bank.activities:[]).filter(a=>{if(!valid(a)||ids.has(a.id))return false;ids.add(a.id);return true;});}
  function topicIds(){return new Set(records().flatMap(a=>a.requires.flatMap(r=>r.anyOf)));}
  function eligible(pool,partySize,settings){
-  return records().filter(activity=>activity.enabled&&activity.groups.includes(partySize)&&activity.level<=settings.max&&activity.minutes<=settings.minutes).flatMap(activity=>{
+  return records().filter(activity=>activity.enabled&&activity.groups.includes(partySize)&&activity.level<=settings.max&&activity.minutes<=settings.minutes&&(!Object.values(settings.quicky||{}).some(Boolean)||activity.minutes<30)).flatMap(activity=>{
    const evidence=[],bindings=[];
    for(const requirement of activity.requires){
     const matches=pool.filter(item=>item.answers.length===partySize&&item.answers.every(a=>a.answered&&a.actuality==='ja'&&a.origin==='question')&&requirement.anyOf.includes(item.topicId||window.DypereProfileCatalog.find(t=>window.DypereProfileQuestionIds[t.id]===item.id)?.id));

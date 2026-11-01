@@ -189,3 +189,5 @@
 .question-clarify[hidden],.profile-editor-content[hidden]{display:none!important}
 .activity-roles{font-size:14px!important;line-height:1.7;color:var(--gold);margin:16px 0!important}
 .profile-editor-content .profile-controls{margin-top:16px}
+
+.session-quicky{border:0;border-top:1px solid var(--line);padding:16px 0 0;margin:18px 0}.session-quicky legend{color:var(--gold);padding-right:10px}.session-quicky .journey-note{margin:0 0 10px}

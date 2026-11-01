@@ -3,7 +3,8 @@
  const P=window.DypereInterestProfiles,M=window.DypereJourneyModel;
  function options(raw={}){
   const curiosity={};for(const [id,value] of Object.entries(raw.curiosity||{}))if(typeof id==='string'&&value===true)curiosity[id]=true;
-  return {minutes:[15,30,60].includes(Number(raw.minutes))?Number(raw.minutes):30,max:[2,3,5].includes(Number(raw.max))?Number(raw.max):3,curiosity};
+  const quicky={};for(const [id,value] of Object.entries(raw.quicky||{}))if(value===true)quicky[id]=true;
+  return {quicky,minutes:[15,30,60].includes(Number(raw.minutes))?Number(raw.minutes):30,max:[2,3,5].includes(Number(raw.max))?Number(raw.max):3,curiosity};
  }
  function candidates(people,entries,raw={}){
   const settings=options(typeof raw==='number'?{max:raw}:raw),byId=new Map(entries.map(e=>[e.card.id,e.card])),rows=new Map();
@@ -23,7 +24,7 @@
   return [...rows.values()].sort((a,b)=>a.card.rang-b.card.rang||Number(a.uncertain)-Number(b.uncertain)||a.card.id.localeCompare(b.card.id));
  }
  function build(people,entries,raw,random=Math.random){
-  const settings=options(raw),available=candidates(people,entries,settings),count=Math.min(available.length,settings.minutes===15?3:settings.minutes===30?5:7);
+  const settings=options(raw),available=candidates(people,entries,settings),count=Math.min(available.length,Object.values(settings.quicky||{}).some(Boolean)?3:settings.minutes===15?3:settings.minutes===30?5:7);
   const supported=window.DypereActivityRegistry?.topicIds()||new Set();
   const priority=available.filter(x=>supported.has(x.topic.id)).slice().sort((a,b)=>Number(a.uncertain)-Number(b.uncertain)||a.card.rang-b.card.rang);
   const picked=[];
@@ -44,7 +45,7 @@
   return M.match(profiles,entries).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
  }
  function enough(profiles,entries,settings,selectedCount){
-  const matched=pool(profiles,entries),minimum=Math.min(2,selectedCount),target=settings.minutes===15?1:settings.minutes===30?2:3;
+  const matched=pool(profiles,entries),minimum=Math.min(2,selectedCount),target=Object.values(settings.quicky||{}).some(Boolean)?1:settings.minutes===15?1:settings.minutes===30?2:3;
   return profiles.every(p=>p.answers.length>=minimum)&&matched.length>=target&&!!window.DypereActivityRegistry?.eligible(matched,profiles.length,settings).length;
  }
  window.DypereSessionPlanner=Object.freeze({options,candidates,build,canStillMatch,pool,enough});
