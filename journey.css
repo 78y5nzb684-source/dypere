@@ -137,3 +137,25 @@
 .interest-tree strong{color:var(--gold)}
 
 .direction-row{border:0;border-top:1px solid var(--line);padding:16px 0;margin:18px 0}.direction-row legend{color:var(--gold);padding:0 8px 0 0}.direction-options{display:flex;gap:8px;flex-wrap:wrap}.direction-options button{flex:1;min-height:48px;padding:10px 12px}.direction-options button[aria-pressed=true]{background:var(--gold);color:#17131a;border-color:var(--gold)}.direction-row .text-button{font-size:12px;min-height:36px}.match-answer{white-space:normal;min-width:110px;line-height:1.7}
+
+/* Compact question flow: one task, two directional choices. */
+.question-quick{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 18px}.question-quick button{min-height:54px;font-size:15px;margin:0!important;border-radius:12px}.question-quick button:hover,.question-quick button:focus-visible{border-color:var(--gold);background:#4a3b48}.question-precise{margin:0 0 16px}.question-precise summary{font-size:13px;color:var(--muted);cursor:pointer}.question-precise[open] summary{margin-bottom:16px}.question-precise .journey-note{font-size:12px}
+.question-panel{padding:26px 30px!important}
+.question-panel h2{font-size:22px;margin:2px 0 14px}
+.question-panel .journey-kicker{font-size:10px;margin-bottom:4px}
+.question-panel .avatar-question{min-height:0;font-size:clamp(23px,4.5vw,29px);line-height:1.25;margin:22px 0 10px}
+.question-panel .question-explanation{border:0;padding:0;margin:0 0 18px}
+.question-panel .question-explanation summary{font-size:13px}
+.question-panel .question-explanation p{margin:8px 0;font-size:13px}
+.question-panel .question-explanation .text-link{font-size:13px}
+.question-panel .question-hint{font-size:12px;color:var(--muted);margin:0 0 16px}
+.question-panel .direction-row{min-width:0;padding:0;margin:0 0 18px;border:0}
+.question-panel .direction-row legend{font-size:14px;color:var(--ink);margin-bottom:8px;padding:0}
+.question-panel .direction-options{gap:6px;flex-wrap:nowrap}
+.question-panel .direction-options button{min-width:0;min-height:46px;padding:9px 6px;font-size:13px;border-radius:11px}
+.question-panel .question-clarify{margin:2px 0 18px;padding-top:12px}
+.question-panel .question-clarify summary{font-size:13px;color:var(--muted)}
+.question-navigation{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.question-navigation button{min-height:44px;margin:0!important}
+.question-navigation .primary{min-width:140px}
+@media(max-width:500px){.question-panel{padding:22px 18px!important}.question-panel .avatar-question{margin-top:18px}.question-navigation .primary{min-width:130px}}

@@ -138,32 +138,39 @@
    const text='Er du nysgjerrig på '+((a.tone==='direkte'?l?.directTopic:l?.topic)||q.topic||q.text).toLocaleLowerCase('nb')+'?';
    const question=node('p',text,'avatar-question');question.id='avatarQuestion';question.tabIndex=-1;
    progress.setAttribute('aria-label','Fremdrift for '+a.name);progress.setAttribute('aria-valuetext','Spørsmål '+(progress.value+1)+' av '+progress.max);p.append(progress,question);
-   if(segment===1&&step===0)p.append(node('p','Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.','journey-note'));
-   if(l?.explanation){const details=node('details',undefined,'question-explanation');details.open=a.tone==='direkte';details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));
-     const link=node('a','Åpne ordboken','text-link');link.href='#ordbok';link.setAttribute('aria-haspopup','dialog');link.onclick=e=>{e.preventDefault();showDictionary(link);};details.append(link);p.append(details);}
+
+   if(l?.explanation){const details=node('details',undefined,'question-explanation');details.open=false;details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));
+     const link=node('a','Åpne ordboken','text-link');link.href='#ordbok';link.setAttribute('aria-haspopup','dialog');link.onclick=e=>{e.preventDefault();showDictionary(link);};details.append(link,node('p','Ubesvart betyr ukjent. Trykk på et valgt svar for å fjerne det.','journey-note'));if(segment===1&&step===0)details.append(node('p','Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.','journey-note'));p.append(details);}
    const draft={...(restoredChoice?.preferences||{})},initialActuality=restoredChoice?.actuality||'uavklart';restoredChoice=null;
-   p.append(node('p','Velg for hver retning. Ubesvarte valg blir stående som ukjent.','journey-note'));
-   for(const direction of M.directions(q)){
+   p.classList.add('question-panel');let choiceRevision=0;const definitions=M.directions(q);
+   const quick=node('div',undefined,'question-quick'),precise=node('details',undefined,'question-precise');precise.append(node('summary','Nysgjerrig eller flere valg'));
+   function quickAnswer(values){if(r!==revision)return;Object.keys(draft).forEach(k=>delete draft[k]);Object.assign(draft,values);submit();}
+   for(const direction of definitions)quick.append(button(direction.label,()=>quickAnswer({[direction.id]:'ja'})));
+   if(definitions.length>1)quick.append(button('Begge',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
+   quick.append(button('Ikke aktuelt',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'nei'])))));
+   quick.setAttribute('aria-label','Velg det du liker');quick.setAttribute('role','group');quick.setAttribute('aria-describedby','avatarQuestion');p.append(node('p','Velg det du liker. Ett trykk går videre.','question-hint'),quick);
+   precise.append(node('p','Her kan du svare ulikt for hver retning.','journey-note'));for(const direction of definitions){
      const group=node('fieldset',undefined,'direction-row');group.append(node('legend',direction.label));
      const row=node('div',undefined,'direction-options'),buttons=[];row.setAttribute('aria-describedby','avatarQuestion');
      function refresh(){buttons.forEach(([b,key])=>b.setAttribute('aria-pressed',String(draft[direction.id]===key)));}
      for(const [label,key] of [['Liker','ja'],['Nysgjerrig','kanskje'],['Ikke aktuelt','nei']]){
-       const b=button(label,()=>{if(r!==revision)return;draft[direction.id]=key;refresh();});buttons.push([b,key]);row.append(b);
+       const b=button(label,()=>{if(r!==revision)return;if(draft[direction.id]===key)delete draft[direction.id];else draft[direction.id]=key;refresh();const token=++choiceRevision;if(definitions.every(d=>draft[d.id]))setTimeout(()=>{if(token===choiceRevision&&!document.querySelector('.studio-dialog[open]')&&!clarify.open)submit();},420);});buttons.push([b,key]);row.append(b);
      }
-     group.append(row,button('Nullstill',()=>{if(r!==revision)return;delete draft[direction.id];refresh();},'text-button'));refresh();p.append(group);
+     group.append(row);refresh();precise.append(group);
    }
+   precise.open=Object.keys(draft).length>0;p.append(precise);
    const clarify=node('details',undefined,'question-clarify');clarify.append(node('summary','Aktualitet denne gangen'));
    const label=node('label','Er temaet aktuelt denne gangen?'),actuality=node('select');actuality.id='questionActuality';label.htmlFor=actuality.id;
    for(const [value,text] of [['uavklart','Ikke avklart'],['ja','Aktuelt denne gangen'],['senere','Bare kartlegging nå']]){const option=node('option',text);option.value=value;actuality.append(option);}actuality.value=initialActuality;clarify.append(label,actuality);p.append(clarify);
    const r=revision;
-   p.append(button('Neste',()=>{
+   function submit(){
      if(r!==revision||busy||current!==q)return;
      remember({preferences:{...draft},actuality:actuality.value});
      if(!M.voteDirections(a,q,draft,{actuality:actuality.value})){history.pop();return;}
      result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
      if(step>=lengths[segment-1])advance();else showQuestion();
-   },'primary'));
-   const back=button('Forrige',previous,'text-button');back.disabled=!history.length;p.append(back);question.focus();
+   }
+   const actions=node('div',undefined,'question-navigation'),back=button('Forrige',previous,'text-button');back.disabled=!history.length;actions.append(back,button('Neste',submit,'primary'));p.append(actions);question.focus();
  }
  function advance(){
    active++;step=0;if(active<profiles.length){showHandoff();return;}
