@@ -20,7 +20,7 @@ function showOrdbok(){
   if(dialog.open)return;
   const content=document.getElementById('ordbokContent');
   content.replaceChildren();
-  const entries=window.DypereJourneyLanguage ? Object.entries(window.DypereJourneyLanguage).filter(([,value])=>value.explanation).map(([term,value])=>[term,value.explanation]) : Object.entries(window.DypereOrdbok||{});
+  const entries=window.DypereJourneyLanguage ? Object.entries(window.DypereJourneyLanguage).filter(([,value])=>value.explanation).map(([term,value])=>[value.topic||term,value.explanation]) : Object.entries(window.DypereOrdbok||{});
   if(!entries.length){
     const note=document.createElement('p');
     note.textContent='Ordboken er ikke tilgjengelig. Last inn siden på nytt når du har nett.';
