@@ -33,6 +33,14 @@
     }
     schedule();
   });
+  let navigationAt=0;
+  document.addEventListener('click',e=>{
+    const next=e.target.closest('#survey #next,#survey #prev,#survey #back');
+    if(!next)return;
+    const now=Date.now();
+    if(e.detail>1||now-navigationAt<300){e.preventDefault();e.stopImmediatePropagation();return;}
+    navigationAt=now;
+  },true);
   all('dialog').forEach(d=>d.addEventListener('close',()=>{opener?.focus();schedule()}));
   id('comment')?.addEventListener('input',schedule);
   function labels(){
@@ -66,7 +74,7 @@
     grid.dataset.multi=String(multi);
     buttons.forEach(b=>{
       b.hidden=false;b.classList.remove('answer-pass');
-      const label=b.textContent.trim();if(!multi){const map={'JA':'Ja','ÅPEN FOR DET':'Åpen','NYSGJERRIG':'Nysgjerrig','NEI':'Nei','PASS':'Pass'};if(map[label])b.textContent=map[label];if(b.textContent.trim()==='Pass')b.classList.add('answer-pass')}
+      const label=b.textContent.trim();if(!multi){const map={'JA':'Ja','ÅPEN FOR DET':'Åpen for det','NYSGJERRIG':'Nysgjerrig','NEI':'Nei','PASS':'Pass'};if(map[label])b.textContent=map[label];if(b.textContent.trim()==='Pass')b.classList.add('answer-pass')}
       const on=b.classList.contains('selected')||b.classList.contains('chosen');b.setAttribute('aria-pressed',String(on));
     });
     const pager=one('.choice-pager');if(!pager)return;

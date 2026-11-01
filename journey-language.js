@@ -1562,7 +1562,7 @@ window.DypereJourneyLanguage = {
       },
       {
         "id": "se",
-        "label": "Se partneren med",
+        "label": "Se på partneren",
         "complement": "bruke"
       }
     ]
@@ -1588,7 +1588,7 @@ window.DypereJourneyLanguage = {
       },
       {
         "id": "se",
-        "label": "Se partneren med",
+        "label": "Se på partneren",
         "complement": "bruke"
       }
     ]

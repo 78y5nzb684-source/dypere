@@ -9,7 +9,7 @@
  let profiles=[],active=0,segment=1,step=0,mode='oppvarming',lengths=[12,6,6];
  let revision=0,started=false,finished=false,busy=false,exiting=false,current=null;
  let setupIndex=0,result=null,scenarioIndex=0,custom='',chosen=false,customOpen=false,customDraft=null,pendingAnswer=null;
- const history=[];let restoredChoice=null;let importedSession=false,sessionQuestions=[];const P=window.DypereInterestProfiles;
+ const history=[];let restoredChoice=null;let answerReadyAt=0;let importedSession=false,sessionQuestions=[];const P=window.DypereInterestProfiles;
  const sessionId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
  const confirmations=new Map();
  const notes=new Map();let reportFilter='yes',reportBody=null,reportData=null;
@@ -17,7 +17,7 @@
  function remember(details){history.push({details,profiles:profiles.map(copyProfile),active,segment,step,setupIndex,question:current});}
  function previous(){
    if(busy||!history.length)return;
-   const oldActive=active,frame=history.pop();profiles=frame.profiles.map(copyProfile);active=frame.active;segment=frame.segment;step=frame.step;setupIndex=frame.setupIndex;current=frame.question;restoredChoice=frame.details;finished=false;result=null;reportData=null;chosen=false;confirmations.clear();custom='';customDraft=null;
+   const oldActive=active,frame=history.pop();profiles=frame.profiles.map(copyProfile);active=frame.active;segment=frame.segment;step=frame.step;setupIndex=frame.setupIndex;current=frame.question;restoredChoice={...frame.details,questionId:current.id,profileId:profiles[active].id};answerReadyAt=0;finished=false;result=null;reportData=null;chosen=false;confirmations.clear();custom='';customDraft=null;
    if(active!==oldActive)showHandoff(true);else showQuestion();
  }
  const currentProfile=()=>profiles[active];
@@ -46,7 +46,7 @@
  }
  function selectParty(count){
    profiles=Array.from({length:count},(_,i)=>M.profile('avatar-'+(i+1)));
-   result=null;scenarioIndex=0;custom='';chosen=false;segment=1;active=0;step=0;setupIndex=0;customOpen=false;customDraft=null;pendingAnswer=null;current=null;started=false;finished=false;busy=false;history.length=0;confirmations.clear();reportData=null;reportFilter='yes';importedSession=false;sessionQuestions=[];showMode();
+   result=null;scenarioIndex=0;custom='';chosen=false;segment=1;active=0;step=0;setupIndex=0;customOpen=false;customDraft=null;pendingAnswer=null;restoredChoice=null;answerReadyAt=0;current=null;started=false;finished=false;busy=false;history.length=0;confirmations.clear();reportData=null;reportFilter='yes';importedSession=false;sessionQuestions=[];showMode();
  }
  function showMode(){
    const p=panel('Hvordan vil dere starte?','TO VEIER');
@@ -135,18 +135,20 @@
    if(!current){showUnavailable('pool');return;}
    const q=current,l=language[M.family(q.text).slice(5)];
    const p=panel(a.name,'AVATAR '+(active+1)+' · '+(importedSession?'DERES FELLES UTVALG':['BRED UTFORSKNING','FINN FELLES INTERESSER','AVKLAR DET SOM PASSER'][segment-1]),false),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
-   const text=(importedSession?'Hva frister denne gangen innen ':'Er du nysgjerrig på ')+((a.tone==='direkte'?l?.directTopic:l?.topic)||q.topic||q.text).toLocaleLowerCase('nb')+'?';
+   const topic=(a.tone==='direkte'?l?.directTopic:l?.topic)||q.topic||q.text;
+   const text='«'+topic+'» – hva frister'+(importedSession?' denne gangen':'')+'?';
    const question=node('p',text,'avatar-question');question.id='avatarQuestion';question.tabIndex=-1;
    progress.setAttribute('aria-label','Fremdrift for '+a.name);progress.setAttribute('aria-valuetext','Spørsmål '+(progress.value+1)+' av '+progress.max);p.append(progress,question);
 
    if(l?.explanation){const details=node('details',undefined,'question-explanation');details.open=false;details.append(node('summary','Hva betyr dette?'),node('p',l.explanation));
      const link=node('a','Åpne ordboken','text-link');link.href='#ordbok';link.setAttribute('aria-haspopup','dialog');link.onclick=e=>{e.preventDefault();showDictionary(link);};details.append(link,node('p','Ubesvart betyr ukjent. Trykk på et valgt svar for å fjerne det.','journey-note'));if(segment===1&&step===0)details.append(node('p','Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.','journey-note'));p.append(details);}
-   const draft={...(restoredChoice?.preferences||{})},initialActuality=restoredChoice?.actuality||(importedSession?'ja':'uavklart');restoredChoice=null;
-   p.classList.add('question-panel');let choiceRevision=0;const definitions=M.directions(q).filter(d=>!importedSession||a.allowed[q.id]?.includes(d.id));
+   const restored=restoredChoice?.questionId===q.id&&restoredChoice?.profileId===a.id?restoredChoice:null;
+   const draft={...(restored?.preferences||{})},initialActuality=restored?.actuality||(importedSession?'ja':'uavklart');restoredChoice=null;
+   p.classList.add('question-panel');p.setAttribute('data-question-id',q.id);const definitions=M.directions(q).filter(d=>!importedSession||a.allowed[q.id]?.includes(d.id));
    const quick=node('div',undefined,'question-quick'),precise=node('details',undefined,'question-precise');precise.append(node('summary','Nysgjerrig eller flere valg'));
-   function quickAnswer(values){if(r!==revision)return;Object.keys(draft).forEach(k=>delete draft[k]);Object.assign(draft,values);submit();}
+   function quickAnswer(values){if(r!==revision)return;if(Date.now()<answerReadyAt){question.focus();return;}Object.keys(draft).forEach(k=>delete draft[k]);Object.assign(draft,values);submit();}
    for(const direction of definitions)quick.append(button(direction.label,()=>quickAnswer({[direction.id]:'ja'})));
-   if(definitions.length>1)quick.append(button(definitions.length===2?'Begge':'Alle disse',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
+   if(definitions.length>1)quick.append(button(definitions.length===2?'Begge retninger':'Alle retninger',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'ja'])))));
    quick.append(button('Ikke aktuelt',()=>quickAnswer(Object.fromEntries(definitions.map(d=>[d.id,'nei'])))));
    quick.setAttribute('aria-label','Velg det du liker');quick.setAttribute('role','group');quick.setAttribute('aria-describedby','avatarQuestion');p.append(node('p','Velg det du liker. Ett trykk går videre.','question-hint'),quick);
    precise.append(node('p','Her kan du svare ulikt for hver retning.','journey-note'));for(const direction of definitions){
@@ -154,7 +156,7 @@
      const row=node('div',undefined,'direction-options'),buttons=[];row.setAttribute('aria-describedby','avatarQuestion');
      function refresh(){buttons.forEach(([b,key])=>b.setAttribute('aria-pressed',String(draft[direction.id]===key)));}
      for(const [label,key] of [['Liker','ja'],['Nysgjerrig','kanskje'],['Ikke aktuelt','nei']]){
-       const b=button(label,()=>{if(r!==revision)return;if(draft[direction.id]===key)delete draft[direction.id];else draft[direction.id]=key;refresh();const token=++choiceRevision;if(definitions.every(d=>draft[d.id]))setTimeout(()=>{if(token===choiceRevision&&!document.querySelector('.studio-dialog[open]')&&!clarify.open)submit();},420);});buttons.push([b,key]);row.append(b);
+       const b=button(label,()=>{if(r!==revision)return;if(draft[direction.id]===key)delete draft[direction.id];else draft[direction.id]=key;refresh();});buttons.push([b,key]);row.append(b);
      }
      group.append(row);refresh();precise.append(group);
    }
@@ -164,10 +166,10 @@
    for(const [value,text] of [['uavklart','Ikke avklart'],['ja','Aktuelt denne gangen'],['senere','Bare kartlegging nå']]){const option=node('option',text);option.value=value;actuality.append(option);}actuality.value=initialActuality;clarify.append(label,actuality);p.append(clarify);
    const r=revision;
    function submit(){
-     if(r!==revision||busy||current!==q)return;
+     if(r!==revision||busy||current!==q||Date.now()<answerReadyAt)return;
      remember({preferences:{...draft},actuality:actuality.value});
      if(!M.voteDirections(a,q,draft,{actuality:actuality.value})){history.pop();return;}
-     result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
+     answerReadyAt=Date.now()+300;result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
      if(step>=lengths[segment-1])advance();else showQuestion();
    }
    const actions=node('div',undefined,'question-navigation'),back=button('Forrige',previous,'text-button');back.disabled=!history.length;actions.append(back,button('Neste',submit,'primary'));p.append(actions);question.focus();
@@ -352,7 +354,7 @@
    // Sample across the permitted range, then progress from soft to more intense.
    const limit=Math.min(Number(amount.value),candidates.length),selected=Array.from({length:limit},(_,i)=>candidates[limit===1?0:Math.round(i*(candidates.length-1)/(limit-1))]);
    profiles=loaded.map((saved,i)=>{const a=M.profile('avatar-'+(i+1));a.name=saved.name;a.tone='diskret';a.allowed=Object.fromEntries(selected.map(x=>[x.card.id,x.item.allowed[i]]));return a;});
-   importedSession=true;sessionQuestions=selected.map(x=>x.card);lengths=[sessionQuestions.length];active=0;segment=1;step=0;history.length=0;current=null;result=null;reportData=null;chosen=false;confirmations.clear();finished=false;started=true;showHandoff();
+   restoredChoice=null;answerReadyAt=0;importedSession=true;sessionQuestions=selected.map(x=>x.card);lengths=[sessionQuestions.length];active=0;segment=1;step=0;history.length=0;current=null;result=null;reportData=null;chosen=false;confirmations.clear();finished=false;started=true;showHandoff();
   },'primary');
   function selection(){if(loaded.length<2)return [];const plan=P.plan(loaded,{curious:curious.checked,explore:explore.checked});return plan.items.map(item=>{const id=window.DypereProfileQuestionIds[item.topic.id],entry=entries.find(e=>e.card.id===id);if(!entry)return null;const level=Math.max(...loaded.map(a=>a.levels[item.topic.id]||entry.card.rang));return {item,card:{...entry.card,rang:level}};}).filter(x=>x&&x.card.rang<=Number(max.value)).sort((a,b)=>a.card.rang-b.card.rang||Number(a.item.uncertain)-Number(b.item.uncertain)||a.card.id.localeCompare(b.card.id));}
   function update(){list.replaceChildren();loaded.forEach((a,i)=>{const row=node('div',undefined,'loaded-profile');row.append(node('span',a.name),button('Fjern '+a.name,()=>{loaded.splice(i,1);update();},'text-button'));list.append(row);});const candidates=selection();summary.textContent=loaded.length<2?'Legg inn minst to profiler.':candidates.length?candidates.length+(candidates.length===1?' tema passer':' temaer passer')+' alle deltakerne. Vi starter mykere og holder oss innenfor valgt nivå.':'Ingen felles temaer i dette utvalget. Dere kan velge nysgjerrighet eller endre profilene. Et nei blir ikke overstyrt.';start.disabled=reading||!candidates.length;}
