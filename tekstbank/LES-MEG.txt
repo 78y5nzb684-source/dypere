@@ -1,45 +1,35 @@
-DYPERE – redigerbar tekstbank, 3.0.17 beta
+DYPERE – redigerbar tekstbank, 3.0.18 beta
 
-spraak.json
-86 begreper, med én rad per begrep i var-stund-bank.js.
-question er en liste med tre hele spørsmål, ett per segment.
-explanation vises under «Hva betyr dette?» og i den felles ordboken.
-aktiv/passiv/sym er rapportsetninger med plassholderne {A} og {B}.
-repeatKey samler kjente synonymer så samme avatar ikke får temaet på nytt.
-Ikke endre oppslagsnøklene uten også å kontrollere kortbankens familier.
-Nye kortfamilier må få en oppføring her. Rå korttekst brukes som reserve.
+86 oppslag med stabile nøkler og ID-er. Ingen nye avhengigheter.
+spraak.json bygger journey-language.js med eksisterende tre question-tekster,
+forklaringer og rapportmaler. Den adaptive visningen bruker topic/directTopic
+som nøytrale temaord, med uendret betydning mellom språktonene.
+categoryId kan overstyre en bred kategorikobling for et konkret begrep.
+area skiller anal, vaginal og uavklart fisting. Generelle fisting-oppslag
+beholdes i ordboken; spørsmålene bruker de to konkrete områdene.
+repeatKey beskytter mot gjentakelser per profil i den åpne økten.
 
-kategorier.json
-groups inneholder de sju poengkategoriene og koblingen til 26 råkategorier.
-names bestemmer de forståelige visningsnavnene på råkategoriene.
-Visningsnavn kan endres uten å endre ID-er eller poengvekter.
-Å flytte en råkategori til en annen gruppe endrer hvordan poeng styrer trekk.
+kategorier.json beholder de sju kategorinavnene. Fisting-underteksten i
+Rumpelek er presisert til Anal fisting. Vaginal fisting styres av categoryId
+lek, ikke av poeng i Rumpelek. Full omgruppering av kategorier avventer.
 
-scenarier.json
-Tre enkle, ikke-grafiske rammer for en kveld. Disse er ikke en ferdig stor
-bank med konkrete seksuelle scenarioer. Alle har begynnelse, hoveddel,
-avrunding og omsorg etterpå. groups angir tillatt deltakerantall.
-skills bestemmer hvilke felles kategorisignaler som rangerer forslaget.
-Appen velger ikke bestemte handlinger eller roller på grunnlag av skår.
+scenarier.json: tre eksisterende rammer, ingen nye handlinger.
+Forslag for hele gruppen får bare retning fra konkrete temaer alle har
+svart ja til. Parvise treff gjelder kun personene som står oppført.
 
-Slik gjør du
-1. Ta kopi. Rediger tekstverdier i JSON-filene i en vanlig teksteditor.
-2. Kjør: python tekstbank/bygg-tekstbank.py (fra appmappen).
-3. Kjør kvalitetskontroll før publisering. Send gjerne hele tekstbankmappen.
-4. Nye publiseringer må få nytt versjons-/buildnummer og service-worker-cache.
-De bygde JS-filene lastes av appen og inngår i offline-cachen.
-JSON-filene er redigerbare kilder og inneholder ingen brukerdata.
+Frivillig poengfordeling: 16 + 4 + 4. Poeng er bare en startprioritering.
+12 brede spørsmål + 6 + 6 oppfølgingsspørsmål per person i begge moduser.
+Motoren veksler mellom avklaring, utforskning og kontroll av mulige treff.
+Kanskje prioriterer avklaring, ikke positiv interesse. Nei sperrer det
+aktuelle temaet og gir aldri parmatch. Ubesvart er ukjent.
+Ja/Kanskje/Nei beholder tekniske historikkskårer 2/1/0 for kompatibilitet;
+disse brukes ikke som ja-bevis i den adaptive motoren eller rapporten.
+Rolle og aktualitet lagres separat, og er frivillig å avklare.
+Diskret/Direkte er visningsvalg som ikke påvirker utvalg eller matching.
 
-Poeng og personvern
-Hver avatar starter med 16 poeng og får 4 + 4 mellom bolkene.
-Ja gir 2, Kanskje 1, Nei 0. Speiling 4,5 og fokusvekt 2 er beholdt.
-21 eller 24 spørsmål per avatar, tre bolker, med separat økthistorikk.
-Avatarer og svar lever bare i minnet i den åpne siden. Ingen innlogging
-eller sending av svar til server. Rapportnotater lagres lokalt per økt
-og begrep i localStorage. Ved blokkert lagring beholdes notatet i minnet.
-På en delt telefon er dette skjerming av svar, ikke et sikkert kontosystem.
+Svar og profiler er kun i minnet. Rapportnotater lagres lokalt som før.
+Å gå tilbake ugyldiggjør felles valg og beregnede forslag.
 
-Begrensning
-Hvert begrep har nå én fast rang fra 1 til 5. Dette er en redaksjonell
-gradering, ikke en vitenskapelig validering. Gamle 5000 kort-ID-er migreres ikke.
-Nye økter bruker de 86 stabile begreps-ID-ene.
+Redigering: python tekstbank/bygg-tekstbank.py er en valgfri hjelpefil.
+Nettstedet kjører direkte fra HTML/JS/CSS uten byggesteg.
+Kontroller språk, metadata, kategorioverskrifter, cache og QA før publisering.

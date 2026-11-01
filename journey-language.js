@@ -9,7 +9,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli holdt tilbake?",
       "Skal vi gå for nekt i kveld?"
     ],
-    "explanation": "Du blir holdt tilbake like før du kommer, og må vente. Ikke det samme som å bli låst i bur."
+    "explanation": "Du blir holdt tilbake like før du kommer, og må vente. Ikke det samme som å bli låst i bur.",
+    "topic": "Nektelse",
+    "directTopic": "Nektelse"
   },
   "du får ikke komme": {
     "retning": "aktiv",
@@ -21,7 +23,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli nektet orgasme?",
       "Skal vi gå for at du ikke får komme i kveld?"
     ],
-    "explanation": "Du får ikke orgasme i det hele tatt denne gangen, selv om du er nær. Orgasmen kommer senere."
+    "explanation": "Du får ikke orgasme i det hele tatt denne gangen, selv om du er nær. Orgasmen kommer senere.",
+    "topic": "Orgasmenekt",
+    "directTopic": "Orgasmenekt"
   },
   "orgasm denial": {
     "retning": "aktiv",
@@ -33,7 +37,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å vente på lov?",
       "Skal vi gå for at du må spørre i kveld?"
     ],
-    "explanation": "En annen bestemmer når du får orgasme, eller om du får det. Gjelder over tid, ikke bare i øyeblikket."
+    "explanation": "En annen bestemmer når du får orgasme, eller om du får det. Gjelder over tid, ikke bare i øyeblikket.",
+    "topic": "Orgasmenekt",
+    "directTopic": "Orgasmenekt"
   },
   "edging": {
     "retning": "aktiv",
@@ -45,7 +51,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli holdt på kanten?",
       "Skal vi gå for edging i kveld?"
     ],
-    "explanation": "Du føres nesten til orgasme, så stopper det, og så videre. Til forskjell fra nekt får du komme til slutt."
+    "explanation": "Du føres nesten til orgasme, så stopper det, og så videre. Til forskjell fra nekt får du komme til slutt.",
+    "topic": "Orgasmeutsettelse",
+    "directTopic": "Orgasmeutsettelse"
   },
   "full kontroll": {
     "retning": "aktiv",
@@ -57,7 +65,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å gi fra deg styringen?",
       "Skal vi gå for full kontroll i kveld?"
     ],
-    "explanation": "En annen tar alle valg en periode: stilling, tempo, når det stopper. Du sier fra bare når noe ikke fungerer."
+    "explanation": "En annen tar alle valg en periode: stilling, tempo, når det stopper. Du sier fra bare når noe ikke fungerer.",
+    "topic": "Full kontroll",
+    "directTopic": "Full kontroll"
   },
   "han bestemmer": {
     "retning": "aktiv",
@@ -69,7 +79,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å la partneren bestemme?",
       "Skal vi gå for at du bestemmer i kveld?"
     ],
-    "explanation": "Som full kontroll, men uformelt og uten krav om at det skal vare. Brukes når en tar styringen underveis."
+    "explanation": "Som full kontroll, men uformelt og uten krav om at det skal vare. Brukes når en tar styringen underveis.",
+    "topic": "Å la partneren bestemme",
+    "directTopic": "Å la partneren bestemme"
   },
   "chastity": {
     "retning": "aktiv",
@@ -81,7 +93,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å være i kyskhet en periode?",
       "Skal vi gå for kyskhet i kveld?"
     ],
-    "explanation": "Kontroll over når du får orgasme, over lengre tid enn en kveld. Buret er ett av flere virkemidler."
+    "explanation": "Kontroll over når du får orgasme, over lengre tid enn en kveld. Buret er ett av flere virkemidler.",
+    "topic": "Kyskhet",
+    "directTopic": "Kyskhet"
   },
   "cage": {
     "retning": "aktiv",
@@ -93,7 +107,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli låst inne?",
       "Skal vi gå for bur i kveld?"
     ],
-    "explanation": "Selve kyskhetsburet som settes på. Det er en gjenstand, ikke en avtale i seg selv."
+    "explanation": "Selve kyskhetsburet som settes på. Det er en gjenstand, ikke en avtale i seg selv.",
+    "topic": "Kyskhetsbur",
+    "directTopic": "Kyskhetsbur"
   },
   "nektelse med bur": {
     "retning": "aktiv",
@@ -105,7 +121,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli låst og holdt tilbake?",
       "Skal vi gå for bur og nekt i kveld?"
     ],
-    "explanation": "Buret på og orgasmen holdt tilbake samtidig. Kombinasjonen av gjenstand og avtale."
+    "explanation": "Buret på og orgasmen holdt tilbake samtidig. Kombinasjonen av gjenstand og avtale.",
+    "topic": "Nektelse med bur",
+    "directTopic": "Nektelse med bur"
   },
   "bli bundet": {
     "retning": "aktiv",
@@ -117,7 +135,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli bundet?",
       "Skal vi gå for binding i kveld?"
     ],
-    "explanation": "Du blir festet med tau, belter eller liknende, så du ikke kommer løs selv. Hender og føtter er vanligst."
+    "explanation": "Du blir festet med tau, belter eller liknende, så du ikke kommer løs selv. Hender og føtter er vanligst.",
+    "topic": "Binding",
+    "directTopic": "Binding"
   },
   "bli brukt": {
     "retning": "aktiv",
@@ -129,7 +149,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli brukt?",
       "Skal vi gå for at du blir brukt i kveld?"
     ],
-    "explanation": "Du blir brukt til den andres nytelse uten å bli spurt underveis. Du er med, men styrer ikke."
+    "explanation": "Du blir brukt til den andres nytelse uten å bli spurt underveis. Du er med, men styrer ikke.",
+    "topic": "En rolle der partneren styrer",
+    "directTopic": "Å bli brukt i avtalt lek"
   },
   "objectification": {
     "retning": "aktiv",
@@ -141,7 +163,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli snakket om som en ting?",
       "Skal vi gå for at du er en gjenstand i kveld?"
     ],
-    "explanation": "Du blir omtalt og behandlet som en ting, ikke som person. Ingen small talk, ingen navn."
+    "explanation": "Du blir omtalt og behandlet som en ting, ikke som person. Ingen small talk, ingen navn.",
+    "topic": "Tingliggjøring",
+    "directTopic": "Tingliggjøring"
   },
   "cnc": {
     "retning": "aktiv",
@@ -153,7 +177,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt med makt, på liksom?",
       "Skal vi gå for CNC i kveld?"
     ],
-    "explanation": "Avtalt rollespill der du protesterer og blir tatt likevel. Motstanden er en del av leken, men stoppord gjelder."
+    "explanation": "Avtalt rollespill der du protesterer og blir tatt likevel. Motstanden er en del av leken, men stoppord gjelder.",
+    "topic": "Avtalt rollespill med motstand",
+    "directTopic": "Avtalt rollespill med motstand"
   },
   "impact": {
     "retning": "aktiv",
@@ -165,7 +191,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli slått?",
       "Skal vi gå for slag i kveld?"
     ],
-    "explanation": "Paraplybegrep for all slaglek. Sier ingenting om redskap eller styrke - det avklares i de andre spørsmålene."
+    "explanation": "Paraplybegrep for all slaglek. Sier ingenting om redskap eller styrke - det avklares i de andre spørsmålene.",
+    "topic": "Slaglek",
+    "directTopic": "Slaglek"
   },
   "hard spanking": {
     "retning": "aktiv",
@@ -177,7 +205,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli spanket hardt?",
       "Skal vi gå for hard spanking i kveld?"
     ],
-    "explanation": "Spanking med håndflate, hardt. Huden blir varm og rød."
+    "explanation": "Spanking med håndflate, hardt. Huden blir varm og rød.",
+    "topic": "Intens slaglek",
+    "directTopic": "Intens slaglek"
   },
   "hardere slag": {
     "retning": "aktiv",
@@ -189,7 +219,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få hardere slag?",
       "Skal vi gå hardere til verks i kveld?"
     ],
-    "explanation": "Samme slag som dere allerede bruker, bare kraftigere. Relativt til det dere gjør i dag."
+    "explanation": "Samme slag som dere allerede bruker, bare kraftigere. Relativt til det dere gjør i dag.",
+    "topic": "Hardere slag",
+    "directTopic": "Hardere slag"
   },
   "paddle": {
     "retning": "aktiv",
@@ -201,7 +233,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få paddle?",
       "Skal vi gå for paddle i kveld?"
     ],
-    "explanation": "Flat slagspade, oftest i lær eller tre. Gir bredere og tyngre slag enn håndflaten."
+    "explanation": "Flat slagspade, oftest i lær eller tre. Gir bredere og tyngre slag enn håndflaten.",
+    "topic": "Slagredskap med flat form",
+    "directTopic": "Slagredskap med flat form"
   },
   "cane": {
     "retning": "aktiv",
@@ -213,7 +247,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få stokken?",
       "Skal vi gå for stokk i kveld?"
     ],
-    "explanation": "Tynn stokk i tre eller karbon. Gir skarpe, presise slag som setter seg, og merker."
+    "explanation": "Tynn stokk i tre eller karbon. Gir skarpe, presise slag som setter seg, og merker.",
+    "topic": "Slaglek med stokk",
+    "directTopic": "Slaglek med stokk"
   },
   "flogger": {
     "retning": "aktiv",
@@ -225,7 +261,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få floggeren?",
       "Skal vi gå for flogger i kveld?"
     ],
-    "explanation": "Redskap med flere remmer. Gir bredt, sviende treff over større hudflate, ikke presise enkeltmerker."
+    "explanation": "Redskap med flere remmer. Gir bredt, sviende treff over større hudflate, ikke presise enkeltmerker.",
+    "topic": "Slaglek med flerhalet pisk",
+    "directTopic": "Slaglek med flerhalet pisk"
   },
   "choking": {
     "retning": "aktiv",
@@ -237,7 +275,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt rundt halsen?",
       "Skal vi gå for kvelertak i kveld?"
     ],
-    "explanation": "Kvelertak betyr trykk mot halsen. Det kan gi alvorlig skade, og det finnes ingen trygg måte å gjøre det på."
+    "explanation": "Kvelertak betyr trykk mot halsen. Det kan gi alvorlig skade, og det finnes ingen trygg måte å gjøre det på.",
+    "topic": "Kvelertak",
+    "directTopic": "Kvelertak"
   },
   "breath play": {
     "retning": "aktiv",
@@ -249,7 +289,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få pusten kontrollert?",
       "Skal vi gå for pustekontroll i kveld?"
     ],
-    "explanation": "Pustekontroll betyr at pust eller lufttilførsel begrenses. Dette er en risikofylt praksis, ikke en fremgangsmåte som beskrives her."
+    "explanation": "Pustekontroll betyr at pust eller lufttilførsel begrenses. Dette er en risikofylt praksis, ikke en fremgangsmåte som beskrives her.",
+    "topic": "Pustekontroll",
+    "directTopic": "Pustekontroll"
   },
   "degradation": {
     "retning": "aktiv",
@@ -261,7 +303,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli nedverdiget?",
       "Skal vi gå for nedverdigelse i kveld?"
     ],
-    "explanation": "Du blir snakket ned til, men med ord som er avtalt på forhånd. Skal kjennes, ikke såre."
+    "explanation": "Du blir snakket ned til, men med ord som er avtalt på forhånd. Skal kjennes, ikke såre.",
+    "topic": "Avtalt nedverdigelse",
+    "directTopic": "Avtalt nedverdigelse"
   },
   "name calling": {
     "retning": "aktiv",
@@ -273,7 +317,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli kalt stygge ting?",
       "Skal vi gå for kallenavn i kveld?"
     ],
-    "explanation": "Korte, faste tilrop underveis. Ordene avtales på forhånd, ellers faller de feil ut."
+    "explanation": "Korte, faste tilrop underveis. Ordene avtales på forhånd, ellers faller de feil ut.",
+    "topic": "Kallenavn i avtalt lek",
+    "directTopic": "Kallenavn i avtalt lek"
   },
   "verbal humiliation": {
     "retning": "aktiv",
@@ -285,7 +331,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli ydmyket med ord?",
       "Skal vi gå for verbal ydmykelse i kveld?"
     ],
-    "explanation": "Satt sammenhengende ned med ord, som en monolog om deg. Mer enn enkeltord, mer krevende enn kallenavn."
+    "explanation": "Satt sammenhengende ned med ord, som en monolog om deg. Mer enn enkeltord, mer krevende enn kallenavn.",
+    "topic": "Verbal ydmykelse",
+    "directTopic": "Verbal ydmykelse"
   },
   "oral": {
     "retning": "aktiv",
@@ -297,7 +345,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli slikket?",
       "Skal vi gå for oral i kveld?"
     ],
-    "explanation": "Munn mot kjønn. Kan gis og mottas, og kan vare kort eller lenge."
+    "explanation": "Munn mot kjønn. Kan gis og mottas, og kan vare kort eller lenge.",
+    "topic": "Oralsex",
+    "directTopic": "Oralsex"
   },
   "dyp munn": {
     "retning": "aktiv",
@@ -309,7 +359,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ta den dypt?",
       "Skal vi gå for dyp munn i kveld?"
     ],
-    "explanation": "Munnen brukes dypere enn vanlig, så langt ned du klarer. Kan gi brekninger, og det er greit."
+    "explanation": "Munnen brukes dypere enn vanlig, så langt ned du klarer. Kan gi brekninger, og det er greit.",
+    "topic": "Dyp oralsex",
+    "directTopic": "Dyp oralsex"
   },
   "facefuck": {
     "retning": "aktiv",
@@ -321,7 +373,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt hardt i munnen?",
       "Skal vi gå for facefuck i kveld?"
     ],
-    "explanation": "Den andre styrer tempo og dybde med munnen din. Du holder deg fast og blir tatt, til forskjell fra dyp munn der du styrer."
+    "explanation": "Den andre styrer tempo og dybde med munnen din. Du holder deg fast og blir tatt, til forskjell fra dyp munn der du styrer.",
+    "topic": "Styrt oralsex",
+    "directTopic": "Styrt penetrasjon av munnen"
   },
   "komme i munnen": {
     "retning": "aktiv",
@@ -333,7 +387,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få det i munnen?",
       "Skal vi gå for å komme i munnen i kveld?"
     ],
-    "explanation": "Utløsning i munnen. Ikke det samme som å svelge - det er et eget valg etterpå."
+    "explanation": "Utløsning i munnen. Ikke det samme som å svelge - det er et eget valg etterpå.",
+    "topic": "Utløsning i munnen",
+    "directTopic": "Utløsning i munnen"
   },
   "swallow": {
     "retning": "aktiv",
@@ -345,7 +401,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å svelge?",
       "Skal vi gå for svelging i kveld?"
     ],
-    "explanation": "Du svelger etterpå i stedet for å spytte. Kan kombineres med komme i munnen, men er et eget valg."
+    "explanation": "Du svelger etterpå i stedet for å spytte. Kan kombineres med komme i munnen, men er et eget valg.",
+    "topic": "Svelging av sæd",
+    "directTopic": "Svelging av sæd"
   },
   "rimming": {
     "retning": "aktiv",
@@ -357,7 +415,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli slikket bak?",
       "Skal vi gå for rimming i kveld?"
     ],
-    "explanation": "Tunge mot anus. Kan gjøres på begge, og krever at man ikke er sjenert for lukt eller hår."
+    "explanation": "Tunge mot anus. Kan gjøres på begge, og krever at man ikke er sjenert for lukt eller hår.",
+    "topic": "Rimming",
+    "directTopic": "Rimming"
   },
   "komme på ansiktet": {
     "retning": "aktiv",
@@ -369,7 +429,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få det på ansiktet?",
       "Skal vi gå for ansiktet i kveld?"
     ],
-    "explanation": "Utløsning på ansiktet. Avklar om øyne og hår skal skjermes."
+    "explanation": "Utløsning på ansiktet. Avklar om øyne og hår skal skjermes.",
+    "topic": "Utløsning på ansiktet",
+    "directTopic": "Utløsning på ansiktet"
   },
   "facial": {
     "retning": "aktiv",
@@ -381,7 +443,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få en facial?",
       "Skal vi gå for facial i kveld?"
     ],
-    "explanation": "Samme som komme på ansiktet, men brukt som eget ord om treffet. Brukes når det er selve bildet som tenner."
+    "explanation": "Samme som komme på ansiktet, men brukt som eget ord om treffet. Brukes når det er selve bildet som tenner.",
+    "topic": "Utløsning på ansiktet",
+    "directTopic": "Utløsning på ansiktet"
   },
   "cum play": {
     "retning": "aktiv",
@@ -393,7 +457,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få sæd på huden?",
       "Skal vi gå for cum play i kveld?"
     ],
-    "explanation": "Sæd brukes videre etterpå - på hud, i munnen, som glidemiddel. Kommer etter utløsningen, ikke i stedet for."
+    "explanation": "Sæd brukes videre etterpå - på hud, i munnen, som glidemiddel. Kommer etter utløsningen, ikke i stedet for.",
+    "topic": "Sæd som del av lek",
+    "directTopic": "Lek med sæd"
   },
   "creampie": {
     "retning": "aktiv",
@@ -405,7 +471,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli fylt?",
       "Skal vi gå for creampie i kveld?"
     ],
-    "explanation": "Utløsning inni, uten kondom. Forutsetter at dere har avklart prevensjon."
+    "explanation": "Utløsning inni, uten kondom. Forutsetter at dere har avklart prevensjon.",
+    "topic": "Utløsning inni",
+    "directTopic": "Utløsning inni partneren"
   },
   "komme inni": {
     "retning": "aktiv",
@@ -417,7 +485,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til at partneren kommer inni deg?",
       "Skal vi gå for å komme inni i kveld?"
     ],
-    "explanation": "Selve øyeblikket der den andre kommer inni deg. Brukes når det er øyeblikket, ikke resultatet, som er poenget."
+    "explanation": "Selve øyeblikket der den andre kommer inni deg. Brukes når det er øyeblikket, ikke resultatet, som er poenget.",
+    "topic": "Utløsning inni",
+    "directTopic": "Utløsning inni"
   },
   "fylt": {
     "retning": "aktiv",
@@ -429,7 +499,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kjenne at det renner ut etterpå?",
       "Skal vi gå for å la det bli liggende i kveld?"
     ],
-    "explanation": "Følelsen etterpå, av å være full og at det renner ut. Et eget ønske, ikke bare selve utløsningen."
+    "explanation": "Følelsen etterpå, av å være full og at det renner ut. Et eget ønske, ikke bare selve utløsningen.",
+    "topic": "Følelsen etter utløsning inni",
+    "directTopic": "Sæd som blir værende inni"
   },
   "spytting": {
     "retning": "aktiv",
@@ -441,7 +513,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli spyttet på?",
       "Skal vi gå for spytting i kveld?"
     ],
-    "explanation": "Spytt som gest, ofte i munnen eller på ansiktet. Mengde og treff avklares."
+    "explanation": "Spytt som gest, ofte i munnen eller på ansiktet. Mengde og treff avklares.",
+    "topic": "Spytting",
+    "directTopic": "Spytting"
   },
   "spytt på": {
     "retning": "aktiv",
@@ -453,7 +527,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få spytt på huden?",
       "Skal vi gå for spytt på kroppen i kveld?"
     ],
-    "explanation": "Spytt brukt som fukt eller som treff på huden, ikke som gest i munnen."
+    "explanation": "Spytt brukt som fukt eller som treff på huden, ikke som gest i munnen.",
+    "topic": "Spytt på kroppen",
+    "directTopic": "Spytt på kroppen"
   },
   "anal med fingre": {
     "retning": "aktiv",
@@ -465,7 +541,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt med fingrene bak?",
       "Skal vi gå for fingre bak i kveld?"
     ],
-    "explanation": "En eller flere fingre i anus. Billigste inngang og lettest å dosere. Glidemiddel er ikke valgfritt."
+    "explanation": "En eller flere fingre i anus. Billigste inngang og lettest å dosere. Glidemiddel er ikke valgfritt.",
+    "topic": "Anal stimulering med fingre",
+    "directTopic": "Anal stimulering med fingre"
   },
   "forsiktig anal": {
     "retning": "aktiv",
@@ -477,7 +555,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å starte forsiktig bak?",
       "Skal vi gå for forsiktig anal i kveld?"
     ],
-    "explanation": "Penetrering bak i rolig tempo, med tid til å venne seg til. Fokus på å ikke stresse, ikke på dybde."
+    "explanation": "Penetrering bak i rolig tempo, med tid til å venne seg til. Fokus på å ikke stresse, ikke på dybde.",
+    "topic": "Forsiktig anal",
+    "directTopic": "Forsiktig analsex"
   },
   "dyp anal": {
     "retning": "aktiv",
@@ -489,7 +569,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kjenne at det går lenger inn?",
       "Skal vi gå for dyp anal i kveld?"
     ],
-    "explanation": "Penetrering som går lenger inn enn vanlig. Krever at du er varmet opp først."
+    "explanation": "Penetrering som går lenger inn enn vanlig. Krever at du er varmet opp først.",
+    "topic": "Dyp anal",
+    "directTopic": "Dyp analsex"
   },
   "hard anal": {
     "retning": "aktiv",
@@ -501,7 +583,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt hardt bak?",
       "Skal vi gå for hard anal i kveld?"
     ],
-    "explanation": "Raskt og kraftig bak. Forutsetter at du allerede er vant, ellers blir det bare ubehag."
+    "explanation": "Raskt og kraftig bak. Forutsetter at du allerede er vant, ellers blir det bare ubehag.",
+    "topic": "Hard anal",
+    "directTopic": "Hard analsex"
   },
   "gaping": {
     "retning": "aktiv",
@@ -513,7 +597,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli holdt åpen etterpå?",
       "Skal vi gå for gaping i kveld?"
     ],
-    "explanation": "Du blir holdt åpen etter penetrering, så det vises. Sekunder, ikke minutter - det lukker seg raskt."
+    "explanation": "Du blir holdt åpen etter penetrering, så det vises. Sekunder, ikke minutter - det lukker seg raskt.",
+    "topic": "Anal utvidelse",
+    "directTopic": "Anal utvidelse"
   },
   "anal med plug": {
     "retning": "aktiv",
@@ -525,7 +611,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få en plugg?",
       "Skal vi gå for plugg i kveld?"
     ],
-    "explanation": "En plugg settes inn og blir sittende. Brukes ofte som oppvarming, eller som eget poeng."
+    "explanation": "En plugg settes inn og blir sittende. Brukes ofte som oppvarming, eller som eget poeng.",
+    "topic": "Analplugg",
+    "directTopic": "Analplugg"
   },
   "remote plug": {
     "retning": "aktiv",
@@ -537,7 +625,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha en plugg noen andre styrer?",
       "Skal vi gå for fjernstyrt plugg i kveld?"
     ],
-    "explanation": "Plugg med fjernkontroll, så den andre kan endre på den uten å være nær deg."
+    "explanation": "Plugg med fjernkontroll, så den andre kan endre på den uten å være nær deg.",
+    "topic": "Fjernstyrt analplugg",
+    "directTopic": "Fjernstyrt analplugg"
   },
   "plug hele kvelden": {
     "retning": "aktiv",
@@ -549,55 +639,73 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha pluggen i lenge?",
       "Skal vi gå for plugg hele kvelden?"
     ],
-    "explanation": "Pluggen blir sittende over lang tid mens dere gjør andre ting. Glidemiddel må fylles på underveis."
+    "explanation": "Pluggen blir sittende over lang tid mens dere gjør andre ting. Glidemiddel må fylles på underveis.",
+    "topic": "Analplugg over tid",
+    "directTopic": "Analplugg over tid"
   },
   "forsiktig fisting": {
     "retning": "aktiv",
     "aktiv": "{A} fister {B} forsiktig",
     "passiv": "{B} blir fistet forsiktig av {A}",
-    "repeatKey": "fisting",
+    "repeatKey": "fisting-uavklart",
     "question": [
       "Kunne du tenke deg forsiktig fisting?",
       "Har du lyst til å bli fistet forsiktig?",
       "Skal vi gå for forsiktig fisting i kveld?"
     ],
-    "explanation": "Fisting med svært rolig tempo. Målet er å komme inn, ikke å fylle."
+    "explanation": "Fisting med svært rolig tempo. Målet er å komme inn, ikke å fylle.",
+    "topic": "Fisting, område uavklart",
+    "area": "uavklart",
+    "categoryId": "lek",
+    "directTopic": "Fisting, område uavklart"
   },
   "gradvis fisting": {
     "retning": "aktiv",
     "aktiv": "{A} fister {B} gradvis",
     "passiv": "{B} blir fistet gradvis av {A}",
-    "repeatKey": "fisting",
+    "repeatKey": "fisting-uavklart",
     "question": [
       "Kunne du tenke deg gradvis fisting?",
       "Har du lyst til å utvides steg for steg?",
       "Skal vi gå for gradvis fisting i kveld?"
     ],
-    "explanation": "Du utvides steg for steg over tid, med pauser underveis. Ingen tidsplan - det tar den tiden det tar."
+    "explanation": "Du utvides steg for steg over tid, med pauser underveis. Ingen tidsplan - det tar den tiden det tar.",
+    "topic": "Fisting, område uavklart",
+    "area": "uavklart",
+    "categoryId": "lek",
+    "directTopic": "Fisting, område uavklart"
   },
   "vaginal fisting": {
     "retning": "aktiv",
     "aktiv": "{A} fister {B} vaginalt",
     "passiv": "{B} blir fistet vaginalt av {A}",
-    "repeatKey": "fisting",
+    "repeatKey": "fisting-vaginal",
     "question": [
       "Kunne du tenke deg vaginal fisting?",
       "Har du lyst til å bli fistet i skjeden?",
       "Skal vi gå for vaginal fisting i kveld?"
     ],
-    "explanation": "Hele hånden i skjeden. Plass er sjelden problemet, tilvenning er."
+    "explanation": "Hele hånden i skjeden. Plass er sjelden problemet, tilvenning er.",
+    "topic": "Vaginal fisting",
+    "area": "vaginal",
+    "categoryId": "lek",
+    "directTopic": "Vaginal fisting"
   },
   "anal fisting": {
     "retning": "aktiv",
     "aktiv": "{A} fister {B} analt",
     "passiv": "{B} blir fistet analt av {A}",
-    "repeatKey": "fisting",
+    "repeatKey": "fisting-anal",
     "question": [
       "Kunne du tenke deg anal fisting?",
       "Har du lyst til å bli fistet bak?",
       "Skal vi gå for anal fisting i kveld?"
     ],
-    "explanation": "Hele hånden i anus. Krever mer tid og mer glidemiddel enn fingre."
+    "explanation": "Hele hånden i anus. Krever mer tid og mer glidemiddel enn fingre.",
+    "topic": "Anal fisting",
+    "area": "anal",
+    "categoryId": "dybde",
+    "directTopic": "Anal fisting"
   },
   "pegging": {
     "retning": "aktiv",
@@ -609,7 +717,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli pegged?",
       "Skal vi gå for pegging i kveld?"
     ],
-    "explanation": "Anal penetrering der den ene bruker strap-on på den andre. Rollene kan byttes, og gjør det ofte."
+    "explanation": "Anal penetrering der den ene bruker strap-on på den andre. Rollene kan byttes, og gjør det ofte.",
+    "topic": "Penetrasjon med strap-on",
+    "directTopic": "Penetrasjon med strap-on"
   },
   "strap on": {
     "retning": "aktiv",
@@ -621,7 +731,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få strap-on?",
       "Skal vi gå for strap-on i kveld?"
     ],
-    "explanation": "Selen med redskapet på. Gjenstanden, ikke handlingen. Brukes også vaginalt."
+    "explanation": "Selen med redskapet på. Gjenstanden, ikke handlingen. Brukes også vaginalt.",
+    "topic": "Strap-on",
+    "directTopic": "Strap-on"
   },
   "blindfold": {
     "retning": "aktiv",
@@ -633,7 +745,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ikke se noe?",
       "Skal vi gå for bind for øynene i kveld?"
     ],
-    "explanation": "Bind for øynene, så du ikke ser. Alt annet blir merkbart sterkere."
+    "explanation": "Bind for øynene, så du ikke ser. Alt annet blir merkbart sterkere.",
+    "topic": "Bind for øynene",
+    "directTopic": "Bind for øynene"
   },
   "sensory deprivation": {
     "retning": "aktiv",
@@ -645,7 +759,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å miste flere sanser?",
       "Skal vi gå for sansedeprivasjon i kveld?"
     ],
-    "explanation": "Mer enn bind: øyne, hørsel, eller begge. Du mister oversikt over tid og rom, og det er hele poenget."
+    "explanation": "Mer enn bind: øyne, hørsel, eller begge. Du mister oversikt over tid og rom, og det er hele poenget.",
+    "topic": "Begrensning av sanseinntrykk",
+    "directTopic": "Begrensning av sanseinntrykk"
   },
   "hot wax": {
     "retning": "aktiv",
@@ -657,7 +773,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få voks dryppet på deg?",
       "Skal vi gå for voks i kveld?"
     ],
-    "explanation": "Stearin dryppes på huden. Bruk varmelys, ikke fargestifter - de svir."
+    "explanation": "Stearin dryppes på huden. Bruk varmelys, ikke fargestifter - de svir.",
+    "topic": "Vokslek",
+    "directTopic": "Vokslek"
   },
   "temperature play": {
     "retning": "aktiv",
@@ -669,7 +787,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kjenne varme og kulde?",
       "Skal vi gå for temperaturlek i kveld?"
     ],
-    "explanation": "Veksling mellom varmt og kaldt - voks, is, metall, varmt vann. Kontrasten er poenget."
+    "explanation": "Veksling mellom varmt og kaldt - voks, is, metall, varmt vann. Kontrasten er poenget.",
+    "topic": "Temperaturlek",
+    "directTopic": "Temperaturlek"
   },
   "feet": {
     "retning": "aktiv",
@@ -681,7 +801,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha føttene i fokus?",
       "Skal vi gå for føtter i kveld?"
     ],
-    "explanation": "Føtter som eget interesseområde. Kan være å se på, ta på, eller å ha dem i fanget."
+    "explanation": "Føtter som eget interesseområde. Kan være å se på, ta på, eller å ha dem i fanget.",
+    "topic": "Føtter",
+    "directTopic": "Føtter"
   },
   "tær": {
     "retning": "aktiv",
@@ -693,7 +815,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få tærne sugd?",
       "Skal vi gå for tær i kveld?"
     ],
-    "explanation": "Tærne spesielt - suge, slikke, bite lett. Snevring av føtter."
+    "explanation": "Tærne spesielt - suge, slikke, bite lett. Snevring av føtter.",
+    "topic": "Tær",
+    "directTopic": "Tær"
   },
   "foot worship": {
     "retning": "aktiv",
@@ -705,7 +829,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å få føttene tilbedt?",
       "Skal vi gå for fotslikking i kveld?"
     ],
-    "explanation": "Føttene får all oppmerksomhet en stund. Vask, massasje, kyss, tunge - i den rekkefolgen."
+    "explanation": "Føttene får all oppmerksomhet en stund. Vask, massasje, kyss, tunge - i den rekkefolgen.",
+    "topic": "Føtter i fokus",
+    "directTopic": "Føtter i fokus"
   },
   "latex": {
     "retning": "aktiv",
@@ -717,7 +843,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å se partneren i lateks?",
       "Skal vi gå for lateks i kveld?"
     ],
-    "explanation": "Klær eller tilbehør i lateks. Stramt, glatt, kaldt mot hud - og helt lydtett."
+    "explanation": "Klær eller tilbehør i lateks. Stramt, glatt, kaldt mot hud - og helt lydtett.",
+    "topic": "Lateks",
+    "directTopic": "Lateks"
   },
   "leather": {
     "retning": "aktiv",
@@ -729,7 +857,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å se partneren i skinn?",
       "Skal vi gå for skinn i kveld?"
     ],
-    "explanation": "Skinn som klær eller utstyr. Varmere og mykere enn lateks, lukter og knirker."
+    "explanation": "Skinn som klær eller utstyr. Varmere og mykere enn lateks, lukter og knirker.",
+    "topic": "Lær og skinn",
+    "directTopic": "Lær og skinn"
   },
   "halsbånd": {
     "retning": "aktiv",
@@ -741,7 +871,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha halsbånd på?",
       "Skal vi gå for halsbånd i kveld?"
     ],
-    "explanation": "Bånd rundt halsen som symbol på rolle. Kan ha bjelle eller ring, og kan tas på uten at noe annet skjer."
+    "explanation": "Bånd rundt halsen som symbol på rolle. Kan ha bjelle eller ring, og kan tas på uten at noe annet skjer.",
+    "topic": "Halsbånd",
+    "directTopic": "Halsbånd"
   },
   "leash": {
     "retning": "aktiv",
@@ -753,7 +885,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli ført i bånd?",
       "Skal vi gå for bånd i kveld?"
     ],
-    "explanation": "Bånd festet til halsbandet, så den andre kan fore deg rundt. Forutsetter halsbånd."
+    "explanation": "Bånd festet til halsbandet, så den andre kan fore deg rundt. Forutsetter halsbånd.",
+    "topic": "Bånd i rollespill",
+    "directTopic": "Bånd i rollespill"
   },
   "pet": {
     "retning": "aktiv",
@@ -765,7 +899,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å være kjæledyr?",
       "Skal vi gå for kjæledyr i kveld?"
     ],
-    "explanation": "Du er kjæledyr en stund: på gulvet, med halsbånd, uten ord. Rollen, ikke rammen."
+    "explanation": "Du er kjæledyr en stund: på gulvet, med halsbånd, uten ord. Rollen, ikke rammen.",
+    "topic": "Kjæledyrrolle",
+    "directTopic": "Kjæledyrrolle"
   },
   "pet play": {
     "retning": "aktiv",
@@ -777,7 +913,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å prøve kjæledyrlek?",
       "Skal vi gå for kjæledyrlek i kveld?"
     ],
-    "explanation": "Rammen rundt det å være kjæledyr - navn, bånd, kommandoer, godbiter. Mer planlagt enn bare rollen."
+    "explanation": "Rammen rundt det å være kjæledyr - navn, bånd, kommandoer, godbiter. Mer planlagt enn bare rollen.",
+    "topic": "Kjæledyrrollespill",
+    "directTopic": "Kjæledyrrollespill"
   },
   "daddy": {
     "retning": "aktiv",
@@ -789,7 +927,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha en daddy?",
       "Skal vi gå for daddy i kveld?"
     ],
-    "explanation": "Rollen som den voksne, trygge parten. Ikke nødvendigvis eldre i alder, men den som holder rammen."
+    "explanation": "Rollen som den voksne, trygge parten. Ikke nødvendigvis eldre i alder, men den som holder rammen.",
+    "topic": "Omsorgsrolle i voksent rollespill",
+    "directTopic": "Omsorgsrolle i voksent rollespill"
   },
   "little": {
     "retning": "aktiv",
@@ -801,7 +941,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å være liten?",
       "Skal vi gå for little i kveld?"
     ],
-    "explanation": "Rollen som den lille. Ikke alder, men posisjon - den som blir tatt vare på."
+    "explanation": "Rollen som den lille. Ikke alder, men posisjon - den som blir tatt vare på.",
+    "topic": "Mottakerrolle i voksent rollespill",
+    "directTopic": "Mottakerrolle i voksent rollespill"
   },
   "dd lg": {
     "retning": "aktiv",
@@ -813,7 +955,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å prøve DD/LG?",
       "Skal vi gå for DD/LG i kveld?"
     ],
-    "explanation": "Dynamikken mellom de to rollene, med omsorg og regler. Krever at rollene er avklart før dere begynner."
+    "explanation": "Dynamikken mellom de to rollene, med omsorg og regler. Krever at rollene er avklart før dere begynner.",
+    "topic": "DD/LG, voksne rollespill",
+    "directTopic": "DD/LG, voksne rollespill"
   },
   "risiko": {
     "retning": "sym",
@@ -824,7 +968,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kunne bli oppdaget?",
       "Skal vi gå for litt risiko i kveld?"
     ],
-    "explanation": "Muligheten for å bli oppdaget, uten at det skjer. Spenningen i det, ikke selve stedet."
+    "explanation": "Muligheten for å bli oppdaget, uten at det skjer. Spenningen i det, ikke selve stedet.",
+    "topic": "Risiko",
+    "directTopic": "Risiko"
   },
   "public": {
     "retning": "sym",
@@ -835,7 +981,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha sex ute blant folk?",
       "Skal vi gå for et offentlig sted i kveld?"
     ],
-    "explanation": "Sex på et sted der andre faktisk kan se. Ute, i bil, på fest. Mer enn bare risikoen."
+    "explanation": "Sex på et sted der andre faktisk kan se. Ute, i bil, på fest. Mer enn bare risikoen.",
+    "topic": "Offentlige omgivelser som tema",
+    "directTopic": "Offentlige omgivelser som tema"
   },
   "remote toy ute": {
     "retning": "aktiv",
@@ -847,7 +995,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha leketøy på blant folk?",
       "Skal vi gå for leketøy ute i kveld?"
     ],
-    "explanation": "Leketøy med fjernkontroll, båret ute blant folk. Den andre styrer uten at noen ser det."
+    "explanation": "Leketøy med fjernkontroll, båret ute blant folk. Den andre styrer uten at noen ser det.",
+    "topic": "Fjernstyrt leketøy ute",
+    "directTopic": "Fjernstyrt leketøy ute"
   },
   "tredjeperson": {
     "retning": "sym",
@@ -858,7 +1008,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ta med en tredje?",
       "Skal vi gå for en tredje i kveld?"
     ],
-    "explanation": "En tredje voksen er med. Kan være til stede, eller bare som fantasi mens dere er to."
+    "explanation": "En tredje voksen er med. Kan være til stede, eller bare som fantasi mens dere er to.",
+    "topic": "En ekstra deltaker",
+    "directTopic": "En ekstra deltaker"
   },
   "group": {
     "retning": "sym",
@@ -869,7 +1021,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ha sex med flere?",
       "Skal vi gå for flere i kveld?"
     ],
-    "explanation": "Flere enn to sammen, tre eller flere. Bredere enn en tredje person, som bare er en."
+    "explanation": "Flere enn to sammen, tre eller flere. Bredere enn en tredje person, som bare er en.",
+    "topic": "Flere deltakere",
+    "directTopic": "Flere deltakere"
   },
   "se på": {
     "retning": "sym",
@@ -880,7 +1034,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å se andre ha sex?",
       "Skal vi gå for å se på i kveld?"
     ],
-    "explanation": "Du ser på mens andre har sex. Du er ikke med selv - det er forskjellen fra gruppe."
+    "explanation": "Du ser på mens andre har sex. Du er ikke med selv - det er forskjellen fra gruppe.",
+    "topic": "Å se på andre",
+    "directTopic": "Å se på andre"
   },
   "kos etter": {
     "retning": "sym",
@@ -891,7 +1047,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å ligge sammen etterpå?",
       "Skal vi gå for kos etter i kveld?"
     ],
-    "explanation": "Nærhet etterpå, uten krav. Ligger, holder, prater."
+    "explanation": "Nærhet etterpå, uten krav. Ligger, holder, prater.",
+    "topic": "Kos etter",
+    "directTopic": "Kos etter"
   },
   "aftercare": {
     "retning": "sym",
@@ -902,7 +1060,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli tatt vare på etterpå?",
       "Skal vi gå for etterpleie i kveld?"
     ],
-    "explanation": "Hele etterspillet: vann, pledd, prat, sjekk av hvordan det gikk. Mer enn kos."
+    "explanation": "Hele etterspillet: vann, pledd, prat, sjekk av hvordan det gikk. Mer enn kos.",
+    "topic": "Omsorg etterpå",
+    "directTopic": "Omsorg etterpå"
   },
   "myk landing": {
     "retning": "sym",
@@ -913,7 +1073,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å trappe rolig ned etterpå?",
       "Skal vi gå for en myk landing i kveld?"
     ],
-    "explanation": "Rolig nedtrapping fra intensitet til vanlig igjen, over tid. For når det har vært hardt."
+    "explanation": "Rolig nedtrapping fra intensitet til vanlig igjen, over tid. For når det har vært hardt.",
+    "topic": "Myk landing",
+    "directTopic": "Myk landing"
   },
   "medical play": {
     "retning": "aktiv",
@@ -925,7 +1087,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å prøve medisinsk lek?",
       "Skal vi gå for medisinsk lek i kveld?"
     ],
-    "explanation": "Rammen: hvitt, hansker, skjema, undersøkelsesbenk. Rollespillet rundt, ikke selve undersøkelsen."
+    "explanation": "Rammen: hvitt, hansker, skjema, undersøkelsesbenk. Rollespillet rundt, ikke selve undersøkelsen.",
+    "topic": "Medisinsk rollespill",
+    "directTopic": "Medisinsk rollespill"
   },
   "undersøkelse": {
     "retning": "aktiv",
@@ -937,7 +1101,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å bli undersøkt?",
       "Skal vi gå for undersøkelse i kveld?"
     ],
-    "explanation": "Selve undersøkelsen. Spekulum, stetoskop, palpering. Handlingen, uten rammen rundt."
+    "explanation": "Selve undersøkelsen. Spekulum, stetoskop, palpering. Handlingen, uten rammen rundt.",
+    "topic": "Undersøkelser i rollespill",
+    "directTopic": "Undersøkelser i rollespill"
   },
   "vanlig sex": {
     "retning": "sym",
@@ -948,7 +1114,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst på helt vanlig sex?",
       "Skal vi gå for vanlig sex i kveld?"
     ],
-    "explanation": "Penetrering uten noe ekstra på. Utgangspunktet dere måler alt annet mot."
+    "explanation": "Penetrering uten noe ekstra på. Utgangspunktet dere måler alt annet mot.",
+    "topic": "Vanlig sex",
+    "directTopic": "Vanlig sex"
   },
   "myk sex": {
     "retning": "sym",
@@ -959,7 +1127,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst på noe rolig og nært?",
       "Skal vi gå for rolig sex i kveld?"
     ],
-    "explanation": "Rolig tempo, mye nærhet, lite overraskelser. Sex uten at det skal være noe mer."
+    "explanation": "Rolig tempo, mye nærhet, lite overraskelser. Sex uten at det skal være noe mer.",
+    "topic": "Rolig sex",
+    "directTopic": "Rolig sex"
   },
   "hard sex": {
     "retning": "sym",
@@ -970,7 +1140,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst på noe hardt?",
       "Skal vi gå for hard sex i kveld?"
     ],
-    "explanation": "Høyt tempo og kraft. Nær røff, men uten at det skal være uvorrent."
+    "explanation": "Høyt tempo og kraft. Nær røff, men uten at det skal være uvorrent.",
+    "topic": "Hard sex",
+    "directTopic": "Hard sex"
   },
   "rough sex": {
     "retning": "sym",
@@ -981,7 +1153,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst på noe røft?",
       "Skal vi gå for røff sex i kveld?"
     ],
-    "explanation": "Hardt og litt uvorrent - hår, hofter, biting, dytting. Mer kaos enn hard sex."
+    "explanation": "Hardt og litt uvorrent - hår, hofter, biting, dytting. Mer kaos enn hard sex.",
+    "topic": "Røff sex",
+    "directTopic": "Røff sex"
   },
   "uten pause": {
     "retning": "sym",
@@ -992,7 +1166,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kjøre på uten stopp?",
       "Skal vi gå for uten pause i kveld?"
     ],
-    "explanation": "Sammenhengende forløp uten planlagte stopp. Du får ikke hente deg inn underveis."
+    "explanation": "Sammenhengende forløp uten planlagte stopp. Du får ikke hente deg inn underveis.",
+    "topic": "Sex uten pause",
+    "directTopic": "Sex uten pause"
   },
   "watersports": {
     "retning": "aktiv",
@@ -1004,7 +1180,9 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å prøve urin?",
       "Skal vi gå for watersports i kveld?"
     ],
-    "explanation": "Urin som del av leken. Paraplybegrepet, brukt om hele temæt."
+    "explanation": "Urin som del av leken. Paraplybegrepet, brukt om hele temæt.",
+    "topic": "Urin som del av lek",
+    "directTopic": "Urin som del av lek"
   },
   "piss": {
     "retning": "aktiv",
@@ -1016,6 +1194,8 @@ window.DypereJourneyLanguage = {
       "Har du lyst til å kjenne det?",
       "Skal vi gå for piss i kveld?"
     ],
-    "explanation": "Selve det å tisse på eller i den andre. Handlingen, ikke temæt. Mengde og sted avklares."
+    "explanation": "Selve det å tisse på eller i den andre. Handlingen, ikke temæt. Mengde og sted avklares.",
+    "topic": "Å bli tisset på",
+    "directTopic": "Å bli tisset på"
   }
 };

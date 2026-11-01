@@ -76,7 +76,7 @@ window.DypereJourneyCategoryNames = {
   "cum": "Sæd",
   "spitting": "Spytt",
   "anal": "Anal",
-  "fisting": "Fisting",
+  "fisting": "Anal fisting",
   "plug": "Analplugg",
   "kontroll": "Styring",
   "bdsm": "BDSM",

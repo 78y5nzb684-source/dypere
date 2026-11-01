@@ -14,6 +14,9 @@ assert len({s['id'] for s in scenarios})==len(scenarios)
 for key,value in language.items():
     assert isinstance(key,str) and key
     assert isinstance(value.get('explanation'),str) and value['explanation'].strip()
+    assert all(isinstance(value.get(f),str) and value[f].strip() for f in ['topic','directTopic'])
+    assert value.get('area') in [None,'anal','vaginal','uavklart']
+    assert value.get('categoryId') is None or value['categoryId'] in {g['id'] for g in categories['groups']}
     questions=value.get('question')
     assert isinstance(questions,list) and len(questions)==3
     assert all(isinstance(q,str) and q.endswith('?') for q in questions)
