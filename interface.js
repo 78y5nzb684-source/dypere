@@ -4,6 +4,31 @@
   const body=document.body, app=document.querySelector('.app'), file=body.dataset.file;
   const one=(s,r=document)=>r.querySelector(s), all=(s,r=document)=>[...r.querySelectorAll(s)];
   const id=n=>document.getElementById(n);
+  // The first header link goes to the relevant parent menu; Home stays separate.
+  const menuParents={
+    'kortpakker.html':['brettspill.html'],
+    'kortverksted.html':['kortpakker.html','brettspill.html'],
+    'onskeliste.html':['brettspill.html','kveldsmikser.html'],
+    'kveldsmikser.html':['brettspill.html'],
+    'hemmelig-match.html':['kveldsmikser.html'],
+    'kveldsspill.html':['kveldsmikser.html'],
+    'bildeutfordring.html':['lek.html'],
+    'spill.html':['lek.html'],
+    'stillinger.html':['lek.html'],
+    'terninger.html':['lek.html'],
+    'kapittel-ii.html':['bli-kjent.html'],'kapittel-iii.html':['bli-kjent.html'],
+    'kapittel-iv.html':['bli-kjent.html'],'kapittel-v.html':['bli-kjent.html'],
+    'quiz.html':['bli-kjent.html'],
+    'pa-kanten.html':['pa-kanten-meny.html'],'pa-kanten-quiz.html':['pa-kanten-meny.html'],
+    'ffm.html':['pa-kanten-meny.html'],
+    'stillinger-klassisk.html':['stillinger.html'],'stillinger-bdsm.html':['stillinger.html']
+  };
+  const parentChoices=menuParents[file],headerBack=one('.app-header a');
+  if(parentChoices&&headerBack){
+    let target='./'+parentChoices[0];
+    try{const previous=new URL(document.referrer);if(previous.origin===location.origin&&parentChoices.includes(previous.pathname.split('/').pop()))target=previous.pathname+previous.search;}catch(_){}
+    headerBack.href=target;headerBack.setAttribute('aria-label','Tilbake til forrige meny');
+  }
   let observer,queued=false,opener=null;
   const readingState=new WeakMap();let optionState={key:'',page:0};
   function shown(e){return !!e&&e.getClientRects().length>0&&getComputedStyle(e).display!=='none'}

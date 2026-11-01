@@ -193,3 +193,7 @@
 .session-quicky{border:0;border-top:1px solid var(--line);padding:16px 0 0;margin:18px 0}.session-quicky legend{color:var(--gold);padding-right:10px}.session-quicky .journey-note{margin:0 0 10px}
 
 .activity-phase-title{font:24px/1.25 Georgia,serif;color:var(--gold);margin:18px 0 8px}
+.profile-editor-dialog{position:fixed;inset:12px auto auto 50%;transform:translateX(-50%);margin:0;box-sizing:border-box;width:min(960px,calc(100vw - 24px));max-width:none;height:calc(100dvh - 24px);max-height:calc(100dvh - 24px);padding:0;overflow:hidden}
+.profile-editor-bar{height:56px;display:flex;align-items:center;padding:0 14px;border-bottom:1px solid var(--line)}
+.profile-editor-frame{display:block;width:100%;height:calc(100% - 56px);border:0;background:var(--bg,#17131a)}
+.profile-editor-embedded .app-header{display:none}

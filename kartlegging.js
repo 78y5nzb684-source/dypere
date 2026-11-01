@@ -3,6 +3,11 @@
  const {node,$}=DypereUI,P=window.DypereInterestProfiles,host=$('profileEditor');
  let profile=P.empty(),offset=0,filter='all',query='',dirty=false,loading=false,visibleCount=0;
  const editMode=new URLSearchParams(location.search).get('mode')==='edit';
+ const embedded=window.parent!==window&&new URLSearchParams(location.search).get('embedded')==='1';
+ if(embedded)document.body.classList.add('profile-editor-embedded');
+ async function requestClose(){if(!dirty)return true;const allowed=await DypereUI.confirmAction('Forlate siden uten å lagre endringene?','Ja, forlat siden');if(allowed)dirty=false;return allowed;}
+ window.DypereProfileEditor=Object.freeze({requestClose});
+ if(embedded)document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!document.querySelector('.studio-dialog[open]')){event.preventDefault();window.parent.postMessage({type:'dypere-profile-close'},location.origin);}});
  const button=(label,fn,cls='')=>{const b=node('button',label,cls);b.type='button';b.onclick=fn;return b;};
  const title=node('h2',editMode?'Åpne interesseprofilen din':'Dine valg'),intro=node('p',editMode?'Velg profilfilen for å lese eller endre dine faste interesser. Kveldens svar endrer ikke denne filen.':'For voksne 18+. Velg det som passer. Du trenger ikke svare på alt. Ubesvart betyr ukjent.','journey-note');
  const nameLabel=node('label','Profilnavn'),name=node('input');name.id='profileName';name.maxLength=60;name.autocomplete='off';name.required=true;nameLabel.htmlFor=name.id;
@@ -33,6 +38,7 @@
   }catch(e){status.textContent=e.message;}finally{loading=false;open.disabled=false;saveTop.disabled=false;saveBottom.disabled=false;open.value='';}
  };
  const next=node('a','Last inn profiler til Vår stund','profile-start');next.href='./var-stund.html';
+ if(embedded)next.textContent='Tilbake til Vår stund';
  const note=node('p','Profilen lagres som en fil hos deg. Endringer krever at du lagrer filen på nytt.','journey-note');
  const footer=node('div',undefined,'profile-save');footer.append(saveTop,next,note);
  const ordering=node('details',undefined,'journey-more');ordering.append(node('summary','Om katalogen og rekkefølgen'),node('p','Filene leses på enheten og sendes ikke til en server. Norske navn brukes der vi har dem; øvrige navn beholdes fra kilden. Nye katalogtemaer starter på middels nivå. Du kan tilpasse nivået under hvert tema. Rekkefølgen er veiledende. Fjern et valgt svar for å gjøre retningen ubesvart igjen.','journey-note'));
@@ -72,6 +78,6 @@
   if(offset+20<rows.length)pager.append(button('Neste side',()=>{offset+=20;render({focusList:true});}));if(focusList)(list.children[0]?.children[0]||count).focus();
  }
  window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
- for(const link of [next,...document.querySelectorAll('.app-header a')])link.onclick=async e=>{if(!dirty)return;e.preventDefault();if(await DypereUI.confirmAction('Forlate siden uten å lagre endringene?','Ja, forlat siden')){dirty=false;location.assign(link.href);}};
+ for(const link of [next,...document.querySelectorAll('.app-header a')])link.onclick=async e=>{if(embedded){e.preventDefault();if(await requestClose())window.parent.postMessage({type:'dypere-profile-close'},location.origin);return;}if(!dirty)return;e.preventDefault();if(await requestClose())location.assign(link.href);};
  render();
 })();
