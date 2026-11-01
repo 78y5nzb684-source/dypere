@@ -164,3 +164,20 @@
 
 .profile-save-status:not(:empty){border-left:2px solid var(--gold);padding-left:10px;font-size:13px}.profile-topic h3:focus-visible{outline:2px solid var(--gold);outline-offset:6px}.profile-state-menus summary:focus-visible,.profile-level summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}#profileEditor input[aria-invalid=true]{border-color:var(--gold);outline:2px solid var(--gold)}
 .profile-state-menus summary{box-sizing:border-box;min-height:44px;display:flex;align-items:center;justify-content:center}.profile-level summary{min-height:28px;display:flex;align-items:center}
+
+/* Profiles supply established answers; this page only collects today's choices. */
+.session-fields{display:grid;gap:10px;margin:22px 0 28px}
+.session-fields label,.session-discovery>label{font-size:14px;color:var(--gold)}
+.session-fields select,.session-discovery>input{box-sizing:border-box;width:100%;max-width:100%;min-height:48px;background:#17131a;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;font:16px Arial,sans-serif}
+.session-choice{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 20px}
+.session-choice button{flex:1;min-width:130px;min-height:48px;margin:0}
+.session-choice button[aria-pressed=true]{background:var(--gold);color:#17131a;border-color:var(--gold)}
+.session-discovery{padding:18px 0;border-top:1px solid var(--line)}
+.session-discovery[hidden]{display:none}.session-discovery>input{display:block;margin-top:8px}
+.session-suggestions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.journey-panel .session-topic{display:flex;align-items:center;gap:10px;min-width:0;min-height:48px;margin:0;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:14px;overflow-wrap:anywhere}
+.session-topic input{width:20px;height:20px;flex-shrink:0;accent-color:var(--gold)}
+.session-summary,.session-meta{font-size:14px!important;color:var(--gold);margin:18px 0!important}
+.session-action{font-size:clamp(20px,4vw,25px)!important;line-height:1.65!important;margin:24px 0!important}
+.match-answer .journey-note{text-transform:none}
+@media(max-width:500px){.session-suggestions{grid-template-columns:1fr}}

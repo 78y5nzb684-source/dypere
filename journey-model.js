@@ -113,7 +113,7 @@
    const previous=p.answers.findIndex(a=>a.id===q.id);
    if(previous>=0){const old=p.answers[previous],oldValue={ja:2,kanskje:1,nei:0}[old.vote]||0;p.scores[old.cat]=Math.max(0,(p.scores[old.cat]||0)-oldValue);if(!p.scores[old.cat])delete p.scores[old.cat];}
    const value={ja:2,kanskje:1,nei:0}[key]||0;if(value)p.scores[q.cat]=(p.scores[q.cat]||0)+value;
-   const answer=Object.freeze({id:q.id,cat:q.cat,family:family(q.text),profileId:p.id,categoryId:q.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(q.cat))?.id,area:q.area||l?.area||null,preferences:selected,vote:key,actuality:['ja','senere'].includes(details.actuality)?details.actuality:'uavklart'});
+   const answer=Object.freeze({id:q.id,cat:q.cat,family:family(q.text),profileId:p.id,categoryId:q.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(q.cat))?.id,area:q.area||l?.area||null,preferences:selected,vote:key,origin:details.origin==='profile'?'profile':'question',actuality:['ja','senere'].includes(details.actuality)?details.actuality:'uavklart'});
    if(previous>=0)p.answers[previous]=answer;else p.answers.push(answer);return true;
  }
  function responses(profiles,entries){
@@ -122,7 +122,7 @@
      const source=entry.card||entry,l=window.DypereJourneyLanguage?.[family(source.text).slice(5)];
      const card={...source,categoryId:source.categoryId||l?.categoryId||categories.find(s=>s.cat.includes(source.cat))?.id,area:source.area||l?.area||null};
      const defs=directions(card);
-     const answers=profiles.map(p=>{const answer=p.answers.findLast(a=>a.id===card.id);return {profileId:p.id,name:p.name,answered:!!answer,vote:answer?.vote||'–',preferences:answer?.preferences||{},actuality:answer?.actuality||'uavklart'};});
+     const answers=profiles.map(p=>{const answer=p.answers.findLast(a=>a.id===card.id);return {profileId:p.id,name:p.name,answered:!!answer,origin:answer?.origin||'question',vote:answer?.vote||'–',preferences:answer?.preferences||{},actuality:answer?.actuality||'uavklart'};});
      const pairs=[];
      for(let a=0;a<answers.length;a++)for(let b=a+1;b<answers.length;b++){
        const x=answers[a],y=answers[b],routes=[];

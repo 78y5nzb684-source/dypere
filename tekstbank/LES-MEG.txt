@@ -1,4 +1,4 @@
-DYPERE – redigerbar tekstbank, 3.0.25 beta
+DYPERE – redigerbar tekstbank, 3.0.26 beta
 
 86 oppslag med stabile nøkler og ID-er. Ingen nye avhengigheter.
 spraak.json bygger journey-language.js med eksisterende tre question-tekster,
