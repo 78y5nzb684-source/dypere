@@ -188,7 +188,7 @@
    const exact=M.match(profiles,entries).filter(item=>(!importedSession||item.answers.every(a=>a.actuality==='ja'))&&profiles.every((_,index)=>item.pairs.some(pair=>pair.compatible&&(pair.a===index||pair.b===index))));
    const shared=skills.map(s=>({id:s.id,name:s.name,value:exact.filter(item=>item.categoryId===s.id).length})).filter(s=>s.value>0).sort((a,b)=>b.value-a.value);
    const ranked=(window.DypereJourneyScenarios||[]).filter(s=>s.groups.includes(profiles.length)).map((s,i)=>({s,i,weight:shared.filter(t=>s.skills.includes(t.id)).reduce((v,t)=>v+t.value,0)})).sort((a,b)=>b.weight-a.weight||a.i-b.i);
-   const positive=ranked.filter(x=>x.weight>0);return {shared,candidates:(positive.length?positive:ranked).map(x=>x.s),neutral:!positive.length};
+   const positive=ranked.filter(x=>x.weight>0);return {exact,possible:M.match(profiles,entries).filter(item=>item.pairs.some(pair=>pair.nesten)),shared,candidates:(positive.length?positive:ranked).map(x=>x.s),neutral:!positive.length};
  }
  function showFinal({keepFocus=false}={}){
    finished=true;
@@ -199,6 +199,11 @@
    p.append(node('p','Dette er en ramme dere kan tilpasse, ikke en avtale om bestemte handlinger eller roller.','journey-note'));
    p.append(button('Se hva dere matchet på',showMatch,'primary'));
    if(s){
+     const basis=result.exact.filter(item=>s.skills.includes(item.categoryId));
+     if(basis.length){const details=node('details',undefined,'scenario-basis');details.append(node('summary','Treff bak forslaget ('+basis.length+')'));const ul=node('ul');basis.forEach(item=>ul.append(node('li',language[item.key]?.topic||item.cat)));details.append(ul);p.append(details);}
+     const tentative=result.possible.filter(item=>s.skills.includes(item.categoryId));
+     if(tentative.length){const details=node('details',undefined,'scenario-possible');details.append(node('summary','Mulige treff å avklare ('+tentative.length+')'));const ul=node('ul');tentative.forEach(item=>ul.append(node('li',language[item.key]?.topic||item.cat)));details.append(ul);p.append(details);}
+     if(result.candidates.length>1)p.append(node('p','Forslag '+(scenarioIndex+1)+' av '+result.candidates.length,'journey-note'));
      const list=node('ol',undefined,'scenario-steps');
      [['Begynn sammen',s.intro],['Hoveddel',custom||s.main],['Avrunding',s.closing],['Omsorg etterpå',s.aftercare]].forEach(([label,text])=>{const li=node('li');li.append(node('strong',label),node('p',text));list.append(li);});p.append(list);
      const select=button(chosen?'Valgt sammen':'Velg dette sammen',async b=>{
@@ -352,7 +357,7 @@
   const start=button('Finn vår stund',()=>{
    const candidates=selection();if(reading||!candidates.length)return;
    // Sample across the permitted range, then progress from soft to more intense.
-   const limit=Math.min(Number(amount.value),candidates.length),selected=Array.from({length:limit},(_,i)=>candidates[limit===1?0:Math.round(i*(candidates.length-1)/(limit-1))]);
+   const selected=M.selectSessionQuestions(candidates,Number(amount.value));
    profiles=loaded.map((saved,i)=>{const a=M.profile('avatar-'+(i+1));a.name=saved.name;a.tone='diskret';a.allowed=Object.fromEntries(selected.map(x=>[x.card.id,x.item.allowed[i]]));return a;});
    restoredChoice=null;answerReadyAt=0;importedSession=true;sessionQuestions=selected.map(x=>x.card);lengths=[sessionQuestions.length];active=0;segment=1;step=0;history.length=0;current=null;result=null;reportData=null;chosen=false;confirmations.clear();finished=false;started=true;showHandoff();
   },'primary');

@@ -86,6 +86,16 @@
    if(p.recent.length>16)p.recent.shift();if(p.recentCats.length>4)p.recentCats.shift();
    return entry.card;
  }
+ function complements(d){return [...new Set([d.complement,...(d.additionalComplements||[])])];}
+ function selectSessionQuestions(candidates,count,random=Math.random){
+   const size=Math.max(0,Math.min(candidates.length,Math.floor(Number(count)||0)));
+   if(size===candidates.length)return candidates.slice();
+   return Array.from({length:size},(_,i)=>{
+     const pool=candidates.slice(Math.floor(i*candidates.length/size),Math.floor((i+1)*candidates.length/size));
+     let value=Number(random());if(!Number.isFinite(value))value=0;
+     return pool[Math.floor(Math.max(0,Math.min(.999999999,value))*pool.length)];
+   });
+ }
  function directions(q){
    const rows=window.DypereJourneyLanguage?.[family(q.text).slice(5)]?.directions;
    return Array.isArray(rows)?rows.map(row=>({...row})):[];
@@ -116,11 +126,11 @@
      const pairs=[];
      for(let a=0;a<answers.length;a++)for(let b=a+1;b<answers.length;b++){
        const x=answers[a],y=answers[b],routes=[];
-       for(const d of defs){const av=x.preferences[d.id]||'–',bv=y.preferences[d.complement]||'–';if(positive(av)&&positive(bv))routes.push({aDirection:d.id,bDirection:d.complement,aVote:av,bVote:bv,confirmed:av==='ja'&&bv==='ja'});}
+       for(const d of defs)for(const complement of complements(d)){const av=x.preferences[d.id]||'–',bv=y.preferences[complement]||'–';if(positive(av)&&positive(bv))routes.push({aDirection:d.id,bDirection:complement,aVote:av,bVote:bv,confirmed:av==='ja'&&bv==='ja'});}
        const compatible=card.area!=='uavklart'&&routes.some(r=>r.confirmed),possible=routes.length>0;
        const common=positive(x.vote)&&positive(y.vote);
        if(!possible&&!common)continue;
-       const needsClarification=!possible&&defs.some(d=>positive(x.preferences[d.id])&&(y.preferences[d.complement]||'–')==='–'||positive(y.preferences[d.complement])&&(x.preferences[d.id]||'–')==='–');
+       const needsClarification=!possible&&defs.some(d=>complements(d).some(c=>positive(x.preferences[d.id])&&(y.preferences[c]||'–')==='–'||positive(y.preferences[c])&&(x.preferences[d.id]||'–')==='–'));
        const status=compatible?(x.actuality==='ja'&&y.actuality==='ja'?'Kompatible ønsker':'Kompatibel retning'):possible?'Mulig treff':needsClarification?'Felles interesse – retning uavklart':'Felles interesse – ingen kompatibel retning';
        pairs.push({a,b,routes,compatible,beggeJa:compatible,nesten:possible&&!compatible,needsClarification,status});
      }
@@ -133,5 +143,5 @@
    const raw=categories.map(s=>({id:s.id,name:s.name,value:profiles.reduce((sum,p)=>sum+p.answers.filter(a=>(a.categoryId||categories.find(c=>c.cat.includes(a.cat))?.id)===s.id&&a.vote==='ja').length,0)}));
    const max=Math.max(0,...raw.map(s=>s.value));return raw.map(s=>({...s,score:max?Math.round(s.value/max*100):0}));
  }
- window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,directions,aggregate,voteDirections,responses,match,chemistry,leaves,treeNodes,allocate,priority});
+ window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,complements,selectSessionQuestions,directions,aggregate,voteDirections,responses,match,chemistry,leaves,treeNodes,allocate,priority});
 })();

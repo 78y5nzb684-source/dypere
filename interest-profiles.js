@@ -3,7 +3,7 @@
  const source=window.DypereProfileCatalog||[],catalog=[],lookup=new Map(),equivalent=new Map();
  // Merge only identical displayed concepts with identical directional schemas.
  // Broad categories, related practices and anatomical variants remain separate.
- for(const topic of source){const key=JSON.stringify([topic.label.normalize('NFKC').toLocaleLowerCase('nb'),topic.group,topic.directions.map(d=>[d.id,d.complement]).sort()]);let target=equivalent.get(key);if(!target){target={...topic,aliases:[...topic.aliases]};equivalent.set(key,target);catalog.push(target);}else target.aliases=[...new Set([...target.aliases,...topic.aliases])];lookup.set(topic.id,target);}
+ for(const topic of source){const key=JSON.stringify([topic.label.normalize('NFKC').toLocaleLowerCase('nb'),topic.group,topic.directions.map(d=>[d.id,d.complement,[...(d.additionalComplements||[])].sort()]).sort()]);let target=equivalent.get(key);if(!target){target={...topic,aliases:[...topic.aliases]};equivalent.set(key,target);catalog.push(target);}else target.aliases=[...new Set([...target.aliases,...topic.aliases])];lookup.set(topic.id,target);}
  const states=['ja','kanskje','nei'];
  function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',preferences:{},levels:{}};}
  function validate(raw){
@@ -28,10 +28,10 @@
   const matches=[],discovery=[];
   for(const topic of catalog){
    const allowed=people.map(()=>new Set()),certain=people.map(()=>new Set());
-   for(let a=0;a<people.length;a++)for(let b=a+1;b<people.length;b++)for(const d of topic.directions){
-    const x=people[a].preferences[topic.id]?.[d.id],y=people[b].preferences[topic.id]?.[d.complement];
+   for(let a=0;a<people.length;a++)for(let b=a+1;b<people.length;b++)for(const d of topic.directions)for(const complement of new Set([d.complement,...(d.additionalComplements||[])])){
+    const x=people[a].preferences[topic.id]?.[d.id],y=people[b].preferences[topic.id]?.[complement];
     const accepts=v=>v==='ja'||curious&&v==='kanskje'||explore&&v===undefined;
-    if(accepts(x)&&accepts(y)&&(positive(x)||positive(y))){allowed[a].add(d.id);allowed[b].add(d.complement);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(d.complement);}}
+    if(accepts(x)&&accepts(y)&&(positive(x)||positive(y))){allowed[a].add(d.id);allowed[b].add(complement);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(complement);}}
    }
    // Everyone must have a compatible path; a pair never opts the whole group in.
    if(!allowed.every(s=>s.size))continue;
