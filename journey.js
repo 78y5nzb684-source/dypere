@@ -419,7 +419,8 @@
   }
   const activity=activityChoice.activity,p=panel(activity.title,'ET FORSLAG FOR I KVELD');
   p.setAttribute('data-activity-id',activity.id);p.append(node('p',(Object.values(today.quicky||{}).some(Boolean)?'Kjapp stund · ':'')+'Omtrent '+activity.minutes+' minutter','session-meta'),node('p',activity.description,'session-action'),node('p',activityRoles(activityChoice),'activity-roles'));
-  const start=button('Start aktiviteten',()=>{chosen=true;runStep=0;showRunning();},'primary');start.id='startTogether';p.append(start);
+  if(activity.reviewNote){const preview=node('details',undefined,'scenario-basis');preview.append(node('summary','Les hele forslaget'));for(const phase of activity.phases||[])preview.append(node('h3',phase.title),node('p',phase.text));p.append(node('p',activity.reviewNote,'journey-note'),preview);}
+  const start=button(activity.reviewNote?'Dette passer oss – start':'Start aktiviteten',()=>{chosen=true;runStep=0;showRunning();},'primary');start.id='startTogether';p.append(start);
   if(choices.length>1)p.append(button('Et annet forslag',()=>{chooseActivity(choices);showShortProposal();},'text-button'));
   const why=node('details',undefined,'scenario-basis');why.append(node('summary','Hvorfor dette forslaget?'));const ul=node('ul');for(const item of activityChoice.evidence)ul.append(node('li',(language[item.key]?.topic||item.topic||item.cat)+' · kompatible ja i kveld'));why.append(ul,button('Se kveldens svar',showMatch,'text-button'));p.append(why);
   const extra=node('details',undefined,'journey-more');extra.append(node('summary','Endre kveldens rammer'),button('Tilbake til dagsformen',()=>showToday(sourceProfiles),'text-button'));if(history.length)extra.append(button('Endre forrige svar',previous,'text-button'));p.append(extra);

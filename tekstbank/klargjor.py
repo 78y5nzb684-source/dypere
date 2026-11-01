@@ -39,6 +39,13 @@ def prepare(document, topics):
             choices = requirement.get('anyOf')
             check(isinstance(choices, list) and choices and
                   all(isinstance(t, str) and t in topics for t in choices), 'Ukjent tema-ID.')
+            actors = requirement.get('actorRoles', {})
+            check(isinstance(actors, dict) and all(isinstance(k, str) and isinstance(v, str) and v.strip() for k,v in actors.items()), 'Ugyldige aktivitetsroller.')
+            if actors:
+                check(row['groups'] == [2], 'Sammenhengende aktivitetsroller støttes foreløpig for to deltakere.')
+                check(len(set(actors.values())) == len(actors), 'Aktivitetsroller må være forskjellige.')
+                for topic_id in choices:
+                    check(all(k in {d['id'] for d in topics[topic_id]['directions']} for k in actors), 'Rollen bruker ukjent retning.')
             routes = requirement.get('routes', [])
             check(isinstance(routes, list), 'routes må være en liste.')
             for pair in routes:
@@ -52,6 +59,7 @@ def prepare(document, topics):
                           'Retningene er ikke komplementære.')
             for topic_id in choices:
                 used_directions.update(d['id'] for d in topics[topic_id]['directions'])
+        check('reviewNote' not in row or isinstance(row['reviewNote'],str) and row['reviewNote'].strip(), 'Ugyldig gjennomlesingsmerknad.')
         labels = row.get('roleLabels', {})
         check(isinstance(labels, dict) and all(k in used_directions and isinstance(v, str) and v.strip()
               for k, v in labels.items()), 'Ugyldige rollenavn.')
@@ -73,7 +81,7 @@ def prepare(document, topics):
             result.append({key: row[key] for key in
                           ['id', 'enabled', 'title', 'description', 'genres', 'level', 'groups', 'requires']}
                           | {'minutes': total, 'steps': steps, 'phases': phases, 'roleLabels': labels,
-                             'source': 'manually-authored'})
+                             'source': 'manually-authored', **({'reviewNote':row['reviewNote']} if row.get('reviewNote') else {})})
     return result
 
 

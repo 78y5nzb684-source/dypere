@@ -1,696 +1,1312 @@
 {
   "version": 1,
-  "description": "Ett nøytralt eksempel. Erstatt eller utvid med ferdige oppføringer.",
+  "description": "Kvalitetsbolk – mer eksplisitte og konkrete opplegg + kommunikasjonslink til ChatGPT",
   "activities": [
     {
-      "id": "deres-stund-001",
+      "id": "kval-001",
       "enabled": true,
-      "title": "Deres stund",
-      "description": "En kort stund med plass til det dere har valgt sammen i kveld.",
+      "title": "Rolig håndmassasje én vei",
+      "description": "En person gir en grundig massasje av hender, fingre og underarmer. Den andre ligger eller sitter og mottar.",
       "genres": [
-        "dybde",
-        "flere",
-        "kraft",
-        "lek",
-        "munn",
-        "naerhet",
-        "risiko",
-        "styring"
+        "naerhet"
       ],
       "level": 1,
       "groups": [
-        2,
-        3,
-        4
+        2
       ],
       "requires": [
         {
           "anyOf": [
-            "topic-3253052e9a8af9",
-            "topic-0886b7d5ab206e",
-            "topic-20da8fd4fb86a1",
-            "topic-4c73a85433683e",
-            "topic-6a0833d4ae4ed5",
-            "topic-52a8d2c2c0b772",
-            "topic-5943be120e49e9",
-            "topic-41b188b4b94e14",
-            "topic-9d838d42a379a6",
-            "topic-34444c0272811d",
-            "topic-a40d2514cbc14a",
-            "topic-e2916a10b9a9c4",
-            "topic-6f61f46c23a666",
-            "topic-efb3a9dd35c63c",
-            "topic-cd7fc954c6579d",
-            "topic-a2afeec49a4a4c",
-            "topic-df39220189ca82",
-            "topic-9778682c80baf2",
-            "topic-3ae3348877ecaa",
-            "topic-56e9a4b48bf824",
-            "topic-3a77a549887bce",
-            "topic-1e9cdcf852fcf6",
-            "topic-0a9a0ec885f048",
-            "topic-81fcbba2c584e6",
-            "topic-65480ba6744be8",
-            "topic-d06690f9341f89",
-            "topic-226063d4964cc2",
-            "topic-7276e0a742cf98",
-            "topic-29ffb6a37c6e8e",
-            "topic-b9276f7420458b",
-            "topic-0a22d0376847d8",
-            "topic-e5fa94453a9250",
-            "topic-d57a8a9a201e3a",
-            "topic-c2a97a699ee330",
-            "topic-c2b6684dc758f0",
-            "topic-730b114f1a2395",
-            "topic-118fc681c071eb",
-            "topic-685f64ecd153f2",
-            "topic-5d6133d3e787cb",
-            "topic-8e4764c3e0510a",
-            "topic-1e3a2be2c4683f",
-            "topic-29c0e221cccc50",
-            "topic-eea2a65f8f4739",
-            "topic-c38e594ce7004e",
-            "topic-80f09b5fe73bdf",
-            "topic-0b95d6755eef25",
-            "topic-6713e85f303d4c",
-            "topic-770875de6bd8d9",
-            "topic-5ac6a10dc55c56",
-            "topic-99f2b8ac8a3dcb",
-            "topic-a5edf48c3553a1",
-            "topic-a5add13655291f",
-            "topic-b67a8231782c16",
-            "topic-80e0c8104e10b0",
-            "topic-60e5f258a91a88",
-            "topic-5022472b2831c6",
-            "topic-1979f5a52b1685",
-            "topic-3e2b351267da13",
-            "topic-bbba57318f7191",
-            "topic-9cc7fa8fc459d4",
-            "topic-569d7dc1611b50",
-            "topic-180ca01b95f0df",
-            "topic-46b99a0bc59418",
-            "topic-3fcffeabccdd3b",
-            "topic-efa1f375d76194",
-            "topic-55d5a4c5e099ca",
-            "topic-e05bd49ebcf081",
-            "topic-ad936fcbed631f",
-            "topic-835663e5ec92f0",
-            "topic-a16641b5fb5865",
-            "topic-9bf48923a47a23",
-            "topic-ee708e9a1b7722",
-            "topic-4750957f183f21",
-            "topic-6ea5184f3302ac",
-            "topic-5ecbc8850dace3",
-            "topic-c68d74881c2168",
-            "topic-ab8273b147e039",
-            "topic-3f8e7067afe037",
-            "topic-dfa8cc80088cde",
-            "topic-9c0b9bdf40eeee",
-            "topic-7bc671151cbfae",
-            "pdf-98fc07367b6df3",
-            "pdf-f8e4fb97fe88b8",
-            "pdf-303be2f21bf397",
-            "pdf-3bfcbeeee9f7c3",
-            "pdf-01c00bef46b9ef",
-            "pdf-6c4e44004698c1",
-            "pdf-38caddca11789c",
-            "pdf-dc214e2f890b2e",
-            "pdf-fac18291659cdb",
-            "pdf-38b439c7273dda",
-            "pdf-98399b56c45cd4",
-            "pdf-38dbf2596c62c0",
-            "pdf-74305616b2bc16",
-            "pdf-d43c8bd5797aa4",
-            "pdf-1d761c0a0a4b1e",
-            "pdf-3612420d8c3b21",
-            "pdf-3e6286e5cbf2d1",
-            "pdf-fe279099064729",
-            "pdf-0ebfcdd92172f5",
-            "pdf-066e6872d9312d",
-            "pdf-5a4820e1f5712e",
-            "pdf-9f3a8f72976c6e",
-            "pdf-acfc92f841614a",
-            "pdf-293f1d2ee206a7",
-            "pdf-68dea81cd2bcf9",
-            "pdf-aaf21757b26ff0",
-            "pdf-8887ae2fbee31d",
-            "pdf-f7c51ee5c8d179",
-            "pdf-4ae19158348463",
-            "pdf-06ee45db74be57",
-            "pdf-b66e4e54b4982f",
-            "pdf-7902e27065cfa9",
-            "pdf-d68e35903af2b6",
-            "pdf-5c78c8e7160e76",
-            "pdf-e157956de2d365",
-            "pdf-98d44e13f455d9",
-            "pdf-321cf2e66dabdd",
-            "pdf-e3be42efb21987",
-            "pdf-9ddcab3ac3610d",
-            "pdf-613649e86e90c1",
-            "pdf-eef0b2f7ee56dd",
-            "pdf-10e80ecbecb057",
-            "pdf-fd5f73e8524179",
-            "pdf-1320e1bf8a423b",
-            "pdf-9f80a5e14017cc",
-            "pdf-d762b2c7041efb",
-            "pdf-bc4820d82e7ae4",
-            "pdf-6e97cbba827373",
-            "pdf-4f2f10d18a4b51",
-            "pdf-0241169c88f74d",
-            "pdf-6eee4ddc7dd29c",
-            "pdf-5728bd72db3fbd",
-            "pdf-d144c112d00bbd",
-            "pdf-0f8f7646045831",
-            "pdf-1c2deba8701b85",
-            "pdf-632586031746bc",
-            "pdf-f4f3b88e59785d",
-            "pdf-c7b6ea529bd780",
-            "pdf-05d155faec1934",
-            "pdf-300f62248dce09",
-            "pdf-50c7c05e615bf9",
-            "pdf-a38a73ed1bbbcc",
-            "pdf-57c29be8a46205",
-            "pdf-fea50d5e6ccc56",
-            "pdf-e46bc4779b7610",
-            "pdf-33900b802eb755",
-            "pdf-694ebc29ab81cd",
-            "pdf-5bf3adf9f323a5",
-            "pdf-fd34e94b7f02a1",
-            "pdf-a0502c04d66911",
-            "pdf-13d397959e5135",
-            "pdf-9092d598139d90",
-            "pdf-851586d9f36688",
-            "pdf-d0c9d47a15819e",
-            "pdf-6174000fe4c494",
-            "pdf-c685c920e98c21",
-            "pdf-3adc7948e0afdc",
-            "pdf-b0af8b6dec1eff",
-            "pdf-fb28108aee9af0",
-            "pdf-2ea016d4c7ef5e",
-            "pdf-ff360ffeee241b",
-            "pdf-8c5c04391361cb",
-            "pdf-6ec62f1af4180f",
-            "pdf-c3e620ea7dbd6c",
-            "pdf-264ad4c6a1169d",
-            "pdf-6672b930d5d08e",
-            "pdf-426443100bfc2f",
-            "pdf-ec9c171354a698",
-            "pdf-b390b46b00b5ce",
-            "pdf-ff5ae7e8d20606",
-            "pdf-5ae2a355453b65",
-            "pdf-6337d8acfa4081",
-            "pdf-c75cb66ae28d8e",
-            "pdf-ca2a151697716c",
-            "pdf-038525cc49649f",
-            "pdf-49150d4cde0810",
-            "pdf-fc1d44026fef5b",
-            "pdf-281d54603cb75d",
-            "pdf-e836bd9ed2fef6",
-            "pdf-0e5f85d4f930ae",
-            "pdf-c68214c8cbf40c",
-            "pdf-7bd09a62869494",
-            "pdf-41e5c16552c2c0",
-            "pdf-1b570bfdfe3213",
-            "pdf-91157064a8a25c",
-            "pdf-11cf8376a1575f",
-            "pdf-7dfdb63729442a",
-            "pdf-76f03622246215",
-            "pdf-00832d7c4b2481",
-            "pdf-471ab0aa449977",
-            "pdf-230dd32066d5b3",
-            "pdf-257a078a61da3e",
-            "pdf-42c38b261da806",
-            "pdf-0e0452a44d05a9",
-            "pdf-908ada82372012",
-            "pdf-a251e868fe96e7",
-            "pdf-ef26f57fcc74c3",
-            "pdf-32837b50cd3a8e",
-            "pdf-7f7111694f5460",
-            "pdf-e75d98e654820e",
-            "pdf-be91e3ed938273",
-            "pdf-d725971181f9a6",
-            "pdf-7a1475b3f8dc3e",
-            "pdf-56379150ebb046",
-            "pdf-b8b58ac1f4c1f6",
-            "pdf-607df6b8f277ab",
-            "pdf-63a38e4abe7603",
-            "pdf-61415431e9e34d",
-            "pdf-291b6b06921b28",
-            "pdf-b0d4d07d612bdd",
-            "pdf-1ec3f732db5ba7",
-            "pdf-af56fcbbd6ec2e",
-            "pdf-ebf8fbad9c5e65",
-            "pdf-ce5767f879f567",
-            "pdf-da17e543e8fd26",
-            "pdf-203e303a50269f",
-            "pdf-cb56a8ee31ee83",
-            "pdf-315995eb99223f",
-            "pdf-7467f71dd9869b",
-            "pdf-07368dcb59c33d",
-            "pdf-b7a46a1a254a46",
-            "pdf-80973de74b2b0d",
-            "pdf-08af521caff4aa",
-            "pdf-fe4d55b9ffa530",
-            "pdf-361bd9e5caa8f8",
-            "pdf-e5866ff9fc093d",
-            "pdf-9f1277d878f365",
-            "pdf-15526073da9550",
-            "pdf-4f7e069d696699",
-            "pdf-889bb028ff0b3d",
-            "pdf-48ea94a906f5a8",
-            "pdf-be432ed436bc3f",
-            "pdf-9ec6ba35d484dc",
-            "pdf-0fcd568a5cb9bd",
-            "pdf-db74eab0b82864",
-            "pdf-f2cd87998aa55d",
-            "pdf-67fc842ec4ff09",
-            "pdf-abce13df5e5a2a",
-            "pdf-ddea5f460b01c2",
-            "pdf-0486f818b123d7",
-            "pdf-423a917de05c19",
-            "pdf-65d2c636523fb6",
-            "pdf-25f3aeb51f1cc7",
-            "pdf-1aa27168b130f9",
-            "pdf-a259276acf1cd8",
-            "pdf-c50a5e4de8983f",
-            "pdf-e738c8d595d851",
-            "pdf-5ad15c085d123b",
-            "pdf-f796e2f28ae581",
-            "pdf-002b4d9d0365ad",
-            "pdf-14c67414e0dfb1",
-            "pdf-e0787d272a439b",
-            "pdf-1c0ed8b99fb2a5",
-            "pdf-1a6d61b62d541f",
-            "pdf-d3aeadbcaafc89",
-            "pdf-575a0729d04f79",
-            "pdf-e87f5f975e59ac",
-            "pdf-5ad3aa07af7124",
-            "pdf-b6e756b1f61e3e",
-            "pdf-b31950d8cfbe76",
-            "pdf-78a057a02d561e",
-            "pdf-a522de87b309ea",
-            "pdf-ce7eb7547fd3fe",
-            "pdf-ec737799f51683",
-            "pdf-bb1443cbe1725d",
-            "pdf-77128a37e0526e",
-            "pdf-6fb778f0a581be",
-            "pdf-087b138185b9cc",
-            "pdf-c97b12820f86d6",
-            "pdf-991540dcc68da0",
-            "pdf-e9cde33db1c270",
-            "pdf-b9ebba6e890e5b",
-            "pdf-b5e2fca211e968",
-            "pdf-1bb89064e93e58",
-            "pdf-c12ebad8e3546e",
-            "pdf-4a493cb85c28ea",
-            "pdf-69ee338746a150",
-            "pdf-fc144b7d25099b",
-            "pdf-9d0c03e92e6d39",
-            "pdf-6ab4e0ff626515",
-            "pdf-57fbee45f0232e",
-            "pdf-91f347aed82e01",
-            "pdf-f5e1107953d7b4",
-            "pdf-033a67827efbff",
-            "pdf-a62bd77d7a1068",
-            "pdf-056183be3d1d3b",
-            "pdf-4d8974777af179",
-            "pdf-198ba67dd1e9f1",
-            "pdf-ebca3d187a58ba",
-            "pdf-6f256e949c1174",
-            "pdf-8073cb2613f0f4",
-            "pdf-093d96f19b6f96",
-            "pdf-3b5bbdccc3ca8b",
-            "pdf-debef26165c6fa",
-            "pdf-d0a32ecf89f3c0",
-            "pdf-581eaf4658d71e",
-            "pdf-2b2dfda9c8f26e",
-            "pdf-0ddfcf3354c388",
-            "pdf-f9c3a13da13239",
-            "pdf-a063c2db0af5ce",
-            "pdf-23b8c1379466c5",
-            "pdf-d8c2b08eee34cd",
-            "pdf-80f189984e5ca7",
-            "pdf-97eb1d6128536a",
-            "pdf-899c9df442dbb4",
-            "pdf-9bfae735d69d28",
-            "pdf-b18f66f7648824",
-            "pdf-62d565822251a3",
-            "pdf-997ff4c1c4d8ff",
-            "pdf-2c41ec73049407",
-            "pdf-4ba730f8490783",
-            "pdf-17fee6671d1217",
-            "pdf-1cf46d079ca631",
-            "pdf-f6d1163c82cecc",
-            "pdf-7c6159f58770e7",
-            "pdf-3c634bd3a6e7f4",
-            "pdf-59f4124b667824",
-            "pdf-b3c6c33c73280c",
-            "pdf-e1c619e47559e1",
-            "pdf-69ab5b6b5e9afb",
-            "pdf-242ab4ac31522e",
-            "pdf-686f746a95b6f8",
-            "pdf-de2b5ee6dd9e93",
-            "pdf-2efdac1e25987e",
-            "pdf-6d0d69a4b6576e",
-            "pdf-01b5121e4c1a68",
-            "pdf-adbae3b31c87e3",
-            "pdf-fce94da70c48e7",
-            "pdf-0e98940ba704b5",
-            "pdf-b1dfdd4aa36e4d",
-            "pdf-7b125d48840b42",
-            "pdf-0734bb834fee95",
-            "pdf-7186587d157eea",
-            "pdf-2034b2b2653eae",
-            "pdf-d93cebec271390",
-            "pdf-ac63b15bda6001",
-            "pdf-dffb2c0c2f3d35",
-            "pdf-1d9f88d73499fc",
-            "pdf-19b467b3b9d63b",
-            "pdf-379757558b04d3",
-            "pdf-135f5484080c7c",
-            "pdf-a429b0a8e45f5a",
-            "pdf-0ccaebc8c8dacd",
-            "pdf-9e2580dbe1cf90",
-            "pdf-058ce9bd95f559",
-            "pdf-266550babbb7bd",
-            "pdf-238e6c0a1c560b",
-            "pdf-5a750c43c390e0",
-            "pdf-999cd8da6c863d",
-            "pdf-6ccffa4977d424",
-            "pdf-33e6e6e382882d",
-            "pdf-161900267916b6",
-            "pdf-bc4990f95e5b70",
-            "pdf-b29d6569728999",
-            "pdf-4afe97e4e83a4f",
-            "pdf-dff6316d987438",
-            "pdf-ae20580b326d08",
-            "pdf-36541b92ce48a0",
-            "pdf-f63274cb049eb4",
-            "pdf-c57b723ae48f70",
-            "pdf-84c7e3732669b4",
-            "pdf-947691ad9c13ba",
-            "pdf-c06de5e1afb1c0",
-            "pdf-d64ff34bd080ce",
-            "pdf-fffbdc19205276",
-            "pdf-4e2064021466c0",
-            "pdf-4ff40993203c26",
-            "pdf-f5778592072e93",
-            "pdf-403db04b83c281",
-            "pdf-fe5b23ddee8937",
-            "pdf-03d31c925b6b67",
-            "pdf-e6597c5c78bb2b",
-            "pdf-89490cd8a5ad9e",
-            "pdf-14e32f3cbdd3b4",
-            "pdf-6a305cfa5702b9",
-            "pdf-190212f47b740c",
-            "pdf-1d533b46fb7dad",
-            "pdf-e5f2a985104c83",
-            "pdf-24b3f2cb6e05f1",
-            "pdf-fa8f8d195a1940",
-            "pdf-614fe60cf73250",
-            "pdf-b656aa1a5e7260",
-            "pdf-908f1c0ec8de3a",
-            "pdf-d5a5256c1cd3b0",
-            "pdf-a53b7f3779e7e2",
-            "pdf-5909998525e608",
-            "pdf-ef4894f6f9898b",
-            "pdf-2a1541c9bffb78",
-            "pdf-d510f138603c99",
-            "pdf-a3719781d14635",
-            "pdf-8c78d93b9fbdf5",
-            "pdf-2a7018de792313",
-            "pdf-49a331ab6a4d3e",
-            "pdf-83d987fffa5d46",
-            "pdf-cd5911636949fa",
-            "pdf-7321f70f98588c",
-            "pdf-bbb120846aa2ee",
-            "pdf-2e0bbde9fc1be7",
-            "pdf-3e1297acb89f75",
-            "pdf-04cad5da4d9f8f",
-            "pdf-60675ea7389d41",
-            "pdf-821dfc72431ff7",
-            "pdf-77e6f78af45f64",
-            "pdf-f5c7922eb47fed",
-            "pdf-eb796444f195ab",
-            "pdf-4ec75b3a3fab70",
-            "pdf-bc2c8adfe9615d",
-            "pdf-0c6bf09a556b3f",
-            "pdf-9c9be3d16acd9b",
-            "pdf-a44541c8df0350",
-            "pdf-376be72e38bba9",
-            "pdf-3810ed3e2a637b",
-            "pdf-ec2aeaad98e081",
-            "pdf-9bc045e2e3ecc4",
-            "pdf-a5ff0590f282e5",
-            "pdf-8f88aa07a7df2f",
-            "pdf-803f849c284e33",
-            "pdf-f06e8488f1a619",
-            "pdf-787f20c11ba604",
-            "pdf-71132fbb5b1251",
-            "pdf-4f11dad67b3fd0",
-            "pdf-e531352262538e",
-            "pdf-e94d1a2b79c376",
-            "pdf-bce368f6f26fb5",
-            "pdf-f909b320ad1064",
-            "pdf-9df6b026a8c6c2",
-            "pdf-20771313696b7d",
-            "pdf-4f9d7440a38222",
-            "pdf-db31d0e73dc2e3",
-            "pdf-87b61bfc9856ff",
-            "pdf-0ab798b8b8ae0e",
-            "pdf-27398052d4eaa9",
-            "pdf-405c2b847810ab",
-            "pdf-7817a3e1deb6b7",
-            "pdf-92399e7cd271c6",
-            "pdf-deda253f604377",
-            "pdf-19b67b74aa7a8e",
-            "pdf-400a478a2d0436",
-            "pdf-773106703bdaad",
-            "pdf-64afeb396d9536",
-            "pdf-0d75675f93f141",
-            "pdf-5e50f5392fab35",
-            "pdf-946fc12932e01e",
-            "pdf-365e7b8801cc47",
-            "pdf-7499aced43869b",
-            "pdf-747a002dbfd270",
-            "pdf-a1b441b56320d0",
-            "pdf-3ea101c6fb4250",
-            "pdf-7791a27c9c09d1",
-            "pdf-7ec93d967db481",
-            "pdf-f7301e0431ca29",
-            "pdf-a6e67fd060274f",
-            "pdf-7eb7a65f29a79a",
-            "pdf-d0d4763320b2a5",
-            "pdf-a946e2ce2a89fc",
-            "pdf-a50d1657de1c1b",
-            "pdf-bdb820f93dbb2a",
-            "pdf-f7708b6460d753",
-            "pdf-e26d852c6e5ac4",
-            "pdf-8789590a1b1735",
-            "pdf-abf2acc1b7a200",
-            "pdf-868f803b859cf4",
-            "pdf-553dfe43f10baa",
-            "pdf-906dbb06e57f0c",
-            "pdf-2410a8819721d2",
-            "pdf-6cfb2b8eeff6ad",
-            "pdf-58d54e7c7553ce",
-            "pdf-7fa77e9ceb4249",
-            "pdf-9e294554071c29",
-            "pdf-227a297e3709b3",
-            "pdf-8747fcee631842",
-            "pdf-706dfb9d58ad99",
-            "pdf-9f0b8b04fe0e80",
-            "pdf-876ac84f5ad995",
-            "pdf-d9ef675e0ff739",
-            "pdf-9674a53dc4f9cf",
-            "pdf-9005cc35eb546c",
-            "pdf-0afa5bb5d5f178",
-            "pdf-62031a495aa117",
-            "pdf-f2c819b6790de3",
-            "pdf-3301730f905f62",
-            "pdf-d8f7e872669569",
-            "pdf-2ab48ff8f98c6a",
-            "pdf-526ff79c90f125",
-            "pdf-a1d72c62d90094",
-            "pdf-156940633f3ba6",
-            "pdf-7430a3be93e868",
-            "pdf-d5bf45624ee48e",
-            "pdf-08d7b857bcff20",
-            "pdf-d1a89eed0dbbc1",
-            "pdf-72401749a06268",
-            "pdf-f0dd258095f149",
-            "pdf-dd51d0e0d7681e",
-            "pdf-b4a8eb6df52992",
-            "pdf-96c669474d7dfe",
-            "pdf-e37e7effa73f3f",
-            "pdf-395d4c38280469",
-            "pdf-6ec48530775bbf",
-            "pdf-dfeb10e1c44cc9",
-            "pdf-0e376c13c26b9a",
-            "pdf-1073a8acacc1b6",
-            "pdf-40e0b70ecf683c",
-            "pdf-ecbb388f0056c1",
-            "pdf-00dbcfb9f21590",
-            "pdf-77f9dc3ecaa689",
-            "pdf-b5f049506e41b8",
-            "pdf-dc91e7b2214ab0",
-            "pdf-c2ee6e6c136a33",
-            "pdf-bb56cd6990faba",
-            "pdf-30caf3ca81ee96",
-            "pdf-62ae6f90b27b5d",
-            "pdf-832609f953931d",
-            "pdf-07e2f0389f9d80",
-            "pdf-e48ab658bb9edc",
-            "pdf-4ef786c8956b58",
-            "pdf-02f101d1a21511",
-            "pdf-e9d9d0f618e05c",
-            "pdf-43a2f9bbf6f8f1",
-            "pdf-da3137f6a480ad",
-            "pdf-bf034ee357887d",
-            "pdf-1e45d9b32152fa",
-            "pdf-8d1349a8f6f16b",
-            "pdf-2709fb8fd1bc69",
-            "pdf-9ea62f7f7e81ec",
-            "pdf-45a229d57d35d9",
-            "pdf-bb9723d1e30712",
-            "pdf-faf78c6d99be47",
-            "pdf-59f5a39db707c4",
-            "pdf-2413b6384b0926",
-            "pdf-54f6d9fbe8ee57",
-            "pdf-99bcbac78b3526",
-            "pdf-2a6abca4e33454",
-            "pdf-d7ffe74dc5ac7e",
-            "pdf-7cb492b7bb9f19",
-            "pdf-cdaad7e096dd8f",
-            "pdf-b49aebe3220a46",
-            "pdf-dcae57a80aa1c9",
-            "pdf-9c4593d0108d8f",
-            "pdf-63d67f142dc2da",
-            "pdf-71d7575667922a",
-            "pdf-c8cf49ca3d8f0a",
-            "pdf-0d3fb34e2b582d",
-            "pdf-2f01c6b905bf97",
-            "pdf-2e883cd41c6f20",
-            "pdf-ba7f9cfcbee1f4",
-            "pdf-da96ac7c3f7793",
-            "pdf-463b9f27ef46a2",
-            "pdf-299f6d3ed4cf3c",
-            "pdf-6761170365b21b",
-            "pdf-01ea5ddd3be547",
-            "pdf-74f7fd1cf08b14",
-            "pdf-45613f84acc9bf",
-            "pdf-4b7e172afd0768",
-            "pdf-c7b2361a551b84",
-            "pdf-16cea9868474d3",
-            "pdf-51cd71d4f3c779",
-            "pdf-083f7d4ed19eb1",
-            "pdf-cade97fac8d439",
-            "pdf-f4161ac74db3e4",
-            "pdf-de9acbc76efd92",
-            "pdf-97bebcfe4998ac",
-            "pdf-baae273a9a336a",
-            "pdf-12b4350d9d9a1e",
-            "pdf-5ddc31f7b027c4",
-            "pdf-344b8e60748767",
-            "pdf-2ea88c7a30351b",
-            "pdf-27984c843c006d",
-            "pdf-1e3dc11c578f55",
-            "pdf-26182c1219b5ca",
-            "pdf-3c3d630e30092e",
-            "pdf-5808cc39da00af",
-            "pdf-e8c4cd121df9ff",
-            "pdf-716ec46ba07d4e",
-            "pdf-cf742112b8ed92",
-            "pdf-1c775808276a15",
-            "pdf-bf3f795d4bdeb5",
-            "pdf-4c8f6b51d448a6",
-            "pdf-5d1d87793ec3d8",
-            "pdf-5da822eb170923",
-            "pdf-8ad3edaa66ee86",
-            "pdf-41b009b0df3cc2",
-            "pdf-d0739b0885e986",
-            "pdf-083e3a954018b4",
-            "pdf-aa55fbc9507fda",
-            "pdf-cd7d8b4b85f0dc",
-            "pdf-ad5918e5fe623c",
-            "pdf-e6d2cd46cd4087",
-            "pdf-53c2641418620e",
-            "pdf-4de851c2d5e6d0",
-            "pdf-c329475a549fd4",
-            "pdf-810498fed4eddc",
-            "pdf-be1130b77b9d58",
-            "pdf-1ef874f850d2cc",
-            "pdf-09dbd9e0116a8e",
-            "pdf-a61639bb17def5",
-            "pdf-4509beb0ab401d",
-            "pdf-f595ad0c80c146",
-            "pdf-167a030e080bfb",
-            "pdf-4dc2159bba05da",
-            "pdf-f4c44266a2dfad",
-            "pdf-ceb04acee50ef6",
-            "pdf-03ecab669ba200",
-            "pdf-517e829426e4b8",
-            "pdf-fdf98d144fc8fb",
-            "pdf-212ef950637866",
-            "pdf-ea9cda58b00b2e",
-            "pdf-62b06d112603d5",
-            "pdf-b4a727caec959d",
-            "pdf-44b1237a067c3a",
-            "pdf-16ed52b8b9c954",
-            "pdf-75bd4e08e8ab3a",
-            "pdf-6a43880421cb82",
-            "pdf-ed0d05d38654e8",
-            "pdf-fafce99e9d6f53",
-            "pdf-57ea37929703b2",
-            "pdf-c2c9db4a9ad40f",
-            "pdf-8e1ac75a103e82",
-            "pdf-c198ecae346885",
-            "pdf-e638bb3c0923c2",
-            "pdf-d36ef13738b408",
-            "pdf-01bbf12a88f3fe",
-            "pdf-d8b81a3609c08c",
-            "pdf-cd7b47ab569cfd",
-            "pdf-a62bffc850c1f2",
-            "pdf-3b98da8499c49c",
-            "pdf-23f49fcc0de826",
-            "pdf-b37bea01070dca",
-            "pdf-99b94ab3f768fa",
-            "pdf-718ef742b5e925",
-            "pdf-620cdc259f49fd",
-            "pdf-72d7f97cbd41b0",
-            "pdf-a71d31181946f8",
-            "pdf-63d0dd5b6ee084",
-            "pdf-8888339939aa12",
-            "pdf-a8891fb1fe6b97",
-            "pdf-2776172fd8734e",
-            "pdf-3e364126a95ec0",
-            "pdf-5b79527deb199f",
-            "pdf-5efde8fc616d57",
-            "pdf-0ea383efaf8750",
-            "pdf-e6a108e3eb184f",
-            "pdf-8a952233e5d677",
-            "pdf-bea7a58034d4ed"
+            "pdf-613649e86e90c1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
           ]
         }
       ],
       "phases": [
         {
-          "title": "Finn roen",
-          "minutes": 3,
+          "title": "Finn plassen",
+          "minutes": 2,
           "level": 1,
-          "text": "Sett dere godt til rette og gi hverandre oppmerksomhet."
+          "text": "Sett dere behagelig. Den som gir, tar den andres hender og varmer dem."
         },
         {
-          "title": "Det dere har valgt sammen",
-          "minutes": 9,
+          "title": "Massasje",
+          "minutes": 12,
           "level": 1,
-          "text": "Ta utgangspunkt i kveldens felles ønsker. Velg sammen hva dere vil gjøre, og la alle si hva som frister nå."
+          "text": "Massér håndflatene hardt med tomlene, trekk i hver finger, og jobb deg oppover underarmene. Bruk olje om dere har. Lytt til pust og små stønn."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Hold hendene, kyss dem om det føles naturlig, og spør hvordan det kjentes."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-002",
+      "enabled": true,
+      "title": "Bind for øynene og myk berøring",
+      "description": "En person har bind for øynene og mottar berøring. Den andre gir.",
+      "genres": [
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-770875de6bd8d9"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Forberedelse",
+          "minutes": 3,
+          "level": 1,
+          "text": "Sett på bindet. Avklar et stopp-signal (for eksempel å ta på hånden)."
+        },
+        {
+          "title": "Berøring",
+          "minutes": 12,
+          "level": 2,
+          "text": "Berør armer, skuldre og nakke med ulike trykk. Bruk fingre, håndflate eller et mykt stoff. Gå sakte."
+        },
+        {
+          "title": "Ta av",
+          "minutes": 3,
+          "level": 1,
+          "text": "Ta av bindet langsomt og hold hverandre et øyeblikk."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-003",
+      "enabled": true,
+      "title": "Oralsex med fokus på tempo",
+      "description": "En person gir oralsex. Den andre ligger tilbake og mottar, og kan styre tempo og dybde med hender eller ord.",
+      "genres": [
+        "munn"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-81fcbba2c584e6"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avklaring",
+          "minutes": 2,
+          "level": 1,
+          "text": "Avklar hva som er ønsket i kveld og et tydelig stopp-ord eller signal."
+        },
+        {
+          "title": "Start mykt",
+          "minutes": 5,
+          "level": 1,
+          "text": "Kyss og slik rundt hodet og skaftet før du tar det i munnen."
+        },
+        {
+          "title": "Oralsex",
+          "minutes": 12,
+          "level": 2,
+          "text": "Ta det i munnen. Bruk tunge, lepper og sug. La den som mottar styre tempoet med hender på hodet ditt eller med ord. Gå dypere når det passer."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Stopp når det passer. Kyss eller hold hverandre."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      },
+      "reviewNote": "Les hele forslaget sammen. Det har en bestemt rollefordeling og kan ha forutsetninger profilen ikke avklarer. Start bare hvis opplegget passer dere begge."
+    },
+    {
+      "id": "kval-004",
+      "enabled": true,
+      "title": "Forsiktig anal med én finger",
+      "description": "En person gir forsiktig anal stimulering med én finger. Den andre mottar og styrer tempoet.",
+      "genres": [
+        "dybde"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-730b114f1a2395",
+            "topic-118fc681c071eb"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Forberedelse",
+          "minutes": 4,
+          "level": 1,
+          "text": "Ha mye glidemiddel klart. Avklar stopp-signal. Den som mottar ligger på siden eller magen."
+        },
+        {
+          "title": "Ytre berøring",
+          "minutes": 4,
+          "level": 1,
+          "text": "Massér rundt åpningen med glidemiddel. Trykk lett og sirkle."
+        },
+        {
+          "title": "Én finger",
+          "minutes": 8,
+          "level": 2,
+          "text": "Sett inn én finger sakte. Hold stille først, så bevege den litt inn og ut eller i sirkler. Stopp umiddelbart ved ubehag."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Trekk ut forsiktig. Tørk og hold hverandre."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-005",
+      "enabled": true,
+      "title": "Lett spanking med hånd",
+      "description": "En person gir lette til middels slag med hånd på rumpa. Den andre mottar.",
+      "genres": [
+        "kraft"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-6f61f46c23a666",
+            "pdf-98fc07367b6df3"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avklaring",
+          "minutes": 2,
+          "level": 1,
+          "text": "Avklar styrke, antall og stopp-signal. Den som mottar ligger over fanget eller på magen."
+        },
+        {
+          "title": "Oppvarming",
+          "minutes": 4,
+          "level": 1,
+          "text": "Start med myke klapp for å varme huden og få blodet i gang."
+        },
+        {
+          "title": "Slag",
+          "minutes": 8,
+          "level": 2,
+          "text": "Gi slag med flat hånd. Varier mellom venstre og høyre. Sjekk inn underveis med et spørsmål eller et klapp på ryggen."
+        },
+        {
+          "title": "Etter",
+          "minutes": 4,
+          "level": 1,
+          "text": "Strøk den røde huden mykt. Hold og pust sammen."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-006",
+      "enabled": true,
+      "title": "Massasje som går over i oralsex",
+      "description": "Start med massasje av rygg og rumpe, fortsett med oralsex hvis begge deler er bekreftet.",
+      "genres": [
+        "naerhet",
+        "munn"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "pdf-613649e86e90c1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "topic-81fcbba2c584e6"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Massasje",
+          "minutes": 10,
+          "level": 1,
+          "text": "Massér rygg, skuldre og rumpe med olje. Kna og stryk."
+        },
+        {
+          "title": "Overgang",
+          "minutes": 3,
+          "level": 1,
+          "text": "Spør om det er greit å fortsette med oralsex. Vent på ja."
+        },
+        {
+          "title": "Oralsex",
+          "minutes": 12,
+          "level": 2,
+          "text": "Snu den andre og gi oralsex. Bruk munn og tunge i et tempo de styrer."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 4,
+          "level": 1,
+          "text": "Hold hverandre og pust sammen."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      },
+      "reviewNote": "Les hele forslaget sammen. Det har en bestemt rollefordeling og kan ha forutsetninger profilen ikke avklarer. Start bare hvis opplegget passer dere begge."
+    },
+    {
+      "id": "kval-007",
+      "enabled": true,
+      "title": "Lett binding av hender og berøring",
+      "description": "En person binder den andres hender mykt og gir deretter berøring.",
+      "genres": [
+        "styring",
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-9d838d42a379a6"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "pdf-613649e86e90c1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Binding",
+          "minutes": 5,
+          "level": 1,
+          "text": "Bind hendene foran eller bak med mykt materiale. Sjekk at det ikke strammer for hardt."
+        },
+        {
+          "title": "Berøring",
+          "minutes": 12,
+          "level": 2,
+          "text": "Berør kroppen mens hendene er bundet. Gå sakte og sjekk inn."
+        },
+        {
+          "title": "Løsne",
+          "minutes": 3,
+          "level": 1,
+          "text": "Løsne bindingen og massér håndleddene."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Binder og gir",
+        "motta": "Bundet og mottar"
+      }
+    },
+    {
+      "id": "kval-008",
+      "enabled": true,
+      "title": "Langsom kveld med massasje og nærhet",
+      "description": "En lengre stund med massasje, berøring og rolig samspill.",
+      "genres": [
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "pdf-613649e86e90c1",
+            "pdf-da17e543e8fd26"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Start",
+          "minutes": 5,
+          "level": 1,
+          "text": "Finn et behagelig sted. Den som gir, starter med skuldre og nakke."
+        },
+        {
+          "title": "Helkroppsmassasje",
+          "minutes": 20,
+          "level": 1,
+          "text": "Massér rygg, armer, lår og føtter i rolig tempo. Bruk olje om ønskelig."
+        },
+        {
+          "title": "Nærhet",
+          "minutes": 10,
+          "level": 2,
+          "text": "Legg dere tett og berør hverandre uten hastverk."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 5,
+          "level": 1,
+          "text": "Hold hverandre og pust sammen."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-009",
+      "enabled": true,
+      "title": "Orgasmeutsettelse med hånd",
+      "description": "En person stimulerer den andre til kanten og stopper flere ganger.",
+      "genres": [
+        "styring"
+      ],
+      "level": 3,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-20da8fd4fb86a1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avtale",
+          "minutes": 2,
+          "level": 1,
+          "text": "Avklar hvor mange ganger og et stopp-signal."
+        },
+        {
+          "title": "Stimulering",
+          "minutes": 15,
+          "level": 3,
+          "text": "Stimuler med hånd til kanten. Stopp og vent til pusten roer seg. Gjenta 3–5 ganger."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 5,
+          "level": 2,
+          "text": "Enten la det komme eller stoppe og gi omsorg."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Styrer",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-010",
+      "enabled": true,
+      "title": "Fotmassasje med olje",
+      "description": "En person masserer den andres føtter grundig.",
+      "genres": [
+        "lek"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-a5add13655291f",
+            "topic-80e0c8104e10b0"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Forberedelse",
+          "minutes": 2,
+          "level": 1,
+          "text": "Vask føttene om ønskelig. Ha olje klart."
+        },
+        {
+          "title": "Massasje",
+          "minutes": 15,
+          "level": 2,
+          "text": "Massér fotsålen, hælen, vristen og tærne. Bruk tommelen med jevnt trykk."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Tørk føttene og hold dem en stund."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-011",
+      "enabled": true,
+      "title": "Spanking etterfulgt av omsorg",
+      "description": "Lett spanking og deretter myk omsorg.",
+      "genres": [
+        "kraft",
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "pdf-98fc07367b6df3"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "topic-a16641b5fb5865",
+            "topic-9bf48923a47a23"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Spanking",
+          "minutes": 10,
+          "level": 2,
+          "text": "Gi lette slag med hånd i avtalt tempo."
+        },
+        {
+          "title": "Omsorg",
+          "minutes": 8,
+          "level": 1,
+          "text": "Strøk huden, hold og pust sammen. Gi vann om ønskelig."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Spør hvordan det kjennes."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-012",
+      "enabled": true,
+      "title": "Snakk mens dere berører",
+      "description": "En person forteller det som skjer med ord mens den andre mottar berøring.",
+      "genres": [
+        "styring",
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "pdf-01c00bef46b9ef"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "pdf-613649e86e90c1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avklaring",
+          "minutes": 2,
+          "level": 1,
+          "text": "Avklar hvilke ord som er greit å bruke."
+        },
+        {
+          "title": "Berøring og ord",
+          "minutes": 15,
+          "level": 2,
+          "text": "Berør kroppen og fortell med ord hva du gjør og hvordan det kjennes."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 3,
+          "level": 1,
+          "text": "Gå over til vanlige ord og hold hverandre."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Sier og gir",
+        "motta": "Hører og mottar"
+      }
+    },
+    {
+      "id": "kval-013",
+      "enabled": true,
+      "title": "Analplugg mens dere gjør noe annet",
+      "description": "Sett inn plugg og gjør noe annet sammen etterpå.",
+      "genres": [
+        "dybde"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-1e3a2be2c4683f",
+            "topic-eea2a65f8f4739"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Sett inn",
+          "minutes": 5,
+          "level": 2,
+          "text": "Sett inn pluggen med glidemiddel. Sjekk at den sitter godt."
+        },
+        {
+          "title": "Sammen",
+          "minutes": 20,
+          "level": 2,
+          "text": "Kyss, masser eller ligg tett mens pluggen er på plass."
+        },
+        {
+          "title": "Ta ut",
+          "minutes": 4,
+          "level": 1,
+          "text": "Ta ut pluggen forsiktig og gi litt omsorg."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Setter inn",
+        "motta": "Bruker"
+      }
+    },
+    {
+      "id": "kval-014",
+      "enabled": true,
+      "title": "En person bestemmer berøringen",
+      "description": "En person leder all berøring i en avtalt periode.",
+      "genres": [
+        "styring"
+      ],
+      "level": 3,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-4c73a85433683e",
+            "topic-6a0833d4ae4ed5"
+          ],
+          "routes": [
+            [
+              "lede",
+              "folge"
+            ],
+            [
+              "folge",
+              "lede"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avtale",
+          "minutes": 3,
+          "level": 1,
+          "text": "Avklar hvor lenge og hvilke grenser som gjelder."
+        },
+        {
+          "title": "Ledelse",
+          "minutes": 15,
+          "level": 3,
+          "text": "Den som leder bestemmer hvor, hvordan og hvor lenge det berøres."
+        },
+        {
+          "title": "Tilbake",
+          "minutes": 4,
+          "level": 1,
+          "text": "Kom tilbake til likeverd og hold hverandre."
+        }
+      ],
+      "roleLabels": {
+        "lede": "Leder",
+        "folge": "Følger"
+      }
+    },
+    {
+      "id": "kval-015",
+      "enabled": true,
+      "title": "Myk landing med omsorg",
+      "description": "En rolig avslutning med holding, vann og ord.",
+      "genres": [
+        "naerhet"
+      ],
+      "level": 1,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-a16641b5fb5865",
+            "topic-9bf48923a47a23",
+            "topic-ee708e9a1b7722"
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Hold",
+          "minutes": 5,
+          "level": 1,
+          "text": "Ligg tett og pust sammen."
+        },
+        {
+          "title": "Omsorg",
+          "minutes": 8,
+          "level": 1,
+          "text": "Gi vann, teppe eller bare strøk. Si det som føles godt."
         },
         {
           "title": "Avrunding",
           "minutes": 3,
           "level": 1,
-          "text": "Rund av i et tempo som passer alle. Ta en rolig pause sammen."
+          "text": "Del en kort tanke om hvordan det var, hvis dere vil."
+        }
+      ]
+    },
+    {
+      "id": "kval-016",
+      "enabled": true,
+      "title": "Oralsex som ender i munnen",
+      "description": "Oralsex der utløsning i munnen er avtalt.",
+      "genres": [
+        "munn"
+      ],
+      "level": 3,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-81fcbba2c584e6"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "topic-226063d4964cc2"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "mottaker",
+            "motta": "giver"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Avtale",
+          "minutes": 2,
+          "level": 1,
+          "text": "Bekreft at utløsning i munnen er ønsket."
+        },
+        {
+          "title": "Oralsex",
+          "minutes": 12,
+          "level": 2,
+          "text": "Gi oralsex til det nærmer seg."
+        },
+        {
+          "title": "Utløsning",
+          "minutes": 3,
+          "level": 3,
+          "text": "La det skje i munnen. Svelg eller ikke etter avtale."
+        },
+        {
+          "title": "Etter",
+          "minutes": 4,
+          "level": 1,
+          "text": "Kyss eller hold. Gi omsorg."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      },
+      "reviewNote": "Les hele forslaget sammen. Det har en bestemt rollefordeling og kan ha forutsetninger profilen ikke avklarer. Start bare hvis opplegget passer dere begge."
+    },
+    {
+      "id": "kval-017",
+      "enabled": true,
+      "title": "Forsiktig vokslek",
+      "description": "Drypp varm voks på avtalt område etter temperaturtest.",
+      "genres": [
+        "lek"
+      ],
+      "level": 3,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-99f2b8ac8a3dcb"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Test",
+          "minutes": 3,
+          "level": 1,
+          "text": "Test temperaturen på underarmen. Den skal være varm, ikke brennende."
+        },
+        {
+          "title": "Drypp",
+          "minutes": 8,
+          "level": 3,
+          "text": "Drypp forsiktig på avtalt område (for eksempel rygg eller lår). Gå sakte."
+        },
+        {
+          "title": "Fjern",
+          "minutes": 4,
+          "level": 1,
+          "text": "La voksen størkne og fjern den forsiktig. Strøk huden etterpå."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Drypper",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-018",
+      "enabled": true,
+      "title": "Strap-on i rolig tempo",
+      "description": "Penetrasjon med strap-on der tempoet styres av den som mottar.",
+      "genres": [
+        "risiko"
+      ],
+      "level": 3,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-0b95d6755eef25",
+            "topic-6713e85f303d4c"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Forberedelse",
+          "minutes": 5,
+          "level": 1,
+          "text": "Ta på strap-on og ha glidemiddel klart. Avklar stilling og stopp-signal."
+        },
+        {
+          "title": "Start",
+          "minutes": 5,
+          "level": 2,
+          "text": "Start med ytre berøring før penetrasjon."
+        },
+        {
+          "title": "Penetrasjon",
+          "minutes": 12,
+          "level": 3,
+          "text": "Gå inn sakte. La den som mottar styre dybde og tempo med ord eller hender."
+        },
+        {
+          "title": "Etter",
+          "minutes": 4,
+          "level": 1,
+          "text": "Trekk ut forsiktig og hold hverandre."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-019",
+      "enabled": true,
+      "title": "Kveld med binding, berøring og aftercare",
+      "description": "Et lengre forløp som kombinerer binding, berøring og omsorg.",
+      "genres": [
+        "styring",
+        "naerhet"
+      ],
+      "level": 2,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "topic-9d838d42a379a6"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "pdf-613649e86e90c1"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        },
+        {
+          "anyOf": [
+            "topic-9bf48923a47a23"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ]
+          ],
+          "actorRoles": {
+            "gi": "giver",
+            "motta": "mottaker"
+          }
+        }
+      ],
+      "phases": [
+        {
+          "title": "Binding",
+          "minutes": 5,
+          "level": 1,
+          "text": "Bind hendene mykt."
+        },
+        {
+          "title": "Berøring",
+          "minutes": 15,
+          "level": 2,
+          "text": "Berør kroppen mens hendene er bundet."
+        },
+        {
+          "title": "Løsne og omsorg",
+          "minutes": 10,
+          "level": 1,
+          "text": "Løsne bindingen, massér håndledd og hold hverandre."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 5,
+          "level": 1,
+          "text": "Pust sammen og del hvordan det var."
+        }
+      ],
+      "roleLabels": {
+        "gi": "Gir",
+        "motta": "Mottar"
+      }
+    },
+    {
+      "id": "kval-020",
+      "enabled": true,
+      "title": "Kjapp kyssing og nakke",
+      "description": "En kort stund med fokus på kyss og nakke.",
+      "genres": [
+        "naerhet"
+      ],
+      "level": 1,
+      "groups": [
+        2
+      ],
+      "requires": [
+        {
+          "anyOf": [
+            "pdf-3612420d8c3b21"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ],
+            [
+              "delta",
+              "delta"
+            ]
+          ]
+        },
+        {
+          "anyOf": [
+            "pdf-c3e620ea7dbd6c"
+          ],
+          "routes": [
+            [
+              "gi",
+              "motta"
+            ],
+            [
+              "motta",
+              "gi"
+            ],
+            [
+              "delta",
+              "delta"
+            ]
+          ]
+        }
+      ],
+      "phases": [
+        {
+          "title": "Kyss",
+          "minutes": 5,
+          "level": 1,
+          "text": "Kyss mykt på munnen."
+        },
+        {
+          "title": "Nakke",
+          "minutes": 8,
+          "level": 1,
+          "text": "Kyss og berør nakke og øre."
+        },
+        {
+          "title": "Avslutning",
+          "minutes": 2,
+          "level": 1,
+          "text": "Hold hverandre et øyeblikk."
         }
       ]
     }

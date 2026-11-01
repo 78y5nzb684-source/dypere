@@ -1,4 +1,26 @@
-DYPERE – aktiv tekstkilde fra 3.0.29 beta
+AKTIVT FRA 3.0.30 BETA
+20 innsendte aktiviteter for to deltakere er aktive. Selve aktivitetstekstene er bevart.
+Kanonisk kilde: aktiviteter.json. Kjør bygg-aktiviteter.py etter endring.
+Metadata er rettet for speilvendt profilrekkefølge og sammenhengende roller.
+
+NYTT I SKJEMAET
+requires[].actorRoles knytter en temaretning til en gjennomgående aktivitetsrolle,
+f.eks. {"gi":"giver","motta":"mottaker"}. Samme rolle må bindes til samme
+person gjennom hele forløpet. Retning og aktivitetsrolle kan ha ulik kobling i
+forskjellige temaer. Dette løses på tvers av alle nødvendige kravgrupper.
+Det er foreløpig bare støttet for groups: [2].
+Begge speilvendte routes tillates når begge profilrekkefølger er like gyldige.
+Dette krever ikke rollebytte underveis.
+
+reviewNote er en valgfri, tydelig merknad på forslagssiden. Ved bruk vises hele
+forløpet under «Les hele forslaget», og startknappen bekrefter at det passer.
+Dette er en manuell bekreftelse. Anatomiske forutsetninger lagres ikke i
+profilformatet og blir ikke automatisk verifisert av matchingen.
+
+Den eldre veiledningen nedenfor beskriver den generelle forfatterflyten;
+det tidligere ene nøytrale eksemplet er nå erstattet av de 20 innsendte radene.
+
+DYPERE – aktiv tekstkilde fra 3.0.30 beta
 
 Åpne tekstbank/aktiviteter.json. Der ligger nå ett aktivt, nøytralt eksempel.
 Endre description og phases[].text. Deloverskrift og minutter vises i appen.

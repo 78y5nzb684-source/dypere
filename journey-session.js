@@ -28,7 +28,13 @@
   const supported=window.DypereActivityRegistry?.topicIds()||new Set();
   const priority=available.filter(x=>supported.has(x.topic.id)).slice().sort((a,b)=>Number(a.uncertain)-Number(b.uncertain)||a.card.rang-b.card.rang);
   const picked=[];
-  if(priority.length&&count){const index=Math.min(priority.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*priority.length));picked.push(priority[index]);}
+  // These temporary answers only plan which questions to ask. They never enter
+  // the evening's answers, source profiles or final result.
+  const possible=people.map((_,index)=>M.profile('planning-'+index));
+  for(const item of available)possible.forEach((person,index)=>M.voteDirections(person,item.card,Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:'ja'}));
+  const plans=(window.DypereActivityRegistry?.eligible(pool(possible,entries),people.length,settings)||[]).filter(row=>new Set(row.evidence.map(item=>item.id)).size<=count);
+  if(plans.length){const index=Math.min(plans.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*plans.length));for(const evidence of plans[index].evidence){const item=available.find(item=>item.card.id===evidence.id);if(item&&!picked.some(p=>p.card.id===item.card.id))picked.push(item);}}
+  if(!picked.length&&priority.length&&count){const index=Math.min(priority.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*priority.length));picked.push(priority[index]);}
   const remaining=available.filter(x=>!picked.some(p=>p.card.id===x.card.id));
   picked.push(...M.selectSessionQuestions(remaining,count-picked.length,random));picked.sort((a,b)=>a.card.rang-b.card.rang||a.card.id.localeCompare(b.card.id));
   const queue=[];people.forEach((person,personIndex)=>picked.forEach(item=>queue.push({card:item.card,personIndex,item})));
