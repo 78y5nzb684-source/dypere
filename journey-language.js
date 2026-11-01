@@ -1,452 +1,1021 @@
 window.DypereJourneyLanguage = {
   "nektelse": {
-    "question": "Er du nysgjerrig på å overlate kontrollen over når du får orgasme til en annen?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å overlate kontrollen over når du får orgasme til en annen",
-    "repeatKey": "nektelse"
-  },
-  "halsbånd": {
-    "question": "Er du nysgjerrig på å bruke halsbånd i et avtalt rollespill?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bruke halsbånd i et avtalt rollespill"
+    "retning": "aktiv",
+    "aktiv": "{A} holder {B} tilbake",
+    "passiv": "{B} blir holdt tilbake av {A}",
+    "repeatKey": "nektelse",
+    "question": [
+      "Kunne du tenke deg nekt?",
+      "Har du lyst til å bli holdt tilbake?",
+      "Skal vi gå for nekt i kveld?"
+    ],
+    "explanation": "Du blir holdt tilbake like før du kommer, og må vente. Ikke det samme som å bli låst i bur."
   },
   "du får ikke komme": {
-    "question": "Er du nysgjerrig på å vente med orgasme mens en annen bestemmer tidspunktet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å vente med orgasme mens en annen bestemmer tidspunktet",
-    "repeatKey": "nektelse"
-  },
-  "forsiktig fisting": {
-    "question": "Er du nysgjerrig på forsiktig fisting?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "forsiktig fisting"
-  },
-  "vaginal fisting": {
-    "question": "Er du nysgjerrig på vaginal fisting?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "vaginal fisting"
-  },
-  "anal med fingre": {
-    "question": "Er du nysgjerrig på anal berøring med fingre?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "anal berøring med fingre"
-  },
-  "komme på ansiktet": {
-    "question": "Er du nysgjerrig på utløsning på ansiktet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "utløsning på ansiktet",
-    "repeatKey": "facial"
-  },
-  "feet": {
-    "question": "Er du nysgjerrig på føtter som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "føtter som et erotisk tema"
-  },
-  "kos etter": {
-    "question": "Er du nysgjerrig på kos og omsorg etterpå?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "kos og omsorg etterpå",
-    "repeatKey": "aftercare"
-  },
-  "komme i munnen": {
-    "question": "Er du nysgjerrig på utløsning i munnen?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "utløsning i munnen"
-  },
-  "tredjeperson": {
-    "question": "Er du nysgjerrig på fantasien om å invitere en tredje voksen inn?",
-    "explanation": "Dette gjelder en mulig fantasi. Det betyr ikke at en ekstra deltaker er til stede eller skal inviteres.",
-    "topic": "fantasien om å invitere en tredje voksen inn",
-    "repeatKey": "group"
-  },
-  "daddy": {
-    "question": "Er du nysgjerrig på et avtalt daddy-rollespill mellom voksne?",
-    "explanation": "En voksen rollespillrolle. Navnet alene bestemmer ikke roller, ordbruk eller innhold.",
-    "topic": "et avtalt daddy-rollespill mellom voksne"
-  },
-  "full kontroll": {
-    "question": "Er du nysgjerrig på å overlate styringen til en annen innenfor avtalte rammer?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å overlate styringen til en annen innenfor avtalte rammer"
-  },
-  "paddle": {
-    "question": "Er du nysgjerrig på slag med paddle?",
-    "explanation": "Paddle er en flat slagspade. Spørsmålet sier ikke hvem som gir eller mottar.",
-    "topic": "slag med paddle"
-  },
-  "anal fisting": {
-    "question": "Er du nysgjerrig på anal fisting?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "anal fisting"
-  },
-  "cane": {
-    "question": "Er du nysgjerrig på slag med stokk?",
-    "explanation": "Cane betyr en tynn stokk brukt i slaglek. Roller er ikke bestemt her.",
-    "topic": "slag med stokk"
-  },
-  "blindfold": {
-    "question": "Er du nysgjerrig på å bruke bind for øynene?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bruke bind for øynene"
-  },
-  "rimming": {
-    "question": "Er du nysgjerrig på oral berøring av anus?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "oral berøring av anus"
-  },
-  "tær": {
-    "question": "Er du nysgjerrig på tær som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "tær som et erotisk tema"
-  },
-  "fylt": {
-    "question": "Er du nysgjerrig på fantasien om å være fylt?",
-    "explanation": "Kildeteksten sier ikke hva dette viser til. Avklar hva uttrykket betyr for dere før dere velger.",
-    "topic": "fantasien om å være fylt"
-  },
-  "creampie": {
-    "question": "Er du nysgjerrig på utløsning inni en partner?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "utløsning inni en partner",
-    "repeatKey": "creampie"
-  },
-  "remote toy ute": {
-    "question": "Er du nysgjerrig på fantasien om et fjernstyrt leketøy utenfor hjemmet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "fantasien om et fjernstyrt leketøy utenfor hjemmet"
-  },
-  "medical play": {
-    "question": "Er du nysgjerrig på medisinsk inspirert rollespill mellom voksne?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "medisinsk inspirert rollespill mellom voksne"
-  },
-  "risiko": {
-    "question": "Er du nysgjerrig på fantasien om å kunne bli oppdaget?",
-    "explanation": "Kildeteksten sier ikke hvilken risiko som menes. Her brukes den som en fantasi om oppdagelse, ikke en oppfordring.",
-    "topic": "fantasien om å kunne bli oppdaget"
-  },
-  "dd lg": {
-    "question": "Er du nysgjerrig på et avtalt DD/LG-rollespill mellom voksne?",
-    "explanation": "En betegnelse for en avtalt rolldynamikk mellom voksne. Det konkrete innholdet må avklares.",
-    "topic": "et avtalt DD/LG-rollespill mellom voksne"
-  },
-  "remote plug": {
-    "question": "Er du nysgjerrig på en fjernstyrt analplugg?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "en fjernstyrt analplugg"
-  },
-  "edging": {
-    "question": "Er du nysgjerrig på å nærme seg orgasme og ta en pause før den kommer?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å nærme seg orgasme og ta en pause før den kommer"
-  },
-  "myk landing": {
-    "question": "Er du nysgjerrig på en rolig avslutning med omsorg og nærhet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "en rolig avslutning med omsorg og nærhet",
-    "repeatKey": "aftercare"
-  },
-  "group": {
-    "question": "Er du nysgjerrig på fantasien om flere voksne deltakere?",
-    "explanation": "Dette gjelder en mulig fantasi. Antall deltakere i denne økten endres ikke.",
-    "topic": "fantasien om flere voksne deltakere",
-    "repeatKey": "group"
-  },
-  "chastity": {
-    "question": "Er du nysgjerrig på å overlate kontrollen over orgasme til en annen?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å overlate kontrollen over orgasme til en annen"
-  },
-  "objectification": {
-    "question": "Er du nysgjerrig på et avtalt rollespill der man blir behandlet som en gjenstand?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et avtalt rollespill der man blir behandlet som en gjenstand"
-  },
-  "plug hele kvelden": {
-    "question": "Er du nysgjerrig på fantasien om å bruke analplugg over lengre tid?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "fantasien om å bruke analplugg over lengre tid"
-  },
-  "choking": {
-    "question": "Er du nysgjerrig på fantasien om kvelning?",
-    "explanation": "Her spørres det om en fantasi. Kvelning kan medføre alvorlig skade; dette er ingen instruksjon.",
-    "topic": "fantasien om kvelning"
-  },
-  "cnc": {
-    "question": "Er du nysgjerrig på et på forhånd avtalt CNC-rollespill mellom voksne?",
-    "explanation": "CNC er avtalt rollespill med forestilt motstand. Interesse i en fantasi er ikke samtykke til en handling.",
-    "topic": "et på forhånd avtalt CNC-rollespill mellom voksne"
-  },
-  "dyp anal": {
-    "question": "Er du nysgjerrig på dyp anal penetrasjon?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "dyp anal penetrasjon"
-  },
-  "pet play": {
-    "question": "Er du nysgjerrig på et avtalt kjæledyrrollespill mellom voksne?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et avtalt kjæledyrrollespill mellom voksne",
-    "repeatKey": "pet"
-  },
-  "spytting": {
-    "question": "Er du nysgjerrig på spytt som del av samspillet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "spytt som del av samspillet",
-    "repeatKey": "spytt på"
-  },
-  "aftercare": {
-    "question": "Er du nysgjerrig på omsorg og nærhet etterpå?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "omsorg og nærhet etterpå",
-    "repeatKey": "aftercare"
-  },
-  "vanlig sex": {
-    "question": "Er du nysgjerrig på penetrerende sex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "penetrerende sex"
-  },
-  "sensory deprivation": {
-    "question": "Er du nysgjerrig på å begrense sanseinntrykk, for eksempel med bind for øynene?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å begrense sanseinntrykk, for eksempel med bind for øynene"
-  },
-  "watersports": {
-    "question": "Er du nysgjerrig på urin som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "urin som et erotisk tema",
-    "repeatKey": "watersports"
-  },
-  "hot wax": {
-    "question": "Er du nysgjerrig på varm voks som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "varm voks som et erotisk tema"
-  },
-  "uten pause": {
-    "question": "Er du nysgjerrig på et sammenhengende forløp uten planlagte pauser?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et sammenhengende forløp uten planlagte pauser"
-  },
-  "facefuck": {
-    "question": "Er du nysgjerrig på intens oralsex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "intens oralsex"
-  },
-  "temperature play": {
-    "question": "Er du nysgjerrig på varme og kulde som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "varme og kulde som et erotisk tema"
-  },
-  "oral": {
-    "question": "Er du nysgjerrig på oralsex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "oralsex"
-  },
-  "gradvis fisting": {
-    "question": "Er du nysgjerrig på gradvis fisting?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "gradvis fisting"
-  },
-  "swallow": {
-    "question": "Er du nysgjerrig på å svelge sæd?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å svelge sæd"
-  },
-  "anal med plug": {
-    "question": "Er du nysgjerrig på analplugg?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "analplugg"
-  },
-  "bli brukt": {
-    "question": "Er du nysgjerrig på et avtalt rollespill der en annen får styre?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et avtalt rollespill der en annen får styre"
-  },
-  "leather": {
-    "question": "Er du nysgjerrig på lær som klær eller tilbehør?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "lær som klær eller tilbehør"
-  },
-  "breath play": {
-    "question": "Er du nysgjerrig på fantasien om pustekontroll?",
-    "explanation": "Her spørres det om en fantasi. Pustekontroll kan medføre alvorlig skade; dette er ingen instruksjon.",
-    "topic": "fantasien om pustekontroll"
-  },
-  "pegging": {
-    "question": "Er du nysgjerrig på anal penetrasjon med strap-on?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "anal penetrasjon med strap-on"
+    "retning": "aktiv",
+    "aktiv": "{A} nekter {B} å komme",
+    "passiv": "{B} blir nektet å komme av {A}",
+    "repeatKey": "nektelse",
+    "question": [
+      "Kunne du tenke deg å ikke få komme?",
+      "Har du lyst til å bli nektet orgasme?",
+      "Skal vi gå for at du ikke får komme i kveld?"
+    ],
+    "explanation": "Du får ikke orgasme i det hele tatt denne gangen, selv om du er nær. Orgasmen kommer senere."
   },
   "orgasm denial": {
-    "question": "Er du nysgjerrig på å utsette eller avstå fra orgasme som del av en avtalt lek?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å utsette eller avstå fra orgasme som del av en avtalt lek",
-    "repeatKey": "nektelse"
+    "retning": "aktiv",
+    "aktiv": "{A} bestemmer når {B} får komme",
+    "passiv": "{B} venter på lov fra {A}",
+    "repeatKey": "nektelse",
+    "question": [
+      "Kunne du tenke deg at en annen bestemmer når du får komme?",
+      "Har du lyst til å vente på lov?",
+      "Skal vi gå for at du må spørre i kveld?"
+    ],
+    "explanation": "En annen bestemmer når du får orgasme, eller om du får det. Gjelder over tid, ikke bare i øyeblikket."
   },
-  "cage": {
-    "question": "Er du nysgjerrig på å bruke kyskhetsbur?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bruke kyskhetsbur",
-    "repeatKey": "cage"
+  "edging": {
+    "retning": "aktiv",
+    "aktiv": "{A} holder {B} på kanten",
+    "passiv": "{B} blir holdt på kanten av {A}",
+    "repeatKey": "edging",
+    "question": [
+      "Kunne du tenke deg edging?",
+      "Har du lyst til å bli holdt på kanten?",
+      "Skal vi gå for edging i kveld?"
+    ],
+    "explanation": "Du føres nesten til orgasme, så stopper det, og så videre. Til forskjell fra nekt får du komme til slutt."
   },
-  "leash": {
-    "question": "Er du nysgjerrig på å bruke bånd i et avtalt rollespill?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bruke bånd i et avtalt rollespill"
-  },
-  "strap on": {
-    "question": "Er du nysgjerrig på å bruke strap-on?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bruke strap-on"
-  },
-  "foot worship": {
-    "question": "Er du nysgjerrig på å gi føtter erotisk oppmerksomhet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å gi føtter erotisk oppmerksomhet"
+  "full kontroll": {
+    "retning": "aktiv",
+    "aktiv": "{A} styrer {B}",
+    "passiv": "{B} gir fra seg styringen til {A}",
+    "repeatKey": "kontroll",
+    "question": [
+      "Kunne du tenke deg full kontroll?",
+      "Har du lyst til å gi fra deg styringen?",
+      "Skal vi gå for full kontroll i kveld?"
+    ],
+    "explanation": "En annen tar alle valg en periode: stilling, tempo, når det stopper. Du sier fra bare når noe ikke fungerer."
   },
   "han bestemmer": {
-    "question": "Er du nysgjerrig på at en mannlig partner tar styringen innenfor avtalte rammer?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "at en mannlig partner tar styringen innenfor avtalte rammer"
+    "retning": "aktiv",
+    "aktiv": "{A} bestemmer over {B}",
+    "passiv": "{B} lar {A} bestemme",
+    "repeatKey": "kontroll",
+    "question": [
+      "Kunne du tenke deg at partneren bestemmer?",
+      "Har du lyst til å la partneren bestemme?",
+      "Skal vi gå for at du bestemmer i kveld?"
+    ],
+    "explanation": "Som full kontroll, men uformelt og uten krav om at det skal vare. Brukes når en tar styringen underveis."
   },
-  "undersøkelse": {
-    "question": "Er du nysgjerrig på et avtalt rollespill med en medisinsk undersøkelse?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et avtalt rollespill med en medisinsk undersøkelse"
+  "chastity": {
+    "retning": "aktiv",
+    "aktiv": "{A} holder {B} i kyskhet",
+    "passiv": "{B} blir holdt i kyskhet av {A}",
+    "repeatKey": "cage",
+    "question": [
+      "Kunne du tenke deg kyskhet?",
+      "Har du lyst til å være i kyskhet en periode?",
+      "Skal vi gå for kyskhet i kveld?"
+    ],
+    "explanation": "Kontroll over når du får orgasme, over lengre tid enn en kveld. Buret er ett av flere virkemidler."
+  },
+  "cage": {
+    "retning": "aktiv",
+    "aktiv": "{A} låser {B} i bur",
+    "passiv": "{B} blir låst i bur av {A}",
+    "repeatKey": "cage",
+    "question": [
+      "Kunne du tenke deg et kyskhetsbur?",
+      "Har du lyst til å bli låst inne?",
+      "Skal vi gå for bur i kveld?"
+    ],
+    "explanation": "Selve kyskhetsburet som settes på. Det er en gjenstand, ikke en avtale i seg selv."
   },
   "nektelse med bur": {
-    "question": "Er du nysgjerrig på kyskhetsbur som del av en avtalt lek om kontroll?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "kyskhetsbur som del av en avtalt lek om kontroll",
-    "repeatKey": "cage"
-  },
-  "flogger": {
-    "question": "Er du nysgjerrig på slag med en flogger?",
-    "explanation": "Flogger er et slagredskap med flere remmer. Roller er ikke bestemt her.",
-    "topic": "slag med en flogger"
-  },
-  "impact": {
-    "question": "Er du nysgjerrig på slag som del av avtalt lek?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "slag som del av avtalt lek"
+    "retning": "aktiv",
+    "aktiv": "{A} låser {B} i bur og holder {B} tilbake",
+    "passiv": "{B} blir låst i bur og holdt tilbake av {A}",
+    "repeatKey": "cage",
+    "question": [
+      "Kunne du tenke deg nektelse med bur?",
+      "Har du lyst til å bli låst og holdt tilbake?",
+      "Skal vi gå for bur og nekt i kveld?"
+    ],
+    "explanation": "Buret på og orgasmen holdt tilbake samtidig. Kombinasjonen av gjenstand og avtale."
   },
   "bli bundet": {
-    "question": "Er du nysgjerrig på å bli bundet innenfor avtalte rammer?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "å bli bundet innenfor avtalte rammer"
+    "retning": "aktiv",
+    "aktiv": "{A} binder {B}",
+    "passiv": "{B} blir bundet av {A}",
+    "repeatKey": "binding",
+    "question": [
+      "Kunne du tenke deg å bli bundet?",
+      "Har du lyst til å bli bundet?",
+      "Skal vi gå for binding i kveld?"
+    ],
+    "explanation": "Du blir festet med tau, belter eller liknende, så du ikke kommer løs selv. Hender og føtter er vanligst."
   },
-  "rough sex": {
-    "question": "Er du nysgjerrig på røff sex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "røff sex"
+  "bli brukt": {
+    "retning": "aktiv",
+    "aktiv": "{A} bruker {B}",
+    "passiv": "{B} blir brukt av {A}",
+    "repeatKey": "bruk",
+    "question": [
+      "Kunne du tenke deg å bli brukt?",
+      "Har du lyst til å bli brukt?",
+      "Skal vi gå for at du blir brukt i kveld?"
+    ],
+    "explanation": "Du blir brukt til den andres nytelse uten å bli spurt underveis. Du er med, men styrer ikke."
   },
-  "degradation": {
-    "question": "Er du nysgjerrig på avtalt nedverdigende rollespill?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "avtalt nedverdigende rollespill"
+  "objectification": {
+    "retning": "aktiv",
+    "aktiv": "{A} snakker om {B} som en gjenstand",
+    "passiv": "{B} blir behandlet som en gjenstand av {A}",
+    "repeatKey": "objekt",
+    "question": [
+      "Kunne du tenke deg å bli behandlet som en gjenstand?",
+      "Har du lyst til å bli snakket om som en ting?",
+      "Skal vi gå for at du er en gjenstand i kveld?"
+    ],
+    "explanation": "Du blir omtalt og behandlet som en ting, ikke som person. Ingen small talk, ingen navn."
   },
-  "latex": {
-    "question": "Er du nysgjerrig på lateks som klær eller tilbehør?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "lateks som klær eller tilbehør"
+  "cnc": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} med makt, på liksom",
+    "passiv": "{B} blir tatt med makt av {A}, på liksom",
+    "repeatKey": "cnc",
+    "question": [
+      "Kunne du tenke deg CNC?",
+      "Har du lyst til å bli tatt med makt, på liksom?",
+      "Skal vi gå for CNC i kveld?"
+    ],
+    "explanation": "Avtalt rollespill der du protesterer og blir tatt likevel. Motstanden er en del av leken, men stoppord gjelder."
   },
-  "komme inni": {
-    "question": "Er du nysgjerrig på utløsning inni en partner?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "utløsning inni en partner",
-    "repeatKey": "creampie"
-  },
-  "se på": {
-    "question": "Er du nysgjerrig på fantasien om å se andre voksne sammen?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "fantasien om å se andre voksne sammen"
-  },
-  "little": {
-    "question": "Er du nysgjerrig på en avtalt little-rolle mellom voksne?",
-    "explanation": "En voksen rollespillrolle. Det er ikke en beskrivelse av alder. Det konkrete innholdet må avklares.",
-    "topic": "en avtalt little-rolle mellom voksne"
+  "impact": {
+    "retning": "aktiv",
+    "aktiv": "{A} slår {B}",
+    "passiv": "{B} blir slått av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg slag?",
+      "Har du lyst til å bli slått?",
+      "Skal vi gå for slag i kveld?"
+    ],
+    "explanation": "Paraplybegrep for all slaglek. Sier ingenting om redskap eller styrke - det avklares i de andre spørsmålene."
   },
   "hard spanking": {
-    "question": "Er du nysgjerrig på kraftig spanking?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "kraftig spanking"
-  },
-  "forsiktig anal": {
-    "question": "Er du nysgjerrig på forsiktig anal penetrasjon?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "forsiktig anal penetrasjon"
-  },
-  "name calling": {
-    "question": "Er du nysgjerrig på avtalt bruk av nedsettende ord i rollespill?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "avtalt bruk av nedsettende ord i rollespill"
-  },
-  "spytt på": {
-    "question": "Er du nysgjerrig på spytt som del av samspillet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "spytt som del av samspillet",
-    "repeatKey": "spytt på"
-  },
-  "piss": {
-    "question": "Er du nysgjerrig på urin som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "urin som et erotisk tema",
-    "repeatKey": "watersports"
-  },
-  "myk sex": {
-    "question": "Er du nysgjerrig på rolig og myk sex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "rolig og myk sex"
-  },
-  "cum play": {
-    "question": "Er du nysgjerrig på sæd som et erotisk tema?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "sæd som et erotisk tema"
-  },
-  "pet": {
-    "question": "Er du nysgjerrig på et avtalt kjæledyrrollespill mellom voksne?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "et avtalt kjæledyrrollespill mellom voksne",
-    "repeatKey": "pet"
-  },
-  "gaping": {
-    "question": "Er du nysgjerrig på gaping som et erotisk tema?",
-    "explanation": "Et engelsk uttrykk knyttet til utvidelse. Kildeteksten angir ikke konkret handling eller rolle.",
-    "topic": "gaping som et erotisk tema"
-  },
-  "public": {
-    "question": "Er du nysgjerrig på fantasien om å bli sett av andre voksne?",
-    "explanation": "Dette gjelder en fantasi. Andre mennesker er ikke deltakere uten at de selv har valgt det.",
-    "topic": "fantasien om å bli sett av andre voksne"
-  },
-  "verbal humiliation": {
-    "question": "Er du nysgjerrig på avtalt verbal ydmykelse i rollespill?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "avtalt verbal ydmykelse i rollespill"
+    "retning": "aktiv",
+    "aktiv": "{A} spanker {B} hardt",
+    "passiv": "{B} blir spanket hardt av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg hard spanking?",
+      "Har du lyst til å bli spanket hardt?",
+      "Skal vi gå for hard spanking i kveld?"
+    ],
+    "explanation": "Spanking med håndflate, hardt. Huden blir varm og rød."
   },
   "hardere slag": {
-    "question": "Er du nysgjerrig på kraftigere slag som del av avtalt lek?",
-    "explanation": "Kildeteksten bruker en sammenligning uten et fast utgangspunkt. Hva som oppleves kraftig, må avklares.",
-    "topic": "kraftigere slag som del av avtalt lek"
+    "retning": "aktiv",
+    "aktiv": "{A} slår {B} hardere",
+    "passiv": "{B} får hardere slag av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg hardere slag?",
+      "Har du lyst til å få hardere slag?",
+      "Skal vi gå hardere til verks i kveld?"
+    ],
+    "explanation": "Samme slag som dere allerede bruker, bare kraftigere. Relativt til det dere gjør i dag."
+  },
+  "paddle": {
+    "retning": "aktiv",
+    "aktiv": "{A} slår {B} med paddle",
+    "passiv": "{B} får paddle av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg paddle?",
+      "Har du lyst til å få paddle?",
+      "Skal vi gå for paddle i kveld?"
+    ],
+    "explanation": "Flat slagspade, oftest i lær eller tre. Gir bredere og tyngre slag enn håndflaten."
+  },
+  "cane": {
+    "retning": "aktiv",
+    "aktiv": "{A} slår {B} med stokk",
+    "passiv": "{B} får stokken av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg stokk?",
+      "Har du lyst til å få stokken?",
+      "Skal vi gå for stokk i kveld?"
+    ],
+    "explanation": "Tynn stokk i tre eller karbon. Gir skarpe, presise slag som setter seg, og merker."
+  },
+  "flogger": {
+    "retning": "aktiv",
+    "aktiv": "{A} slår {B} med flogger",
+    "passiv": "{B} får floggeren av {A}",
+    "repeatKey": "impact",
+    "question": [
+      "Kunne du tenke deg flogger?",
+      "Har du lyst til å få floggeren?",
+      "Skal vi gå for flogger i kveld?"
+    ],
+    "explanation": "Redskap med flere remmer. Gir bredt, sviende treff over større hudflate, ikke presise enkeltmerker."
+  },
+  "choking": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar kvelertak på {B}",
+    "passiv": "{B} blir tatt kvelertak på av {A}",
+    "repeatKey": "pust",
+    "question": [
+      "Kunne du tenke deg kvelertak?",
+      "Har du lyst til å bli tatt rundt halsen?",
+      "Skal vi gå for kvelertak i kveld?"
+    ],
+    "explanation": "Kvelertak betyr trykk mot halsen. Det kan gi alvorlig skade, og det finnes ingen trygg måte å gjøre det på."
+  },
+  "breath play": {
+    "retning": "aktiv",
+    "aktiv": "{A} kontrollerer pusten til {B}",
+    "passiv": "{B} får pusten kontrollert av {A}",
+    "repeatKey": "pust",
+    "question": [
+      "Kunne du tenke deg pustekontroll?",
+      "Har du lyst til å få pusten kontrollert?",
+      "Skal vi gå for pustekontroll i kveld?"
+    ],
+    "explanation": "Pustekontroll betyr at pust eller lufttilførsel begrenses. Dette er en risikofylt praksis, ikke en fremgangsmåte som beskrives her."
+  },
+  "degradation": {
+    "retning": "aktiv",
+    "aktiv": "{A} nedverdiger {B}",
+    "passiv": "{B} blir nedverdiget av {A}",
+    "repeatKey": "ydmykelse",
+    "question": [
+      "Kunne du tenke deg nedverdigelse?",
+      "Har du lyst til å bli nedverdiget?",
+      "Skal vi gå for nedverdigelse i kveld?"
+    ],
+    "explanation": "Du blir snakket ned til, men med ord som er avtalt på forhånd. Skal kjennes, ikke såre."
+  },
+  "name calling": {
+    "retning": "aktiv",
+    "aktiv": "{A} kaller {B} stygge navn",
+    "passiv": "{B} blir kalt stygge navn av {A}",
+    "repeatKey": "ydmykelse",
+    "question": [
+      "Kunne du tenke deg kallenavn?",
+      "Har du lyst til å bli kalt stygge ting?",
+      "Skal vi gå for kallenavn i kveld?"
+    ],
+    "explanation": "Korte, faste tilrop underveis. Ordene avtales på forhånd, ellers faller de feil ut."
+  },
+  "verbal humiliation": {
+    "retning": "aktiv",
+    "aktiv": "{A} ydmyker {B} med ord",
+    "passiv": "{B} blir ydmyket med ord av {A}",
+    "repeatKey": "ydmykelse",
+    "question": [
+      "Kunne du tenke deg verbal ydmykelse?",
+      "Har du lyst til å bli ydmyket med ord?",
+      "Skal vi gå for verbal ydmykelse i kveld?"
+    ],
+    "explanation": "Satt sammenhengende ned med ord, som en monolog om deg. Mer enn enkeltord, mer krevende enn kallenavn."
+  },
+  "oral": {
+    "retning": "aktiv",
+    "aktiv": "{A} slikker {B}",
+    "passiv": "{B} blir slikket av {A}",
+    "repeatKey": "oral",
+    "question": [
+      "Kunne du tenke deg oral?",
+      "Har du lyst til å bli slikket?",
+      "Skal vi gå for oral i kveld?"
+    ],
+    "explanation": "Munn mot kjønn. Kan gis og mottas, og kan vare kort eller lenge."
   },
   "dyp munn": {
-    "question": "Er du nysgjerrig på dyp oralsex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "dyp oralsex"
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} dypt i munnen",
+    "passiv": "{B} får {A} dypt i munnen",
+    "repeatKey": "oral",
+    "question": [
+      "Kunne du tenke deg dyp munn?",
+      "Har du lyst til å ta den dypt?",
+      "Skal vi gå for dyp munn i kveld?"
+    ],
+    "explanation": "Munnen brukes dypere enn vanlig, så langt ned du klarer. Kan gi brekninger, og det er greit."
+  },
+  "facefuck": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} hardt i munnen",
+    "passiv": "{B} blir tatt hardt i munnen av {A}",
+    "repeatKey": "oral",
+    "question": [
+      "Kunne du tenke deg facefuck?",
+      "Har du lyst til å bli tatt hardt i munnen?",
+      "Skal vi gå for facefuck i kveld?"
+    ],
+    "explanation": "Den andre styrer tempo og dybde med munnen din. Du holder deg fast og blir tatt, til forskjell fra dyp munn der du styrer."
+  },
+  "komme i munnen": {
+    "retning": "aktiv",
+    "aktiv": "{A} kommer i munnen på {B}",
+    "passiv": "{B} får {A} i munnen",
+    "repeatKey": "munn",
+    "question": [
+      "Kunne du tenke deg å komme i munnen?",
+      "Har du lyst til å få det i munnen?",
+      "Skal vi gå for å komme i munnen i kveld?"
+    ],
+    "explanation": "Utløsning i munnen. Ikke det samme som å svelge - det er et eget valg etterpå."
+  },
+  "swallow": {
+    "retning": "aktiv",
+    "aktiv": "{A} ser {B} svelge",
+    "passiv": "{B} svelger for {A}",
+    "repeatKey": "munn",
+    "question": [
+      "Kunne du tenke deg å svelge?",
+      "Har du lyst til å svelge?",
+      "Skal vi gå for svelging i kveld?"
+    ],
+    "explanation": "Du svelger etterpå i stedet for å spytte. Kan kombineres med komme i munnen, men er et eget valg."
+  },
+  "rimming": {
+    "retning": "aktiv",
+    "aktiv": "{A} slikker {B} bak",
+    "passiv": "{B} blir slikket bak av {A}",
+    "repeatKey": "rimming",
+    "question": [
+      "Kunne du tenke deg rimming?",
+      "Har du lyst til å bli slikket bak?",
+      "Skal vi gå for rimming i kveld?"
+    ],
+    "explanation": "Tunge mot anus. Kan gjøres på begge, og krever at man ikke er sjenert for lukt eller hår."
+  },
+  "komme på ansiktet": {
+    "retning": "aktiv",
+    "aktiv": "{A} kommer på ansiktet til {B}",
+    "passiv": "{B} får {A} på ansiktet",
+    "repeatKey": "facial",
+    "question": [
+      "Kunne du tenke deg å komme på ansiktet?",
+      "Har du lyst til å få det på ansiktet?",
+      "Skal vi gå for ansiktet i kveld?"
+    ],
+    "explanation": "Utløsning på ansiktet. Avklar om øyne og hår skal skjermes."
   },
   "facial": {
-    "question": "Er du nysgjerrig på utløsning på ansiktet?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "utløsning på ansiktet",
-    "repeatKey": "facial"
+    "retning": "aktiv",
+    "aktiv": "{A} gir {B} en facial",
+    "passiv": "{B} får en facial av {A}",
+    "repeatKey": "facial",
+    "question": [
+      "Kunne du tenke deg en facial?",
+      "Har du lyst til å få en facial?",
+      "Skal vi gå for facial i kveld?"
+    ],
+    "explanation": "Samme som komme på ansiktet, men brukt som eget ord om treffet. Brukes når det er selve bildet som tenner."
+  },
+  "cum play": {
+    "retning": "aktiv",
+    "aktiv": "{A} bruker sæd på {B}",
+    "passiv": "{B} får sæd på huden av {A}",
+    "repeatKey": "cum",
+    "question": [
+      "Kunne du tenke deg cum play?",
+      "Har du lyst til å få sæd på huden?",
+      "Skal vi gå for cum play i kveld?"
+    ],
+    "explanation": "Sæd brukes videre etterpå - på hud, i munnen, som glidemiddel. Kommer etter utløsningen, ikke i stedet for."
+  },
+  "creampie": {
+    "retning": "aktiv",
+    "aktiv": "{A} kommer inni {B}",
+    "passiv": "{B} blir fylt av {A}",
+    "repeatKey": "creampie",
+    "question": [
+      "Kunne du tenke deg creampie?",
+      "Har du lyst til å bli fylt?",
+      "Skal vi gå for creampie i kveld?"
+    ],
+    "explanation": "Utløsning inni, uten kondom. Forutsetter at dere har avklart prevensjon."
+  },
+  "komme inni": {
+    "retning": "aktiv",
+    "aktiv": "{A} kommer inni {B}",
+    "passiv": "{B} blir fylt av {A}",
+    "repeatKey": "creampie",
+    "question": [
+      "Kunne du tenke deg at partneren kommer inni deg?",
+      "Har du lyst til at partneren kommer inni deg?",
+      "Skal vi gå for å komme inni i kveld?"
+    ],
+    "explanation": "Selve øyeblikket der den andre kommer inni deg. Brukes når det er øyeblikket, ikke resultatet, som er poenget."
+  },
+  "fylt": {
+    "retning": "aktiv",
+    "aktiv": "{A} fyller {B}",
+    "passiv": "{B} blir fylt av {A}",
+    "repeatKey": "creampie",
+    "question": [
+      "Kunne du tenke deg følelsen av å være fylt?",
+      "Har du lyst til å kjenne at det renner ut etterpå?",
+      "Skal vi gå for å la det bli liggende i kveld?"
+    ],
+    "explanation": "Følelsen etterpå, av å være full og at det renner ut. Et eget ønske, ikke bare selve utløsningen."
+  },
+  "spytting": {
+    "retning": "aktiv",
+    "aktiv": "{A} spytter på {B}",
+    "passiv": "{B} blir spyttet på av {A}",
+    "repeatKey": "spytt",
+    "question": [
+      "Kunne du tenke deg spytting?",
+      "Har du lyst til å bli spyttet på?",
+      "Skal vi gå for spytting i kveld?"
+    ],
+    "explanation": "Spytt som gest, ofte i munnen eller på ansiktet. Mengde og treff avklares."
+  },
+  "spytt på": {
+    "retning": "aktiv",
+    "aktiv": "{A} spytter på huden til {B}",
+    "passiv": "{B} får spytt på huden av {A}",
+    "repeatKey": "spytt",
+    "question": [
+      "Kunne du tenke deg spytt på kroppen?",
+      "Har du lyst til å få spytt på huden?",
+      "Skal vi gå for spytt på kroppen i kveld?"
+    ],
+    "explanation": "Spytt brukt som fukt eller som treff på huden, ikke som gest i munnen."
+  },
+  "anal med fingre": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} med fingrene bak",
+    "passiv": "{B} blir tatt med fingre bak av {A}",
+    "repeatKey": "anal",
+    "question": [
+      "Kunne du tenke deg fingre bak?",
+      "Har du lyst til å bli tatt med fingrene bak?",
+      "Skal vi gå for fingre bak i kveld?"
+    ],
+    "explanation": "En eller flere fingre i anus. Billigste inngang og lettest å dosere. Glidemiddel er ikke valgfritt."
+  },
+  "forsiktig anal": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} forsiktig bak",
+    "passiv": "{B} blir tatt forsiktig bak av {A}",
+    "repeatKey": "anal",
+    "question": [
+      "Kunne du tenke deg forsiktig anal?",
+      "Har du lyst til å starte forsiktig bak?",
+      "Skal vi gå for forsiktig anal i kveld?"
+    ],
+    "explanation": "Penetrering bak i rolig tempo, med tid til å venne seg til. Fokus på å ikke stresse, ikke på dybde."
+  },
+  "dyp anal": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} dypt bak",
+    "passiv": "{B} blir tatt dypt bak av {A}",
+    "repeatKey": "anal",
+    "question": [
+      "Kunne du tenke deg dyp anal?",
+      "Har du lyst til å kjenne at det går lenger inn?",
+      "Skal vi gå for dyp anal i kveld?"
+    ],
+    "explanation": "Penetrering som går lenger inn enn vanlig. Krever at du er varmet opp først."
   },
   "hard anal": {
-    "question": "Er du nysgjerrig på kraftig anal penetrasjon?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "kraftig anal penetrasjon"
+    "retning": "aktiv",
+    "aktiv": "{A} tar {B} hardt bak",
+    "passiv": "{B} blir tatt hardt bak av {A}",
+    "repeatKey": "anal",
+    "question": [
+      "Kunne du tenke deg hard anal?",
+      "Har du lyst til å bli tatt hardt bak?",
+      "Skal vi gå for hard anal i kveld?"
+    ],
+    "explanation": "Raskt og kraftig bak. Forutsetter at du allerede er vant, ellers blir det bare ubehag."
+  },
+  "gaping": {
+    "retning": "aktiv",
+    "aktiv": "{A} holder {B} åpen etterpå",
+    "passiv": "{B} blir holdt åpen av {A}",
+    "repeatKey": "gaping",
+    "question": [
+      "Kunne du tenke deg gaping?",
+      "Har du lyst til å bli holdt åpen etterpå?",
+      "Skal vi gå for gaping i kveld?"
+    ],
+    "explanation": "Du blir holdt åpen etter penetrering, så det vises. Sekunder, ikke minutter - det lukker seg raskt."
+  },
+  "anal med plug": {
+    "retning": "aktiv",
+    "aktiv": "{A} setter plugg i {B}",
+    "passiv": "{B} får plugg av {A}",
+    "repeatKey": "plugg",
+    "question": [
+      "Kunne du tenke deg analplugg?",
+      "Har du lyst til å få en plugg?",
+      "Skal vi gå for plugg i kveld?"
+    ],
+    "explanation": "En plugg settes inn og blir sittende. Brukes ofte som oppvarming, eller som eget poeng."
+  },
+  "remote plug": {
+    "retning": "aktiv",
+    "aktiv": "{A} styrer pluggen i {B}",
+    "passiv": "{B} har plugg {A} styrer",
+    "repeatKey": "plugg",
+    "question": [
+      "Kunne du tenke deg fjernstyrt plugg?",
+      "Har du lyst til å ha en plugg noen andre styrer?",
+      "Skal vi gå for fjernstyrt plugg i kveld?"
+    ],
+    "explanation": "Plugg med fjernkontroll, så den andre kan endre på den uten å være nær deg."
+  },
+  "plug hele kvelden": {
+    "retning": "aktiv",
+    "aktiv": "{A} lar {B} ha pluggen i",
+    "passiv": "{B} har pluggen i hele kvelden for {A}",
+    "repeatKey": "plugg",
+    "question": [
+      "Kunne du tenke deg plugg hele kvelden?",
+      "Har du lyst til å ha pluggen i lenge?",
+      "Skal vi gå for plugg hele kvelden?"
+    ],
+    "explanation": "Pluggen blir sittende over lang tid mens dere gjør andre ting. Glidemiddel må fylles på underveis."
+  },
+  "forsiktig fisting": {
+    "retning": "aktiv",
+    "aktiv": "{A} fister {B} forsiktig",
+    "passiv": "{B} blir fistet forsiktig av {A}",
+    "repeatKey": "fisting",
+    "question": [
+      "Kunne du tenke deg forsiktig fisting?",
+      "Har du lyst til å bli fistet forsiktig?",
+      "Skal vi gå for forsiktig fisting i kveld?"
+    ],
+    "explanation": "Fisting med svært rolig tempo. Målet er å komme inn, ikke å fylle."
+  },
+  "gradvis fisting": {
+    "retning": "aktiv",
+    "aktiv": "{A} fister {B} gradvis",
+    "passiv": "{B} blir fistet gradvis av {A}",
+    "repeatKey": "fisting",
+    "question": [
+      "Kunne du tenke deg gradvis fisting?",
+      "Har du lyst til å utvides steg for steg?",
+      "Skal vi gå for gradvis fisting i kveld?"
+    ],
+    "explanation": "Du utvides steg for steg over tid, med pauser underveis. Ingen tidsplan - det tar den tiden det tar."
+  },
+  "vaginal fisting": {
+    "retning": "aktiv",
+    "aktiv": "{A} fister {B} vaginalt",
+    "passiv": "{B} blir fistet vaginalt av {A}",
+    "repeatKey": "fisting",
+    "question": [
+      "Kunne du tenke deg vaginal fisting?",
+      "Har du lyst til å bli fistet i skjeden?",
+      "Skal vi gå for vaginal fisting i kveld?"
+    ],
+    "explanation": "Hele hånden i skjeden. Plass er sjelden problemet, tilvenning er."
+  },
+  "anal fisting": {
+    "retning": "aktiv",
+    "aktiv": "{A} fister {B} analt",
+    "passiv": "{B} blir fistet analt av {A}",
+    "repeatKey": "fisting",
+    "question": [
+      "Kunne du tenke deg anal fisting?",
+      "Har du lyst til å bli fistet bak?",
+      "Skal vi gå for anal fisting i kveld?"
+    ],
+    "explanation": "Hele hånden i anus. Krever mer tid og mer glidemiddel enn fingre."
+  },
+  "pegging": {
+    "retning": "aktiv",
+    "aktiv": "{A} pegger {B}",
+    "passiv": "{B} blir pegged av {A}",
+    "repeatKey": "pegging",
+    "question": [
+      "Kunne du tenke deg pegging?",
+      "Har du lyst til å bli pegged?",
+      "Skal vi gå for pegging i kveld?"
+    ],
+    "explanation": "Anal penetrering der den ene bruker strap-on på den andre. Rollene kan byttes, og gjør det ofte."
+  },
+  "strap on": {
+    "retning": "aktiv",
+    "aktiv": "{A} bruker strap-on på {B}",
+    "passiv": "{B} får strap-on av {A}",
+    "repeatKey": "pegging",
+    "question": [
+      "Kunne du tenke deg strap-on?",
+      "Har du lyst til å få strap-on?",
+      "Skal vi gå for strap-on i kveld?"
+    ],
+    "explanation": "Selen med redskapet på. Gjenstanden, ikke handlingen. Brukes også vaginalt."
+  },
+  "blindfold": {
+    "retning": "aktiv",
+    "aktiv": "{A} setter bind for {B}",
+    "passiv": "{B} får bind for øynene av {A}",
+    "repeatKey": "sanser",
+    "question": [
+      "Kunne du tenke deg bind for øynene?",
+      "Har du lyst til å ikke se noe?",
+      "Skal vi gå for bind for øynene i kveld?"
+    ],
+    "explanation": "Bind for øynene, så du ikke ser. Alt annet blir merkbart sterkere."
+  },
+  "sensory deprivation": {
+    "retning": "aktiv",
+    "aktiv": "{A} tar fra {B} sanser",
+    "passiv": "{B} får sansene tatt fra seg av {A}",
+    "repeatKey": "sanser",
+    "question": [
+      "Kunne du tenke deg sansedeprivasjon?",
+      "Har du lyst til å miste flere sanser?",
+      "Skal vi gå for sansedeprivasjon i kveld?"
+    ],
+    "explanation": "Mer enn bind: øyne, hørsel, eller begge. Du mister oversikt over tid og rom, og det er hele poenget."
+  },
+  "hot wax": {
+    "retning": "aktiv",
+    "aktiv": "{A} drypper voks på {B}",
+    "passiv": "{B} får voks på seg av {A}",
+    "repeatKey": "temperatur",
+    "question": [
+      "Kunne du tenke deg varmt voks?",
+      "Har du lyst til å få voks dryppet på deg?",
+      "Skal vi gå for voks i kveld?"
+    ],
+    "explanation": "Stearin dryppes på huden. Bruk varmelys, ikke fargestifter - de svir."
+  },
+  "temperature play": {
+    "retning": "aktiv",
+    "aktiv": "{A} bruker varme og kulde på {B}",
+    "passiv": "{B} får varme og kulde av {A}",
+    "repeatKey": "temperatur",
+    "question": [
+      "Kunne du tenke deg temperaturlek?",
+      "Har du lyst til å kjenne varme og kulde?",
+      "Skal vi gå for temperaturlek i kveld?"
+    ],
+    "explanation": "Veksling mellom varmt og kaldt - voks, is, metall, varmt vann. Kontrasten er poenget."
+  },
+  "feet": {
+    "retning": "aktiv",
+    "aktiv": "{A} koser med føttene til {B}",
+    "passiv": "{B} får føttene kost med av {A}",
+    "repeatKey": "føtter",
+    "question": [
+      "Kunne du tenke deg føtter?",
+      "Har du lyst til å ha føttene i fokus?",
+      "Skal vi gå for føtter i kveld?"
+    ],
+    "explanation": "Føtter som eget interesseområde. Kan være å se på, ta på, eller å ha dem i fanget."
+  },
+  "tær": {
+    "retning": "aktiv",
+    "aktiv": "{A} suger tærne til {B}",
+    "passiv": "{B} får tærne sugd av {A}",
+    "repeatKey": "føtter",
+    "question": [
+      "Kunne du tenke deg tær?",
+      "Har du lyst til å få tærne sugd?",
+      "Skal vi gå for tær i kveld?"
+    ],
+    "explanation": "Tærne spesielt - suge, slikke, bite lett. Snevring av føtter."
+  },
+  "foot worship": {
+    "retning": "aktiv",
+    "aktiv": "{A} tilber føttene til {B}",
+    "passiv": "{B} får føttene tilbedt av {A}",
+    "repeatKey": "føtter",
+    "question": [
+      "Kunne du tenke deg fotslikking?",
+      "Har du lyst til å få føttene tilbedt?",
+      "Skal vi gå for fotslikking i kveld?"
+    ],
+    "explanation": "Føttene får all oppmerksomhet en stund. Vask, massasje, kyss, tunge - i den rekkefolgen."
+  },
+  "latex": {
+    "retning": "aktiv",
+    "aktiv": "{A} har på lateks for {B}",
+    "passiv": "{B} ser {A} i lateks",
+    "repeatKey": "materialer",
+    "question": [
+      "Kunne du tenke deg lateks?",
+      "Har du lyst til å se partneren i lateks?",
+      "Skal vi gå for lateks i kveld?"
+    ],
+    "explanation": "Klær eller tilbehør i lateks. Stramt, glatt, kaldt mot hud - og helt lydtett."
+  },
+  "leather": {
+    "retning": "aktiv",
+    "aktiv": "{A} har på skinn for {B}",
+    "passiv": "{B} ser {A} i skinn",
+    "repeatKey": "materialer",
+    "question": [
+      "Kunne du tenke deg skinn?",
+      "Har du lyst til å se partneren i skinn?",
+      "Skal vi gå for skinn i kveld?"
+    ],
+    "explanation": "Skinn som klær eller utstyr. Varmere og mykere enn lateks, lukter og knirker."
+  },
+  "halsbånd": {
+    "retning": "aktiv",
+    "aktiv": "{A} setter halsbånd på {B}",
+    "passiv": "{B} har halsbånd fra {A}",
+    "repeatKey": "pet",
+    "question": [
+      "Kunne du tenke deg halsbånd?",
+      "Har du lyst til å ha halsbånd på?",
+      "Skal vi gå for halsbånd i kveld?"
+    ],
+    "explanation": "Bånd rundt halsen som symbol på rolle. Kan ha bjelle eller ring, og kan tas på uten at noe annet skjer."
+  },
+  "leash": {
+    "retning": "aktiv",
+    "aktiv": "{A} fører {B} i bånd",
+    "passiv": "{B} blir ført i bånd av {A}",
+    "repeatKey": "pet",
+    "question": [
+      "Kunne du tenke deg bånd?",
+      "Har du lyst til å bli ført i bånd?",
+      "Skal vi gå for bånd i kveld?"
+    ],
+    "explanation": "Bånd festet til halsbandet, så den andre kan fore deg rundt. Forutsetter halsbånd."
+  },
+  "pet": {
+    "retning": "aktiv",
+    "aktiv": "{A} har {B} som kjæledyr",
+    "passiv": "{B} er kjæledyr for {A}",
+    "repeatKey": "pet",
+    "question": [
+      "Kunne du tenke deg å være kjæledyr?",
+      "Har du lyst til å være kjæledyr?",
+      "Skal vi gå for kjæledyr i kveld?"
+    ],
+    "explanation": "Du er kjæledyr en stund: på gulvet, med halsbånd, uten ord. Rollen, ikke rammen."
+  },
+  "pet play": {
+    "retning": "aktiv",
+    "aktiv": "{A} leker kjæledyrlek med {B}",
+    "passiv": "{B} blir lekt kjæledyrlek med av {A}",
+    "repeatKey": "pet",
+    "question": [
+      "Kunne du tenke deg kjæledyrlek?",
+      "Har du lyst til å prøve kjæledyrlek?",
+      "Skal vi gå for kjæledyrlek i kveld?"
+    ],
+    "explanation": "Rammen rundt det å være kjæledyr - navn, bånd, kommandoer, godbiter. Mer planlagt enn bare rollen."
+  },
+  "daddy": {
+    "retning": "aktiv",
+    "aktiv": "{A} er daddy for {B}",
+    "passiv": "{B} er little for {A}",
+    "repeatKey": "daddy",
+    "question": [
+      "Kunne du tenke deg en daddy?",
+      "Har du lyst til å ha en daddy?",
+      "Skal vi gå for daddy i kveld?"
+    ],
+    "explanation": "Rollen som den voksne, trygge parten. Ikke nødvendigvis eldre i alder, men den som holder rammen."
+  },
+  "little": {
+    "retning": "aktiv",
+    "aktiv": "{A} er little for {B}",
+    "passiv": "{B} er daddy for {A}",
+    "repeatKey": "daddy",
+    "question": [
+      "Kunne du tenke deg å være little?",
+      "Har du lyst til å være liten?",
+      "Skal vi gå for little i kveld?"
+    ],
+    "explanation": "Rollen som den lille. Ikke alder, men posisjon - den som blir tatt vare på."
+  },
+  "dd lg": {
+    "retning": "aktiv",
+    "aktiv": "{A} og {B} leker DD/LG",
+    "passiv": "{B} og {A} leker DD/LG",
+    "repeatKey": "daddy",
+    "question": [
+      "Kunne du tenke deg DD/LG?",
+      "Har du lyst til å prøve DD/LG?",
+      "Skal vi gå for DD/LG i kveld?"
+    ],
+    "explanation": "Dynamikken mellom de to rollene, med omsorg og regler. Krever at rollene er avklart før dere begynner."
+  },
+  "risiko": {
+    "retning": "sym",
+    "sym": "{A} og {B} har sex der dere kan bli oppdaget",
+    "repeatKey": "risiko",
+    "question": [
+      "Kunne du tenke deg litt risiko?",
+      "Har du lyst til å kunne bli oppdaget?",
+      "Skal vi gå for litt risiko i kveld?"
+    ],
+    "explanation": "Muligheten for å bli oppdaget, uten at det skjer. Spenningen i det, ikke selve stedet."
+  },
+  "public": {
+    "retning": "sym",
+    "sym": "{A} og {B} har sex på et offentlig sted",
+    "repeatKey": "risiko",
+    "question": [
+      "Kunne du tenke deg offentlig sted?",
+      "Har du lyst til å ha sex ute blant folk?",
+      "Skal vi gå for et offentlig sted i kveld?"
+    ],
+    "explanation": "Sex på et sted der andre faktisk kan se. Ute, i bil, på fest. Mer enn bare risikoen."
+  },
+  "remote toy ute": {
+    "retning": "aktiv",
+    "aktiv": "{A} styrer leketøyet til {B} blant folk",
+    "passiv": "{B} har leketøy {A} styrer, blant folk",
+    "repeatKey": "risiko",
+    "question": [
+      "Kunne du tenke deg fjernstyrt leketøy ute?",
+      "Har du lyst til å ha leketøy på blant folk?",
+      "Skal vi gå for leketøy ute i kveld?"
+    ],
+    "explanation": "Leketøy med fjernkontroll, båret ute blant folk. Den andre styrer uten at noen ser det."
+  },
+  "tredjeperson": {
+    "retning": "sym",
+    "sym": "{A} og {B} tar med en tredje",
+    "repeatKey": "gruppe",
+    "question": [
+      "Kunne du tenke deg en tredje person?",
+      "Har du lyst til å ta med en tredje?",
+      "Skal vi gå for en tredje i kveld?"
+    ],
+    "explanation": "En tredje voksen er med. Kan være til stede, eller bare som fantasi mens dere er to."
+  },
+  "group": {
+    "retning": "sym",
+    "sym": "{A} og {B} har sex med flere",
+    "repeatKey": "gruppe",
+    "question": [
+      "Kunne du tenke deg flere enn to?",
+      "Har du lyst til å ha sex med flere?",
+      "Skal vi gå for flere i kveld?"
+    ],
+    "explanation": "Flere enn to sammen, tre eller flere. Bredere enn en tredje person, som bare er en."
+  },
+  "se på": {
+    "retning": "sym",
+    "sym": "{A} og {B} ser på andre sammen",
+    "repeatKey": "gruppe",
+    "question": [
+      "Kunne du tenke deg å se på?",
+      "Har du lyst til å se andre ha sex?",
+      "Skal vi gå for å se på i kveld?"
+    ],
+    "explanation": "Du ser på mens andre har sex. Du er ikke med selv - det er forskjellen fra gruppe."
+  },
+  "kos etter": {
+    "retning": "sym",
+    "sym": "{A} og {B} ligger sammen etterpå",
+    "repeatKey": "etter",
+    "question": [
+      "Kunne du tenke deg kos etter?",
+      "Har du lyst til å ligge sammen etterpå?",
+      "Skal vi gå for kos etter i kveld?"
+    ],
+    "explanation": "Nærhet etterpå, uten krav. Ligger, holder, prater."
+  },
+  "aftercare": {
+    "retning": "sym",
+    "sym": "{A} og {B} tar vare på hverandre etterpå",
+    "repeatKey": "etter",
+    "question": [
+      "Kunne du tenke deg etterpleie?",
+      "Har du lyst til å bli tatt vare på etterpå?",
+      "Skal vi gå for etterpleie i kveld?"
+    ],
+    "explanation": "Hele etterspillet: vann, pledd, prat, sjekk av hvordan det gikk. Mer enn kos."
+  },
+  "myk landing": {
+    "retning": "sym",
+    "sym": "{A} og {B} avslutter rolig sammen",
+    "repeatKey": "etter",
+    "question": [
+      "Kunne du tenke deg en myk landing?",
+      "Har du lyst til å trappe rolig ned etterpå?",
+      "Skal vi gå for en myk landing i kveld?"
+    ],
+    "explanation": "Rolig nedtrapping fra intensitet til vanlig igjen, over tid. For når det har vært hardt."
+  },
+  "medical play": {
+    "retning": "aktiv",
+    "aktiv": "{A} leker medisinsk lek med {B}",
+    "passiv": "{B} blir lekt medisinsk lek med av {A}",
+    "repeatKey": "medisinsk",
+    "question": [
+      "Kunne du tenke deg medisinsk lek?",
+      "Har du lyst til å prøve medisinsk lek?",
+      "Skal vi gå for medisinsk lek i kveld?"
+    ],
+    "explanation": "Rammen: hvitt, hansker, skjema, undersøkelsesbenk. Rollespillet rundt, ikke selve undersøkelsen."
+  },
+  "undersøkelse": {
+    "retning": "aktiv",
+    "aktiv": "{A} gir {B} en undersøkelse",
+    "passiv": "{B} får undersøkelse av {A}",
+    "repeatKey": "medisinsk",
+    "question": [
+      "Kunne du tenke deg en undersøkelse?",
+      "Har du lyst til å bli undersøkt?",
+      "Skal vi gå for undersøkelse i kveld?"
+    ],
+    "explanation": "Selve undersøkelsen. Spekulum, stetoskop, palpering. Handlingen, uten rammen rundt."
+  },
+  "vanlig sex": {
+    "retning": "sym",
+    "sym": "{A} og {B} har sex",
+    "repeatKey": "sex",
+    "question": [
+      "Kunne du tenke deg vanlig sex?",
+      "Har du lyst på helt vanlig sex?",
+      "Skal vi gå for vanlig sex i kveld?"
+    ],
+    "explanation": "Penetrering uten noe ekstra på. Utgangspunktet dere måler alt annet mot."
+  },
+  "myk sex": {
+    "retning": "sym",
+    "sym": "{A} og {B} har rolig sex",
+    "repeatKey": "sex",
+    "question": [
+      "Kunne du tenke deg rolig sex?",
+      "Har du lyst på noe rolig og nært?",
+      "Skal vi gå for rolig sex i kveld?"
+    ],
+    "explanation": "Rolig tempo, mye nærhet, lite overraskelser. Sex uten at det skal være noe mer."
   },
   "hard sex": {
-    "question": "Er du nysgjerrig på kraftig sex?",
-    "explanation": "Spørsmålet gjelder din interesse i temaet. Hvem som gjør hva, og om det skal prøves, er ikke bestemt av svaret.",
-    "topic": "kraftig sex"
+    "retning": "sym",
+    "sym": "{A} og {B} har hard sex",
+    "repeatKey": "sex",
+    "question": [
+      "Kunne du tenke deg hard sex?",
+      "Har du lyst på noe hardt?",
+      "Skal vi gå for hard sex i kveld?"
+    ],
+    "explanation": "Høyt tempo og kraft. Nær røff, men uten at det skal være uvorrent."
+  },
+  "rough sex": {
+    "retning": "sym",
+    "sym": "{A} og {B} har røff sex",
+    "repeatKey": "sex",
+    "question": [
+      "Kunne du tenke deg røff sex?",
+      "Har du lyst på noe røft?",
+      "Skal vi gå for røff sex i kveld?"
+    ],
+    "explanation": "Hardt og litt uvorrent - hår, hofter, biting, dytting. Mer kaos enn hard sex."
+  },
+  "uten pause": {
+    "retning": "sym",
+    "sym": "{A} og {B} har sex uten pauser",
+    "repeatKey": "sex",
+    "question": [
+      "Kunne du tenke deg sex uten pause?",
+      "Har du lyst til å kjøre på uten stopp?",
+      "Skal vi gå for uten pause i kveld?"
+    ],
+    "explanation": "Sammenhengende forløp uten planlagte stopp. Du får ikke hente deg inn underveis."
+  },
+  "watersports": {
+    "retning": "aktiv",
+    "aktiv": "{A} tisser på {B}",
+    "passiv": "{B} blir tisset på av {A}",
+    "repeatKey": "piss",
+    "question": [
+      "Kunne du tenke deg watersports?",
+      "Har du lyst til å prøve urin?",
+      "Skal vi gå for watersports i kveld?"
+    ],
+    "explanation": "Urin som del av leken. Paraplybegrepet, brukt om hele temæt."
+  },
+  "piss": {
+    "retning": "aktiv",
+    "aktiv": "{A} tisser på {B}",
+    "passiv": "{B} blir tisset på av {A}",
+    "repeatKey": "piss",
+    "question": [
+      "Kunne du tenke deg å bli tisset på?",
+      "Har du lyst til å kjenne det?",
+      "Skal vi gå for piss i kveld?"
+    ],
+    "explanation": "Selve det å tisse på eller i den andre. Handlingen, ikke temæt. Mengde og sted avklares."
   }
 };

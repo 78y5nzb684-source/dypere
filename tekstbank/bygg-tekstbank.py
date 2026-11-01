@@ -13,8 +13,12 @@ assert len({s['id'] for s in categories['groups']})==len(categories['groups'])
 assert len({s['id'] for s in scenarios})==len(scenarios)
 for key,value in language.items():
     assert isinstance(key,str) and key
-    assert all(isinstance(value.get(f),str) and value[f].strip() for f in ['question','explanation','topic'])
-    assert value['question'].endswith('?')
+    assert isinstance(value.get('explanation'),str) and value['explanation'].strip()
+    questions=value.get('question')
+    assert isinstance(questions,list) and len(questions)==3
+    assert all(isinstance(q,str) and q.endswith('?') for q in questions)
+    assert value.get('retning') in ['aktiv','passiv','sym']
+    assert isinstance(value.get('repeatKey'),str) and value['repeatKey']
 for s in scenarios:
     assert all(isinstance(s.get(f),str) and s[f].strip() for f in ['id','title','intro','main','closing','aftercare'])
     assert s['groups'] and all(n in [2,3,4] for n in s['groups'])

@@ -64,3 +64,60 @@
 .scenario-steps li::marker{color:var(--gold)}.scenario-steps strong{color:var(--gold)}
 .scenario-steps p{margin:8px 0 14px}
 @media(max-width:390px){.avatar-category{gap:6px}.avatar-category-controls{grid-template-columns:40px 22px 40px;gap:3px}.avatar-category-controls button{min-width:40px;min-height:44px}.avatar-category summary{font-size:14px}}
+
+/* Matchrapport. Existing question and avatar rules above remain unchanged. */
+.match-radar{display:block;width:100%;height:auto;max-width:560px;margin:12px auto 20px;overflow:visible}
+.match-radar-grid{fill:none;stroke:var(--line);stroke-width:1}
+.match-radar text{fill:var(--muted);font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.match-radar-value{fill:#d8b88944;stroke:var(--gold);stroke-width:2.5}
+.match-filters{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.match-filters button{border-radius:24px;min-height:44px;padding:10px 14px;font-size:14px}
+.match-list{margin:24px 0}.match-list h3{font:23px/1.35 Georgia,serif;color:var(--gold)}
+.match-category{margin:26px 0}.match-category h3{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.match-badge,.match-near{display:inline-block;border:1px solid var(--line);border-radius:14px;font:12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;padding:3px 8px;color:var(--gold)}
+.match-table-scroll{width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+.match-table{border-collapse:collapse;width:100%;font-size:14px}
+.match-table caption{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.match-table th{font-weight:500;color:var(--gold);text-align:left;vertical-align:top;min-width:60px;overflow-wrap:anywhere}
+.match-table th:last-child{min-width:170px}.match-table td{vertical-align:top}
+.match-table th,.match-table td{padding:12px 10px;border-bottom:1px solid var(--line)}
+.match-table tbody tr:last-child td{border-bottom:0}
+.match-table .match-sentence{margin:0 0 8px;line-height:1.6;color:var(--ink)}
+.match-table .match-vote{white-space:nowrap;font-size:13px}
+.match-table details{margin-top:12px}.match-table summary{font-size:13px}
+.match-table label{font-size:13px;margin:8px 0}
+.match-table textarea{width:100%;min-width:160px;min-height:80px;padding:10px;font-size:14px}
+.match-panel>.journey-note{margin:20px 0}
+.match-scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;font-size:13px;color:var(--muted);margin-bottom:20px}
+.match-scores div{display:flex;justify-content:space-between;gap:8px;align-items:start}
+.match-scores dt{overflow-wrap:anywhere}.match-scores dd{margin:0;color:var(--gold);font-variant-numeric:tabular-nums}
+.match-filters button:focus-visible,.match-table-scroll:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* FIL 04: lookup presentation and the supplied report refinements. */
+.question-explanation{border:0;border-top:1px solid var(--line);padding-top:10px;margin-top:18px}
+.question-explanation summary{color:var(--gold);font-size:14px;list-style:none}
+.question-explanation summary::-webkit-details-marker{display:none}
+.question-explanation summary::before{content:"+ ";color:var(--gold)}
+.question-explanation[open] summary::before{content:"- "}
+.question-explanation p{font-size:14px;line-height:1.65;color:var(--muted);margin:8px 0 0}
+.question-explanation summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.match-panel{overflow-x:auto}
+.match-radar{display:block;width:100%;max-width:420px;margin:8px auto 24px}
+.match-count{font-size:14px;color:var(--gold);margin:0 0 16px}
+.match-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.match-filters button{min-height:44px;padding:8px 14px;font-size:14px}
+.match-filters button[aria-pressed=true]{background:var(--gold);color:#17131a;border-color:var(--gold)}
+.match-section{margin-top:28px}
+.match-section h3{font:19px Georgia,serif;color:var(--gold);display:flex;gap:10px;align-items:baseline;margin:0 0 10px}
+.match-section h3 span{font:12px/1 ui-sans-serif,sans-serif;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 8px}
+.match-table{width:100%;border-collapse:collapse;font-size:14px}
+.match-table th{text-align:left;font:12px/1.4 ui-sans-serif,sans-serif;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--line)}
+.match-table th:first-child,.match-table td:first-child{width:64px}
+.match-table td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.5}
+.match-table tr.nesten td:first-child{color:var(--gold)}
+.match-answer{font:12px/1.4 ui-sans-serif,sans-serif;color:var(--muted);text-transform:lowercase}
+.match-answer.ja{color:var(--ink)}
+.match-note{margin:6px 0 0}
+.match-note textarea{min-height:60px;font-size:14px}
+.match-empty{padding:24px 0;color:var(--muted)}
+@media(max-width:500px){.match-table th:first-child,.match-table td:first-child{width:52px}.match-table{font-size:13px}}
