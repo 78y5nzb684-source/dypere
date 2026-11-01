@@ -427,7 +427,11 @@
  function showRunning(){
   if(!activityChoice)return;const activity=activityChoice.activity;
   finished=false;const p=panel(activity.title,'DEL '+(runStep+1)+' AV '+activity.steps.length);p.setAttribute('data-activity-id',activity.id);
-  p.append(node('p',activityRoles(activityChoice),'activity-roles'),node('p',activity.steps[runStep],'session-action'));
+  const phase=activity.phases?.[runStep];
+  p.append(node('p',activityRoles(activityChoice),'activity-roles'));
+  if(phase)p.append(node('h3',phase.title,'activity-phase-title'),node('p','Omtrent '+phase.minutes+' minutter','session-meta'));
+  p.append(node('p',phase?.text||activity.steps[runStep],'session-action'));
+  const basis=node('details',undefined,'scenario-basis');basis.append(node('summary','Kveldens felles ønsker'));const themes=node('ul');for(const item of result.exact)themes.append(node('li',language[item.key]?.topic||item.topic||item.cat));basis.append(themes);p.append(basis);
   const progress=node('progress');progress.max=activity.steps.length;progress.value=runStep+1;progress.setAttribute('aria-label','Del '+(runStep+1)+' av '+activity.steps.length);p.append(progress);
   p.append(button(runStep===activity.steps.length-1?'Avrund stunden':'Neste del',()=>{if(runStep<activity.steps.length-1){runStep++;showRunning();}else{finished=true;const done=panel('Takk for stunden','AVRUNDET');done.append(node('p','Kveldens svar har ikke endret interesseprofilene deres.'),button('Se kveldens treff',showMatch,'primary'),button('Ny stund',()=>location.reload(),'text-button'));}},'primary'));
   if(runStep)p.append(button('Forrige del',()=>{runStep--;showRunning();},'text-button'));

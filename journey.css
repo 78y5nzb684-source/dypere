@@ -191,3 +191,5 @@
 .profile-editor-content .profile-controls{margin-top:16px}
 
 .session-quicky{border:0;border-top:1px solid var(--line);padding:16px 0 0;margin:18px 0}.session-quicky legend{color:var(--gold);padding-right:10px}.session-quicky .journey-note{margin:0 0 10px}
+
+.activity-phase-title{font:24px/1.25 Georgia,serif;color:var(--gold);margin:18px 0 8px}

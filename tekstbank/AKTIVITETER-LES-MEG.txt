@@ -1,36 +1,72 @@
-DYPERE – aktivitetsregister
+DYPERE – aktiv tekstkilde fra 3.0.29 beta
 
-Kilde: aktiviteter.json. Nettstedet leser den tilsvarende activity-database.js.
-32 ikke-grafiske aktiviteter og samtalerammer fordelt på sju kategorier.
-Det er et startregister, ikke en komplett database med seksuelle scenarioer.
+Åpne tekstbank/aktiviteter.json. Der ligger nå ett aktivt, nøytralt eksempel.
+Endre description og phases[].text. Deloverskrift og minutter vises i appen.
+Kjør python tekstbank/bygg-aktiviteter.py etter endring. Det validerer og lager activity-database.js.
+Deretter testes og publiseres ny versjon med ny cache. Appen trenger ingen byggesteg for å kjøre.
 
-Hver oppføring har:
-  id: stabil, unik aktivitets-ID.
-  enabled: om oppføringen kan trekkes.
-  title og description: kort overskrift og beskrivelse på sluttsiden.
-  genres: kategori-ID-er for organisering. En kategori alene gir aldri et treff.
-  level: øvre nivåvalg må være minst dette nivået. Dette er sortering, ikke medisinsk risikovurdering.
-  minutes: veiledende varighet; aktiviteten må få plass innenfor kveldens tid.
-  groups: tillatt antall deltakere, 2–4.
-  requires: alle krav i listen må være oppfylt.
-    anyOf: minst én av de eksakte profiltema-ID-ene må være bekreftet i kveld.
-    routes: valgfri liste med kompatible retninger, eksempelvis gi/motta.
-  steps: korte deler som vises én om gangen etter start.
-  roleLabels: valgfrie, aktivitetsspesifikke navn på eksisterende retninger.
+Eksemplet har et bredt anyOf-krav fordi det kun er en generell samtaleramme.
+Når du erstatter det med konkrete aktiviteter, må alle nødvendige temaer få egne kravgrupper.
+Ikke behold det brede eksempelkravet for en konkret handling.
 
-Bare spørsmål besvart i denne kvelden kan gi grunnlag for et forslag.
-Tidligere profil-ja gir spørsmål, ikke automatisk ja i kveld.
-Profil-kanskje krever at den aktuelle personen åpner for nysgjerrighet i kveld.
-Nei og ubesvart åpner aldri en ny retning.
-Alle deltakere må ha en kompatibel forbindelse i hvert påkrevd tema.
-Tilfeldighet skjer først etter at alle krav er kontrollert.
-«Et annet forslag» unngår allerede viste forslag til det tillatte utvalget er brukt opp.
-Manglende dekning vises ærlig; ingen generell ramme settes inn som en påstått aktivitetsmatch.
+DYPERE – redigeringspakke for egne aktivitetsforslag
 
-Redigering:
-  1. Endre aktiviteter.json. Behold gamle ID-er.
-  2. Kjør valgfritt: python tekstbank/bygg-aktiviteter.py
-  3. Test innhold, tema-ID-er, roller, grenser og tomt resultat før publisering.
-  4. Oppdater versjon og tjenestearbeiderens hurtigbuffer som ved andre innholdsendringer.
+START HER
+Åpne mal-myk-kjapp-stund.json eller mal-intens-kjapp-stund.json i en teksteditor.
+Dette er utkast uten personlige svar eller ferdige handlingsbeskrivelser.
+Begge er enabled: false og inngår ikke i det publiserte registeret.
 
-Dette registeret er offentlig appinnhold. Ikke legg personlige profiler eller reelle svar i det.
+HVOR SKRIVER JEG?
+title: overskrift på forslagssiden.
+description: én kort oppsummering på forslagssiden.
+phases: delene som vises etter at aktiviteten er startet.
+  title: delens overskrift.
+  minutes: delens veiledende varighet som heltall.
+  level: delens nivå 1–5.
+  text: din egen tekst for akkurat denne delen.
+Du kan bruke tre, fem eller flere deler. Summen av minutes blir total varighet.
+Under 30 minutter regnes som kjapp stund. Nøyaktig 30 minutter gjør ikke det.
+Intensitet og varighet er uavhengige. Et høyt nivå øker ikke tilgjengelig tid.
+
+HVA STYRER HVEM SOM KAN FÅ FORSLAGET?
+id: en ny, unik ID per variant. Behold ID ved senere rettelser.
+enabled: false under arbeid, true først når alt er ferdig.
+genres: eksisterende kategori-ID-er. Kategori alene gir aldri et treff.
+level: minst like høyt som høyeste nivå i delene. Brukes mot kveldens nivåvalg.
+groups: antall deltakere opplegget faktisk fungerer med, f.eks. [2].
+requires: alle kravgrupper må oppfylles av kveldens bekreftede svar.
+  anyOf: minst ett av disse temaene må passe.
+  routes: kompatible retninger, f.eks. ["gi", "motta"] og omvendt.
+Se temaoppslag.json for faktiske ID-er, navn, kategorier og retninger.
+OBS: eksempelkravet i malene gjelder massasje. Bytt det til de faktiske temaene
+teksten din inneholder. Legg til en egen requires-gruppe per nødvendig tema.
+Et valgfritt hjelpemiddel skal ha en egen variant med eget krav hvis teksten
+forutsetter det. Motoren fjerner ikke deler av teksten automatisk.
+roleLabels: visningsnavn for retninger. Dette er ikke faste personer eller
+kjønnsroller. Navnene kobles fra kveldens faktiske, kompatible svar.
+
+LAG VARIASJON
+Kopier en oppføring, gi den ny ID og endre tittel, deler og riktige krav.
+Motoren velger tilfeldig blant ferdige, kompatible oppføringer. Den setter
+ikke vilkårlige tekstbiter sammen. Skriv derfor hvert forløp som en helhet.
+Teksten behandles som ren tekst, aldri HTML, og settes ikke sammen av AI.
+Det finnes foreløpig ingen personplassholdere i deltekstene. Bruk rollene.
+
+KONTROLLER OG KLARGJØR
+Fra denne mappen:
+  python klargjor.py mal-myk-kjapp-stund.json
+Dette kontrollerer utkastet uten å endre noe på nettstedet.
+Når innholdet er ferdig og enabled er true:
+  python klargjor.py mine-forslag.json --export mine-ferdige-aktiviteter.json
+Eksporten inneholder bare aktiverte oppføringer i appens eksisterende format.
+Eksporten legges til activities i tekstbank/aktiviteter.json ved en utgivelse.
+Deretter kjøres tekstbank/bygg-aktiviteter.py, matching og nettlesertest,
+versjons- og cacheoppdatering og publisering. Dette skjer ikke automatisk.
+Maler og verktøy her er lokale. Profilfiler skal aldri legges i registeret.
+
+BEGRENSNINGER
+Delminutter er en plan, ikke en stoppeklokke. Hvert krav må være riktig merket
+av den som skriver teksten; verktøyet kan ikke lese og forstå friteksten.
+Fokus på en rolle og ønsker om hjelpemidler må samsvare med konkrete temaer
+og roller, ikke bare nevnes som en ubehandlet merknad. Orgasme er ikke et
+resultat motoren kan garantere. Hvem som leder endrer ikke matchkravene.
