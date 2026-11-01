@@ -1,6 +1,9 @@
 (function(){
  'use strict';
- const catalog=window.DypereProfileCatalog||[],lookup=new Map(catalog.map(t=>[t.id,t]));
+ const source=window.DypereProfileCatalog||[],catalog=[],lookup=new Map(),equivalent=new Map();
+ // Merge only identical displayed concepts with identical directional schemas.
+ // Broad categories, related practices and anatomical variants remain separate.
+ for(const topic of source){const key=JSON.stringify([topic.label.normalize('NFKC').toLocaleLowerCase('nb'),topic.group,topic.directions.map(d=>[d.id,d.complement]).sort()]);let target=equivalent.get(key);if(!target){target={...topic,aliases:[...topic.aliases]};equivalent.set(key,target);catalog.push(target);}else target.aliases=[...new Set([...target.aliases,...topic.aliases])];lookup.set(topic.id,target);}
  const states=['ja','kanskje','nei'];
  function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',preferences:{},levels:{}};}
  function validate(raw){
@@ -11,14 +14,14 @@
   for(const [id,prefs] of Object.entries(raw.preferences)){
    const topic=lookup.get(id);if(!topic)throw Error('Profilen inneholder et ukjent tema.');
    if(!prefs||typeof prefs!=='object'||Array.isArray(prefs))throw Error('Ugyldige retningsvalg.');
-   const out={};for(const [dir,value] of Object.entries(prefs)){if(!topic.directions.some(d=>d.id===dir)||!states.includes(value))throw Error('Ugyldig retning eller svar.');out[dir]=value;}
-   if(Object.keys(out).length)result.preferences[id]=out;
+   const out=result.preferences[topic.id]||{},priority={ja:1,kanskje:2,nei:3};for(const [dir,value] of Object.entries(prefs)){if(!topic.directions.some(d=>d.id===dir)||!states.includes(value))throw Error('Ugyldig retning eller svar.');if(!out[dir]||priority[value]>priority[out[dir]])out[dir]=value;}
+   if(Object.keys(out).length)result.preferences[topic.id]=out;
   }
   if(raw.levels!==undefined&&(!raw.levels||typeof raw.levels!=='object'||Array.isArray(raw.levels)))throw Error('Ugyldig temarekkefølge.');
-  for(const [id,level] of Object.entries(raw.levels||{})){if(!lookup.has(id)||!Number.isInteger(level)||level<1||level>5)throw Error('Ugyldig intensitetsnivå.');result.levels[id]=level;}
+  for(const [id,level] of Object.entries(raw.levels||{})){if(!lookup.has(id)||!Number.isInteger(level)||level<1||level>5)throw Error('Ugyldig intensitetsnivå.');const canonical=lookup.get(id).id;result.levels[canonical]=Math.max(level,result.levels[canonical]||0);}
   return result;
  }
- function parse(text){if(typeof text!=='string'||text.length>2000000)throw Error('Profilfilen er for stor.');try{return validate(JSON.parse(text));}catch(error){if(error instanceof SyntaxError)throw Error('Filen kunne ikke leses som en profil.');throw error;}}
+ function parse(text){if(typeof text!=='string'||text.length>2000000)throw Error('Profilfilen er for stor.');try{return validate(JSON.parse(text.replace(/^\uFEFF/,'')));}catch(error){if(error instanceof SyntaxError)throw Error('Filen kunne ikke leses som en profil.');throw error;}}
  const positive=v=>v==='ja'||v==='kanskje';
  function plan(people,{curious=false,explore=false}={}){
   if(people.length<2||people.length>4||new Set(people.map(p=>p.id)).size!==people.length)throw Error('Velg 2–4 forskjellige profiler.');

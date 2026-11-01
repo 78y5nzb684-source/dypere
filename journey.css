@@ -160,3 +160,6 @@
 .question-navigation button{min-height:44px;margin:0!important}
 .question-navigation .primary{min-width:140px}
 @media(max-width:500px){.question-panel{padding:22px 18px!important}.question-panel .avatar-question{margin-top:18px}.question-navigation .primary{min-width:130px}}
+
+.profile-save-status:not(:empty){border-left:2px solid var(--gold);padding-left:10px;font-size:13px}.profile-topic h3:focus-visible{outline:2px solid var(--gold);outline-offset:6px}.profile-state-menus summary:focus-visible,.profile-level summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}#profileEditor input[aria-invalid=true]{border-color:var(--gold);outline:2px solid var(--gold)}
+.profile-state-menus summary{box-sizing:border-box;min-height:44px;display:flex;align-items:center;justify-content:center}.profile-level summary{min-height:28px;display:flex;align-items:center}
