@@ -96,3 +96,41 @@ window.DypereJourneyCategoryNames = {
   "watersports": "Urin som tema",
   "medical": "Medisinsk rollespill"
 };
+window.DypereJourneyTree = [
+  {
+    "id": "kontakt",
+    "name": "Nærhet og sanser",
+    "description": "Kontakt, oppmerksomhet og sanseinntrykk",
+    "groups": [
+      "naerhet"
+    ]
+  },
+  {
+    "id": "kropp",
+    "name": "Kropp og utforskning",
+    "description": "Områder, berøring og konkrete interesser",
+    "groups": [
+      "munn",
+      "dybde",
+      "lek"
+    ]
+  },
+  {
+    "id": "dynamikk",
+    "name": "Roller og dynamikk",
+    "description": "Lede, følge, kontroll og samspill",
+    "groups": [
+      "styring",
+      "kraft"
+    ]
+  },
+  {
+    "id": "variasjon",
+    "name": "Fantasi og variasjon",
+    "description": "Rollespill, rekvisitter og nye rammer",
+    "groups": [
+      "lek",
+      "risiko"
+    ]
+  }
+];

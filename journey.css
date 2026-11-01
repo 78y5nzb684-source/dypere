@@ -120,3 +120,18 @@
 .question-clarify label{display:block;margin-top:14px;font-size:14px}
 .question-clarify select,.journey-panel #profileTone{width:100%;min-height:48px;padding:10px;background:#17131a;color:var(--ink);border:1px solid var(--line);border-radius:10px;font:inherit}
 @media(max-width:500px){.match-table th,.match-table td{padding:12px 8px}.dictionary-dialog{padding:16px}.dictionary-heading{top:-16px}.match-scores{grid-template-columns:1fr}}
+
+/* Progressive interest tree: one allocation level at a time. */
+.tree-levels{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 20px}
+.tree-levels button{min-height:44px;font-size:13px;padding:8px 12px}
+.tree-levels button[aria-pressed=true]{background:var(--gold);color:#17131a}
+.tree-levels button:disabled{opacity:.45}
+.tree-choice strong{display:block;font-size:15px;line-height:1.5;padding-top:10px}
+.tree-choice .journey-note{margin:6px 0 12px}
+.tree-path{font-size:13px;color:var(--gold);margin:18px 0 8px}
+.profile-preferences>label{display:block;margin:16px 0 6px;font-size:14px}
+.profile-preferences>select{width:100%;min-height:48px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#17131a;color:var(--ink);font:inherit}
+.interest-trees{border-top:1px solid var(--line);padding-top:14px;margin:20px 0}
+.interest-tree,.interest-tree ul{list-style:none;padding-left:14px;border-left:1px solid var(--line)}
+.interest-tree li{margin:12px 0;font-size:14px;line-height:1.5}
+.interest-tree strong{color:var(--gold)}

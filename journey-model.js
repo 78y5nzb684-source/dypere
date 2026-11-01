@@ -29,7 +29,30 @@
    }
    return entries;
  }
- function profile(id){return {id,name:'',points:16,allocated:{},scores:{},recent:[],recentCats:[],seenText:new Set(),seenFamilies:new Set(),seenTopics:new Set(),answers:[],consent:false};}
+ function profile(id){return {id,name:'',points:8,allocated:{},treeAllocated:[{},{},{}],treePoints:[8,4,4],scores:{},recent:[],recentCats:[],seenText:new Set(),seenFamilies:new Set(),seenTopics:new Set(),answers:[],consent:false};}
+ const roots=window.DypereJourneyTree;
+ function leaves(entries,group){
+   const found=new Map();for(const e of entries){const q=e.card||e;if(q.categoryId!==group||q.area==='uavklart')continue;
+     const id=group+':'+q.cat;if(!found.has(id))found.set(id,{id,name:q.cat==='fisting'&&group==='lek'?'Vaginal fisting':window.DypereJourneyCategoryNames[q.cat]||q.cat,cat:q.cat,group});}
+   return [...found.values()];
+ }
+ function treeNodes(level,entries){return level===0?roots:level===1?categories:categories.flatMap(c=>leaves(entries,c.id));}
+ function allocate(p,level,id,delta,entries,unlocked=2){
+   if(!Number.isInteger(level)||level<0||level>unlocked||level>2||![1,-1].includes(delta)||!treeNodes(level,entries).some(n=>n.id===id))return false;
+   if(delta>0&&p.treePoints[level]<1||delta<0&&!(p.treeAllocated[level][id]>0))return false;
+   p.treeAllocated[level][id]=(p.treeAllocated[level][id]||0)+delta;p.treePoints[level]-=delta;return true;
+ }
+ function priority(p,q,entries){
+   if(!p.treeAllocated)return p.allocated[q.categoryId]||0;
+   const [top,middle,bottom]=p.treeAllocated;
+   const paths=roots.filter(root=>root.groups.includes(q.categoryId)).map(root=>{
+     const childTotal=root.groups.reduce((n,id)=>n+1+(middle[id]||0),0);
+     return (1+(top[root.id]||0))*(1+(middle[q.categoryId]||0))/childTotal;
+   });
+   const children=leaves(entries,q.categoryId),total=children.reduce((n,c)=>n+1+(bottom[c.id]||0),0);
+   // Shared nodes use the strongest route, never a duplicated sum of the same node.
+   return Math.max(0,...paths)*(1+(bottom[q.categoryId+':'+q.cat]||0))/Math.max(1,total);
+ }
  function rank(mode,segment,step,lengths){const progress=(segment-1+step/lengths[segment-1])/3;return 1+Math.pow(progress,mode==='kartlegg'?0.85:1.25)*(mode==='kartlegg'?2.5:4);}
  function pick(p,entries,currentRang,random=Math.random,peers=[]){
    if(!entries)return null;
@@ -52,7 +75,7 @@
      const id=e.card.categoryId;
      // No-answer is never negative interest. Maybe is not a weak yes.
      const interest=p.answers.filter(a=>a.categoryId===id&&a.vote==='ja').length;
-     const prior=p.allocated[id]||0;
+     const prior=priority(p,e.card,entries)*8;
      const rankWeight=1/(1+Math.abs(e.card.rang-currentRang));
      return {entry:e,weight:(1+prior*.25+interest*.35)*rankWeight/sizes[id]};
    });
@@ -97,5 +120,5 @@
    const raw=categories.map(s=>({id:s.id,name:s.name,value:profiles.reduce((sum,p)=>sum+p.answers.filter(a=>(a.categoryId||categories.find(c=>c.cat.includes(a.cat))?.id)===s.id&&a.vote==='ja').length,0)}));
    const max=Math.max(0,...raw.map(s=>s.value));return raw.map(s=>({...s,score:max?Math.round(s.value/max*100):0}));
  }
- window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,vote,responses,match,chemistry});
+ window.DypereJourneyModel=Object.freeze({normalize,family,index,indexReport,validerLanguage,profile,rank,pick,vote,responses,match,chemistry,leaves,treeNodes,allocate,priority});
 })();

@@ -2,7 +2,7 @@
  'use strict';
  const U=DypereUI,{node,$}=U,M=window.DypereJourneyModel;
  const view=$('journeyView'),exit=$('journeyExit');
- const skills=window.DypereJourneyCategories,names=window.DypereJourneyCategoryNames;
+ const skills=window.DypereJourneyCategories,names=window.DypereJourneyCategoryNames,roots=window.DypereJourneyTree;
  const language=window.DypereJourneyLanguage||{},entries=M.index(window.DypereVarStundBank);
  M.indexReport().skipped.forEach(row=>console.warn('Vår stund: hoppet over rad',row.id,row.reason));
  M.validerLanguage(language).forEach(key=>console.warn('Vår stund: manglende språkoppføring',key));
@@ -13,11 +13,11 @@
  const sessionId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
  const confirmations=new Map();
  const notes=new Map();let reportFilter='yes',reportBody=null,reportData=null;
- function copyProfile(p){return {...p,allocated:{...p.allocated},scores:{...p.scores},recent:[...p.recent],recentCats:[...p.recentCats],seenText:new Set(p.seenText),seenFamilies:new Set(p.seenFamilies),seenTopics:new Set(p.seenTopics),answers:[...p.answers]};}
+ function copyProfile(p){return {...p,allocated:{...p.allocated},treeAllocated:p.treeAllocated.map(a=>({...a})),treePoints:[...p.treePoints],scores:{...p.scores},recent:[...p.recent],recentCats:[...p.recentCats],seenText:new Set(p.seenText),seenFamilies:new Set(p.seenFamilies),seenTopics:new Set(p.seenTopics),answers:[...p.answers]};}
  function remember(details){history.push({details,profiles:profiles.map(copyProfile),active,segment,step,setupIndex,question:current});}
  function previous(){
    if(busy||!history.length)return;
-   const oldActive=active,frame=history.pop();profiles=frame.profiles.map(copyProfile);active=frame.active;segment=frame.segment;step=frame.step;setupIndex=frame.setupIndex;current=frame.question;restoredChoice=frame.details;finished=false;result=null;reportData=null;chosen=false;confirmations.clear();custom='';customDraft=null;confirmations.clear();
+   const oldActive=active,frame=history.pop();profiles=frame.profiles.map(copyProfile);active=frame.active;segment=frame.segment;step=frame.step;setupIndex=frame.setupIndex;current=frame.question;restoredChoice=frame.details;finished=false;result=null;reportData=null;chosen=false;confirmations.clear();custom='';customDraft=null;
    if(active!==oldActive)showHandoff(true);else showQuestion();
  }
  const currentProfile=()=>profiles[active];
@@ -40,7 +40,7 @@
  }
  async function changeParty(b){
    const r=revision;b.disabled=true;
-   const hasData=!!document.getElementById('avatarName')?.value.trim()||profiles.some(a=>a.name||Object.values(a.allocated).some(Boolean)||a.answers.length);
+   const hasData=!!document.getElementById('avatarName')?.value.trim()||profiles.some(a=>a.name||a.treeAllocated.some(level=>Object.values(level).some(Boolean))||a.answers.length);
    const yes=!hasData||await U.confirmAction('Endre deltakere og fjerne profilene og svarene som er lagt inn?','Ja, endre deltakere');
    if(r!==revision)return;b.disabled=false;if(yes)showParty();
  }
@@ -56,25 +56,52 @@
    options.append(button('Finn stemningen',()=>choose('oppvarming'),'primary journey-party-choice'),node('p','En stund hjemme, med plass til å finne stemningen sammen.','journey-note'),button('Kartlegg interesser',()=>choose('kartlegg'),'journey-party-choice'),node('p','Utforsk interesser og fantasier, uavhengig av hvor dere er.','journey-note'));
    p.append(options,button('Endre deltakere',changeParty,'text-button'));
  }
+ function showTreeChoices(a,host,level,rootId=null,groupId=null){
+   const focusId=document.activeElement?.id,focusLabel=document.activeElement?.textContent;host.replaceChildren();
+   const levelButtons=[];
+   const nav=node('div',undefined,'tree-levels');nav.setAttribute('role','group');nav.setAttribute('aria-label','Velg nivå i interessetreet');
+   ['Hovedgrener','Undergrener','Temaer'].forEach((label,i)=>{const b=button(label,()=>showTreeChoices(a,host,i));b.disabled=i>segment-1;b.setAttribute('aria-pressed',String(i===level));nav.append(b);levelButtons.push(b);});host.append(nav);
+   const suggestedRoot=roots.slice().sort((x,y)=>(a.treeAllocated[0][y.id]||0)-(a.treeAllocated[0][x.id]||0)||a.answers.filter(v=>v.vote==='ja'&&y.groups.includes(v.categoryId)).length-a.answers.filter(v=>v.vote==='ja'&&x.groups.includes(v.categoryId)).length)[0];
+   const root=roots.find(r=>r.id===rootId)||suggestedRoot;
+   const select=(label,id,options,value,action)=>{const caption=node('label',label);caption.htmlFor=id;const input=node('select');input.id=id;for(const o of options){const option=node('option',o.name);option.value=o.id;input.append(option);}input.value=value;input.onchange=()=>action(input.value);host.append(caption,input);};
+   if(level>0)select('Hovedgren','treeRoot',roots,root.id,value=>showTreeChoices(a,host,level,value));
+   const groups=skills.filter(g=>root.groups.includes(g.id));
+   const suggested=groups.slice().sort((x,y)=>(a.treeAllocated[1][y.id]||0)-(a.treeAllocated[1][x.id]||0)||a.answers.filter(v=>v.vote==='ja'&&v.categoryId===y.id).length-a.answers.filter(v=>v.vote==='ja'&&v.categoryId===x.id).length)[0];
+   const group=groups.find(g=>g.id===groupId)||suggested;
+   if(level===2)select('Undergren','treeGroup',groups,group.id,value=>showTreeChoices(a,host,level,root.id,value));
+   const path=level===0?'Dine interesser':root.name+(level===2?' › '+group.name:'');host.append(node('p',path,'tree-path'));
+   const pts=node('p','Poeng igjen på dette nivået: '+a.treePoints[level],'journey-budget');pts.setAttribute('aria-live','polite');host.append(pts);
+   const list=level===0?roots:level===1?groups:M.leaves(entries,group.id),controls=[];
+   list.forEach(item=>{
+     const row=node('div',undefined,'avatar-category tree-choice'),text=node('div');text.append(node('strong',item.name));
+     if(item.description)text.append(node('p',item.description,'journey-note'));
+     const buttons=node('div',undefined,'avatar-category-controls'),value=node('output',a.treeAllocated[level][item.id]||0);value.setAttribute('aria-label',item.name+' poeng');
+     const refresh=()=>{pts.textContent='Poeng igjen på dette nivået: '+a.treePoints[level];controls.forEach(c=>{c.value.textContent=a.treeAllocated[level][c.id]||0;c.minus.disabled=!(a.treeAllocated[level][c.id]>0);c.plus.disabled=a.treePoints[level]<1;});};
+     const change=delta=>{if(M.allocate(a,level,item.id,delta,entries,segment-1)){a.points=a.treePoints[segment-1];refresh();}};
+     const minus=button('−',()=>change(-1)),plus=button('+',()=>change(1));minus.setAttribute('aria-label','Fjern poeng fra '+item.name);plus.setAttribute('aria-label','Legg poeng til '+item.name);minus.disabled=!(a.treeAllocated[level][item.id]>0);plus.disabled=a.treePoints[level]<1;
+     controls.push({id:item.id,value,minus,plus});buttons.append(minus,value,plus);row.append(text,buttons);host.append(row);
+   });
+   host.append(node('p',level===0?'Poeng velger hva vi undersøker først. Null poeng betyr uprioritert, ikke nei.':'Velg en annen hovedgren for å utforske en annen retning. Poeng på ulike nivåer er separate.','journey-note'));
+   if(focusId==='treeRoot'||focusId==='treeGroup')document.getElementById(focusId)?.focus();else levelButtons.find(b=>b.textContent===focusLabel)?.focus();
+   if(level>0)host.append(node('p','En undergren kan nås fra flere hovedgrener. Det er samme valg og samme poeng begge steder.','journey-note'));
+ }
+ function appendInterestTrees(p){
+   const all=node('details',undefined,'interest-trees');all.append(node('summary','Se interessetrærne'),node('p','Poeng viser prioritering på hvert nivå. Svarene nedenfor avgjør treffene.','journey-note'));
+   profiles.forEach(a=>{const person=node('details');person.append(node('summary',a.name));const tree=node('ul',undefined,'interest-tree');
+     roots.forEach(root=>{const branch=node('li');branch.append(node('strong',root.name+' · '+(a.treeAllocated[0][root.id]||0)+' poeng'));const children=node('ul');
+       root.groups.forEach(id=>{const g=skills.find(s=>s.id===id),child=node('li');child.append(node('span',g.name+' · '+(a.treeAllocated[1][id]||0)+' poeng'));const themes=node('ul');
+         M.leaves(entries,id).forEach(leaf=>{const count=a.treeAllocated[2][leaf.id]||0;if(count){themes.append(node('li',leaf.name+' · '+count+' poeng'));}});if(themes.children.length)child.append(themes);children.append(child);});branch.append(children);tree.append(branch);});person.append(tree);all.append(person);});p.append(all);
+ }
  function showSetup(){
    const a=profiles[setupIndex],first=segment===1;
-   const p=panel(first?'Lag profilen din':'Juster '+a.name,'AVATAR '+(setupIndex+1));
-   p.append(node('p',first?'Velg et navn. Du kan la spørsmålene vise veien, eller velge interesser først.':'Har interessene dine endret seg? Du har fått fire nye poeng og kan flytte poeng mellom kategoriene.'));
+   const p=panel(first?'Lag profilen din':'Hvor vil du utforske videre, '+a.name+'?','AVATAR '+(setupIndex+1));
+   p.append(node('p',first?'Velg et navn og en retning. Du har åtte poeng på fire hovedgrener. Du kan også la spørsmålene vise veien.':'Du har fire poeng på det nye nivået. Du kan også gå tilbake og flytte tidligere poeng.'));
    const label=node('label','Avatarnavn');label.htmlFor='avatarName';
    const input=node('input');input.id='avatarName';input.type='text';input.maxLength=24;input.autocomplete='off';input.value=a.name;input.placeholder='Velg et navn';
    let tone=null;
    if(first){p.append(label,input);const toneLabel=node('label','Språktone'),toneSelect=node('select');toneSelect.id='profileTone';toneLabel.htmlFor='profileTone';for(const [value,text] of [['diskret','Diskret'],['direkte','Direkte']]){const option=node('option',text);option.value=value;toneSelect.append(option);}toneSelect.value=a.tone||'diskret';tone=toneSelect;p.append(toneLabel,toneSelect,node('p','Bare ordvalg og visning av detaljer. Interessen din vurderes på samme måte.','journey-note'));}
 
-   const preferences=node('details',undefined,'profile-preferences');preferences.append(node('summary','Velg interesser først (valgfritt)'));p.append(preferences);
-   const pts=node('p','Poeng igjen: '+a.points,'journey-budget');pts.setAttribute('aria-live','polite');preferences.append(pts);
-   skills.forEach(s=>{
-     const row=node('div',undefined,'avatar-category'),info=node('details'),summary=node('summary',s.name),copy=node('p',s.cat.map(c=>names[c]||c).join(' · ')+(s.id==='lek'?' · Vaginal fisting · Fisting med uavklart område':''),'journey-note');info.append(summary,copy);
-     const controls=node('div',undefined,'avatar-category-controls'),value=node('output',a.allocated[s.id]||0);value.setAttribute('aria-label',s.name+' poeng');
-     const update=delta=>{if(delta>0&&a.points<1||delta<0&&!(a.allocated[s.id]>0))return;a.allocated[s.id]=(a.allocated[s.id]||0)+delta;a.points-=delta;value.textContent=a.allocated[s.id];pts.textContent='Poeng igjen: '+a.points;minus.disabled=!a.allocated[s.id];};
-     const minus=button('−',()=>update(-1)),plus=button('+',()=>update(1));
-     minus.setAttribute('aria-label','Fjern poeng fra '+s.name);plus.setAttribute('aria-label','Legg poeng til '+s.name);minus.disabled=!(a.allocated[s.id]>0);
-     controls.append(minus,value,plus);row.append(info,controls);preferences.append(row);
-   });
+   const preferences=node('div',undefined,'profile-preferences');p.append(preferences);showTreeChoices(a,preferences,segment-1);
    let consent=null;
    if(first){
      const box=node('label',undefined,'journey-check');consent=node('input');consent.type='checkbox';consent.checked=a.consent;
@@ -132,7 +159,7 @@
  function advance(){
    active++;step=0;if(active<profiles.length){showHandoff();return;}
    if(segment===3){finished=true;showMatch();return;}
-   segment++;active=0;setupIndex=0;profiles.forEach(a=>{a.points+=4;});showSetupHandoff();
+   segment++;active=0;setupIndex=0;profiles.forEach(a=>{a.points=a.treePoints[segment-1];});showSetupHandoff();
  }
  function showUnavailable(reason){
    finished=true;const p=panel(reason==='bank'?'Spørsmålene kunne ikke lastes':'Alle aktuelle spørsmål er brukt');
@@ -221,6 +248,7 @@
    const legend=node('dl',undefined,'match-scores');M.chemistry(profiles).forEach(axis=>{const row=node('div');row.append(node('dt',axis.name),node('dd',axis.score+' / 100'));legend.append(row);});p.append(legend);
    const yes=reportData.filter(x=>x.pairs.some(pair=>pair.beggeJa)).length,maybe=reportData.filter(x=>x.kanskjeCount>=2).length;
    p.append(node('p',profiles.length===2?yes+(yes===1?' tema har':' temaer har')+' dere begge sagt ja til. '+maybe+' sier begge kanskje.':yes+(yes===1?' tema har':' temaer har')+' minst to sagt ja til. '+maybe+' har minst to svart kanskje på.','match-count'));
+   appendInterestTrees(p);
    const filters=node('div',undefined,'match-filters');filters.setAttribute('role','group');filters.setAttribute('aria-label','Velg hvilke svar som vises');
    const buttons=[];
    [['Begge ja','yes'],['Til avklaring','mixed'],['Alt','all']].forEach(([label,key])=>{

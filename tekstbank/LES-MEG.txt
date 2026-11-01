@@ -1,4 +1,4 @@
-DYPERE – redigerbar tekstbank, 3.0.18 beta
+DYPERE – redigerbar tekstbank, 3.0.19 beta
 
 86 oppslag med stabile nøkler og ID-er. Ingen nye avhengigheter.
 spraak.json bygger journey-language.js med eksisterende tre question-tekster,
@@ -17,7 +17,11 @@ scenarier.json: tre eksisterende rammer, ingen nye handlinger.
 Forslag for hele gruppen får bare retning fra konkrete temaer alle har
 svart ja til. Parvise treff gjelder kun personene som står oppført.
 
-Frivillig poengfordeling: 16 + 4 + 4. Poeng er bare en startprioritering.
+Interesstre: 8 poeng på fire hovedgrener, 4 på undergrener, 4 på konkrete temaer.
+Nivåene har separate saldoer og kan justeres senere. Delte undergrener
+bruker én node-ID og én saldo. Poeng er prioritering, aldri et ja.
+Nye røtter er kun navigasjon. Dagens undergrupper og innhold beholdes.
+Modellen bruker sterkeste vei til delte noder og normaliserer innen grenen.
 12 brede spørsmål + 6 + 6 oppfølgingsspørsmål per person i begge moduser.
 Motoren veksler mellom avklaring, utforskning og kontroll av mulige treff.
 Kanskje prioriterer avklaring, ikke positiv interesse. Nei sperrer det

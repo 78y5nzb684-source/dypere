@@ -11,6 +11,8 @@ scenarios=load('scenarier.json')
 assert isinstance(language,dict) and language
 assert len({s['id'] for s in categories['groups']})==len(categories['groups'])
 assert len({s['id'] for s in scenarios})==len(scenarios)
+assert len(categories['tree'])==4 and len({r['id'] for r in categories['tree']})==4
+assert all(r['groups'] and all(g in {s['id'] for s in categories['groups']} for g in r['groups']) for r in categories['tree'])
 for key,value in language.items():
     assert isinstance(key,str) and key
     assert isinstance(value.get('explanation'),str) and value['explanation'].strip()
@@ -28,7 +30,7 @@ for s in scenarios:
 dump=lambda x:json.dumps(x,ensure_ascii=False,indent=2)
 outputs={
     'journey-language.js':'window.DypereJourneyLanguage = '+dump(language)+';\n',
-    'journey-categories.js':'window.DypereJourneyCategories = '+dump(categories['groups'])+';\nwindow.DypereJourneyCategoryNames = '+dump(categories['names'])+';\n',
+    'journey-categories.js':'window.DypereJourneyCategories = '+dump(categories['groups'])+';\nwindow.DypereJourneyCategoryNames = '+dump(categories['names'])+';\nwindow.DypereJourneyTree = '+dump(categories['tree'])+';\n',
     'journey-scenarios.js':'window.DypereJourneyScenarios = '+dump(scenarios)+';\n'
 }
 for filename,text in outputs.items():(app/filename).write_bytes(text.encode('utf-8'))
