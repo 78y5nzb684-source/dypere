@@ -19,7 +19,7 @@ window.DypereJourneyCategories = [
   },
   {
     "id": "dybde",
-    "name": "Anal utforsking",
+    "name": "Rumpelek",
     "cat": [
       "anal",
       "fisting",

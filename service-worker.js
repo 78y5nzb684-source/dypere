@@ -1,8 +1,8 @@
 /* DYPERE 3.0.17 beta | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-17-beta-r1';
+const CACHE = 'dypere-3-0-17-beta-r2';
 const ASSETS = [
   "./journey-language.js?build=3.0.17-beta-r1",
-  "./journey-categories.js?build=3.0.17-beta-r1",
+  "./journey-categories.js?build=3.0.17-beta-r2",
   "./journey-model.js?build=3.0.17-beta-r1",
   "./journey-scenarios.js?build=3.0.17-beta-r1",
 
