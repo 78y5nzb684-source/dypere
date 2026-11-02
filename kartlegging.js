@@ -11,6 +11,7 @@
  const button=(label,fn,cls='')=>{const b=node('button',label,cls);b.type='button';b.onclick=fn;return b;};
  const title=node('h2',editMode?'Åpne interesseprofilen din':'Dine valg'),intro=node('p',editMode?'Velg profilfilen for å lese eller endre dine faste interesser. Kveldens svar endrer ikke denne filen.':'For voksne 18+. Velg det som passer. Du trenger ikke svare på alt. Ubesvart betyr ukjent.','journey-note');
  const nameLabel=node('label','Profilnavn'),name=node('input');name.id='profileName';name.maxLength=60;name.autocomplete='off';name.required=true;nameLabel.htmlFor=name.id;
+ const roleLabel=node('label','Din rolle'),role=node('select');role.id='profileDynamicRole';roleLabel.htmlFor=role.id;for(const [value,text] of [['','Velg rolle'],['dom','Dom'],['sub','Sub']]){const option=node('option',text);option.value=value;role.append(option);}role.onchange=()=>{profile.dynamicRole=role.value||null;changed();};
  const status=node('p',undefined,'profile-save-status');status.id='profileSaveStatus';status.setAttribute('role','status');name.setAttribute('aria-describedby',status.id);
  function changed(){if(!dirty)status.textContent='Ulagrede endringer';dirty=true;}
  name.oninput=()=>{profile.name=name.value;name.setAttribute('aria-invalid','false');changed();};
@@ -25,6 +26,7 @@
  function save(){
   if(loading)return;
   if(!name.value.trim()){status.textContent='Skriv et profilnavn før du lagrer.';name.setAttribute('aria-invalid','true');name.focus();return;}
+  if(!role.value){status.textContent='Velg din rolle før du lagrer.';role.focus();return;}
   try{profile.name=name.value;P.download(profile);dirty=false;status.textContent='Profilfilen er klar for nedlasting. Ta vare på den til neste stund.';}catch(e){status.textContent=e.message;}
  }
  const saveTop=button('Lagre profilfil',save,'primary'),saveBottom=button('Lagre endringene',save,'primary');
@@ -34,7 +36,7 @@
    if(file.size>2000000)throw Error('Profilfilen er for stor.');
    const incoming=P.parse(await file.text());
    if(dirty&&!await DypereUI.confirmAction('Åpne en annen profil og forkaste ulagrede endringer?','Ja, åpne profilen'))return;
-   profile=incoming;name.value=profile.name;offset=0;dirty=false;filter='answered';select.value='answered';editor.hidden=false;name.setAttribute('aria-invalid','false');title.textContent='Din interesseprofil';status.textContent='Profilen er åpnet. Endringer lagres i en ny fil.';render();
+   profile=incoming;name.value=profile.name;role.value=profile.dynamicRole||'';offset=0;dirty=false;filter='answered';select.value='answered';editor.hidden=false;name.setAttribute('aria-invalid','false');title.textContent='Din interesseprofil';status.textContent='Profilen er åpnet. Endringer lagres i en ny fil.';render();
   }catch(e){status.textContent=e.message;}finally{loading=false;open.disabled=false;saveTop.disabled=false;saveBottom.disabled=false;open.value='';}
  };
  const next=node('a','Last inn profiler til Vår stund','profile-start');next.href='./var-stund.html';
@@ -43,7 +45,7 @@
  const footer=node('div',undefined,'profile-save');footer.append(saveTop,next,note);
  const ordering=node('details',undefined,'journey-more');ordering.append(node('summary','Om katalogen og rekkefølgen'),node('p','Filene leses på enheten og sendes ikke til en server. Norske navn brukes der vi har dem; øvrige navn beholdes fra kilden. Nye katalogtemaer starter på middels nivå. Du kan tilpasse nivået under hvert tema. Rekkefølgen er veiledende. Fjern et valgt svar for å gjøre retningen ubesvart igjen.','journey-note'));
  const opener=node('div',undefined,'profile-save');opener.append(openLabel,open,status);
- const editor=node('div',undefined,'profile-editor-content');editor.hidden=editMode;editor.append(nameLabel,name,footer,ordering,controls,count,list,pager,saveBottom);
+ const editor=node('div',undefined,'profile-editor-content');editor.hidden=editMode;editor.append(nameLabel,name,roleLabel,role,node('p','Rollen vises bare i din egen profilvisning. Profilfilen er lesbar for den som har den.','journey-note'),footer,ordering,controls,count,list,pager,saveBottom);
  host.append(title,intro,opener,editor);
  function syncBoxes(boxes,prefs,topic){
   for(const [input,value,direction] of boxes){const eligible=topic.directions.filter(d=>value==='nei'||prefs[d.id]!=='nei');input.checked=direction==='*'?eligible.length>0&&eligible.every(d=>prefs[d.id]===value):prefs[direction]===value;if(direction==='*')input.disabled=!eligible.length;}

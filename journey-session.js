@@ -6,6 +6,7 @@
   const quicky={};for(const [id,value] of Object.entries(raw.quicky||{}))if(value===true)quicky[id]=true;
   return {quicky,minutes:[15,30,60].includes(Number(raw.minutes))?Number(raw.minutes):30,max:[2,3,5].includes(Number(raw.max))?Number(raw.max):3,curiosity};
  }
+ function rolePair(a,b){return !a.dynamicRole&&!b.dynamicRole||['dom','sub'].includes(a.dynamicRole)&&['dom','sub'].includes(b.dynamicRole)&&a.dynamicRole!==b.dynamicRole;}
  function candidates(people,entries,raw={}){
   const settings=options(typeof raw==='number'?{max:raw}:raw),byId=new Map(entries.map(e=>[e.card.id,e.card])),rows=new Map();
   const accepts=(index,value)=>value==='ja'||settings.curiosity[people[index].id]===true&&value==='kanskje';
@@ -15,7 +16,7 @@
    const allowed=people.map(()=>new Set()),certain=people.map(()=>new Set());
    for(let a=0;a<people.length;a++)for(let b=a+1;b<people.length;b++)for(const d of topic.directions)for(const c of M.complements(d)){
     const x=people[a].preferences[topic.id]?.[d.id],y=people[b].preferences[topic.id]?.[c];
-    if(accepts(a,x)&&accepts(b,y)){allowed[a].add(d.id);allowed[b].add(c);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(c);}}
+    if((!people[a].dynamicRole||!people[b].dynamicRole||rolePair(people[a],people[b]))&&accepts(a,x)&&accepts(b,y)){allowed[a].add(d.id);allowed[b].add(c);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(c);}}
    }
    if(!allowed.every(d=>d.size))continue;
    const item={topic,card:{...card,rang:level},allowed:allowed.map(d=>[...d]),uncertain:!certain.every(s=>s.size)};
@@ -30,7 +31,7 @@
   const picked=[];
   // These temporary answers only plan which questions to ask. They never enter
   // the evening's answers, source profiles or final result.
-  const possible=people.map((_,index)=>M.profile('planning-'+index));
+  const possible=people.map((saved,index)=>Object.assign(M.profile('planning-'+index),{dynamicRole:saved.dynamicRole||null}));
   for(const item of available)possible.forEach((person,index)=>M.voteDirections(person,item.card,Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:'ja'}));
   const plans=(window.DypereActivityRegistry?.eligible(pool(possible,entries),people.length,settings)||[]).filter(row=>new Set(row.evidence.map(item=>item.id)).size<=count);
   if(plans.length){const index=Math.min(plans.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*plans.length));for(const evidence of plans[index].evidence){const item=available.find(item=>item.card.id===evidence.id);if(item&&!picked.some(p=>p.card.id===item.card.id))picked.push(item);}}
@@ -44,11 +45,11 @@
   const defs=M.directions(item.card),allowed=item.allowed;
   const positive=(index,direction)=>{const answer=profiles[index].answers.findLast(a=>a.id===item.card.id);return answer?answer.actuality==='ja'&&answer.preferences[direction]==='ja':allowed[index].includes(direction);};
   const covered=profiles.map(()=>false);
-  for(let a=0;a<profiles.length;a++)for(let b=a+1;b<profiles.length;b++)for(const d of defs)for(const c of M.complements(d))if(positive(a,d.id)&&positive(b,c)){covered[a]=true;covered[b]=true;}
+  for(let a=0;a<profiles.length;a++)for(let b=a+1;b<profiles.length;b++)for(const d of defs)for(const c of M.complements(d))if(rolePair(profiles[a],profiles[b])&&positive(a,d.id)&&positive(b,c)){covered[a]=true;covered[b]=true;}
   return covered.every(Boolean);
  }
  function pool(profiles,entries){
-  return M.match(profiles,entries).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
+  return M.match(profiles,entries).map(item=>({...item,pairs:item.pairs.filter(pair=>rolePair(profiles[pair.a],profiles[pair.b]))})).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
  }
  function enough(profiles,entries,settings,selectedCount){
   const matched=pool(profiles,entries),minimum=Math.min(2,selectedCount),target=Object.values(settings.quicky||{}).some(Boolean)?1:settings.minutes===15?1:settings.minutes===30?2:3;

@@ -18,6 +18,7 @@
  let shortPlan=null,activityChoice=null;const activitySeen=new Set(),A=window.DypereActivityRegistry;
  A.validate().forEach(error=>console.warn('Aktivitetsregister:',error));
  const sessionOverrides=new Map();
+ const quickyAnswered=new Set();
  const backButton=$('journeyBack');let backAction=null,screenId='',screenRenderer=null,reportReturn=null,proposalReturn=null;
  let loadedProfiles=[],partyFingerprint='',navigatingBack=false,runningActivityId=null,runCompleted=false;
  function navigation(id,action,destination,render){
@@ -72,7 +73,7 @@
    const r=revision;b.disabled=true;
    const hasData=!!document.getElementById('avatarName')?.value.trim()||profiles.some(a=>a.name||a.treeAllocated.some(level=>Object.values(level).some(Boolean))||a.answers.length);
    const yes=!hasData||await U.confirmAction('Endre deltakere og fjerne profilene og svarene som er lagt inn?','Ja, endre deltakere');
-   if(r!==revision)return;b.disabled=false;if(yes){started=false;profiles=[];sourceProfiles=[];loadedProfiles=[];partyFingerprint='';history.length=0;sessionOverrides.clear();shortPlan=null;showParty();}
+   if(r!==revision)return;b.disabled=false;if(yes){started=false;profiles=[];sourceProfiles=[];loadedProfiles=[];partyFingerprint='';history.length=0;sessionOverrides.clear();quickyAnswered.clear();shortPlan=null;showParty();}
  }
  function selectParty(count){
    shortSession=false;sourceProfiles=[];shortQueue=[];
@@ -162,6 +163,7 @@
    navigation('handoff',initialSessionBack,history.length?'forrige spørsmål':shortSession?'kveldens rammer':'profiloppsettet',()=>showHandoff(true));
    if(!preserve)current=null;busy=false;const a=currentProfile(),p=panel('Din tur, '+a.name,'GI TELEFONEN VIDERE');
    p.append(node('p','Svar for deg selv. De andre trenger ikke se hvilke svar du velger.'));p.append(button('Jeg er '+a.name,showQuestion,'primary'));
+   if(shortSession)p.append(button('Endre mitt valg for kjapp stund',()=>showPrivateQuickyHandoff(sourceProfiles,active,()=>prepareShortSession(sourceProfiles),()=>showHandoff(true)),'text-button'));
  }
  function showQuestion(){
    if(busy||finished)return;started=true;if(!entries?.length){showUnavailable('bank');return;}
@@ -170,7 +172,8 @@
    const q=current,l=language[M.family(q.text).slice(5)];
    const p=panel(a.name,'AVATAR '+(active+1)+' · '+(importedSession?'DERES FELLES UTVALG':['BRED UTFORSKNING','FINN FELLES INTERESSER','AVKLAR DET SOM PASSER'][segment-1]),false),progress=node('progress');progress.max=lengths.reduce((x,y)=>x+y,0);progress.value=lengths.slice(0,segment-1).reduce((x,y)=>x+y,0)+step;
    const topic=l?.topic||q.topic||q.text;
-   const text='«'+topic+'» – hva frister'+(importedSession?' i kveld':'')+'?';
+   const role=shortSession?sourceProfiles[active].dynamicRole:null,partner=shortSession&&sourceProfiles.length===2?sourceProfiles[1-active].name:'de andre';
+   const text=role==='dom'?'«'+topic+'» – hva vil du ta initiativ til med '+partner+' i kveld?':role==='sub'?'«'+topic+'» – hva ønsker du at '+partner+' tar initiativ til i kveld?':'«'+topic+'» – hva frister'+(importedSession?' i kveld':'')+'?';
    const question=node('p',text,'avatar-question');question.id='avatarQuestion';question.tabIndex=-1;
    progress.setAttribute('aria-label','Fremdrift for '+a.name);progress.setAttribute('aria-valuetext','Spørsmål '+(progress.value+1)+' av '+progress.max);p.append(progress,question);
 
@@ -395,7 +398,7 @@
   window.addEventListener('popstate',event=>{if(event.state?.dypereJourney&&!event.state.guard){window.history.pushState({dypereJourney:true,guard:true},'');navigateBack();}});
  }
  const curtain=$('journeyPrivacy'),resume=$('journeyContinue');
- document.addEventListener('visibilitychange',()=>{if(document.hidden&&started&&!finished&&!curtain.open&&!document.querySelector('.studio-dialog[open]'))curtain.showModal();});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden&&(started||['private-quicky','private-role'].includes(screenId))&&!finished&&!curtain.open&&!document.querySelector('.studio-dialog[open]'))curtain.showModal();});
  resume.onclick=()=>curtain.close();
 
  function showToday(people){
@@ -404,10 +407,9 @@
   const p=panel('Hvordan er kvelden?','VÅR STUND');p.append(node('p','Profilene er utgangspunktet. Nå finner vi det som frister dere i kveld.'));
   const fields=node('div',undefined,'session-fields');
   function select(caption,id,rows,value,change){const label=node('label',caption),input=node('select');label.htmlFor=id;input.id=id;for(const [v,text] of rows){const option=node('option',text);option.value=String(v);input.append(option);}input.value=String(value);input.onchange=()=>{change(Number(input.value));update();};fields.append(label,input);}
-  select('Hvor mye tid har dere?','todayMinutes',[[15,'En kort stund · omtrent 15 minutter'],[30,'God tid · omtrent 30 minutter'],[60,'En lang stund · omtrent en time']],today.minutes,value=>{today.minutes=value;});
+  p.append(node('p','Ingen tidsgrense, med mindre noen velger en kjapp stund.','journey-note'));
   select('Hvilket nivå passer nå?','todayLevel',[[2,'Mykere'],[3,'Variert'],[5,'Hele det felles utvalget']],today.max,value=>{today.max=value;});p.append(fields);
-  const quick=node('fieldset',undefined,'session-quicky');quick.append(node('legend','Kjapp stund'),node('p','Hvis én velger dette, holder vi forslaget under 30 minutter.','journey-note'));
-  people.forEach(person=>{const label=node('label',undefined,'session-topic'),input=node('input');input.type='checkbox';input.checked=today.quicky[person.id]===true;input.setAttribute('data-quicky-profile',person.id);input.onchange=()=>{if(input.checked)today.quicky[person.id]=true;else delete today.quicky[person.id];update();};label.append(input,node('span',person.name+' ønsker en kjapp stund'));quick.append(label);});p.append(quick);
+  p.append(node('p','Valget om kjapp stund tar dere hver for dere. Svarene vises ikke på fellesskjermen.','journey-note'));
   const curiosity=node('details',undefined,'session-curiosity');curiosity.append(node('summary','Nysgjerrigheter i kveld'),node('p','Slå på bare for den som ønsker spørsmål om sine registrerte nysgjerrigheter. Ellers bruker vi bare det du liker.','journey-note'));
   people.forEach(person=>{
    const count=Object.values(person.preferences).filter(prefs=>Object.values(prefs).includes('kanskje')).length;
@@ -416,21 +418,46 @@
    label.append(input,node('span',person.name+' er nysgjerrig i kveld'));curiosity.append(label);
   });if(people.some(person=>Object.values(person.preferences).some(prefs=>Object.values(prefs).includes('kanskje'))))p.append(curiosity);
   const summary=node('p',undefined,'session-summary');summary.setAttribute('role','status');p.append(summary);
-  const start=button('Finn det som passer i kveld',()=>prepareShortSession(people),'primary');start.id='todayContinue';p.append(start);
-  const extra=node('details',undefined,'journey-more'),edit=node('a','Les eller rediger en interesseprofil','text-link');edit.href='./kartlegging.html?mode=edit';edit.onclick=event=>{event.preventDefault();openProfileEditor('edit',edit);};extra.append(node('summary','Profiler og tilpasning'),button('Endre deltakere',()=>showProfileImport(people),'text-button'),edit);p.append(extra);
-  function update(){const available=S.candidates(people,entries,today);const included=people.filter(p=>today.curiosity[p.id]).map(p=>p.name);summary.textContent=available.length?'En kort runde om kveldens ønsker.'+(Object.values(today.quicky).some(Boolean)?' Kjapp stund: forslaget varer under 30 minutter.':'')+(included.length?' Nysgjerrigheter er med for '+included.join(' og ')+'.':' Nysgjerrigheter er ikke med i kveld.'):'Ingen kompatible interesser innenfor kveldens valg. Dere kan justere nivå eller åpne for registrert nysgjerrighet. Nei og ubesvarte valg tas ikke med.';start.disabled=!available.length;}
+  const start=button('Finn det som passer i kveld',()=>{if(people.every(person=>quickyAnswered.has(person.id)))prepareShortSession(people);else collectPrivateQuicky(people);},'primary');start.id='todayContinue';p.append(start);
+  const extra=node('details',undefined,'journey-more'),edit=node('a','Les eller rediger en interesseprofil','text-link');edit.href='./kartlegging.html?mode=edit';edit.onclick=event=>{event.preventDefault();openProfileEditor('edit',edit);};extra.append(node('summary','Profiler og tilpasning'),button('Avklar kjapp stund på nytt',()=>collectPrivateQuicky(people),'text-button'),button('Endre deltakere',()=>showProfileImport(people),'text-button'),edit);p.append(extra);
+  function update(){const available=S.candidates(people,entries,today);const included=people.filter(p=>today.curiosity[p.id]).map(p=>p.name);summary.textContent=available.length?'En kort runde om kveldens ønsker.'+(included.length?' Nysgjerrigheter er med for '+included.join(' og ')+'.':' Nysgjerrigheter er ikke med i kveld.'):'Ingen kompatible interesser innenfor kveldens valg. Dere kan justere nivå eller åpne for registrert nysgjerrighet. Nei og ubesvarte valg tas ikke med.';start.disabled=!available.length;}
   update();
+ }
+ function collectPrivateQuicky(people,index=0){
+  showPrivateQuickyHandoff(people,index,()=>{if(index+1<people.length)collectPrivateQuicky(people,index+1);else prepareShortSession(people);},()=>showToday(people));
+ }
+ function showPrivateQuickyHandoff(people,index,next,back){
+  const person=people[index];finished=false;
+  navigation('private-quicky-handoff',back,'forrige skjerm',()=>showPrivateQuickyHandoff(people,index,next,back));
+  const p=panel('Gi telefonen til '+person.name,'ET PRIVAT VALG');
+  p.append(node('p','Neste valg svarer du på alene. Den andres svar vises ikke.'),button('Jeg er '+person.name,()=>{if(!person.dynamicRole)showPrivateRole(people,index,next,back);else showPrivateQuicky(people,index,next,back);},'primary'));
+ }
+ function showPrivateRole(people,index,next,back){
+  const person=people[index];finished=false;
+  navigation('private-role',()=>showPrivateQuickyHandoff(people,index,next,back),'overleveringen',()=>showPrivateQuickyHandoff(people,index,next,back));
+  const p=panel(person.name,'DITT VALG');p.append(node('p','Hvilken rolle er din?','avatar-question'),node('p','Den eldre profilfilen mangler rolle. Valget brukes her; lagre rollen i kartleggingen for å få den med i profilfilen.','journey-note'));
+  for(const [label,value] of [['Dom','dom'],['Sub','sub']]){const b=button(label,()=>{person.dynamicRole=value;showPrivateQuicky(people,index,next,back);});b.dataset.dynamicRole=value;p.append(b);}
+ }
+ function showPrivateQuicky(people,index,next,back){
+  const person=people[index];finished=false;
+  navigation('private-quicky',()=>showPrivateQuickyHandoff(people,index,next,back),'overleveringen',()=>showPrivateQuickyHandoff(people,index,next,back));
+  const p=panel(person.name,'DITT VALG');p.setAttribute('data-quicky-profile',person.id);
+  p.append(node('p','Ønsker du en kjapp stund i kveld?','avatar-question'),node('p','Svaret ditt vises ikke til den andre. Hvis noen ønsker en kjapp stund, holder vi forslagene under 30 minutter.','journey-note'));
+  for(const [label,value] of [['Ja, en kjapp stund',true],['Nei, vanlig tidsramme',false]]){
+   const choice=button(label,()=>{if(value)today.quicky[person.id]=true;else delete today.quicky[person.id];quickyAnswered.add(person.id);next();},value?'primary':'');
+   choice.setAttribute('aria-pressed',String(quickyAnswered.has(person.id)&&(today.quicky[person.id]===true)===value));choice.dataset.quickyAnswer=String(value);p.append(choice);
+  }
  }
  function prepareShortSession(people){
   proposalReturn=null;
-  const key=JSON.stringify([people.map(person=>person.id),S.options(today)]);
+  const key=JSON.stringify([people.map(person=>[person.id,person.dynamicRole]),S.options(today)]);
   if(shortPlan?.key===key&&shortSession&&profiles.some(person=>person.answers.length)){
    started=true;if(step>=shortQueue.length||S.enough(profiles,entries,today,shortPlan.items.length)){finished=true;showFinal();}else{active=shortQueue[step].personIndex;showHandoff(true);}return;
   }
-  const plan=shortPlan?.key===key?shortPlan:S.build(people,entries,today);plan.key=key;if(!plan.items.length)return;
+  const plan=shortPlan?.key===key?shortPlan:S.build(people,entries,today);plan.key=key;if(!plan.items.length){showToday(people);return;}
   sourceProfiles=people;shortPlan=plan;shortSession=true;importedSession=true;sessionQuestions=[];
   profiles=people.map((saved,index)=>{
-   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.allowed=Object.fromEntries(plan.items.map(item=>[item.card.id,item.allowed[index]]));
+   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.dynamicRole=saved.dynamicRole||null;person.allowed=Object.fromEntries(plan.items.map(item=>[item.card.id,item.allowed[index]]));
    for(const item of plan.items){const answer=sessionOverrides.get(saved.id+':'+item.card.id);if(!answer)continue;const preferences=Object.fromEntries(Object.entries(answer.preferences).filter(([id])=>item.allowed[index].includes(id)));M.voteDirections(person,item.card,preferences,{actuality:answer.actuality});}return person;
   });
   shortQueue=plan.queue.filter(item=>!profiles[item.personIndex].answers.some(a=>a.id===item.card.id));
@@ -469,7 +496,7 @@
    if(history.length)p.append(button('Forrige',previous,'text-button'));return;
   }
   const activity=activityChoice.activity,p=panel(activity.title,'ET FORSLAG FOR I KVELD');
-  p.setAttribute('data-activity-id',activity.id);p.append(node('p',(Object.values(today.quicky||{}).some(Boolean)?'Kjapp stund · ':'')+'Omtrent '+activity.minutes+' minutter','session-meta'),node('p',activity.description,'session-action'),node('p',activityRoles(activityChoice),'activity-roles'));
+  p.setAttribute('data-activity-id',activity.id);p.append(node('p','Omtrent '+activity.minutes+' minutter','session-meta'),node('p',activity.description,'session-action'),node('p',activityRoles(activityChoice),'activity-roles'));
   if(activity.reviewNote){const preview=node('details',undefined,'scenario-basis');preview.append(node('summary','Les hele forslaget'));for(const phase of activity.phases||[])preview.append(node('h3',phase.title),node('p',phase.text));p.append(node('p',activity.reviewNote,'journey-note'),preview);}
   const resuming=runningActivityId===activity.id&&!runCompleted,repeating=runningActivityId===activity.id&&runCompleted;
   const start=button(resuming?'Fortsett fra del '+(runStep+1):repeating?'Start aktiviteten på nytt':activity.reviewNote?'Dette passer oss – start':'Start aktiviteten',()=>{chosen=true;if(!resuming)runStep=0;runningActivityId=activity.id;runCompleted=false;showRunning();},'primary');start.id='startTogether';p.append(start);
@@ -508,7 +535,7 @@
   let reading=false;status.setAttribute('role','status');
   p.append(node('p','Velg din egen og partnernes profilfiler. 2–4 deltakere. Filene leses bare på denne enheten.'));
   const label=node('label','Velg profilfiler'),input=node('input');input.type='file';input.multiple=true;input.accept='.json,application/json';input.id='sessionProfileFiles';label.htmlFor=input.id;
-  const start=button('Fortsett',async b=>{if(reading||loaded.length<2)return;const fingerprint=JSON.stringify(loaded);if(partyFingerprint&&fingerprint!==partyFingerprint&&sessionOverrides.size){b.disabled=true;const allowed=await U.confirmAction('Endre deltakere og fjerne kveldens svar?','Ja, endre deltakere');b.disabled=false;if(!allowed)return;}if(fingerprint!==partyFingerprint){today=S.options();shortPlan=null;sessionOverrides.clear();history.length=0;profiles=[];current=null;activityChoice=null;result=null;started=false;}partyFingerprint=fingerprint;showToday(loaded);},'primary');start.id='profilesContinue';
+  const start=button('Fortsett',async b=>{if(reading||loaded.length<2)return;const fingerprint=JSON.stringify(loaded);if(partyFingerprint&&fingerprint!==partyFingerprint&&sessionOverrides.size){b.disabled=true;const allowed=await U.confirmAction('Endre deltakere og fjerne kveldens svar?','Ja, endre deltakere');b.disabled=false;if(!allowed)return;}if(fingerprint!==partyFingerprint){today=S.options();quickyAnswered.clear();shortPlan=null;sessionOverrides.clear();history.length=0;profiles=[];current=null;activityChoice=null;result=null;started=false;}partyFingerprint=fingerprint;showToday(loaded);},'primary');start.id='profilesContinue';
   function update(){
    list.replaceChildren();loaded.forEach((person,i)=>{const row=node('div',undefined,'loaded-profile');row.append(node('span',person.name),button('Fjern '+person.name,()=>{loaded.splice(i,1);update();},'text-button'));list.append(row);});
    start.disabled=reading||loaded.length<2;

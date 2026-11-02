@@ -5,12 +5,13 @@
  // Broad categories, related practices and anatomical variants remain separate.
  for(const topic of source){const key=JSON.stringify([topic.label.normalize('NFKC').toLocaleLowerCase('nb'),topic.group,topic.directions.map(d=>[d.id,d.complement,[...(d.additionalComplements||[])].sort()]).sort()]);let target=equivalent.get(key);if(!target){target={...topic,aliases:[...topic.aliases]};equivalent.set(key,target);catalog.push(target);}else target.aliases=[...new Set([...target.aliases,...topic.aliases])];lookup.set(topic.id,target);}
  const states=['ja','kanskje','nei'];
- function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',preferences:{},levels:{}};}
+ function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',dynamicRole:null,preferences:{},levels:{}};}
  function validate(raw){
   if(!raw||raw.format!=='dypere-interest-profile'||raw.version!==1)throw Error('Dette er ikke en støttet DYPERE-profil.');
   if(typeof raw.id!=='string'||!/^p-[a-zA-Z0-9-]{1,100}$/.test(raw.id)||typeof raw.name!=='string'||!raw.name.trim()||raw.name.length>60)throw Error('Profilen mangler gyldig navn eller identitet.');
   if(!raw.preferences||typeof raw.preferences!=='object'||Array.isArray(raw.preferences))throw Error('Profilen har ugyldige svar.');
-  const result={...empty(),id:raw.id,name:raw.name.trim(),preferences:{},levels:{}};
+  if(raw.dynamicRole!==undefined&&raw.dynamicRole!==null&&!['dom','sub'].includes(raw.dynamicRole))throw Error('Profilen har en ugyldig rolle.');
+  const result={...empty(),id:raw.id,name:raw.name.trim(),dynamicRole:raw.dynamicRole||null,preferences:{},levels:{}};
   for(const [id,prefs] of Object.entries(raw.preferences)){
    const topic=lookup.get(id);if(!topic)throw Error('Profilen inneholder et ukjent tema.');
    if(!prefs||typeof prefs!=='object'||Array.isArray(prefs))throw Error('Ugyldige retningsvalg.');

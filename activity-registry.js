@@ -27,7 +27,7 @@
   return null;
  }
  function eligible(pool,partySize,settings){
-  return records().filter(activity=>activity.enabled&&activity.groups.includes(partySize)&&activity.level<=settings.max&&activity.minutes<=settings.minutes&&(!Object.values(settings.quicky||{}).some(Boolean)||activity.minutes<30)).flatMap(activity=>{
+  return records().filter(activity=>activity.enabled&&activity.groups.includes(partySize)&&activity.level<=settings.max&&(!Object.values(settings.quicky||{}).some(Boolean)||activity.minutes<30)).flatMap(activity=>{
    const evidence=[],bindings=[],options=[];
    for(const requirement of activity.requires){
     const matches=pool.filter(item=>item.answers.length===partySize&&item.answers.every(a=>a.answered&&a.actuality==='ja'&&a.origin==='question')&&requirement.anyOf.includes(item.topicId||window.DypereProfileCatalog.find(t=>window.DypereProfileQuestionIds[t.id]===item.id)?.id));
