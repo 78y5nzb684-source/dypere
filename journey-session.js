@@ -6,6 +6,7 @@
   const quicky={};for(const [id,value] of Object.entries(raw.quicky||{}))if(value===true)quicky[id]=true;
   return {quicky,minutes:[15,30,60].includes(Number(raw.minutes))?Number(raw.minutes):30,max:[2,3,5].includes(Number(raw.max))?Number(raw.max):3,curiosity};
  }
+ function roleDirection(person,direction){return !person.dynamicRole||direction!=='lede'&&direction!=='folge'||direction==='lede'&&person.dynamicRole==='dom'||direction==='folge'&&person.dynamicRole==='sub';}
  function rolePair(a,b){return !a.dynamicRole&&!b.dynamicRole||['dom','sub'].includes(a.dynamicRole)&&['dom','sub'].includes(b.dynamicRole)&&a.dynamicRole!==b.dynamicRole;}
  function candidates(people,entries,raw={}){
   const settings=options(typeof raw==='number'?{max:raw}:raw),byId=new Map(entries.map(e=>[e.card.id,e.card])),rows=new Map();
@@ -16,7 +17,7 @@
    const allowed=people.map(()=>new Set()),certain=people.map(()=>new Set());
    for(let a=0;a<people.length;a++)for(let b=a+1;b<people.length;b++)for(const d of topic.directions)for(const c of M.complements(d)){
     const x=people[a].preferences[topic.id]?.[d.id],y=people[b].preferences[topic.id]?.[c];
-    if((!people[a].dynamicRole||!people[b].dynamicRole||rolePair(people[a],people[b]))&&accepts(a,x)&&accepts(b,y)){allowed[a].add(d.id);allowed[b].add(c);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(c);}}
+    if((!people[a].dynamicRole||!people[b].dynamicRole||rolePair(people[a],people[b]))&&roleDirection(people[a],d.id)&&roleDirection(people[b],c)&&accepts(a,x)&&accepts(b,y)){allowed[a].add(d.id);allowed[b].add(c);if(x==='ja'&&y==='ja'){certain[a].add(d.id);certain[b].add(c);}}
    }
    if(!allowed.every(d=>d.size))continue;
    const item={topic,card:{...card,rang:level},allowed:allowed.map(d=>[...d]),uncertain:!certain.every(s=>s.size)};
@@ -45,15 +46,29 @@
   const defs=M.directions(item.card),allowed=item.allowed;
   const positive=(index,direction)=>{const answer=profiles[index].answers.findLast(a=>a.id===item.card.id);return answer?answer.actuality==='ja'&&answer.preferences[direction]==='ja':allowed[index].includes(direction);};
   const covered=profiles.map(()=>false);
-  for(let a=0;a<profiles.length;a++)for(let b=a+1;b<profiles.length;b++)for(const d of defs)for(const c of M.complements(d))if(rolePair(profiles[a],profiles[b])&&positive(a,d.id)&&positive(b,c)){covered[a]=true;covered[b]=true;}
+  for(let a=0;a<profiles.length;a++)for(let b=a+1;b<profiles.length;b++)for(const d of defs)for(const c of M.complements(d))if(rolePair(profiles[a],profiles[b])&&roleDirection(profiles[a],d.id)&&roleDirection(profiles[b],c)&&positive(a,d.id)&&positive(b,c)){covered[a]=true;covered[b]=true;}
   return covered.every(Boolean);
  }
  function pool(profiles,entries){
-  return M.match(profiles,entries).map(item=>({...item,pairs:item.pairs.filter(pair=>rolePair(profiles[pair.a],profiles[pair.b]))})).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
+  return M.match(profiles,entries).map(item=>({...item,pairs:item.pairs.filter(pair=>rolePair(profiles[pair.a],profiles[pair.b])).map(pair=>{const routes=pair.routes.filter(route=>roleDirection(profiles[pair.a],route.aDirection)&&roleDirection(profiles[pair.b],route.bDirection));return {...pair,routes,compatible:pair.compatible&&routes.some(route=>route.confirmed)};})})).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
+ }
+ function followup(plan,profiles,entries,settings){
+  const answerLimit=Object.values(settings.quicky||{}).some(Boolean)?6:12;if(profiles.some(person=>person.answers.length>=answerLimit))return [];
+  // Only ask unresolved requirements for an activity still possible after the
+  // actual answers. A rejected direction is never replaced by a prediction.
+  const possible=profiles.map((person,index)=>{
+   const predicted=M.profile('followup-'+index);predicted.dynamicRole=person.dynamicRole;
+   for(const item of plan.available){const answer=person.answers.findLast(a=>a.id===item.card.id);M.voteDirections(predicted,item.card,answer?answer.preferences:Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:answer?answer.actuality:'ja'});}
+   return predicted;
+  });
+  const proposals=window.DypereActivityRegistry.eligible(pool(possible,entries),profiles.length,settings).map(row=>({row,unanswered:row.evidence.filter(e=>profiles.some(person=>!person.answers.some(a=>a.id===e.id)))})).filter(x=>x.unanswered.length).sort((a,b)=>a.unanswered.length-b.unanswered.length||a.row.activity.level-b.row.activity.level);
+  if(!proposals.length)return [];
+  const items=proposals[0].unanswered.map(e=>plan.available.find(item=>item.card.id===e.id)).filter(Boolean).sort((a,b)=>a.card.rang-b.card.rang);
+  const queue=[];profiles.forEach((person,personIndex)=>items.forEach(item=>{if(!person.answers.some(a=>a.id===item.card.id))queue.push({card:item.card,personIndex,item});}));return queue;
  }
  function enough(profiles,entries,settings,selectedCount){
   const matched=pool(profiles,entries),minimum=Math.min(2,selectedCount),target=Object.values(settings.quicky||{}).some(Boolean)?1:settings.minutes===15?1:settings.minutes===30?2:3;
   return profiles.every(p=>p.answers.length>=minimum)&&matched.length>=target&&!!window.DypereActivityRegistry?.eligible(matched,profiles.length,settings).length;
  }
- window.DypereSessionPlanner=Object.freeze({options,candidates,build,canStillMatch,pool,enough});
+ window.DypereSessionPlanner=Object.freeze({options,candidates,build,canStillMatch,pool,enough,followup});
 })();

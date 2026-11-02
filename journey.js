@@ -213,6 +213,7 @@
      answerReadyAt=Date.now()+300;result=null;reportData=null;chosen=false;confirmations.clear();current=null;step++;
      if(shortSession){
        while(step<shortQueue.length&&!S.canStillMatch(shortQueue[step].item,profiles))step++;
+       if(step>=shortQueue.length&&!S.enough(profiles,entries,today,shortPlan.items.length)){const extra=S.followup(shortPlan,profiles,entries,today);shortQueue.push(...extra);lengths[0]=Math.max(1,shortQueue.length);}
        if(step>=shortQueue.length||S.enough(profiles,entries,today,shortPlan.items.length)){finished=true;showFinal();return;}
        const next=shortQueue[step].personIndex,changed=active!==next;active=next;if(changed)showHandoff();else showQuestion();return;
      }
@@ -457,7 +458,7 @@
   const plan=shortPlan?.key===key?shortPlan:S.build(people,entries,today);plan.key=key;if(!plan.items.length){showToday(people);return;}
   sourceProfiles=people;shortPlan=plan;shortSession=true;importedSession=true;sessionQuestions=[];
   profiles=people.map((saved,index)=>{
-   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.dynamicRole=saved.dynamicRole||null;person.allowed=Object.fromEntries(plan.items.map(item=>[item.card.id,item.allowed[index]]));
+   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.dynamicRole=saved.dynamicRole||null;person.allowed=Object.fromEntries(plan.available.map(item=>[item.card.id,item.allowed[index]]));
    for(const item of plan.items){const answer=sessionOverrides.get(saved.id+':'+item.card.id);if(!answer)continue;const preferences=Object.fromEntries(Object.entries(answer.preferences).filter(([id])=>item.allowed[index].includes(id)));M.voteDirections(person,item.card,preferences,{actuality:answer.actuality});}return person;
   });
   shortQueue=plan.queue.filter(item=>!profiles[item.personIndex].answers.some(a=>a.id===item.card.id));
