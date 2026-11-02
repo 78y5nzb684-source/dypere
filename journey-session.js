@@ -25,6 +25,12 @@
   }
   return [...rows.values()].sort((a,b)=>a.card.rang-b.card.rang||Number(a.uncertain)-Number(b.uncertain)||a.card.id.localeCompare(b.card.id));
  }
+ function prioritizeEvidence(matches,people,available){
+  // An activity may accept several related topics. Prefer the participant's
+  // actual priority before selecting evidence for that activity.
+  const scores=new Map(available.map(item=>[item.card.id,people.reduce((sum,person)=>sum+(person.priorities?.[item.topic.id]||0),0)]));
+  return matches.slice().sort((a,b)=>(scores.get(b.id)||0)-(scores.get(a.id)||0));
+ }
  function build(people,entries,raw,random=Math.random){
   const settings=options(raw),available=candidates(people,entries,settings),count=Math.min(available.length,Object.values(settings.quicky||{}).some(Boolean)?3:settings.minutes===15?3:settings.minutes===30?5:7);
   const supported=window.DypereActivityRegistry?.topicIds()||new Set();
@@ -34,7 +40,7 @@
   // the evening's answers, source profiles or final result.
   const possible=people.map((saved,index)=>Object.assign(M.profile('planning-'+index),{dynamicRole:saved.dynamicRole||null}));
   for(const item of available)possible.forEach((person,index)=>M.voteDirections(person,item.card,Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:'ja'}));
-  const plans=(window.DypereActivityRegistry?.eligible(pool(possible,entries),people.length,settings)||[]).filter(row=>new Set(row.evidence.map(item=>item.id)).size<=count);
+  const plans=(window.DypereActivityRegistry?.eligible(prioritizeEvidence(pool(possible,entries),people,available),people.length,settings)||[]).filter(row=>new Set(row.evidence.map(item=>item.id)).size<=count);
   const priorityScore=row=>row.evidence.reduce((sum,evidence)=>{const item=available.find(item=>item.card.id===evidence.id);return sum+people.reduce((value,person)=>value+(person.priorities?.[item?.topic.id]||0),0);},0);
   const highestPriority=Math.max(0,...plans.map(priorityScore)),preferredPlans=highestPriority?plans.filter(row=>priorityScore(row)===highestPriority):plans;
   if(preferredPlans.length){const index=Math.min(preferredPlans.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*preferredPlans.length));for(const evidence of preferredPlans[index].evidence){const item=available.find(item=>item.card.id===evidence.id);if(item&&!picked.some(p=>p.card.id===item.card.id))picked.push(item);}}
@@ -70,8 +76,9 @@
   });
   const asked=new Set(profiles.flatMap(person=>person.answers.map(answer=>answer.id))),categoryVisits=new Map();for(const item of plan.available)if(asked.has(item.card.id)){const category=item.topic.group||item.card.categoryId;categoryVisits.set(category,(categoryVisits.get(category)||0)+1);}
   const preferenceScore=proposal=>proposal.unanswered.reduce((sum,e)=>{const item=plan.available.find(item=>item.card.id===e.id);return sum+profiles.reduce((score,person)=>score+(person.priorities?.[item?.topic.id]||0),0);},0);
+  const flexibility=proposal=>proposal.unanswered.reduce((sum,e)=>{const item=plan.available.find(item=>item.card.id===e.id);return sum+(item?Math.min(...item.allowed.map(directions=>directions.length)):0);},0);
   const diversityCost=proposal=>Math.min(...proposal.unanswered.map(e=>{const item=plan.available.find(item=>item.card.id===e.id);return categoryVisits.get(item?.topic.group||item?.card.categoryId)||0;}));
-  const proposals=window.DypereActivityRegistry.eligible(pool(possible,entries),profiles.length,settings).map(row=>({row,unanswered:row.evidence.filter(e=>profiles.some(person=>!person.answers.some(a=>a.id===e.id)))})).filter(x=>x.unanswered.length).sort((a,b)=>preferenceScore(b)-preferenceScore(a)||a.unanswered.length-b.unanswered.length||diversityCost(a)-diversityCost(b)||a.row.activity.level-b.row.activity.level);
+  const proposals=window.DypereActivityRegistry.eligible(prioritizeEvidence(pool(possible,entries),profiles,plan.available),profiles.length,settings).map(row=>({row,unanswered:row.evidence.filter(e=>profiles.some(person=>!person.answers.some(a=>a.id===e.id)))})).filter(x=>x.unanswered.length).sort((a,b)=>preferenceScore(b)-preferenceScore(a)||a.unanswered.length-b.unanswered.length||flexibility(b)-flexibility(a)||diversityCost(a)-diversityCost(b)||a.row.activity.level-b.row.activity.level);
   if(!proposals.length)return [];
   const items=proposals[0].unanswered.map(e=>plan.available.find(item=>item.card.id===e.id)).filter(Boolean).sort((a,b)=>a.card.rang-b.card.rang);
   const queue=[];profiles.forEach((person,personIndex)=>items.forEach(item=>{if(!person.answers.some(a=>a.id===item.card.id))queue.push({card:item.card,personIndex,item});}));return queue;
