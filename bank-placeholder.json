@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "activities": [
+    {
+      "id": "demo-1",
+      "title": "Musikkpause",
+      "description": "Velg noen sanger og lytt sammen.",
+      "theme_id": "musikk",
+      "intensity": 1,
+      "supports_quicky": true,
+      "min_duration_minutes": null
+    },
+    {
+      "id": "demo-2",
+      "title": "Spilleliste",
+      "description": "Lag en kort spilleliste sammen.",
+      "theme_id": "musikk",
+      "intensity": 2,
+      "supports_quicky": true,
+      "min_duration_minutes": null
+    },
+    {
+      "id": "demo-3",
+      "title": "Musikkquiz",
+      "description": "Bytt på å gjette sangene.",
+      "theme_id": "musikk",
+      "intensity": 2,
+      "supports_quicky": true,
+      "min_duration_minutes": null
+    },
+    {
+      "id": "demo-4",
+      "title": "Spillrunde",
+      "description": "Velg et kort brettspill.",
+      "theme_id": "spill",
+      "intensity": 1,
+      "supports_quicky": true,
+      "min_duration_minutes": 15
+    },
+    {
+      "id": "demo-5",
+      "title": "Spillkveld",
+      "description": "Sett av tid til et lengre brettspill.",
+      "theme_id": "spill",
+      "intensity": 3,
+      "supports_quicky": false,
+      "min_duration_minutes": 60
+    },
+    {
+      "id": "demo-6",
+      "title": "Kveldstur",
+      "description": "Ta en kort tur i nærområdet.",
+      "theme_id": "tur",
+      "intensity": 2,
+      "supports_quicky": true,
+      "min_duration_minutes": 20
+    }
+  ]
+}

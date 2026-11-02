@@ -1,6 +1,13 @@
 /* DYPERE 3.0.39 beta | image repair 20261020-bilder2. Never changes answer storage. */
-const CACHE = 'dypere-3-0-39-beta-r1';
+const CACHE = 'dypere-3-0-39-neutral-test-1';
 const ASSETS = [
+  "./neutral-demo-engine.js",
+  "./neutral-demo.js",
+  "./neutral-demo.css",
+  "./neutral-test-register.js",
+  "./bank-placeholder.json",
+  "./eksempelprofil-A.json",
+  "./eksempelprofil-B.json",
   "./page-ids.js?build=3.0.39-beta-r1",
   "./page-ids.css?build=3.0.39-beta-r1",
   "./page-id-map.json",
