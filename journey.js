@@ -439,7 +439,7 @@
   const person=people[index];finished=false;
   navigation('private-role',()=>showPrivateQuickyHandoff(people,index,next,back),'overleveringen',()=>showPrivateQuickyHandoff(people,index,next,back));
   const p=panel(person.name,'DITT VALG');p.append(node('p','Hvilken rolle er din?','avatar-question'),node('p','Den eldre profilfilen mangler rolle. Valget brukes her; lagre rollen i kartleggingen for å få den med i profilfilen.','journey-note'));
-  for(const [label,value] of [['Dom','dom'],['Sub','sub']]){const b=button(label,()=>{person.dynamicRole=value;showPrivateQuicky(people,index,next,back);});b.dataset.dynamicRole=value;p.append(b);}
+  for(const [label,value] of [['Dom','dom'],['Sub','sub']]){const b=button(label,()=>{person.dynamicRole=value;partyFingerprint=JSON.stringify(loadedProfiles);showPrivateQuicky(people,index,next,back);});b.dataset.dynamicRole=value;p.append(b);}
  }
  function showPrivateQuicky(people,index,next,back){
   const person=people[index];finished=false;
@@ -460,7 +460,7 @@
   const plan=shortPlan?.key===key?shortPlan:S.build(people,entries,today);plan.key=key;if(!plan.items.length){showToday(people);return;}
   sourceProfiles=people;shortPlan=plan;shortSession=true;importedSession=true;sessionQuestions=[];
   profiles=people.map((saved,index)=>{
-   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.dynamicRole=saved.dynamicRole||null;person.allowed=Object.fromEntries(plan.available.map(item=>[item.card.id,item.allowed[index]]));
+   const person=M.profile('avatar-'+(index+1));person.name=saved.name;person.dynamicRole=saved.dynamicRole||null;person.priorities={...(saved.priorities||{})};person.allowed=Object.fromEntries(plan.available.map(item=>[item.card.id,item.allowed[index]]));
    for(const item of plan.items){const answer=sessionOverrides.get(saved.id+':'+item.card.id);if(!answer)continue;const preferences=Object.fromEntries(Object.entries(answer.preferences).filter(([id])=>item.allowed[index].includes(id)));M.voteDirections(person,item.card,preferences,{actuality:answer.actuality});}return person;
   });
   shortQueue=plan.queue.filter(item=>!profiles[item.personIndex].answers.some(a=>a.id===item.card.id));

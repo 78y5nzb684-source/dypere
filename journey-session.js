@@ -35,10 +35,15 @@
   const possible=people.map((saved,index)=>Object.assign(M.profile('planning-'+index),{dynamicRole:saved.dynamicRole||null}));
   for(const item of available)possible.forEach((person,index)=>M.voteDirections(person,item.card,Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:'ja'}));
   const plans=(window.DypereActivityRegistry?.eligible(pool(possible,entries),people.length,settings)||[]).filter(row=>new Set(row.evidence.map(item=>item.id)).size<=count);
-  if(plans.length){const index=Math.min(plans.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*plans.length));for(const evidence of plans[index].evidence){const item=available.find(item=>item.card.id===evidence.id);if(item&&!picked.some(p=>p.card.id===item.card.id))picked.push(item);}}
+  const priorityScore=row=>row.evidence.reduce((sum,evidence)=>{const item=available.find(item=>item.card.id===evidence.id);return sum+people.reduce((value,person)=>value+(person.priorities?.[item?.topic.id]||0),0);},0);
+  const highestPriority=Math.max(0,...plans.map(priorityScore)),preferredPlans=highestPriority?plans.filter(row=>priorityScore(row)===highestPriority):plans;
+  if(preferredPlans.length){const index=Math.min(preferredPlans.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*preferredPlans.length));for(const evidence of preferredPlans[index].evidence){const item=available.find(item=>item.card.id===evidence.id);if(item&&!picked.some(p=>p.card.id===item.card.id))picked.push(item);}}
   if(!picked.length&&priority.length&&count){const index=Math.min(priority.length-1,Math.floor(Math.max(0,Math.min(.999999,Number(random())||0))*priority.length));picked.push(priority[index]);}
-  const remaining=available.filter(x=>!picked.some(p=>p.card.id===x.card.id));
-  picked.push(...M.selectSessionQuestions(remaining,count-picked.length,random));picked.sort((a,b)=>a.card.rang-b.card.rang||a.card.id.localeCompare(b.card.id));
+  // A feasible activity already provides direction. Keep the first round short
+  // and reserve additional questions for actual unresolved requirements.
+  const budget=plans.length?Math.min(count,Math.max(2,picked.length)):count;
+  const remaining=available.filter(x=>!picked.some(p=>p.card.id===x.card.id)&&(!plans.length||supported.has(x.topic.id)));
+  picked.push(...M.selectSessionQuestions(remaining,budget-picked.length,random));picked.sort((a,b)=>a.card.rang-b.card.rang||a.card.id.localeCompare(b.card.id));
   const queue=[];people.forEach((person,personIndex)=>picked.forEach(item=>queue.push({card:item.card,personIndex,item})));
   return {settings,available,items:picked,queue};
  }
@@ -50,7 +55,9 @@
   return covered.every(Boolean);
  }
  function pool(profiles,entries){
-  return M.match(profiles,entries).map(item=>({...item,pairs:item.pairs.filter(pair=>rolePair(profiles[pair.a],profiles[pair.b])).map(pair=>{const routes=pair.routes.filter(route=>roleDirection(profiles[pair.a],route.aDirection)&&roleDirection(profiles[pair.b],route.bDirection));return {...pair,routes,compatible:pair.compatible&&routes.some(route=>route.confirmed)};})})).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
+  const answered=profiles.map(person=>new Set(person.answers.map(answer=>answer.id)));
+  const complete=entries.filter(entry=>answered.every(ids=>ids.has((entry.card||entry).id)));
+  return M.match(profiles,complete).map(item=>({...item,pairs:item.pairs.filter(pair=>rolePair(profiles[pair.a],profiles[pair.b])).map(pair=>{const routes=pair.routes.filter(route=>roleDirection(profiles[pair.a],route.aDirection)&&roleDirection(profiles[pair.b],route.bDirection));return {...pair,routes,compatible:pair.compatible&&routes.some(route=>route.confirmed)};})})).filter(item=>item.answers.every(a=>a.answered&&a.actuality==='ja')&&profiles.every((_,i)=>item.pairs.some(p=>p.compatible&&(p.a===i||p.b===i))));
  }
  function followup(plan,profiles,entries,settings){
   const answerLimit=Object.values(settings.quicky||{}).some(Boolean)?6:12;if(profiles.some(person=>person.answers.length>=answerLimit))return [];
@@ -61,7 +68,10 @@
    for(const item of plan.available){const answer=person.answers.findLast(a=>a.id===item.card.id);M.voteDirections(predicted,item.card,answer?answer.preferences:Object.fromEntries(item.allowed[index].map(id=>[id,'ja'])),{actuality:answer?answer.actuality:'ja'});}
    return predicted;
   });
-  const proposals=window.DypereActivityRegistry.eligible(pool(possible,entries),profiles.length,settings).map(row=>({row,unanswered:row.evidence.filter(e=>profiles.some(person=>!person.answers.some(a=>a.id===e.id)))})).filter(x=>x.unanswered.length).sort((a,b)=>a.unanswered.length-b.unanswered.length||a.row.activity.level-b.row.activity.level);
+  const asked=new Set(profiles.flatMap(person=>person.answers.map(answer=>answer.id))),categoryVisits=new Map();for(const item of plan.available)if(asked.has(item.card.id)){const category=item.topic.group||item.card.categoryId;categoryVisits.set(category,(categoryVisits.get(category)||0)+1);}
+  const preferenceScore=proposal=>proposal.unanswered.reduce((sum,e)=>{const item=plan.available.find(item=>item.card.id===e.id);return sum+profiles.reduce((score,person)=>score+(person.priorities?.[item?.topic.id]||0),0);},0);
+  const diversityCost=proposal=>Math.min(...proposal.unanswered.map(e=>{const item=plan.available.find(item=>item.card.id===e.id);return categoryVisits.get(item?.topic.group||item?.card.categoryId)||0;}));
+  const proposals=window.DypereActivityRegistry.eligible(pool(possible,entries),profiles.length,settings).map(row=>({row,unanswered:row.evidence.filter(e=>profiles.some(person=>!person.answers.some(a=>a.id===e.id)))})).filter(x=>x.unanswered.length).sort((a,b)=>preferenceScore(b)-preferenceScore(a)||a.unanswered.length-b.unanswered.length||diversityCost(a)-diversityCost(b)||a.row.activity.level-b.row.activity.level);
   if(!proposals.length)return [];
   const items=proposals[0].unanswered.map(e=>plan.available.find(item=>item.card.id===e.id)).filter(Boolean).sort((a,b)=>a.card.rang-b.card.rang);
   const queue=[];profiles.forEach((person,personIndex)=>items.forEach(item=>{if(!person.answers.some(a=>a.id===item.card.id))queue.push({card:item.card,personIndex,item});}));return queue;

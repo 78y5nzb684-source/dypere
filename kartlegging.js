@@ -69,7 +69,7 @@
   }
   card.append(menus);const advanced=node('details',undefined,'profile-level'),level=node('select');level.setAttribute('aria-label','Intensitet for '+topic.label);
   for(const [n,label] of [[0,'Bruk vanlig rekkefølge'],[1,'1 · Mykt'],[2,'2'],[3,'3 · Middels'],[4,'4'],[5,'5 · Intenst']]){const o=node('option',label);o.value=String(n);level.append(o);}
-  level.value=String(profile.levels[topic.id]||0);level.onchange=()=>{const n=Number(level.value);if(n)profile.levels[topic.id]=n;else delete profile.levels[topic.id];changed();};advanced.append(node('summary','Tilpass rekkefølgen'),level);card.append(advanced);update();return card;
+  level.value=String(profile.levels[topic.id]||0);level.onchange=()=>{const n=Number(level.value);if(n)profile.levels[topic.id]=n;else delete profile.levels[topic.id];changed();};const priorityLabel=node('label'),priority=node('input');priority.type='checkbox';priority.checked=profile.priorities[topic.id]===1;priority.setAttribute('aria-label','Prioriter '+topic.label);priority.onchange=()=>{if(priority.checked)profile.priorities[topic.id]=1;else delete profile.priorities[topic.id];changed();};priorityLabel.append(priority,node('span','Et prioritert tema for meg'));advanced.append(node('summary','Tilpass rekkefølgen'),level,priorityLabel);card.append(advanced);update();return card;
  }
  function render({focusList=false}={}){
   list.replaceChildren();pager.replaceChildren();const order=['naerhet','munn','dybde','styring','lek','risiko','kraft','flere'];

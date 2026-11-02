@@ -5,13 +5,13 @@
  // Broad categories, related practices and anatomical variants remain separate.
  for(const topic of source){const key=JSON.stringify([topic.label.normalize('NFKC').toLocaleLowerCase('nb'),topic.group,topic.directions.map(d=>[d.id,d.complement,[...(d.additionalComplements||[])].sort()]).sort()]);let target=equivalent.get(key);if(!target){target={...topic,aliases:[...topic.aliases]};equivalent.set(key,target);catalog.push(target);}else target.aliases=[...new Set([...target.aliases,...topic.aliases])];lookup.set(topic.id,target);}
  const states=['ja','kanskje','nei'];
- function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',dynamicRole:null,preferences:{},levels:{}};}
+ function empty(){return {format:'dypere-interest-profile',version:1,id:'p-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),name:'',dynamicRole:null,preferences:{},levels:{},priorities:{}};}
  function validate(raw){
   if(!raw||raw.format!=='dypere-interest-profile'||raw.version!==1)throw Error('Dette er ikke en støttet DYPERE-profil.');
   if(typeof raw.id!=='string'||!/^p-[a-zA-Z0-9-]{1,100}$/.test(raw.id)||typeof raw.name!=='string'||!raw.name.trim()||raw.name.length>60)throw Error('Profilen mangler gyldig navn eller identitet.');
   if(!raw.preferences||typeof raw.preferences!=='object'||Array.isArray(raw.preferences))throw Error('Profilen har ugyldige svar.');
   if(raw.dynamicRole!==undefined&&raw.dynamicRole!==null&&!['dom','sub'].includes(raw.dynamicRole))throw Error('Profilen har en ugyldig rolle.');
-  const result={...empty(),id:raw.id,name:raw.name.trim(),dynamicRole:raw.dynamicRole||null,preferences:{},levels:{}};
+  const result={...empty(),id:raw.id,name:raw.name.trim(),dynamicRole:raw.dynamicRole||null,preferences:{},levels:{},priorities:{}};
   for(const [id,prefs] of Object.entries(raw.preferences)){
    const topic=lookup.get(id);if(!topic)throw Error('Profilen inneholder et ukjent tema.');
    if(!prefs||typeof prefs!=='object'||Array.isArray(prefs))throw Error('Ugyldige retningsvalg.');
@@ -20,6 +20,8 @@
   }
   if(raw.levels!==undefined&&(!raw.levels||typeof raw.levels!=='object'||Array.isArray(raw.levels)))throw Error('Ugyldig temarekkefølge.');
   for(const [id,level] of Object.entries(raw.levels||{})){if(!lookup.has(id)||!Number.isInteger(level)||level<1||level>5)throw Error('Ugyldig intensitetsnivå.');const canonical=lookup.get(id).id;result.levels[canonical]=Math.max(level,result.levels[canonical]||0);}
+  if(raw.priorities!==undefined&&(!raw.priorities||typeof raw.priorities!=='object'||Array.isArray(raw.priorities)))throw Error('Ugyldige profilprioriteringer.');
+  for(const [id,value] of Object.entries(raw.priorities||{})){if(!lookup.has(id)||value!==1)throw Error('Ugyldig prioritert tema.');result.priorities[lookup.get(id).id]=1;}
   return result;
  }
  function parse(text){if(typeof text!=='string'||text.length>2000000)throw Error('Profilfilen er for stor.');try{return validate(JSON.parse(text.replace(/^\uFEFF/,'')));}catch(error){if(error instanceof SyntaxError)throw Error('Filen kunne ikke leses som en profil.');throw error;}}
