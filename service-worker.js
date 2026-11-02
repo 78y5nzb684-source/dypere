@@ -1,6 +1,6 @@
 /* DYPERE dates: only public soft assets are cached. */
-const CACHE='dypere-dates-grundig-20261102-r1';
-const ASSETS=["./index.html", "./var-stund.html", "./soft.css", "./soft-engine.js", "./soft-app.js", "./date-engine.js", "./soft-bank.json", "./testprofil-A.json", "./testprofil-B.json", "./datebank/manifest.json", "./register-dates.js", "./datebank/dates-01.json", "./datebank/dates-02.json", "./datebank/dates-03.json", "./datebank/dates-04.json", "./datebank/dates-05.json", "./datebank/dates-06.json", "./datebank/dates-07.json", "./datebank/dates-08.json", "./datebank/dates-09.json", "./datebank/dates-10.json"];
+const CACHE='dypere-dates-adaptiv-20261102-r1';
+const ASSETS=["./adaptive-engine.js","./index.html", "./var-stund.html", "./soft.css", "./soft-engine.js", "./soft-app.js", "./date-engine.js", "./soft-bank.json", "./testprofil-A.json", "./testprofil-B.json", "./datebank/manifest.json", "./register-dates.js", "./datebank/dates-01.json", "./datebank/dates-02.json", "./datebank/dates-03.json", "./datebank/dates-04.json", "./datebank/dates-05.json", "./datebank/dates-06.json", "./datebank/dates-07.json", "./datebank/dates-08.json", "./datebank/dates-09.json", "./datebank/dates-10.json"];
 const URLS=new Set(ASSETS.map(p=>new URL(p,self.registration.scope).href));
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(ASSETS.map(p=>new Request(p,{cache:'reload'})));await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('dypere-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})()));

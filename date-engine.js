@@ -29,6 +29,7 @@
   return loading;
  }
  function eligible(catalog,session){
+  if(session.adaptive)return root.DypereSoft.dateCandidates(session,true);
   const E=root.DypereSoft,set=E.settings(session),confirmed=new Set(E.candidates(session,true).map(topicKey));
   const yes=key=>session.people.every((p,i)=>{const last=[...session.history].reverse().find(h=>h.key===key&&h.person===i);return last?.value==='ja';});
   const styles=catalog.styles.map(style=>yes('style:'+style.id)),durations={kort:yes('duration:kort'),middels:yes('duration:middels'),lang:yes('duration:lang')};
