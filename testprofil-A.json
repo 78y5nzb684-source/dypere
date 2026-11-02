@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "dypere-soft-profile",
+  "id": "soft-test-A",
+  "name": "Testperson A",
+  "preferences": {
+    "musikk": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "spill": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "tur": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "prat": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "kreativ": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "plan": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    },
+    "minne": {
+      "interest": "ja",
+      "priority": 2,
+      "role": "begge"
+    }
+  }
+}

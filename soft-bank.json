@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "activities": [
+    {
+      "id": "s001",
+      "title": "Musikkpause",
+      "description": "Velg noen sanger og lytt sammen.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Velg noen sanger og lytt sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s002",
+      "title": "Spilleliste",
+      "description": "Lag en kort spilleliste sammen.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Lag en kort spilleliste sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s003",
+      "title": "Spillrunde",
+      "description": "Velg et kort brettspill.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Velg et kort brettspill.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s004",
+      "title": "Kveldstur",
+      "description": "Ta en kort tur i nærområdet.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 20,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Ta en kort tur i nærområdet.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s005",
+      "title": "Te og prat",
+      "description": "Lag noe å drikke og snakk sammen.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Lag noe å drikke og snakk sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s006",
+      "title": "Tegn en historie",
+      "description": "Tegn noe enkelt og la den andre gjette.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Tegn noe enkelt og la den andre gjette.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s007",
+      "title": "Planlegg en date",
+      "description": "Finn på noe enkelt dere kan gjøre sammen senere.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Finn på noe enkelt dere kan gjøre sammen senere.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s008",
+      "title": "Minnestund",
+      "description": "Fortell om et godt minne dere deler.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Fortell om et godt minne dere deler.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ]
+    },
+    {
+      "id": "s101",
+      "title": "Musikkminner",
+      "description": "Del en sang hver og fortell hvorfor dere valgte den.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Del en sang hver og fortell hvorfor dere valgte den.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s102",
+      "title": "Tre sanger hver",
+      "description": "Velg tre sanger hver til en felles spilleliste.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg tre sanger hver til en felles spilleliste.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s103",
+      "title": "Lyttestund",
+      "description": "Sett av god tid til å lytte til et helt album.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": false,
+      "minMinutes": 45,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Sett av god tid til å lytte til et helt album.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s104",
+      "title": "Quizvert for en stund",
+      "description": "Én leder en kort quiz, og resten svarer.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Én leder en kort quiz, og resten svarer.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s105",
+      "title": "Gjett melodien",
+      "description": "Én velger låter og leder en gjettelek.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Én velger låter og leder en gjettelek.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s106",
+      "title": "Kortspill",
+      "description": "Velg et kjent kortspill og spill en runde.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et kjent kortspill og spill en runde.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s107",
+      "title": "Lang spillkveld",
+      "description": "Velg et brettspill dere vil bruke god tid på.",
+      "theme": "spill",
+      "format": "lang",
+      "formatLabel": "et lengre brettspill",
+      "energy": 2,
+      "supportsQuicky": false,
+      "minMinutes": 60,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et brettspill dere vil bruke god tid på.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s108",
+      "title": "Finn tre detaljer",
+      "description": "Gå ut og finn tre detaljer dere ikke har lagt merke til før.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Gå ut og finn tre detaljer dere ikke har lagt merke til før.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s109",
+      "title": "Lang rusletur",
+      "description": "Finn en lengre rute og ta dere tid underveis.",
+      "theme": "tur",
+      "format": "lang",
+      "formatLabel": "en lengre tur",
+      "energy": 3,
+      "supportsQuicky": false,
+      "minMinutes": 45,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn en lengre rute og ta dere tid underveis.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s110",
+      "title": "Dagens høydepunkt",
+      "description": "Fortell hverandre om noe fint fra dagen.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Fortell hverandre om noe fint fra dagen.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s111",
+      "title": "Et spørsmål hver",
+      "description": "Bytt på å stille et åpent spørsmål og lytt til svaret.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Bytt på å stille et åpent spørsmål og lytt til svaret.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s112",
+      "title": "Tegn videre",
+      "description": "Bytt på å tegne videre på det samme arket.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Bytt på å tegne videre på det samme arket.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s113",
+      "title": "Historie på rundgang",
+      "description": "Lag en historie ved å legge til én setning hver.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Lag en historie ved å legge til én setning hver.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s114",
+      "title": "Helgeønske",
+      "description": "Finn én ting dere kunne tenke dere å gjøre i helgen.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn én ting dere kunne tenke dere å gjøre i helgen.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s115",
+      "title": "Et lite prosjekt",
+      "description": "Velg et lite felles prosjekt og skriv ned første steg.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et lite felles prosjekt og skriv ned første steg.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    },
+    {
+      "id": "s116",
+      "title": "Et fint bilde",
+      "description": "Finn fram et bilde og fortell om minnet bak.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn fram et bilde og fortell om minnet bak.",
+        "Ta en pause eller rund av når dere ønsker."
+      ]
+    }
+  ]
+}
