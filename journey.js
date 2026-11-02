@@ -475,7 +475,13 @@
  function chooseActivity(choices){
   let available=choices.filter(row=>!activitySeen.has(row.activity.id));
   if(!available.length){activitySeen.clear();available=choices;}
-  const next=A.choose(available,activityChoice?.activity.id);
+  // Prefer an explicitly prioritized, confirmed topic; keep variation among
+  // equally suitable suggestions and leave all eligibility checks unchanged.
+  const topicByQuestion=new Map((shortPlan?.available||[]).map(item=>[item.card.id,item.topic.id]));
+  const score=row=>row.evidence.reduce((sum,item)=>sum+profiles.reduce((value,person)=>value+(person.priorities?.[topicByQuestion.get(item.id)]||0),0),0);
+  const highest=Math.max(0,...available.map(score));
+  const ranked=highest?available.filter(row=>score(row)===highest):available;
+  const next=A.choose(ranked,activityChoice?.activity.id);
   if(next?.activity.id!==activityChoice?.activity.id){runningActivityId=null;runCompleted=false;runStep=0;}
   if(next)activitySeen.add(next.activity.id);activityChoice=next;
  }
@@ -490,7 +496,7 @@
  }
  function showShortProposal(){
   navigation('proposal',proposalBack,proposalReturn?'rapporten':'siste spørsmål',showShortProposal);
-  finished=true;result=eveningResult();const choices=A.eligible(result.exact,profiles.length,today);
+  finished=true;result=eveningResult();const choices=A.eligible(S.prioritizeEvidence(result.exact,profiles,shortPlan?.available||[]),profiles.length,today);
   const currentChoice=activityChoice&&choices.find(row=>row.activity.id===activityChoice.activity.id);
   if(currentChoice)activityChoice=currentChoice;else chooseActivity(choices);
   if(!activityChoice){

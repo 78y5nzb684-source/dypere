@@ -87,5 +87,5 @@
   const matched=pool(profiles,entries),minimum=Math.min(2,selectedCount),target=Object.values(settings.quicky||{}).some(Boolean)?1:settings.minutes===15?1:settings.minutes===30?2:3;
   return profiles.every(p=>p.answers.length>=minimum)&&matched.length>=target&&!!window.DypereActivityRegistry?.eligible(matched,profiles.length,settings).length;
  }
- window.DypereSessionPlanner=Object.freeze({options,candidates,build,canStillMatch,pool,enough,followup});
+ window.DypereSessionPlanner=Object.freeze({options,candidates,build,canStillMatch,pool,enough,followup,prioritizeEvidence});
 })();
