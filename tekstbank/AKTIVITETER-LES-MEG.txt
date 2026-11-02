@@ -1,10 +1,10 @@
-AKTIVT FRA 3.0.34 BETA
+AKTIVT FRA 3.0.35 BETA
 100 aktive oppføringer for to deltakere: 20 tidligere innsendte, uendrede aktiviteter og 80 nye ikke-grafiske aktiviteter og forløp.
 De nye omfatter massasje, kyss, sanser, omsorg, fotmassasje, klær, voksne rollespill og ledelse. De er ikke 80 nye eksplisitte sexscenarioer.
 Varighet beregnes fra alle delene. Kjapp stund bruker fortsatt strengt under 30 minutter, og alle vanlige krav til kveldens bekreftelser og roller gjelder.
 Den eldre veiledningen nedenfor beskriver 3.0.30-integrasjonen og skjemaet.
 
-AKTIVT FRA 3.0.34 BETA
+AKTIVT FRA 3.0.35 BETA
 20 innsendte aktiviteter for to deltakere er aktive. Selve aktivitetstekstene er bevart.
 Kanonisk kilde: aktiviteter.json. Kjør bygg-aktiviteter.py etter endring.
 Metadata er rettet for speilvendt profilrekkefølge og sammenhengende roller.
@@ -26,7 +26,7 @@ profilformatet og blir ikke automatisk verifisert av matchingen.
 Den eldre veiledningen nedenfor beskriver den generelle forfatterflyten;
 det tidligere ene nøytrale eksemplet er nå erstattet av de 20 innsendte radene.
 
-DYPERE – aktiv tekstkilde fra 3.0.34 beta
+DYPERE – aktiv tekstkilde fra 3.0.35 beta
 
 Åpne tekstbank/aktiviteter.json. Der ligger nå ett aktivt, nøytralt eksempel.
 Endre description og phases[].text. Deloverskrift og minutter vises i appen.

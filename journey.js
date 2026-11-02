@@ -2,6 +2,8 @@
  'use strict';
  const U=DypereUI,{node,$}=U,M=window.DypereJourneyModel;
  const view=$('journeyView'),exit=$('journeyExit');
+ // A second click belongs to the original gesture, even after a screen redraw.
+ document.addEventListener('click',event=>{if(event.detail>1&&event.target.closest('button,a')){event.preventDefault();event.stopImmediatePropagation();}},true);
  const skills=window.DypereJourneyCategories,names=window.DypereJourneyCategoryNames,roots=window.DypereJourneyTree;
  const language=window.DypereJourneyLanguage||{},entries=M.index(window.DypereVarStundBank);
  M.indexReport().skipped.forEach(row=>console.warn('Vår stund: hoppet over rad',row.id,row.reason));
@@ -500,7 +502,7 @@
   p.setAttribute('data-activity-id',activity.id);p.append(node('p','Omtrent '+activity.minutes+' minutter','session-meta'),node('p',activity.description,'session-action'),node('p',activityRoles(activityChoice),'activity-roles'));
   if(activity.reviewNote){const preview=node('details',undefined,'scenario-basis');preview.append(node('summary','Les hele forslaget'));for(const phase of activity.phases||[])preview.append(node('h3',phase.title),node('p',phase.text));p.append(node('p',activity.reviewNote,'journey-note'),preview);}
   const resuming=runningActivityId===activity.id&&!runCompleted,repeating=runningActivityId===activity.id&&runCompleted;
-  const start=button(resuming?'Fortsett fra del '+(runStep+1):repeating?'Start aktiviteten på nytt':activity.reviewNote?'Dette passer oss – start':'Start aktiviteten',()=>{chosen=true;if(!resuming)runStep=0;runningActivityId=activity.id;runCompleted=false;showRunning();},'primary');start.id='startTogether';p.append(start);
+  const start=button(resuming?'Fortsett fra del '+(runStep+1):repeating?'Start aktiviteten på nytt':activity.reviewNote?'Dette passer oss – start':'Start aktiviteten',()=>{chosen=true;if(!resuming)runStep=0;runningActivityId=activity.id;runCompleted=false;showRunning();},'primary');start.id='startTogether';const wait=answerReadyAt-Date.now();if(wait>0){start.disabled=true;const screenRevision=revision;setTimeout(()=>{if(revision===screenRevision)start.disabled=false;},wait);}p.append(start);
   if(choices.length>1)p.append(button('Et annet forslag',()=>{chooseActivity(choices);showShortProposal();},'text-button'));
   const why=node('details',undefined,'scenario-basis');why.append(node('summary','Hvorfor dette forslaget?'));const ul=node('ul');for(const item of activityChoice.evidence)ul.append(node('li',(language[item.key]?.topic||item.topic||item.cat)+' · kompatible ja i kveld'));why.append(ul,button('Se kveldens svar',showMatch,'text-button'));p.append(why);
   const extra=node('details',undefined,'journey-more');extra.append(node('summary','Endre kveldens rammer'),button('Tilbake til dagsformen',()=>showToday(sourceProfiles),'text-button'));if(history.length)extra.append(button('Endre forrige svar',previous,'text-button'));p.append(extra);
