@@ -1,0 +1,5 @@
+DYPERE – komplett app med gjenopprettet hovedmeny
+
+Alle filer fra GitHub-commit ef768b8807d785100bce7b73acfef58cb5db06ef er med. Hovedmenyen er gjenopprettet med innganger til de eksisterende delene. Dagens Vår stund er fortsatt dateversjonen med private startvalg og bolker på opptil ti spørsmål. Min dateprofil åpner profilredigeringen for denne motoren. Den tidligere kartleggingen ligger som egen inngang og har et annet profilformat. De to profilformatene er ikke slått sammen.
+
+Pakk ut filene. Ved opplasting skal index.html ligge i roten, sammen med undermappene. Lokal bruk krever en lokal webserver fordi appen laster JSON-filer. Pakken inneholder ikke den avviste DYPERE-DIR-APP-banken. Ingen private brukerprofiler er lagt til; testprofilene er fiktive.

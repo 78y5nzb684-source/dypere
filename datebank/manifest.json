@@ -1,1 +1,1988 @@
-{"version": 1, "count": 100000, "columns": ["id", "first", "second", "style", "durationMinutes"], "modules": [{"id": "s001", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s001"}, {"id": "s002", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s002"}, {"id": "s003", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s003"}, {"id": "s004", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 2, "supportsQuicky": true, "minMinutes": 20, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "s005", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s005"}, {"id": "s006", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s006"}, {"id": "s007", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s007"}, {"id": "s008", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s008"}, {"id": "s101", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s101"}, {"id": "s102", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s102"}, {"id": "s103", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 1, "supportsQuicky": false, "minMinutes": 45, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s103"}, {"id": "s104", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": true, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s104"}, {"id": "s105", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": true, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s105"}, {"id": "s106", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s106"}, {"id": "s107", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 2, "supportsQuicky": false, "minMinutes": 60, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s107"}, {"id": "s108", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 2, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s108"}, {"id": "s109", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 3, "supportsQuicky": false, "minMinutes": 45, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s109"}, {"id": "s110", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s110"}, {"id": "s111", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s111"}, {"id": "s112", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s112"}, {"id": "s113", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s113"}, {"id": "s114", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s114"}, {"id": "s115", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s115"}, {"id": "s116", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s116"}, {"id": "m025", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s001"}, {"id": "m026", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s001"}, {"id": "m027", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s002"}, {"id": "m028", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s002"}, {"id": "m029", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s001"}, {"id": "m030", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s001"}, {"id": "m031", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s002"}, {"id": "m032", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s001"}, {"id": "m033", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s003"}, {"id": "m034", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s003"}, {"id": "m035", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s003"}, {"id": "m036", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s003"}, {"id": "m037", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": true, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s104"}, {"id": "m038", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": true, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s104"}, {"id": "m039", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": true, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s104"}, {"id": "m040", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 1, "supportsQuicky": true, "minMinutes": 15, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s003"}, {"id": "m041", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m042", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s004"}, {"id": "m043", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s004"}, {"id": "m044", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m045", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s004"}, {"id": "m046", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m047", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m048", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s004"}, {"id": "m049", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s004"}, {"id": "m050", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s004"}, {"id": "m051", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m052", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s004"}, {"id": "m053", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s004"}, {"id": "m054", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m055", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s004"}, {"id": "m056", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m057", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m058", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s004"}, {"id": "m059", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s004"}, {"id": "m060", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s004"}, {"id": "m061", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m062", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s004"}, {"id": "m063", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s004"}, {"id": "m064", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 2, "supportsQuicky": true, "minMinutes": 10, "minPeople": 2, "maxPeople": 4, "place": "ute", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s004"}, {"id": "m065", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s005"}, {"id": "m066", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s005"}, {"id": "m067", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s005"}, {"id": "m068", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s005"}, {"id": "m069", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s005"}, {"id": "m070", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s005"}, {"id": "m071", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s005"}, {"id": "m072", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s005"}, {"id": "m073", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s006"}, {"id": "m074", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s006"}, {"id": "m075", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s006"}, {"id": "m076", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s006"}, {"id": "m077", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s113"}, {"id": "m078", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s113"}, {"id": "m079", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s113"}, {"id": "m080", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 2, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s113"}, {"id": "m081", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s007"}, {"id": "m082", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s007"}, {"id": "m083", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s007"}, {"id": "m084", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s007"}, {"id": "m085", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s114"}, {"id": "m086", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s007"}, {"id": "m087", "title": "Bondage", "description": "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "theme": "bondage", "format": "bundet", "formatLabel": "bondage", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Hender bundet. Leder bruker munn eller rumpe. Leder kommer.", "Leder kommer."], "sourceId": "s007"}, {"id": "m088", "title": "Quick anal", "description": "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "theme": "anal", "format": "quick", "formatLabel": "quick anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Kort og hardt. Rumpa blir tatt. Leder kommer fort.", "Leder kommer."], "sourceId": "s007"}, {"id": "m089", "title": "Deepthroat", "description": "Leder bruker munnen hardt. Sæd i halsen.", "theme": "oral", "format": "dyp", "formatLabel": "deepthroat", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder bruker munnen hardt. Sæd i halsen.", "Leder kommer."], "sourceId": "s008"}, {"id": "m090", "title": "Edging", "description": "Leder holder på kanten. Kommer bare når leder tillater.", "theme": "kontroll", "format": "edge", "formatLabel": "edging", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder holder på kanten. Kommer bare når leder tillater.", "Leder kommer."], "sourceId": "s008"}, {"id": "m091", "title": "Rett på sak", "description": "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "theme": "anal", "format": "knull", "formatLabel": "hard anal", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder tar det de vil. Rumpa blir brukt hardt. Leder kommer.", "Leder kommer."], "sourceId": "s008"}, {"id": "m092", "title": "Munn og sæd", "description": "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "theme": "oral", "format": "munn", "formatLabel": "oral", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Munnen blir brukt til leder kommer. Sæd i munn eller på.", "Leder kommer."], "sourceId": "s008"}, {"id": "m093", "title": "Nektelse", "description": "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "theme": "kontroll", "format": "edge", "formatLabel": "nektelse", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder edger og nekter. Den andre får ikke komme før leder sier det.", "Leder kommer."], "sourceId": "s008"}, {"id": "m094", "title": "På ryggen", "description": "På ryggen med bena opp. Leder knuller og kommer.", "theme": "anal", "format": "knull", "formatLabel": "anal på ryggen", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "På ryggen med bena opp. Leder knuller og kommer.", "Leder kommer."], "sourceId": "s008"}, {"id": "m095", "title": "Spanking", "description": "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "theme": "impact", "format": "slag", "formatLabel": "spanking", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder gir slag. Rumpa blir rød. Deretter blir den brukt.", "Leder kommer."], "sourceId": "s008"}, {"id": "m096", "title": "Hairpulling", "description": "Leder drar i håret mens de tar. Leder kommer.", "theme": "kontroll", "format": "dra", "formatLabel": "hairpulling", "energy": 1, "supportsQuicky": true, "minMinutes": null, "minPeople": 2, "maxPeople": 4, "place": "inne", "needsLeader": false, "steps": ["Leder tar kontroll.", "Leder drar i håret mens de tar. Leder kommer.", "Leder kommer."], "sourceId": "s008"}], "styles": [{"id": "enkelt", "name": "Enkel og uformell", "intro": "Gjør daten enkel: velg en behagelig start og ta én del om gangen.", "end": "Rund av når den avsatte tiden er brukt, eller tidligere hvis dere ønsker."}, {"id": "detaljer", "name": "Legg merke til detaljene", "intro": "Velg én liten detalj hver som dere vil legge ekstra merke til underveis.", "end": "Avslutt med å nevne detaljen dere likte best, hvis dere har lyst."}, {"id": "favoritter", "name": "Plass til hver deres favoritt", "intro": "Gi plass til et lite valg fra hver person innenfor aktivitetene dere har valgt.", "end": "Rund av med å velge hva dere eventuelt vil gjøre igjen en annen gang."}, {"id": "lavterskel", "name": "Uten prestasjon", "intro": "La daten være uten krav om et godt resultat. Det holder å gjøre noe sammen.", "end": "Avslutt uten å bedømme hvordan det gikk."}, {"id": "pauser", "name": "God plass til pauser", "intro": "Legg inn en kort pause mellom de to delene.", "end": "Bruk den siste lille stunden til å lande før dere går videre med dagen."}, {"id": "nysgjerrig", "name": "Et nytt blikk på noe kjent", "intro": "Prøv en liten ny vri innenfor de aktivitetene dere allerede har valgt.", "end": "Rund av med å legge merke til hva som føltes nytt eller annerledes."}, {"id": "tilstede", "name": "Tid til å være til stede", "intro": "Sett andre gjøremål til side mens dere gjør disse to aktivitetene.", "end": "Avslutt rolig før dere tar fram neste gjøremål."}, {"id": "liten", "name": "En liten anledning", "intro": "Gi disse aktivitetene litt mer oppmerksomhet enn på en vanlig hverdag.", "end": "Sett et tydelig punktum for daten, også om dere bare hadde en kort stund."}], "parts": [{"file": "dates-01.json", "count": 10000, "sha256": "04fe7b6c28ef1987ff4d1153ebc4e64480a16d1749ded3dfb02e45e8f9ce9fd2"}, {"file": "dates-02.json", "count": 10000, "sha256": "0e659c2e04db44f0ce352a088a42d1d57b42a28dcfc4d13d3841410d9e2f09cd"}, {"file": "dates-03.json", "count": 10000, "sha256": "b3889f76619ff0f14c1232b92d8a582576caf2e0573a352e8388ed98679c2e50"}, {"file": "dates-04.json", "count": 10000, "sha256": "e7c7a76411c1c8680f7ad02c83f0f0d49015bcfb075220fe9b196e42ab2db569"}, {"file": "dates-05.json", "count": 10000, "sha256": "d232ab4fd8276b41a67ab951b3215522de7045c8e6b68fd2495645e4453ae0cb"}, {"file": "dates-06.json", "count": 10000, "sha256": "52b9c318cde0e8b5274028a7be3a079d5a866c2d2aaf17b57e1d962fcf93616b"}, {"file": "dates-07.json", "count": 10000, "sha256": "3d856c64264508687574dce9d0fe155491be76845ed9e8bb1b6c7a9f11a6c1da"}, {"file": "dates-08.json", "count": 10000, "sha256": "71093bda6df4803003efd478bd48b8ed77d0899c69a913b18f40d4ed2963d234"}, {"file": "dates-09.json", "count": 10000, "sha256": "4f892508ed8f374f0832263cd3bdb3747505a5a46a423b282f492a0176d7d914"}, {"file": "dates-10.json", "count": 10000, "sha256": "704cc19665a28a8b077fab27ceb8491167e6c820c37c8bb927ed0830c9e8f13f"}], "note": "100000 parametriske kombinasjonsvarianter fra 96 nøytrale aktiviteter. Ikke 100000 uavhengige grunnideer."}
+{
+  "version": 1,
+  "count": 100000,
+  "columns": [
+    "id",
+    "first",
+    "second",
+    "style",
+    "durationMinutes"
+  ],
+  "modules": [
+    {
+      "id": "s001",
+      "title": "Musikkpause",
+      "description": "Velg noen sanger og lytt sammen.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Velg noen sanger og lytt sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "s002",
+      "title": "Spilleliste",
+      "description": "Lag en kort spilleliste sammen.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Lag en kort spilleliste sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s002"
+    },
+    {
+      "id": "s003",
+      "title": "Spillrunde",
+      "description": "Velg et kort brettspill.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Velg et kort brettspill.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "s004",
+      "title": "Kveldstur",
+      "description": "Ta en kort tur i nærområdet.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 20,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Ta en kort tur i nærområdet.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "s005",
+      "title": "Te og prat",
+      "description": "Lag noe å drikke og snakk sammen.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Lag noe å drikke og snakk sammen.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "s006",
+      "title": "Tegn en historie",
+      "description": "Tegn noe enkelt og la den andre gjette.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Tegn noe enkelt og la den andre gjette.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s006"
+    },
+    {
+      "id": "s007",
+      "title": "Planlegg en date",
+      "description": "Finn på noe enkelt dere kan gjøre sammen senere.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Finn på noe enkelt dere kan gjøre sammen senere.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "s008",
+      "title": "Minnestund",
+      "description": "Fortell om et godt minne dere deler.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen hvordan dere vil begynne.",
+        "Fortell om et godt minne dere deler.",
+        "Avslutt når dere ønsker, og si hva dere likte."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "s101",
+      "title": "Musikkminner",
+      "description": "Del en sang hver og fortell hvorfor dere valgte den.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Del en sang hver og fortell hvorfor dere valgte den.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s101"
+    },
+    {
+      "id": "s102",
+      "title": "Tre sanger hver",
+      "description": "Velg tre sanger hver til en felles spilleliste.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg tre sanger hver til en felles spilleliste.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s102"
+    },
+    {
+      "id": "s103",
+      "title": "Lyttestund",
+      "description": "Sett av god tid til å lytte til et helt album.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": false,
+      "minMinutes": 45,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Sett av god tid til å lytte til et helt album.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s103"
+    },
+    {
+      "id": "s104",
+      "title": "Quizvert for en stund",
+      "description": "Én leder en kort quiz, og resten svarer.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Én leder en kort quiz, og resten svarer.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s104"
+    },
+    {
+      "id": "s105",
+      "title": "Gjett melodien",
+      "description": "Én velger låter og leder en gjettelek.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Én velger låter og leder en gjettelek.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s105"
+    },
+    {
+      "id": "s106",
+      "title": "Kortspill",
+      "description": "Velg et kjent kortspill og spill en runde.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et kjent kortspill og spill en runde.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s106"
+    },
+    {
+      "id": "s107",
+      "title": "Lang spillkveld",
+      "description": "Velg et brettspill dere vil bruke god tid på.",
+      "theme": "spill",
+      "format": "lang",
+      "formatLabel": "et lengre brettspill",
+      "energy": 2,
+      "supportsQuicky": false,
+      "minMinutes": 60,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et brettspill dere vil bruke god tid på.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s107"
+    },
+    {
+      "id": "s108",
+      "title": "Finn tre detaljer",
+      "description": "Gå ut og finn tre detaljer dere ikke har lagt merke til før.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Gå ut og finn tre detaljer dere ikke har lagt merke til før.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s108"
+    },
+    {
+      "id": "s109",
+      "title": "Lang rusletur",
+      "description": "Finn en lengre rute og ta dere tid underveis.",
+      "theme": "tur",
+      "format": "lang",
+      "formatLabel": "en lengre tur",
+      "energy": 3,
+      "supportsQuicky": false,
+      "minMinutes": 45,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn en lengre rute og ta dere tid underveis.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s109"
+    },
+    {
+      "id": "s110",
+      "title": "Dagens høydepunkt",
+      "description": "Fortell hverandre om noe fint fra dagen.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Fortell hverandre om noe fint fra dagen.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s110"
+    },
+    {
+      "id": "s111",
+      "title": "Et spørsmål hver",
+      "description": "Bytt på å stille et åpent spørsmål og lytt til svaret.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Bytt på å stille et åpent spørsmål og lytt til svaret.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s111"
+    },
+    {
+      "id": "s112",
+      "title": "Tegn videre",
+      "description": "Bytt på å tegne videre på det samme arket.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Bytt på å tegne videre på det samme arket.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s112"
+    },
+    {
+      "id": "s113",
+      "title": "Historie på rundgang",
+      "description": "Lag en historie ved å legge til én setning hver.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Lag en historie ved å legge til én setning hver.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s113"
+    },
+    {
+      "id": "s114",
+      "title": "Helgeønske",
+      "description": "Finn én ting dere kunne tenke dere å gjøre i helgen.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn én ting dere kunne tenke dere å gjøre i helgen.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s114"
+    },
+    {
+      "id": "s115",
+      "title": "Et lite prosjekt",
+      "description": "Velg et lite felles prosjekt og skriv ned første steg.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Velg et lite felles prosjekt og skriv ned første steg.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s115"
+    },
+    {
+      "id": "s116",
+      "title": "Et fint bilde",
+      "description": "Finn fram et bilde og fortell om minnet bak.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg sammen en enkel start.",
+        "Finn fram et bilde og fortell om minnet bak.",
+        "Ta en pause eller rund av når dere ønsker."
+      ],
+      "sourceId": "s116"
+    },
+    {
+      "id": "m025",
+      "title": "Sanger fra oppveksten",
+      "description": "Velg en sang fra hver deres oppvekst og lytt sammen.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg en sang fra hver deres oppvekst og lytt sammen."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "m026",
+      "title": "En sang til den andre",
+      "description": "Velg hver deres sang som dere tror den andre vil like.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg hver deres sang som dere tror den andre vil like."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "m027",
+      "title": "Rekkefølgen betyr noe",
+      "description": "Lag en spilleliste med en tydelig begynnelse, midtdel og avslutning.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Lag en spilleliste med en tydelig begynnelse, midtdel og avslutning."
+      ],
+      "sourceId": "s002"
+    },
+    {
+      "id": "m028",
+      "title": "Et lydspor til helgen",
+      "description": "Lag et kort lydspor som passer en helg dere ønsker dere.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Lag et kort lydspor som passer en helg dere ønsker dere."
+      ],
+      "sourceId": "s002"
+    },
+    {
+      "id": "m029",
+      "title": "Oppdag en ny sjanger",
+      "description": "Velg en musikksjanger dere kjenner lite og prøv noen låter.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg en musikksjanger dere kjenner lite og prøv noen låter."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "m030",
+      "title": "Samme sang, to versjoner",
+      "description": "Finn to versjoner av en sang og lytt etter forskjellene.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn to versjoner av en sang og lytt etter forskjellene."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "m031",
+      "title": "Tre stemninger",
+      "description": "Velg musikk til tre ulike stemninger og sett sammen valgene.",
+      "theme": "musikk",
+      "format": "skape",
+      "formatLabel": "å lage musikkvalg sammen",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg musikk til tre ulike stemninger og sett sammen valgene."
+      ],
+      "sourceId": "s002"
+    },
+    {
+      "id": "m032",
+      "title": "En liten minikonsert",
+      "description": "Velg et kort konsertopptak og se eller lytt sammen.",
+      "theme": "musikk",
+      "format": "lytte",
+      "formatLabel": "en rolig musikkpause",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et kort konsertopptak og se eller lytt sammen."
+      ],
+      "sourceId": "s001"
+    },
+    {
+      "id": "m033",
+      "title": "En kjent favoritt",
+      "description": "Finn et spill dere allerede kan, og spill en runde uten å bruke tid på nye regler.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn et spill dere allerede kan, og spill en runde uten å bruke tid på nye regler."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "m034",
+      "title": "Lær bort et spill",
+      "description": "Velg et enkelt spill én av dere kjenner, og lær det bort til de andre.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et enkelt spill én av dere kjenner, og lær det bort til de andre."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "m035",
+      "title": "Spill på lag",
+      "description": "Velg et samarbeidsspill og prøv å løse oppgaven sammen.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et samarbeidsspill og prøv å løse oppgaven sammen."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "m036",
+      "title": "Tre små runder",
+      "description": "Velg et kort spill og spill tre små runder med en pause imellom.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et kort spill og spill tre små runder med en pause imellom."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "m037",
+      "title": "Quiz om hverdagskunnskap",
+      "description": "La én lage en kort quiz om ufarlig hverdagskunnskap og lede runden.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "La én lage en kort quiz om ufarlig hverdagskunnskap og lede runden."
+      ],
+      "sourceId": "s104"
+    },
+    {
+      "id": "m038",
+      "title": "Gjett fra et hint",
+      "description": "La én gi små hint om kjente steder eller ting, mens resten gjetter.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "La én gi små hint om kjente steder eller ting, mens resten gjetter."
+      ],
+      "sourceId": "s104"
+    },
+    {
+      "id": "m039",
+      "title": "En vennlig quizvert",
+      "description": "La én finne fem lette spørsmål og lede en quiz uten poengtelling.",
+      "theme": "spill",
+      "format": "quiz",
+      "formatLabel": "en quiz med en som leder",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": true,
+      "steps": [
+        "La én finne fem lette spørsmål og lede en quiz uten poengtelling."
+      ],
+      "sourceId": "s104"
+    },
+    {
+      "id": "m040",
+      "title": "En ny spillfavoritt",
+      "description": "Finn fram et enkelt spill dere sjelden bruker og prøv en rolig runde.",
+      "theme": "spill",
+      "format": "rolig",
+      "formatLabel": "et kort spill",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": 15,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn fram et enkelt spill dere sjelden bruker og prøv en rolig runde."
+      ],
+      "sourceId": "s003"
+    },
+    {
+      "id": "m041",
+      "title": "En farge på tur",
+      "description": "Ta en kort tur og legg merke til ting som har den samme fargen.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Ta en kort tur og legg merke til ting som har den samme fargen."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m042",
+      "title": "En vei dere sjelden velger",
+      "description": "Velg en kort og tilgjengelig rute dere vanligvis går forbi.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg en kort og tilgjengelig rute dere vanligvis går forbi."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m043",
+      "title": "Lytt til nærmiljøet",
+      "description": "Ta en kort tur og stopp litt for å lytte til lydene rundt dere.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Ta en kort tur og stopp litt for å lytte til lydene rundt dere."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m044",
+      "title": "Se opp en stund",
+      "description": "Gå en kort runde og legg merke til himmel, trær eller bygninger.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå en kort runde og legg merke til himmel, trær eller bygninger."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m045",
+      "title": "Finn et fint stoppested",
+      "description": "Gå en kort tur og finn et tilgjengelig sted å stoppe et øyeblikk.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå en kort tur og finn et tilgjengelig sted å stoppe et øyeblikk."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m046",
+      "title": "To små veivalg",
+      "description": "Velg hver deres lille del av en kort rute og gå den sammen.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg hver deres lille del av en kort rute og gå den sammen."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m047",
+      "title": "Et bilde av nærmiljøet",
+      "description": "Ta en kort tur og velg ett motiv dere vil huske fra runden.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Ta en kort tur og velg ett motiv dere vil huske fra runden."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m048",
+      "title": "En liten næroppdagelse",
+      "description": "Gå en kort runde og se etter en detalj dere ikke har lagt merke til før.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå en kort runde og se etter en detalj dere ikke har lagt merke til før."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m049",
+      "title": "Tre små stopp",
+      "description": "Velg tre små stopp underveis på en kort tur og ta dere tid ved hvert av dem.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg tre små stopp underveis på en kort tur og ta dere tid ved hvert av dem."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m050",
+      "title": "En rundtur uten hast",
+      "description": "Velg en kort rundtur og gå den i et tempo alle trives med.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg en kort rundtur og gå den i et tempo alle trives med."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m051",
+      "title": "En annerledes retning",
+      "description": "Start en kjent tur i motsatt retning og legg merke til hva som oppleves annerledes.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Start en kjent tur i motsatt retning og legg merke til hva som oppleves annerledes."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m052",
+      "title": "Rolige omgivelser",
+      "description": "Velg den roligste tilgjengelige delen av nærmiljøet for en kort gåtur.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg den roligste tilgjengelige delen av nærmiljøet for en kort gåtur."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m053",
+      "title": "En liten omvei",
+      "description": "Legg inn en liten, kjent omvei på en kort tur dere ellers kunne gått rett fram.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Legg inn en liten, kjent omvei på en kort tur dere ellers kunne gått rett fram."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m054",
+      "title": "Former på veien",
+      "description": "Gå en kort tur og legg merke til runde, kantete eller bølgende former rundt dere.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå en kort tur og legg merke til runde, kantete eller bølgende former rundt dere."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m055",
+      "title": "Et nytt veivalg hver",
+      "description": "La hver person velge ett lite veivalg på en kort, kjent tur.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "La hver person velge ett lite veivalg på en kort, kjent tur."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m056",
+      "title": "Nærmiljøets mønstre",
+      "description": "Se etter gjentakende mønstre i nærmiljøet mens dere går en kort runde.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Se etter gjentakende mønstre i nærmiljøet mens dere går en kort runde."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m057",
+      "title": "En rute med god plass",
+      "description": "Velg en kort rute der dere har plass til å gå i et behagelig tempo sammen.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg en kort rute der dere har plass til å gå i et behagelig tempo sammen."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m058",
+      "title": "Se det kjente på nytt",
+      "description": "Gå forbi et kjent sted og stopp for å legge merke til noe dere vanligvis overser.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå forbi et kjent sted og stopp for å legge merke til noe dere vanligvis overser."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m059",
+      "title": "En liten utsiktsrunde",
+      "description": "Velg en kort runde med et tilgjengelig sted der dere kan se litt utover omgivelsene.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg en kort runde med et tilgjengelig sted der dere kan se litt utover omgivelsene."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m060",
+      "title": "Nært og langt",
+      "description": "Bytt mellom å legge merke til det som er helt nært og det som ligger langt unna på turen.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Bytt mellom å legge merke til det som er helt nært og det som ligger langt unna på turen."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m061",
+      "title": "Et rolig vendepunkt",
+      "description": "Gå et kort stykke sammen, ta en liten pause og vend tilbake samme vei.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå et kort stykke sammen, ta en liten pause og vend tilbake samme vei."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m062",
+      "title": "Turen som en sirkel",
+      "description": "Finn en enkel sirkel i nærmiljøet og la selve runden være daten.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Finn en enkel sirkel i nærmiljøet og la selve runden være daten."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m063",
+      "title": "Små forandringer",
+      "description": "Gå en kjent runde og se etter noe som har forandret seg siden sist.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Gå en kjent runde og se etter noe som har forandret seg siden sist."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m064",
+      "title": "En tur med få planer",
+      "description": "Velg en kort og kjent rute, og la resten av turen være uten oppgaver.",
+      "theme": "tur",
+      "format": "kort",
+      "formatLabel": "en kort tur",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": 10,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "ute",
+      "needsLeader": false,
+      "steps": [
+        "Velg en kort og kjent rute, og la resten av turen være uten oppgaver."
+      ],
+      "sourceId": "s004"
+    },
+    {
+      "id": "m065",
+      "title": "Et godt spørsmål",
+      "description": "Still hverandre ett åpent spørsmål dere faktisk er nysgjerrige på.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Still hverandre ett åpent spørsmål dere faktisk er nysgjerrige på."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m066",
+      "title": "Dagens lille seier",
+      "description": "Fortell om noe lite dere fikk til i dag, og lytt til hverandre.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell om noe lite dere fikk til i dag, og lytt til hverandre."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m067",
+      "title": "Det vi vil ha mer av",
+      "description": "Snakk om noe hyggelig dere vil ha mer plass til i hverdagen.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Snakk om noe hyggelig dere vil ha mer plass til i hverdagen."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m068",
+      "title": "En drøm uten frist",
+      "description": "Fortell om en drøm eller idé uten å lage en plan for den.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell om en drøm eller idé uten å lage en plan for den."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m069",
+      "title": "Hva gjør en god dag?",
+      "description": "Beskriv en enkel god dag og finn noen likheter mellom svarene.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Beskriv en enkel god dag og finn noen likheter mellom svarene."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m070",
+      "title": "En ting jeg setter pris på",
+      "description": "Fortell om én konkret ting dere setter pris på ved hverandre.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell om én konkret ting dere setter pris på ved hverandre."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m071",
+      "title": "Et spørsmål på rundgang",
+      "description": "La alle velge ett uformelt spørsmål som de andre kan svare på eller stå over.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "La alle velge ett uformelt spørsmål som de andre kan svare på eller stå over."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m072",
+      "title": "Et lite pusterom",
+      "description": "Sett dere godt til rette og snakk om det dere har lyst til, uten en oppgaveliste.",
+      "theme": "prat",
+      "format": "rolig",
+      "formatLabel": "en uformell samtale",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Sett dere godt til rette og snakk om det dere har lyst til, uten en oppgaveliste."
+      ],
+      "sourceId": "s005"
+    },
+    {
+      "id": "m073",
+      "title": "Tegn uten fasit",
+      "description": "Velg et enkelt motiv og tegn hver deres versjon uten å sammenligne ferdigheter.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et enkelt motiv og tegn hver deres versjon uten å sammenligne ferdigheter."
+      ],
+      "sourceId": "s006"
+    },
+    {
+      "id": "m074",
+      "title": "Et felles fantasisted",
+      "description": "Tegn videre på et felles ark og lag et sted som ikke finnes.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Tegn videre på et felles ark og lag et sted som ikke finnes."
+      ],
+      "sourceId": "s006"
+    },
+    {
+      "id": "m075",
+      "title": "Tegn med tre former",
+      "description": "Lag en liten tegning som bare bruker tre former dere velger sammen.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Lag en liten tegning som bare bruker tre former dere velger sammen."
+      ],
+      "sourceId": "s006"
+    },
+    {
+      "id": "m076",
+      "title": "Et postkort fra framtiden",
+      "description": "Tegn et postkort fra en oppdiktet reise dere kunne tatt sammen.",
+      "theme": "kreativ",
+      "format": "tegne",
+      "formatLabel": "en tegnelek",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Tegn et postkort fra en oppdiktet reise dere kunne tatt sammen."
+      ],
+      "sourceId": "s006"
+    },
+    {
+      "id": "m077",
+      "title": "Tre ord blir en historie",
+      "description": "Velg tre vanlige ord og lag en kort historie der alle tre er med.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg tre vanlige ord og lag en kort historie der alle tre er med."
+      ],
+      "sourceId": "s113"
+    },
+    {
+      "id": "m078",
+      "title": "Historien skifter retning",
+      "description": "Fortell en historie på rundgang og la hver person legge til en ny vending.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell en historie på rundgang og la hver person legge til en ny vending."
+      ],
+      "sourceId": "s113"
+    },
+    {
+      "id": "m079",
+      "title": "Gi en ting et eventyr",
+      "description": "Velg en hverdagsting og finn på en kort historie om hva den har opplevd.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg en hverdagsting og finn på en kort historie om hva den har opplevd."
+      ],
+      "sourceId": "s113"
+    },
+    {
+      "id": "m080",
+      "title": "En alternativ slutt",
+      "description": "Finn på en kort fortelling sammen og lag to forskjellige avslutninger.",
+      "theme": "kreativ",
+      "format": "fortelle",
+      "formatLabel": "å skape en historie",
+      "energy": 2,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn på en kort fortelling sammen og lag to forskjellige avslutninger."
+      ],
+      "sourceId": "s113"
+    },
+    {
+      "id": "m081",
+      "title": "En liten utflukt",
+      "description": "Planlegg en enkel utflukt uten å bestille eller kjøpe noe nå.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Planlegg en enkel utflukt uten å bestille eller kjøpe noe nå."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m082",
+      "title": "En kveld dere gleder dere til",
+      "description": "Skisser en hyggelig kveld med én ting hver ønsker å ha med.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Skisser en hyggelig kveld med én ting hver ønsker å ha med."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m083",
+      "title": "Tre mulige helger",
+      "description": "Finn tre ulike måter å bruke en rolig helg på, og velg en favoritt.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn tre ulike måter å bruke en rolig helg på, og velg en favoritt."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m084",
+      "title": "En gratis opplevelse",
+      "description": "Finn på en opplevelse dere kan lage selv uten et nytt innkjøp.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn på en opplevelse dere kan lage selv uten et nytt innkjøp."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m085",
+      "title": "Et felles lite prosjekt",
+      "description": "Velg et lite prosjekt og skriv ned det første overkommelige steget.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et lite prosjekt og skriv ned det første overkommelige steget."
+      ],
+      "sourceId": "s114"
+    },
+    {
+      "id": "m086",
+      "title": "En ønskeliste for nærmiljøet",
+      "description": "Lag en kort liste over ting dere ønsker å oppleve i nærmiljøet senere.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Lag en kort liste over ting dere ønsker å oppleve i nærmiljøet senere."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m087",
+      "title": "En regnværsplan",
+      "description": "Finn på en hyggelig innedag dere kan ta fram når været er dårlig.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn på en hyggelig innedag dere kan ta fram når været er dårlig."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m088",
+      "title": "Bytt på å velge",
+      "description": "Planlegg to enkle framtidige dater der dere får velge hovedideen hver deres gang.",
+      "theme": "plan",
+      "format": "planlegge",
+      "formatLabel": "å planlegge noe sammen",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Planlegg to enkle framtidige dater der dere får velge hovedideen hver deres gang."
+      ],
+      "sourceId": "s007"
+    },
+    {
+      "id": "m089",
+      "title": "Et bilde med en historie",
+      "description": "Velg et bilde hver og fortell om et godt minne bak det.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Velg et bilde hver og fortell om et godt minne bak det."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m090",
+      "title": "Førsteinntrykk",
+      "description": "Fortell om et vennlig førsteinntrykk dere husker fra da dere møttes.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell om et vennlig førsteinntrykk dere husker fra da dere møttes."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m091",
+      "title": "En liten favorittdag",
+      "description": "Tenk tilbake på en god dag og del en liten detalj dere fortsatt husker.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Tenk tilbake på en god dag og del en liten detalj dere fortsatt husker."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m092",
+      "title": "Noe vi lo av",
+      "description": "Del et minne om noe morsomt dere kan le av sammen igjen.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Del et minne om noe morsomt dere kan le av sammen igjen."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m093",
+      "title": "Et sted å huske",
+      "description": "Beskriv et sted dere forbinder med et godt minne.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Beskriv et sted dere forbinder med et godt minne."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m094",
+      "title": "Et lite øyeblikk",
+      "description": "Fortell om et lite øyeblikk som betydde mer enn det så ut til.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Fortell om et lite øyeblikk som betydde mer enn det så ut til."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m095",
+      "title": "En gammel favoritt",
+      "description": "Finn fram et bilde eller en liten ting dere allerede har, og del minnet rundt den.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Finn fram et bilde eller en liten ting dere allerede har, og del minnet rundt den."
+      ],
+      "sourceId": "s008"
+    },
+    {
+      "id": "m096",
+      "title": "Det vi tok med oss",
+      "description": "Del en fin opplevelse dere lærte noe av eller gjerne vil huske.",
+      "theme": "minne",
+      "format": "dele",
+      "formatLabel": "å dele gode minner",
+      "energy": 1,
+      "supportsQuicky": true,
+      "minMinutes": null,
+      "minPeople": 2,
+      "maxPeople": 4,
+      "place": "inne",
+      "needsLeader": false,
+      "steps": [
+        "Del en fin opplevelse dere lærte noe av eller gjerne vil huske."
+      ],
+      "sourceId": "s008"
+    }
+  ],
+  "styles": [
+    {
+      "id": "enkelt",
+      "name": "Enkel og uformell",
+      "intro": "Gjør daten enkel: velg en behagelig start og ta én del om gangen.",
+      "end": "Rund av når den avsatte tiden er brukt, eller tidligere hvis dere ønsker."
+    },
+    {
+      "id": "detaljer",
+      "name": "Legg merke til detaljene",
+      "intro": "Velg én liten detalj hver som dere vil legge ekstra merke til underveis.",
+      "end": "Avslutt med å nevne detaljen dere likte best, hvis dere har lyst."
+    },
+    {
+      "id": "favoritter",
+      "name": "Plass til hver deres favoritt",
+      "intro": "Gi plass til et lite valg fra hver person innenfor aktivitetene dere har valgt.",
+      "end": "Rund av med å velge hva dere eventuelt vil gjøre igjen en annen gang."
+    },
+    {
+      "id": "lavterskel",
+      "name": "Uten prestasjon",
+      "intro": "La daten være uten krav om et godt resultat. Det holder å gjøre noe sammen.",
+      "end": "Avslutt uten å bedømme hvordan det gikk."
+    },
+    {
+      "id": "pauser",
+      "name": "God plass til pauser",
+      "intro": "Legg inn en kort pause mellom de to delene.",
+      "end": "Bruk den siste lille stunden til å lande før dere går videre med dagen."
+    },
+    {
+      "id": "nysgjerrig",
+      "name": "Et nytt blikk på noe kjent",
+      "intro": "Prøv en liten ny vri innenfor de aktivitetene dere allerede har valgt.",
+      "end": "Rund av med å legge merke til hva som føltes nytt eller annerledes."
+    },
+    {
+      "id": "tilstede",
+      "name": "Tid til å være til stede",
+      "intro": "Sett andre gjøremål til side mens dere gjør disse to aktivitetene.",
+      "end": "Avslutt rolig før dere tar fram neste gjøremål."
+    },
+    {
+      "id": "liten",
+      "name": "En liten anledning",
+      "intro": "Gi disse aktivitetene litt mer oppmerksomhet enn på en vanlig hverdag.",
+      "end": "Sett et tydelig punktum for daten, også om dere bare hadde en kort stund."
+    }
+  ],
+  "parts": [
+    {
+      "file": "dates-01.json",
+      "count": 10000,
+      "sha256": "04fe7b6c28ef1987ff4d1153ebc4e64480a16d1749ded3dfb02e45e8f9ce9fd2"
+    },
+    {
+      "file": "dates-02.json",
+      "count": 10000,
+      "sha256": "0e659c2e04db44f0ce352a088a42d1d57b42a28dcfc4d13d3841410d9e2f09cd"
+    },
+    {
+      "file": "dates-03.json",
+      "count": 10000,
+      "sha256": "b3889f76619ff0f14c1232b92d8a582576caf2e0573a352e8388ed98679c2e50"
+    },
+    {
+      "file": "dates-04.json",
+      "count": 10000,
+      "sha256": "e7c7a76411c1c8680f7ad02c83f0f0d49015bcfb075220fe9b196e42ab2db569"
+    },
+    {
+      "file": "dates-05.json",
+      "count": 10000,
+      "sha256": "d232ab4fd8276b41a67ab951b3215522de7045c8e6b68fd2495645e4453ae0cb"
+    },
+    {
+      "file": "dates-06.json",
+      "count": 10000,
+      "sha256": "52b9c318cde0e8b5274028a7be3a079d5a866c2d2aaf17b57e1d962fcf93616b"
+    },
+    {
+      "file": "dates-07.json",
+      "count": 10000,
+      "sha256": "3d856c64264508687574dce9d0fe155491be76845ed9e8bb1b6c7a9f11a6c1da"
+    },
+    {
+      "file": "dates-08.json",
+      "count": 10000,
+      "sha256": "71093bda6df4803003efd478bd48b8ed77d0899c69a913b18f40d4ed2963d234"
+    },
+    {
+      "file": "dates-09.json",
+      "count": 10000,
+      "sha256": "4f892508ed8f374f0832263cd3bdb3747505a5a46a423b282f492a0176d7d914"
+    },
+    {
+      "file": "dates-10.json",
+      "count": 10000,
+      "sha256": "704cc19665a28a8b077fab27ceb8491167e6c820c37c8bb927ed0830c9e8f13f"
+    }
+  ],
+  "note": "100000 parametriske kombinasjonsvarianter fra 96 nøytrale aktiviteter. Ikke 100000 uavhengige grunnideer."
+}

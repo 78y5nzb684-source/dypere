@@ -1,2 +1,0 @@
-DYPERE v3.0 – alle ni nye tekstkilder integrert i spill, bildeutfordring, quiz, FFM, terninger og punishment. Kapittel I–V er beholdt fordi det ikke ble levert nye kapitteltekster. Last opp alle filer til samme mappe. Eksporter tidligere svar før oppdatering.\n
-DYPERE v3.0: 25 stillinger med bilder, offline randomizer i Lek sammen, overordnede tekster forkortet i sidene.
